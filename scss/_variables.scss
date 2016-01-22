@@ -1,0 +1,214 @@
+// Variables
+//
+//
+//
+
+
+// Colors
+// Grapscale and brand color from bootstrap-4.0-alpha.
+//
+$gray-dark:         #373a3c !default;
+$gray:              #55595c !default;
+$gray-light:        #818a91 !default;
+$gray-lighter:      #eceeef !default;
+$gray-lightest:     #f7f7f9 !default;
+
+$brand-primary:     #0275d8 !default;
+$brand-sencondary:  #375A7F !default;
+$brand-info:        #3bb4f2 !default;
+$brand-success:     #2EC6A0 !default;
+$brand-warning:     #f0ad4e !default;
+$brand-danger:      #d9534f !default;
+
+
+// Options
+// Quickly modify global styling by enabling and disabling optional feature.
+//
+$enable-flex:                 false !default;
+$enable-transitions:          true !default;
+$enable-rounded:              false !default;
+$enable-shadows:              false !default;
+$enable-hover-media-query:    false !default;
+
+$cursor-disabled:         not-allowed !default;
+
+// Spacing
+// Settings for spacing.
+//
+$spacer:            1rem !default;
+$spacer-x:          $spacer !default;
+$spacer-y:          $spacer !default;
+$space-default:     15px !default;
+$space-md:          10px !default;
+$space-sm:          5px !default;
+$space-lg:          20px !default;
+
+
+// body
+// Settings for the `<body>` element.
+//
+$body-bg:         #fff !default;
+$body-color:      $gray-dark !default;
+
+
+// Links
+// Style anthor elements.
+//
+$link-color:              $brand-primary !default;
+$link-hover-color:        darken($link-color, 15%) !default;
+$link-hover-decoration:   underline !default;
+
+
+//
+// Typography
+//
+
+// Fonts
+// Font, line-height, color for body text and more.
+//
+$font-family-base:          "Open Sans","Segoe UI","Microsoft YaHei",sans-serif,Arial !default;
+
+// Size
+//
+//
+$font-size-root:    1rem !default;
+
+$font-size-base:    1rem !default; //16px
+$font-size-lg:      1.25rem !default; //20px
+$font-size-sm:      .85rem !default; //~14px
+$font-size-xs:      .75rem !default; // 12px
+
+$font-size-h1:      2.5rem !default; //40px
+$font-size-h2:      2rem !default; // 32px
+$font-size-h3:      1.75rem !default; //28px
+$font-size-h4:      1.5rem !default; //24px
+$font-size-h5:      1.25rem !default; //20px
+$font-size-h6:      1rem !default; //16px
+
+
+// Line-height
+// Define the common ling-height
+//
+$line-height:           1.5 !default;
+$line-height-lg:      (4/3) !default;
+$line-height-sm:      1.5 !default;
+$line-height-xs:      1.5 !default;
+
+
+// Border
+// the base styles of border.
+//
+$border-width:      .0625rem !default;
+
+$border-radius:     .25rem !default;
+$border-radius-no:  0rem !default;
+$border-radius-lg:  .3rem !default;
+$border-radius-sm:  .2rem !default;
+$border-radius-xs:  .1875rem !default;
+$border-radius-hg:  1000px;
+
+
+// Buttons
+// For each of buttons
+//
+$btn-padding-x:     1rem;
+$btn-padding-y:     .375rem;
+$btn-font-weight:   normal !default;
+
+$btn-primary-color:     #fff !default;
+$btn-primary-bg:        $brand-primary !default;
+$btn-primary-border:    $btn-primary-bg !default;
+
+$btn-secondary-color:     #fff !default;
+$btn-secondary-bg:        $brand-sencondary !default;
+$btn-secondary-border:    $btn-secondary-bg !default;
+
+$btn-default-color:     $gray-dark !default;
+$btn-default-bg:        #fff !default;
+$btn-default-border:    #ccc !default;
+
+$btn-info-color:        #fff !default;
+$btn-info-bg:           $brand-info !default;
+$btn-info-border:       $btn-info-bg !default;
+
+$btn-success-color:     #fff !default;
+$btn-success-bg:        $brand-success !default;
+$btn-success-border:    $btn-success-bg !default;
+
+$btn-warning-color:     #fff !default;
+$btn-warning-bg:        $brand-warning !default;
+$btn-warning-border:    $btn-warning-bg !default;
+
+$btn-danger-color:      #fff !default;
+$btn-danger-bg:         $brand-danger !default;
+$btn-danger-border:     $btn-danger-bg !default;
+
+$btn-link-disabled-color:     $gray-light !default;
+
+$btn-padding-x-xs:      .3125rem !default;
+$btn-padding-y-xs:      .02rem !default;
+
+$btn-padding-x-sm:      .75rem !default;
+$btn-padding-y-sm:      .25rem !default;
+
+$btn-padding-x-lg:      1.25rem !default;
+$btn-padding-y-lg:      .75rem !default;
+
+
+//
+// Grid
+//
+
+
+// Grid containers
+// Define the maximum width of `.container` for different screen sizes.
+//
+$container-max-widths: (
+        sm: 30rem,    // 480
+        md: 45rem,    // 720
+        lg: 60rem,    // 960
+        xl: 71.25rem, // 1140
+) !default;
+
+// Grid columns$link-color
+// Set the number of columns and specify the width of the gutters.
+//
+$grid-columns:               12 !default;
+$grid-gutter-width:          1.875rem !default; // 30px
+
+// Grid breakpoints
+//
+$grid-breakpoints: (
+        // Extra small screen / phone
+        xs: 0,
+        // Small screen / phone
+        sm: 34em,
+        // Medium screen / tablet
+        md: 48em,
+        // Large screen / desktop
+        lg: 62em,
+        // Extra large screen / wide desktop
+        xl: 75em
+) !default;
+
+// Flex
+//
+//
+$flex-wrap: wrap;
+
+$text-muted:                  $gray-light !default;
+$abbr-border-color:           $gray-light !default;
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:            .75rem !default;
+$table-sm-cell-padding:         .3rem !default;
+
+$table-bg:                      transparent !default;
+$table-bg-accent:               #f9f9f9 !default;
+$table-bg-hover:                #f5f5f5 !default;
+$table-bg-active:               $table-bg-hover !default;
+
+$table-border-color:            $gray-lighter !default;

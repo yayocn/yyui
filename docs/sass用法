@@ -1,0 +1,14 @@
+安装
+1.安装ruby，勾选Add Ruby executables to you PATH
+2.$ gem sources --remove https://rubygems.org/
+  $ gem sources -a https://ruby.taobao.org/
+  $ gem sources -l
+  *** CURRENT SOURCES ***
+
+  https://ruby.taobao.org
+  # 请确保只有 ruby.taobao.org
+  $ gem install sass
+
+函数：
+1.ceil(): 向上取整
+2.floor(): 向下取整

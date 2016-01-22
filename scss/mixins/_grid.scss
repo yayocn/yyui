@@ -1,0 +1,133 @@
+// Create container
+// Define container default style
+//
+@mixin create-container($gutter: $grid-gutter-width) {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: ($gutter / 2);
+  padding-right: ($gutter / 2);
+  @include clearfix();
+}
+
+// Create grid rows
+//
+@mixin create-row($gutter: $grid-gutter-width) {
+  @if $enable-flex {
+    @include display-flex(); // compass
+    @include flex-wrap($flex-wrap); // compass
+  } @else {
+    @include clearfix();
+  }
+  margin-left: ($gutter / -2);
+  margin-right: ($gutter / -2);
+}
+
+// Breakpoints
+//
+//
+
+// Minimum breakpoint width. Null for the smallest (first) breakpoint.
+//
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+//
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+
+// Define the width of columns
+//
+@mixin create-col-width($size, $cols-length: $grid-columns) {
+  @if $enable-flex {
+    flex: 0 0 percentage($size / $cols-length);
+  } @else {
+    width: percentage($size / $cols-length);
+  }
+}
+
+// Define the position of columns
+// `left` mean the position at the left of the original. So it will set `right` property.
+// `right` is same as `left`.
+// `offset` is set the `margin-left` property.
+//
+@mixin create-col-left($size, $cols-length: $grid-columns) {
+  right: if($size > 0, percentage($size / $cols-length), auto);
+}
+@mixin create-col-right($size, $cols-length: $grid-columns) {
+  left: if($size > 0, percentage($size / $cols-length), auto);
+}
+@mixin create-col-offset($size, $cols-length: $grid-columns) {
+  margin-left: if($size > 0, percentage($size / $cols-length), auto);
+}
+
+@mixin create-col-position($type, $size, $cols-length: $grid-columns) {
+  @if $type == lt {
+    @include create-col-left($size, $cols-length);
+  } @else if($type == rt) {
+    @include create-col-right($size, $cols-length);
+  } @else if($type == offset) {
+    @include create-col-offset($size, $cols-length);
+  }
+}
+
+// Create grid columns
+//
+@mixin create-columns($cols-length: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  // Grid columns common properties.
+  %col-common {
+    position: relative;
+    min-height: 1px;
+    padding-left: ($gutter / 2);
+    padding-right: ($gutter / 2);
+  }
+
+  // create columns
+  @each $breakpoint in map_keys($breakpoints) {
+    @for $i from 1 through $cols-length {
+      .col-#{$breakpoint}-#{$i} {
+        @extend %col-common;
+      }
+    }
+
+    @include media-breakpoint-up($breakpoint) {
+      // You have to put the `float` at here, then when you don't add 'col-xx-x' or less the min-width,
+      // the div fill the row.
+      // There is a bug in sass.
+      //  if you don't do like this, it will tell you: You may not @extend an outer selector from within @media.
+      %grid-column-float-#{$breakpoint} {
+        @if $enable-flex {
+          // Do nothing
+        } @else {
+          float: left;
+        }
+      }
+      @for $i from 1 through $cols-length {
+        .col-#{$breakpoint}-#{$i} {
+          @extend %grid-column-float-#{$breakpoint};
+          @include create-col-width($i, $cols-length);
+        }
+      }
+      // Columns position
+      @each $type in (lt, rt, offset) {
+        @for $i from 1 through $cols-length {
+          .col-#{$breakpoint}-#{$type}-#{$i} {
+            @include create-col-position($type, $i, $cols-length);
+          }
+        }
+      }
+    }
+  }
+}
