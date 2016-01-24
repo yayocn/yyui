@@ -15,3 +15,65 @@
     clear: both;
   }
 }
+
+// triangle
+//
+@mixin triangle($directions: $directions) {
+  %triangle-common {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    vertical-align: middle;
+  }
+
+  @each $dir in $directions {
+    .triangle-#{$dir} {
+      @extend %triangle-common;
+      @if $dir == top {
+        border-bottom: 7px solid;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+
+        &.disabled,
+        &:disabled,
+        *.disabled > &,
+        *:disabled > & {
+          border-bottom-color: #999;
+        }
+      } @else if($dir == right) {
+        border-left: 7px solid;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+
+        &.disabled,
+        &:disabled,
+        *.disabled > &,
+        *:disabled > & {
+          border-left-color: #999;
+        }
+      } @else if($dir == down) {
+        border-top: 7px solid;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+
+        &.disabled,
+        &:disabled,
+        *.disabled > &,
+        *:disabled > & {
+          border-top-color: #999;
+        }
+      } @else if($dir == left) {
+        border-right: 7px solid;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+
+        &.disabled,
+        &:disabled,
+        *.disabled > &,
+        *:disabled > & {
+          border-right-color: #999;
+        }
+      }
+    }
+  }
+}

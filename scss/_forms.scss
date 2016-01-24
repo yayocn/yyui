@@ -1,0 +1,184 @@
+// Forms
+//
+//
+//
+
+//
+// Form group
+//
+
+.form-group {
+  margin-bottom: $space-default;
+}
+
+
+//
+// textual form controls
+//
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: $input-padding-y $input-padding-x;
+  font-size: $font-size-base;
+  line-height: $line-height;
+  color: $input-color;
+  background-image: none;
+  background-color: $input-bg;
+  border: $border-width solid $input-border-color;
+
+  @include box-shadow($input-box-shadow); // compass
+  @if $enable-rounded {
+    @include border-radius($input-border-radius);
+  }
+  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s); //compass
+
+  &::placeholder {
+    color: $input-color-placeholder;
+    opacity: 1;
+  }
+
+  @include form-control-focus();
+
+  // Disabled
+  //
+  //
+  &:disabled,
+  &.disabled,
+  &[readonly]
+  fieldset[disabled] & {
+    background-color: $input-bg-disabled;
+    opacity: 1;
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+}
+
+.form-group > label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+
+// Select
+//
+.select {
+  position: relative;
+}
+select.form-control {
+  // remove the default style
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  & + div[class^="triangle"] {
+    position: absolute;
+    top: 43%;
+    right: 10px;
+  }
+
+  & > option {
+    padding-left: $space-default;
+    padding-right: $space-default;
+  }
+}
+
+//
+// Checkbox and radio
+//
+
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-bottom: ($space-md);
+
+  label {
+    padding-left: 1.25rem;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+  }
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  top: .54rem;
+  left: 0;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -.25rem;
+}
+
+// Radios and checkboxes on same line
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+  margin-right: .75rem;
+  font-weight: normal;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+}
+
+// switch checkbox
+//
+.checkbox-switch {
+  position: relative;
+  display: inline;
+
+  & input[type="checkbox"] {
+    opacity: 0;
+  }
+  & input[type="checkbox"]:checked + label,
+  & input[type="checkbox"]:not(:checked) + label {
+    background-color: #e0e0e0;
+    border-radius: 1000px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    text-indent: -9999px;
+    width: 76px;
+    height: 38px;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+  }
+
+  & input[type="checkbox"]:checked + label:after,
+  & input[type="checkbox"]:not(:checked) + label:after {
+    background-color: #fff;
+    border-radius: 1000px;
+    content: "";
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 34px;
+    height: 34px;
+    -webkit-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+
+  & input[type="checkbox"]:checked + label {
+    background-color: $brand-primary;
+  }
+
+  & input[type="checkbox"]:checked + label:after {
+    left: 40px;
+  }
+}
