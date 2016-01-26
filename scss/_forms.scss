@@ -9,6 +9,37 @@
 
 .form-group {
   margin-bottom: $space-default;
+
+  &.form-group-sm {
+    font-size: $font-size-sm;
+
+    & .form-control {
+      padding: $input-padding-y-sm $input-padding-x-sm;
+      line-height: $line-height-sm;
+      @if $enable-rounded {
+        @include border-radius($input-border-radius-sm); // compass
+      }
+    }
+
+    .radio input[type="radio"],
+    .radio-inline input[type="radio"],
+    .checkbox input[type="checkbox"],
+    .checkbox-inline input[type="checkbox"] {
+      bottom: .13rem;
+    }
+  }
+
+  &.form-group-lg {
+    font-size: $font-size-lg;
+
+    & .form-control {
+      padding: $input-padding-y-lg $input-padding-x-lg;
+      line-height: $line-height-lg;
+      @if $enable-rounded {
+        @include border-radius($input-border-radius-lg); // compass
+      }
+    }
+  }
 }
 
 
@@ -48,7 +79,8 @@
   &[readonly]
   fieldset[disabled] & {
     background-color: $input-bg-disabled;
-    opacity: 1;
+    border: transparent;
+    opacity: .6;
   }
 
   &[disabled],
@@ -62,6 +94,29 @@
   margin-bottom: 5px;
 }
 
+.form-control-sm {
+  padding: $input-padding-y-sm $input-padding-x-sm;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  @if $enable-rounded {
+    @include border-radius($input-border-radius-sm); // compass
+  }
+}
+
+.form-control-lg {
+  padding: $input-padding-y-lg $input-padding-x-lg;
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
+  @if $enable-rounded {
+    @include border-radius($input-border-radius-lg); // compass
+  }
+}
+
+// Define the label style of form-group
+.form-control-label {
+  padding: ($input-padding-y + $border-width) $input-padding-x;
+  margin-bottom: 0;
+}
 
 // Select
 //
@@ -95,7 +150,7 @@ select.form-control {
 .checkbox {
   position: relative;
   display: block;
-  margin-bottom: ($space-md);
+  margin-bottom: $space-sm;
 
   label {
     padding-left: 1.25rem;
@@ -110,8 +165,8 @@ select.form-control {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
-  top: .54rem;
   left: 0;
+  bottom: .25rem;
 }
 
 .radio + .radio,
@@ -140,7 +195,10 @@ select.form-control {
 //
 .checkbox-switch {
   position: relative;
-  display: inline;
+  display: inline-block;
+  width: 4.75rem;
+  height: 2.375rem;
+  margin-bottom: $space-sm;
 
   & input[type="checkbox"] {
     opacity: 0;
@@ -154,8 +212,8 @@ select.form-control {
     position: absolute;
     left: 0;
     text-indent: -9999px;
-    width: 76px;
-    height: 38px;
+    width: 4.75rem;
+    height: 2.375rem;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
@@ -165,11 +223,11 @@ select.form-control {
     background-color: #fff;
     border-radius: 1000px;
     content: "";
-    left: 2px;
+    left: .125rem;
     position: absolute;
-    top: 2px;
-    width: 34px;
-    height: 34px;
+    top: .125rem;
+    width: 2.125rem;
+    height: 2.125rem;
     -webkit-transition: left 0.3s;
     transition: left 0.3s;
   }
@@ -179,6 +237,105 @@ select.form-control {
   }
 
   & input[type="checkbox"]:checked + label:after {
-    left: 40px;
+    left: 2.5rem;
+  }
+
+  &.disabled input[type="checkbox"] + label {
+    cursor: $cursor-disabled;
+    background-color: #e0e0e0;
+  }
+
+  &.disabled input[type="checkbox"] + label:after {
+    cursor: $cursor-disabled;
+    left: .125rem;
+  }
+}
+
+// Disabled
+//
+input[type="radio"],
+input[type="checkbox"] {
+  &:disabled,
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+}
+
+.radio-inline,
+.checkbox-inline,
+.radio,
+.checkbox {
+  &.disabled,
+  fieldset[disabled] & {
+    label {
+      cursor: $cursor-disabled;
+      opacity: .6;
+    }
+  }
+}
+
+//
+// Form status
+// success, wraning and error
+
+// Form control status
+// this status can't influence the lable of this group.
+.form-control-success,
+.form-control-wraning,
+.form-control-error {
+  padding-right: ($input-padding-x * 3);
+  background-position: center right ($input-height * .25);
+  background-size: ($input-height * .65) ($input-height * .65);
+  background-repeat: no-repeat;
+}
+
+.form-control-success {
+  @include form-control-status(success, $brand-success);
+  background-image: url($form-icon-success);
+}
+.form-control-wraning {
+  background-image: url($form-icon-warning);
+}
+.form-control-error {
+  background-image: url($form-icon-error);
+}
+
+// Form group status {
+//
+.form-group-success,
+.form-group-wraning,
+.form-group-error {
+  .form-control {
+    padding-right: ($input-padding-x * 3);
+    background-position: center right ($input-height * .25);
+    background-size: ($input-height * .65) ($input-height * .65);
+    background-repeat: no-repeat;
+  }
+}
+.form-group-success {
+  color: $brand-success;
+  @include form-group-status(success, $brand-success);
+
+  .form-control {
+    background-image: url($form-icon-success);
+  }
+}
+
+.form-group-wraning {
+  color: $brand-warning;
+  @include form-group-status(warning, $brand-warning);
+
+  .form-control {
+    background-image: url($form-icon-warning);
+  }
+}
+
+.form-group-error {
+  color: $brand-danger;
+  @include form-group-status(error, $brand-danger);
+
+  .form-control {
+    background-image: url($form-icon-error);
   }
 }

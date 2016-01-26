@@ -11,14 +11,32 @@
     <div class="col-xs-12">
       <form action="">
         <fieldset class="form-group">
-          <label>Text</label>
+          <label>large</label>
+          <input type="text" class="form-control form-control-lg" placeholder="user name"/>
+        </fieldset>
+        <fieldset class="form-group">
+          <label>default</label>
           <input type="text" class="form-control" placeholder="user name"/>
+        </fieldset>
+        <fieldset class="form-group">
+          <label>small</label>
+          <input type="text" class="form-control form-control-sm" placeholder="user name"/>
+        </fieldset>
+
+        <fieldset class="form-group form-group-lg">
+          <label>form group large</label>
+          <input type="text" class="form-control form-control-sm" placeholder="user name"/>
+        </fieldset>
+
+        <fieldset class="form-group form-group-sm">
+          <label>form group small</label>
+          <input type="text" class="form-control form-control-sm" placeholder="user name"/>
         </fieldset>
 
         <fieldset class="form-group">
           <label>Select</label>
           <div class="select">
-            <select class="form-control" name="" id="33">
+            <select class="form-control" disabled name="" id="33">
               <option value="">1</option>
               <option value="">2</option>
               <option value="">3</option>
@@ -29,60 +47,112 @@
 
         <fieldset class="form-group">
           <label>radio</label>
-          <div class="radio">
+          <div class="radio ">
             <label>
-              <input type="radio" name="radio1"/>默认radio
+              <input type="radio"  name="radio1"/>默认radio
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="radio1"/>this is default redio.
+              <input type="radio" name="radio1"/>This is default redio.
             </label>
           </div>
           <label>inline radio</label>
           <br/>
-          <div class="radio-inline">
+          <div class="radio-inline ">
             <label>
-              <input type="radio" name="radio2"/>默认radio
+              <input type="radio"  name="radio2"/>默认radio
             </label>
           </div>
           <div class="radio-inline">
             <label>
-              <input type="radio" name="radio2"/>this is default radio.
+              <input type="radio" name="radio2"/>This is default radio.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group form-group-sm">
+          <label>small radio</label>
+          <div class="radio ">
+            <label>
+              <input type="radio"  name="radio1"/>默认radio
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="radio1"/>This is default redio.
+            </label>
+          </div>
+          <label>inline radio</label>
+          <br/>
+          <div class="radio-inline ">
+            <label>
+              <input type="radio"  name="radio2"/>默认radio
+            </label>
+          </div>
+          <div class="radio-inline">
+            <label>
+              <input type="radio" name="radio2"/>This is default radio.
             </label>
           </div>
         </fieldset>
 
         <fieldset class="form-group">
           <label>checkBox</label>
-          <div class="checkbox">
+          <div class="checkbox ">
             <label>
-              <input type="checkbox"/>默认checkbox
+              <input type="checkbox" />默认checkbox
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox"/>this is default checkbox.
+              <input type="checkbox"/>This is default checkbox.
             </label>
           </div>
           <label>inline checkBox</label>
           <br/>
-          <div class="checkbox-inline">
+          <div class="checkbox-inline ">
             <label>
-              <input type="checkbox"/>默认checkbox
+              <input type="checkbox" disabled/>默认checkbox
             </label>
           </div>
           <div class="checkbox-inline">
             <label>
-              <input type="checkbox"/>this is default checkbox.
+              <input type="checkbox"/>This is default checkbox.
             </label>
           </div>
           <br/>
           <div class="checkbox-switch">
-            <input id="example" type="checkbox">
-            <label for="example">Check</label>
+            <input id="example1" type="checkbox" checked>
+            <label for="example1">Check</label>
+          </div>
+          <div class="checkbox-switch disabled">
+            <input id="example2" type="checkbox" disabled>
+            <label for="example2">Check</label>
           </div>
         </fieldset>
+
+        <fieldset class="form-group form-group-success">
+          <label>success</label>
+          <input type="text" class="form-control" placeholder="user name"/>
+        </fieldset>
+
+        <fieldset class="form-group form-group-wraning">
+          <label>wraning</label>
+          <input type="text" class="form-control" placeholder="user name"/>
+          <span class="form-control-feedback">
+            给你一个小小的警告
+          </span>
+        </fieldset>
+
+        <fieldset class="form-group form-group-error">
+          <label>error</label>
+          <input type="text" class="form-control" placeholder="user name"/>
+          <span class="form-control-feedback">
+            这里输入有错哦
+          </span>
+        </fieldset>
+
       </form>
     </div>
   </div>
