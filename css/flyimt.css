@@ -1853,13 +1853,16 @@ select.form-control > option {
 /* line 141, ../scss/_forms.scss */
 .checkbox-switch {
   position: relative;
-  display: inline;
+  display: inline-block;
+  width: 76px;
+  height: 38px;
+  margin-bottom: 10px;
 }
-/* line 145, ../scss/_forms.scss */
+/* line 148, ../scss/_forms.scss */
 .checkbox-switch input[type="checkbox"] {
   opacity: 0;
 }
-/* line 148, ../scss/_forms.scss */
+/* line 151, ../scss/_forms.scss */
 .checkbox-switch input[type="checkbox"]:checked + label, .checkbox-switch input[type="checkbox"]:not(:checked) + label {
   background-color: #e0e0e0;
   border-radius: 1000px;
@@ -1868,12 +1871,12 @@ select.form-control > option {
   position: absolute;
   left: 0;
   text-indent: -9999px;
-  width: 76px;
-  height: 38px;
+  width: 100%;
+  height: 100%;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-/* line 163, ../scss/_forms.scss */
+/* line 166, ../scss/_forms.scss */
 .checkbox-switch input[type="checkbox"]:checked + label:after, .checkbox-switch input[type="checkbox"]:not(:checked) + label:after {
   background-color: #fff;
   border-radius: 1000px;
@@ -1886,11 +1889,11 @@ select.form-control > option {
   -webkit-transition: left 0.3s;
   transition: left 0.3s;
 }
-/* line 177, ../scss/_forms.scss */
+/* line 180, ../scss/_forms.scss */
 .checkbox-switch input[type="checkbox"]:checked + label {
   background-color: #0275d8;
 }
-/* line 181, ../scss/_forms.scss */
+/* line 184, ../scss/_forms.scss */
 .checkbox-switch input[type="checkbox"]:checked + label:after {
   left: 40px;
 }
