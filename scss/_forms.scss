@@ -90,8 +90,10 @@
 }
 
 .form-group > label {
-  font-weight: 600;
+  display: inline-block;
+  font-weight: 700;
   margin-bottom: 5px;
+  max-width: 100%;
 }
 
 .form-control-sm {
@@ -115,7 +117,7 @@
 // Define the label style of form-group
 .form-control-label {
   padding: ($input-padding-y + $border-width) $input-padding-x;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 // Select
@@ -156,7 +158,7 @@ select.form-control {
     padding-left: 1.25rem;
     margin-bottom: 0;
     font-weight: normal;
-    cursor: pointer;
+    //cursor: pointer;
   }
 }
 
@@ -184,7 +186,7 @@ select.form-control {
   margin-right: .75rem;
   font-weight: normal;
   vertical-align: middle;
-  cursor: pointer;
+  //cursor: pointer;
 }
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
@@ -337,5 +339,98 @@ input[type="checkbox"] {
 
   .form-control {
     background-image: url($form-icon-error);
+  }
+}
+
+
+// Input group
+//
+.input-group {
+  @include input-group($brand-primary);
+
+  &.input-group-btn {
+    @include input-group-btn();
+    border: none;
+  }
+}
+
+// Form horizontal
+//
+.form-hz {
+  .form-group {
+    margin-left: ($grid-gutter-width / -2);
+    margin-right: ($grid-gutter-width / -2);
+    overflow: auto;
+    zoom: 1;
+
+    .form-control-label {
+      text-align: right;
+    }
+  }
+}
+
+// Form inline
+// Inline forms' min width is bigger than 34em.
+//
+.form-inline {
+
+  // `form-inline` will work when the device width more than `sm`.
+  //
+  @include media-breakpoint-up(sm) {
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+      margin-right: $space-sm;
+
+      &:last-child {
+        margin-right: $space-none;
+      }
+    }
+    .form-control {
+      display: inline-block;
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle;
+    }
+
+    .input-group {
+      display: inline-table;
+      vertical-align: middle;
+
+      .input-group-addon,
+      .input-group-btn,
+      .form-control {
+        width: auto;
+      }
+    }
+
+    // Input groups need that 100% width though
+    .input-group > .form-control {
+      width: 100%;
+    }
+
+    .form-control-label {
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    // Remove default margin on radios/checkboxes that were used for stacking, and
+    // then undo the floating of radios and checkboxes to match.
+    .radio,
+    .checkbox {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      vertical-align: middle;
+
+      label {
+        padding-left: 0;
+      }
+    }
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      position: relative;
+      margin-left: 0;
+    }
   }
 }
