@@ -1,0 +1,37 @@
+.tree {
+  list-style-type: none;
+  & .tree {
+    padding-left: 30px;
+  }
+  & .tree-dropdown {
+    margin-left: -10px;
+    cursor: pointer;
+
+    & li {
+      display: none;
+    }
+  }
+
+  & .tree-dropdown.active {
+    & li {
+      display: block;
+    }
+  }
+
+  & .tree-dropdown:before {
+    content: "";
+    display: inline-block;
+    border-left: 6px solid #333;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+
+  & .tree-dropdown.active:before {
+    content: "";
+    margin-left: -4px;
+    margin-bottom: -3px;
+    border-top: 6px solid #333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+}
