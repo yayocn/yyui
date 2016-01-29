@@ -157,6 +157,15 @@
 }
 .btn-round {
    @include border-radius($border-radius); //compass
+   &.btn-lg {
+     @include border-radius($border-radius-lg);
+   }
+   &.btn-sm {
+     @include border-radius($border-radius-sm);
+   }
+   &.btn-xs {
+     @include border-radius($border-radius-xs);
+   }
  }
 
 // Button size
