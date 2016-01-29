@@ -25,12 +25,17 @@
 
         <fieldset class="form-group form-group-lg">
           <label>form group large</label>
-          <input type="text" class="form-control form-control-sm" placeholder="user name"/>
+          <input type="text" class="form-control" placeholder="user name"/>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label>form group large</label>
+          <input type="text" class="form-control" placeholder="user name"/>
         </fieldset>
 
         <fieldset class="form-group form-group-sm">
           <label>form group small</label>
-          <input type="text" class="form-control form-control-sm" placeholder="user name"/>
+          <input type="text" class="form-control" placeholder="user name"/>
         </fieldset>
 
         <fieldset class="form-group">
@@ -155,11 +160,30 @@
       </form>
 
       <h1>Input group</h1>
-      <div class="input-group">
-        <span class="input-group-addon">$</span>
-        <input type="text" class="form-control"/>
-      </div>
-      <br/>
+
+      <form action="">
+        <div class="form-group form-group-lg">
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control"/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control"/>
+          </div>
+        </div>
+
+        <div class="form-group form-group-sm">
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control"/>
+          </div>
+        </div>
+      </form>
+
       <div class="input-group">
         <span class="input-group-addon"><i class="fa fa-power-off"></i></span>
         <input type="text" class="form-control"/>
