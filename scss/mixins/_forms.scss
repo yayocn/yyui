@@ -53,10 +53,70 @@
     }
   }
 
+  .input-group-addon {
+    color: $color;
+    border-color: $color;
+    background-color: lighten($color, 40%);
+  }
+
   // Optional feedback icon
   .form-control-feedback {
     color: $color;
     font-size: $font-size-xs;
     padding: $input-padding-y-sm $input-padding-x-sm;
+  }
+}
+
+@mixin input-group-btn($color: $gray) {
+  width: 100%;
+
+  .form-control {
+    padding-right: $input-padding-x * 3;
+    width: 85%;
+  }
+
+  .input-group-btn {
+    width: 15%;
+  }
+}
+
+@mixin input-group($color: $gray) {
+  position: relative;
+  display: table;
+
+  .form-control {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 0;
+    width: auto;
+    border-color: $color;
+    z-index: 2;
+  }
+
+  .input-group-btn,
+  .input-group-addon {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .input-group-addon {
+    background-color: rgba($color, .05);
+    border: 1px solid $color;
+    color: $gray;
+    padding: $input-padding-y $input-padding-x;
+    text-align: center;
+  }
+
+  .form-control + .form-control,
+  .form-control + .input-group-addon,
+  .form-control + .input-group-btn,
+  .input-group-addon + .input-group-addon,
+  .input-group-addon + .input-group-btn,
+  .input-group-addon + .form-control,
+  .input-group-btn + .input-group-btn,
+  .input-group-btn + .input-group-addon,
+  .input-group-btn + .form-control, {
+    margin-left: -1px;
   }
 }

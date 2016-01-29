@@ -111,7 +111,7 @@
           </div>
           <label>inline checkBox</label>
           <br/>
-          <div class="checkbox-inline ">
+          <div class="checkbox-inline disabled">
             <label>
               <input type="checkbox" disabled/>默认checkbox
             </label>
@@ -152,7 +152,58 @@
             这里输入有错哦
           </span>
         </fieldset>
+      </form>
 
+      <h1>Input group</h1>
+      <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control"/>
+      </div>
+      <br/>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-power-off"></i></span>
+        <input type="text" class="form-control"/>
+      </div>
+      <br/>
+      <div class="input-group">
+        <input type="text" class="form-control"/>
+        <button class="btn btn-primary input-group-btn">search</button>
+      </div>
+      <br/>
+      <div class="input-group input-group-btn">
+        <input type="text" class="form-control"/>
+        <button class="btn btn-primary input-group-btn">search</button>
+      </div>
+
+      <h1>Form horizontal</h1>
+      <form class="form-hz">
+        <div class="form-group">
+          <label class="col-xs-3 form-control-label">User Name</label>
+          <div class="col-xs-9">
+            <input type="text" class="form-control" placeholder="enter user name"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-xs-3 form-control-label">password</label>
+          <div class="col-xs-9">
+            <input type="password" class="form-control" placeholder="enter password"/>
+          </div>
+        </div>
+      </form>
+
+      <h1>Form inline</h1>
+
+      <form class="form-inline">
+        <fieldset class="form-group">
+          <label>error</label>
+          <input type="text" class="form-control" placeholder="user name"/>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label>error</label>
+          <input type="password" class="form-control" placeholder="password"/>
+        </fieldset>
+        <button class="btn btn-default" type="button">submit</button>
       </form>
     </div>
   </div>
