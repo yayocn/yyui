@@ -1,0 +1,72 @@
+// The style of some labels
+// The labels are h1 to h6,
+//
+//
+
+
+// Headings
+//
+//
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  margin-bottom: $headings-margin-bottom;
+}
+
+// Headings' font size.
+//
+h1, .h1 {
+  font-size: $font-size-h1;
+}
+h2, .h2 {
+  font-size: $font-size-h2;
+}
+h3, .h3 {
+  font-size: $font-size-h3;
+}
+h4, .h4 {
+  font-size: $font-size-h4;
+}
+h5, .h5 {
+  font-size: $font-size-h5;
+}
+h6, .h6 {
+  font-size: $font-size-h6;
+}
+
+//
+// Horizontal rules
+//
+
+hr {
+  margin-top: $space-y;
+  margin-bottom: $space-y;
+  border: 0;
+  border-top: $hr-border-width solid $hr-border-color;
+}
+
+//
+// Emphasis
+//
+
+small,
+.small {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+mark,
+.mark {
+  padding: .2em;
+  background-color: $state-warning-bg;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  small, .small {
+    color: #777;
+  }
+}

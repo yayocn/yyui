@@ -35,10 +35,12 @@ $cursor-disabled:         not-allowed !default;
 // Spacing
 // Settings for spacing.
 //
-$space-default:    15px !default;
+$space-default:    1rem !default;
 $space-sm:         10px !default;
 $space-xs:         5px !default;
 $space-lg:         20px !default;
+$space-x:          $space-default !default;
+$space-y:          $space-default !default;
 $space-none:       0 !default;
 
 // body
@@ -258,3 +260,44 @@ $form-icon-error: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGl
 
 // Directions
 $directions: (top, right, down, left) !default;
+
+// Lead
+//
+$lead-font-size: 1.25rem !default;
+$lead-font-weight: 300 !default;
+
+//
+// Type
+//
+
+// The labels with h1 to h6.
+//
+$headings-margin-bottom:     ($space-default / 2) !default;
+$headings-font-family:       inherit !default;
+$headings-font-weight:       500 !default;
+$headings-line-height:       1.1 !default;
+$headings-color:             inherit !default;
+
+// hr
+//
+$hr-border-color:             rgba(0,0,0,.1) !default;
+$hr-border-width:             $border-width;
+
+// Text states and alerts
+// Define colors for texts.
+//
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken($state-success-bg, 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken($state-info-bg, 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken($state-warning-bg, 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken($state-danger-bg, 5%) !default;
