@@ -21,18 +21,18 @@
 @mixin triangle($directions: $directions) {
   %triangle-common {
     display: inline-block;
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
     vertical-align: middle;
   }
 
   @each $dir in $directions {
     .triangle-#{$dir} {
       @extend %triangle-common;
-      @if $dir == top {
-        border-bottom: 7px solid;
-        border-right: 5px solid transparent;
-        border-left: 5px solid transparent;
+      @if $dir == up {
+        border-bottom: 5px solid #555;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
 
         &.disabled,
         &:disabled,
@@ -41,9 +41,9 @@
           border-bottom-color: #999;
         }
       } @else if($dir == right) {
-        border-left: 7px solid;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
+        border-left: 5px solid #555;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
 
         &.disabled,
         &:disabled,
@@ -52,9 +52,9 @@
           border-left-color: #999;
         }
       } @else if($dir == down) {
-        border-top: 7px solid;
-        border-right: 5px solid transparent;
-        border-left: 5px solid transparent;
+        border-top: 5px solid #555;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
 
         &.disabled,
         &:disabled,
@@ -63,9 +63,9 @@
           border-top-color: #999;
         }
       } @else if($dir == left) {
-        border-right: 7px solid;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
+        border-right: 5px solid #555;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
 
         &.disabled,
         &:disabled,
