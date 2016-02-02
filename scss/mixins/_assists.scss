@@ -16,6 +16,20 @@
   }
 }
 
+// center
+//
+@mixin center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// left
+//
+@mixin float($float) {
+  float: $float;
+}
+
 // triangle
 //
 @mixin triangle($directions: $directions) {
@@ -89,4 +103,14 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+// Hidden
+//
+@mixin text-hidden() {
+  font: "0/0" a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
 }
