@@ -8,8 +8,33 @@
 //
 @include triangle();
 
+
+//
+// Text
+//
+
 // Lead
+// The style of Chinese is terrible.
 .lead {
   font-size: $lead-font-size;
   font-weight: $lead-font-weight;
 }
+
+// Alignment
+//
+//
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+.text-nowrap { white-space: nowrap; }
+// when text over the wrapper width, it will show ellipsis
+//
+.text-truncate { @include text-truncate};
+
+// Transformations
+//
+//
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }

@@ -65,7 +65,10 @@ $link-hover-decoration:   underline !default;
 // Fonts
 // Font, line-height, color for body text and more.
 //
-$font-family-base:          "Open Sans","Segoe UI","Microsoft YaHei",sans-serif,Arial !default;
+$font-family-sans-serif:    "Helvetica Neue",Helvetica,Microsoft Yahei,Arial,sans-serif !default;
+$font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:          $font-family-sans-serif !default;
 
 // Size
 //
@@ -111,7 +114,7 @@ $border-radius-hg:  1000px;
 // For each of buttons
 //
 $btn-padding-x:     1rem;
-$btn-padding-y:     .375rem;
+$btn-padding-y:     .37rem;
 $btn-font-weight:   normal !default;
 
 $btn-primary-color:     #fff !default;
@@ -217,7 +220,7 @@ $table-border-color:            $gray-lighter !default;
 //
 
 $input-padding-x:                .75rem !default;
-$input-padding-y:                .375rem !default;
+$input-padding-y:                .37rem !default;
 
 $input-bg:                       #fff !default;
 $input-bg-disabled:              $gray-lighter !default;
@@ -236,7 +239,7 @@ $input-box-shadow-color-focus:         rgba(102,175,233,.6) !default;
 $input-color-placeholder:        #999 !default;
 
 $input-padding-x-sm:             .75rem !default;
-$input-padding-y-sm:             .275rem !default;
+$input-padding-y-sm:             .27rem !default;
 
 $input-padding-x-lg:             1.25rem !default;
 $input-padding-y-lg:             .75rem !default;
@@ -260,7 +263,7 @@ $form-icon-error: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGl
 
 // Directions
 //
-$directions: (top, right, down, left) !default;
+$directions: (up, right, down, left) !default;
 
 // Lead
 //
@@ -283,6 +286,12 @@ $headings-color:             inherit !default;
 //
 $hr-border-color:             rgba(0,0,0,.1) !default;
 $hr-border-width:             $border-width;
+
+// Blockquote
+//
+$blockquote-small-color:      $gray-light !default;
+$blockquote-font-size:        $font-size-base !default;
+$blockquote-border-color:     $gray-lighter !default;
 
 // Text states and alerts
 // Define colors for texts.
