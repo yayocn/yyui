@@ -108,9 +108,24 @@
 // Hidden
 //
 @mixin text-hidden() {
-  font: "0/0" a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
+}
+
+//
+// background
+//
+
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    color: #fff;
+    background-color: $color;
+  }
+  a#{$parent} {
+    @include hover-focus {
+      background-color: darken($color, 10%);
+    }
+  }
 }

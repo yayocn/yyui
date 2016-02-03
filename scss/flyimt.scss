@@ -1,8 +1,8 @@
 // Core variables and mixins
 //
 @import "variables";
+@import "compass/css3";
 @import "mixins";
-@import "compass";
 
 // reset
 //
@@ -19,3 +19,7 @@
 // Fonts
 //
 @import "fonts";
+
+// Code
+//
+@import "code";

@@ -35,10 +35,8 @@ $cursor-disabled:         not-allowed !default;
 // Spacing
 // Settings for spacing.
 //
-$space-default:    1rem !default;
-$space-sm:         10px !default;
-$space-xs:         5px !default;
-$space-lg:         20px !default;
+$space-default:    15px !default;
+$space-base:       5px !default;
 $space-x:          $space-default !default;
 $space-y:          $space-default !default;
 $space-none:       0 !default;
@@ -313,3 +311,46 @@ $state-danger-bg:                #f2dede !default;
 $state-danger-border:            darken($state-danger-bg, 5%) !default;
 
 $directions: (up, right, down, left) !default;
+
+// Code
+//
+//
+$code-color:                  #bd4147 !default;
+$code-bg:                     #f7f7f9 !default;
+
+$kbd-color:                   #fff !default;
+$kbd-bg:                      #333 !default;
+
+$pre-bg:                      #f7f7f9 !default;
+$pre-color:                   $gray-dark !default;
+$pre-border-color:            #ccc !default;
+$pre-scrollable-max-height:   340px !default;
+
+$code-label-color: #2f6f9f;
+$code-attr-color:  #4f9fcf;
+$code-attr-value-color: #d44950;
+$code-note-color: $gray-light;
+
+//
+// Assists
+//
+
+// Margin and padding
+//
+$margin-padding-range: 10 !default;
+
+// Close
+//
+$close-color:        $gray-dark;
+$close-font-weight:  700;
+
+// z-index
+//
+//$zindex-navbar:            1000 !default;
+//$zindex-dropdown:          1000 !default;
+//$zindex-popover:           1060 !default;
+//$zindex-tooltip:           1070 !default;
+//$zindex-navbar-fixed:      1030 !default;
+//$zindex-navbar-sticky:     1030 !default;
+//$zindex-modal-bg:          1040 !default;
+//$zindex-modal:             1050 !default;

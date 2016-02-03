@@ -152,7 +152,7 @@ select.form-control {
 .checkbox {
   position: relative;
   display: block;
-  margin-bottom: $space-sm;
+  margin-bottom: $space-base * 2;
 
   label {
     padding-left: 1.25rem;
@@ -200,7 +200,7 @@ select.form-control {
   display: inline-block;
   width: 4.75rem;
   height: 2.375rem;
-  margin-bottom: $space-sm;
+  margin-bottom: $space-base * 2;
 
   & input[type="checkbox"] {
     opacity: 0;
@@ -586,7 +586,7 @@ input[type="checkbox"] {
       display: inline-block;
       margin-bottom: 0;
       vertical-align: middle;
-      margin-right: $space-sm;
+      margin-right: $space-base * 2;
 
       &:last-child {
         margin-right: $space-none;
