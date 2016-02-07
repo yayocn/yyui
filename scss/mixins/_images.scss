@@ -1,0 +1,7 @@
+// responsive
+//
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%;
+  height: auto;
+}

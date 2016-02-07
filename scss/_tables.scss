@@ -1,0 +1,69 @@
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $space-default;
+
+  th,
+  td {
+    padding: $table-cell-padding;
+    line-height: $line-height;
+    vertical-align: top;
+    border-top: 1px solid $table-border-color;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid $table-border-color;
+  }
+
+  tbody + tbody {
+    border-top: 2px solid $table-border-color;
+  }
+
+  .table {
+    background-color: $body-bg;
+  }
+
+  tbody tr:hover {
+    @include hover {
+      background-color: $table-bg-hover;
+    }
+  }
+}
+
+.table-sm {
+  th,
+  td {
+    padding: $table-sm-cell-padding;
+  }
+}
+
+.table-bordered {
+  border: 1px solid $table-border-color;
+
+  th,
+  td {
+    border: 1px solid $table-border-color;
+  }
+
+  thead {
+    th,
+    td {
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+.table-striped {
+  tbody tr:nth-of-type(odd) {
+    background-color: $table-bg-accent;
+  }
+}
+
+@include table-row-variant(active, $table-bg-active);
+@include table-row-variant(primary, $brand-primary);
+@include table-row-variant(secondary, $brand-secondary);
+@include table-row-variant(success, $brand-success);
+@include table-row-variant(info, $brand-info);
+@include table-row-variant(warning, $brand-warning);
+@include table-row-variant(danger, $brand-danger);

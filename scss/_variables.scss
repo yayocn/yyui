@@ -354,3 +354,14 @@ $close-font-weight:  700;
 //$zindex-navbar-sticky:     1030 !default;
 //$zindex-modal-bg:          1040 !default;
 //$zindex-modal:             1050 !default;
+
+//
+// Images
+//
+
+// Image thumbnails
+//
+$thumbnail-padding:           .25rem !default;
+$thumbnail-bg:                $body-bg !default;
+$thumbnail-border:            #ddd !default;
+$thumbnail-border-radius:     $border-radius !default;

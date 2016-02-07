@@ -1,0 +1,29 @@
+// Tables
+
+@mixin table-row-variant($state, $background) {
+  // Exact selectors below required to override `.table-striped` and prevent
+  // inheritance to nested tables.
+  .row-bg-#{$state} {
+    &,
+    > th,
+    > td {
+      @if $state != active {
+        color: #f5f5f5;
+      }
+      background-color: $background;
+    }
+
+    $hover-background: darken($background, 5%);
+
+    &:hover {
+      @include hover {
+        background-color: $hover-background;
+
+        > td,
+        > th {
+          background-color: $hover-background;
+        }
+      }
+    }
+  }
+}
