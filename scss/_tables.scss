@@ -67,3 +67,9 @@
 @include table-row-variant(info, $brand-info);
 @include table-row-variant(warning, $brand-warning);
 @include table-row-variant(danger, $brand-danger);
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
