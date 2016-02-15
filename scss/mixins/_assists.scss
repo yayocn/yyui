@@ -44,20 +44,20 @@
     .triangle-#{$dir} {
       @extend %triangle-common;
       @if $dir == up {
-        border-bottom: 5px solid #555;
-        border-right: 4px solid transparent;
-        border-left: 4px solid transparent;
+        border-bottom: $triangle-bottom solid $triangle-color;
+        border-right: $triangle-height solid transparent;
+        border-left: $triangle-height solid transparent;
 
         &.disabled,
         &:disabled,
         *.disabled > &,
         *:disabled > & {
-          border-bottom-color: #999;
+          border-bottom-color: lighten($triangle-color, 12%);
         }
       } @else if($dir == right) {
-        border-left: 5px solid #555;
-        border-top: 4px solid transparent;
-        border-bottom: 4px solid transparent;
+        border-left: $triangle-bottom solid $triangle-color;
+        border-top: $triangle-height solid transparent;
+        border-bottom: $triangle-height solid transparent;
 
         &.disabled,
         &:disabled,
@@ -66,9 +66,9 @@
           border-left-color: #999;
         }
       } @else if($dir == down) {
-        border-top: 5px solid #555;
-        border-right: 4px solid transparent;
-        border-left: 4px solid transparent;
+        border-top: $triangle-bottom solid $triangle-color;
+        border-right: $triangle-height solid transparent;
+        border-left: $triangle-height solid transparent;
 
         &.disabled,
         &:disabled,
@@ -77,9 +77,9 @@
           border-top-color: #999;
         }
       } @else if($dir == left) {
-        border-right: 5px solid #555;
-        border-top: 4px solid transparent;
-        border-bottom: 4px solid transparent;
+        border-right: $triangle-bottom solid $triangle-color;
+        border-top: $triangle-height solid transparent;
+        border-bottom: $triangle-height solid transparent;
 
         &.disabled,
         &:disabled,

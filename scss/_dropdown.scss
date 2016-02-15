@@ -1,0 +1,207 @@
+// Dropdown
+//
+//
+//
+
+.dropdown {
+  position: relative;
+}
+
+
+%border-white {
+  border-top-color: #fff;
+}
+
+// Dropdown buttons
+//
+.dropdown-toggle {
+  text-align: left;
+  &:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    margin-left: .25rem;
+    border-top: $triangle-bottom solid $triangle-color;
+    border-right: $triangle-height solid transparent;
+    border-left: $triangle-height solid transparent;
+  }
+  &.btn-block:after {
+    position: absolute;
+    top: 46%;
+    right: $space-base * 2;
+    margin-left: 0;
+  }
+  &:focus {
+    @include focus-none();
+  }
+  @each $color in map_keys($theme-colors) {
+    &.btn-#{$color}:after {
+      @extend %border-white;
+    }
+
+    &.btn-#{$color}-outline:after {
+      border-top-color: map-get($theme-colors, $color);
+    }
+
+    &.btn-#{$color}-outline:hover:after,
+    &.btn-#{$color}-outline:focus:after,
+    &.btn-#{$color}-outline:active:after,
+    &.btn-#{$color}-outline.active:after {
+      @extend %border-white;
+      @include transition(all .1s ease-in-out); // compass
+    }
+  }
+}
+
+// Active state for the dropdown
+//
+.dropdown.active {
+  // Show the menu
+  > .dropdown-menu {
+    display: block;
+  }
+
+  // Remove the outline when :focus is triggered
+  > a {
+    outline: 0;
+  }
+}
+
+// Dropdown menu
+// ul
+//
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: $zindex-dropdown;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: $font-size-base;
+  text-align: left;
+  list-style: none;
+  background-color: $dropdown-bg;
+  background-clip: padding-box;
+  border: 1px solid $dropdown-border-color;
+  @if $enable-rounded {
+    @include border-radius($border-radius);
+  }
+  @include box-shadow(0 6px 12px rgba(0,0,0,.175));
+}
+
+// Menu positioning
+// Add extra class to `.dropdown-menu` to flip the alignment of the dropdown
+// menu with the parent.
+.right > .dropdown-menu{
+  right: 0;
+  left: auto;
+}
+
+// Block
+//
+.dropdown-toggle.btn-block + .dropdown-menu {
+  width: 100%;
+}
+
+
+// Dropdown item
+//
+.dropdown-item {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: $line-height;
+  color: $dropdown-link-color;
+  white-space: nowrap; // prevent links from randomly breaking onto new lines
+
+  // For `<button>`s
+  text-align: inherit;
+  width: 100%;
+  background: none;
+  border: 0;
+
+  @include hover-focus {
+    color: $dropdown-link-hover-color;
+    text-decoration: none;
+    background-color: $dropdown-link-hover-bg;
+    cursor: pointer;
+  }
+
+  // Active state
+  &.active {
+    @include plain-hover-focus {
+      color: $dropdown-link-active-color;
+      text-decoration: none;
+      background-color: $dropdown-link-active-bg;
+      outline: 0;
+    }
+  }
+
+  // Disabled state
+  //
+  // Gray out text and ensure the hover/focus state remains gray
+  &.disabled {
+    @include plain-hover-focus {
+      color: $dropdown-link-disabled-color;
+    }
+
+    // Nuke hover/focus effects
+    @include hover-focus {
+      text-decoration: none;
+      cursor: $cursor-disabled;
+      background-color: transparent;
+      background-image: none; // Remove CSS gradient
+    }
+  }
+}
+
+// Divider
+//
+.dropdown-divider {
+  height: 1px;
+  margin: ($space-y / 2) 0;
+  overflow: hidden;
+  background-color: $dropdown-divider-bg;
+}
+
+// Dropdown section headers
+//
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: $font-size-lg;
+  line-height: $line-height;
+  color: $dropdown-header-color;
+  white-space: nowrap;
+}
+
+// Backdrop to catch body clicks on mobile, etc.
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: ($zindex-dropdown - 10);
+}
+
+.dropdown.up {
+  & > .dropdown-toggle:after {
+    content: "";
+    border-top: 0;
+    border-bottom: $triangle-bottom solid;
+  }
+
+  // Different positioning for bottom up menu
+  .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 2px;
+  }
+}
