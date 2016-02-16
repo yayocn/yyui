@@ -52,6 +52,7 @@ var Dropdown = (function ($) {
   var Event = {
     CLICK: 'click' + EVENT_KEY,
     CLICK_DATA_API: 'click' + EVENT_KEY + DATA_API_KEY,
+    MOUSEENTER_DATA_API: 'mouseenter' + EVENT_KEY + DATA_API_KEY,
     KEYDOWN_DATA_API: 'keydown' + EVENT_KEY + DATA_API_KEY
   }
 
@@ -222,7 +223,9 @@ var Dropdown = (function ($) {
 
   $(document).on(Event.KEYDOWN_DATA_API, Selector.DATA_TOGGLE, Dropdown._dataApiKeydownHandler)
     .on(Event.KEYDOWN_DATA_API, Selector.DROPDOWN_MENU, Dropdown._dataApiKeydownHandler)
-    .on(Event.CLICK_DATA_API, Dropdown._clearMenus).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, Dropdown.prototype.toggle);
+    .on(Event.CLICK_DATA_API, Dropdown._clearMenus)
+    .on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, Dropdown.prototype.toggle)
+    .on(Event.MOUSEENTER_DATA_API, Selector.DATA_TOGGLE, Dropdown.prototype.toggle);
 
   // prevent conflict with jquery
   $.fn[NAME] = Dropdown._jQueryInterface;
