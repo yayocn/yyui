@@ -131,6 +131,7 @@
     text-decoration: none;
     background-color: $dropdown-link-hover-bg;
     cursor: pointer;
+    outline: 0;
   }
 
   // Active state
@@ -182,14 +183,14 @@
 }
 
 // Backdrop to catch body clicks on mobile, etc.
-.dropdown-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: ($zindex-dropdown - 10);
-}
+//.dropdown-backdrop {
+//  position: fixed;
+//  top: 0;
+//  right: 0;
+//  bottom: 0;
+//  left: 0;
+//  z-index: ($zindex-dropdown - 10);
+//}
 
 .dropdown.up {
   & > .dropdown-toggle:after {
