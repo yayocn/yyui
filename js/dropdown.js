@@ -63,6 +63,7 @@ var Dropdown = (function ($) {
 
   var Selector = {
     DATA_TOGGLE: '.dropdown-toggle',
+    DATA_TOGGLE_HOVER: '.dropdown-toggle.dropdown-toggle-hover',
     DROPDOWN_MENU: '.dropdown-menu',
     VISIBLE_ITEMS: '.dropdown-menu li:not(.disabled) a'
   }
@@ -225,7 +226,7 @@ var Dropdown = (function ($) {
     .on(Event.KEYDOWN_DATA_API, Selector.DROPDOWN_MENU, Dropdown._dataApiKeydownHandler)
     .on(Event.CLICK_DATA_API, Dropdown._clearMenus)
     .on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, Dropdown.prototype.toggle)
-    .on(Event.MOUSEENTER_DATA_API, Selector.DATA_TOGGLE, Dropdown.prototype.toggle);
+    .on(Event.MOUSEENTER_DATA_API, Selector.DATA_TOGGLE_HOVER, Dropdown.prototype.toggle);
 
   // prevent conflict with jquery
   $.fn[NAME] = Dropdown._jQueryInterface;
