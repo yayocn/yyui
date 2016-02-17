@@ -36,6 +36,38 @@
   }
 }
 
+// Block
+//
+.btn-group-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  > .btn {
+    width: 100%;
+  }
+
+  > .dropdown {
+    width: 100%;
+
+    .dropdown-toggle {
+      width: 100%;
+      text-align: center;
+
+      &:after {
+        position: absolute;
+        top: 46%;
+        right: $space-base * 2;
+        margin-left: 0;
+      }
+    }
+
+    .dropdown-menu {
+      width: 100%;
+    }
+  }
+}
+
 // btn-bar
 //
 .btn-bar {
@@ -111,3 +143,58 @@
 }
 
 
+//
+// Vertical
+//
+
+.btn-group-vt {
+  > .btn,
+  > .btn-group,
+  > .btn-group > .btn {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  // Clear up the double borders.
+  > .btn + .btn,
+  > .btn + .btn-group,
+  > .btn-group + .btn,
+  > .btn-group + .btn-group {
+    margin-top: -1px;
+    margin-left: 0;
+  }
+}
+
+// borders
+//
+.btn-group-vt > .btn {
+  &:not(:first-child):not(:last-child) {
+    @include border-radius(0);
+  }
+  &:first-child:not(:last-child) {
+    @if $enable-rounded {
+      border-top-right-radius: $border-radius;
+    }
+    @include border-bottom-radius(0);
+  }
+  &:last-child:not(:first-child) {
+    @if $enable-rounded {
+      border-top-right-radius: $border-radius;
+    }
+    @include border-top-radius(0);
+  }
+}
+.btn-group-vt > .btn-group:not(:first-child):not(:last-child) > .btn {
+  @include border-radius(0);
+}
+.btn-group-vt > .btn-group:first-child:not(:last-child) {
+  > .btn:last-child,
+  > .dropdown-toggle {
+    @include border-bottom-radius(0);
+  }
+}
+.btn-group-vt > .btn-group:last-child:not(:first-child) > .btn:first-child {
+  @include border-top-radius(0);
+}
