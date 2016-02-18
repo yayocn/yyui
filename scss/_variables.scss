@@ -364,12 +364,12 @@ $close-font-weight:  700;
 
 // z-index
 //
-//$zindex-navbar:            1000 !default;
+$zindex-navbar:            1000 !default;
 $zindex-dropdown:          1000 !default;
 //$zindex-popover:           1060 !default;
 //$zindex-tooltip:           1070 !default;
-//$zindex-navbar-fixed:      1030 !default;
-//$zindex-navbar-sticky:     1030 !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-navbar-sticky:     1030 !default;
 //$zindex-modal-bg:          1040 !default;
 //$zindex-modal:             1050 !default;
 
@@ -396,7 +396,7 @@ $dropdown-header-color:          $gray-light !default;
 // Triangle
 //
 
-$triangle-bottom: 5px;
+$triangle-bottom: 4px;
 $triangle-height: 4px;
 $triangle-color: #555;
 
@@ -410,3 +410,46 @@ $thumbnail-padding:           .25rem !default;
 $thumbnail-bg:                $body-bg !default;
 $thumbnail-border:            #ddd !default;
 $thumbnail-border-radius:     $border-radius !default;
+
+//
+// Navbar
+//
+
+$navbar-border-radius:              $border-radius !default;
+$navbar-padding-horizontal:         $space-default !default;
+$navbar-padding-vertical:           ($space-default / 2) !default;
+
+$navbar-dark-color:                 rgba(255,255,255,.5);
+$navbar-dark-hover-color:           rgba(255,255,255,.75);
+$navbar-dark-active-color:          rgba(255,255,255,1);
+$navbar-dark-disabled-color:        rgba(255,255,255,.25);
+
+$navbar-light-color:                rgba(0,0,0,.3);
+$navbar-light-hover-color:          rgba(0,0,0,.6);
+$navbar-light-active-color:         rgba(0,0,0,.8);
+$navbar-light-disabled-color:       rgba(0,0,0,.15);
+
+//
+// Navs
+//
+
+$nav-link-padding:                          .5em 1em !default;
+$nav-link-hover-bg:                         $gray-lighter !default;
+
+$nav-disabled-link-color:                   #ccc !default;
+$nav-disabled-link-hover-color:             #ccc !default;
+
+$nav-tabs-border-color:                     #ddd !default;
+
+$nav-tabs-link-hover-border-color:          $gray-lighter !default;
+
+$nav-tabs-active-link-hover-bg:             $body-bg !default;
+$nav-tabs-active-link-hover-color:          $gray !default;
+$nav-tabs-active-link-hover-border-color:   #ddd !default;
+
+$nav-tabs-justified-link-border-color:            #ddd !default;
+$nav-tabs-justified-active-link-border-color:     $body-bg !default;
+
+$nav-brands-border-radius:                   $border-radius !default;
+$nav-brands-active-link-hover-bg:            $component-active-bg !default;
+$nav-brands-active-link-hover-color:         $component-active-color !default;

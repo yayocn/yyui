@@ -1,0 +1,139 @@
+// Nav
+//
+//
+//
+
+// Default
+// `<nav>` or `<ul>`
+nav,
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+
+.nav-item {
+  &.disabled,
+  &.disabled > .nav-link {
+    color: $nav-disabled-link-color;
+
+    &.dropdown-toggle:after {
+      border-top-color: $nav-disabled-link-color;
+    }
+
+    @include plain-hover-focus {
+      color: $nav-disabled-link-hover-color;
+      cursor: $cursor-disabled;
+      background-color: transparent;
+    }
+  }
+
+  &.active,
+  &.active > .nav-link {
+    &.dropdown-toggle:after {
+      border-top-color: $component-active-color;
+    }
+  }
+
+  &.dropdown.up {
+    &.disabled,
+    &.disabled > .nav-link {
+      &.dropdown-toggle:after {
+        border-top: none;
+        border-bottom-color: $nav-disabled-link-color;
+      }
+    }
+
+    &.active,
+    &.active > .nav-link {
+      &.dropdown-toggle:after {
+        border-top: none;
+        border-bottom-color: $component-active-color;
+      }
+    }
+  }
+}
+.nav-link {
+  display: inline-block;
+  color: $brand-primary;
+
+  &.dropdown-toggle:after {
+    border-top-color: $brand-primary;
+  }
+
+  @include hover-focus {
+    color: darken($brand-primary, 15%);
+    text-decoration: none;
+    background-color: $nav-link-hover-bg;
+
+    &.dropdown-toggle:after {
+      border-top-color: darken($brand-primary, 15%);
+    }
+  }
+
+  // Disabled state lightens text and removes hover/tab effects
+  &.disabled {
+    color: $nav-disabled-link-color;
+
+    &.dropdown-toggle:after {
+      border-top-color: $nav-disabled-link-color;
+    }
+
+    @include plain-hover-focus {
+      color: $nav-disabled-link-hover-color;
+      cursor: $cursor-disabled;
+      background-color: transparent;
+    }
+  }
+}
+
+// Nav inline
+
+//.nav-inline {
+//  .nav-link + .nav-link {
+//    margin-left: 1rem;
+//  }
+//}
+
+
+// Brands
+// Default style
+//
+.nav-brands {
+  .nav-item {
+    display: inline-block;
+
+    + .nav-item {
+      margin-left: -.24rem; // clear up space between inline blocks.
+    }
+  }
+
+  .nav-link {
+    display: block;
+    padding: $nav-link-padding;
+    @if $enable-rounded {
+      @include border-radius($nav-brands-border-radius);
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.active .nav-link {
+    @include plain-hover-focus {
+      color: $component-active-color;
+      cursor: default;
+      background-color: $component-active-bg;
+    }
+  }
+}
+
+.nav-vt {
+  .nav-item {
+    display: block;
+    float: none;
+
+    + .nav-item {
+      margin-left: 0;
+    }
+  }
+}

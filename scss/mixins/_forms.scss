@@ -4,7 +4,7 @@
   &:focus {
     border-color: $input-border-color-focus;
     outline: none;
-    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px $input-box-shadow-color-focus);
+    @include box-shadow(inset 0 0 5px rgba($brand-primary, .35), 0 0 10px rgba($brand-primary, .45));
   }
 }
 

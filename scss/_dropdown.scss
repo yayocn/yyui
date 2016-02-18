@@ -29,7 +29,7 @@
   }
   &.btn-block:after {
     position: absolute;
-    top: 46%;
+    top: 45%;
     right: $space-base * 2;
     margin-left: 0;
   }
@@ -119,30 +119,35 @@
 // Dropdown item
 //
 .dropdown-item {
-  display: block;
   padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: $line-height;
-  color: $dropdown-link-color;
-  white-space: nowrap; // prevent links from randomly breaking onto new lines
 
-  // For `<button>`s
-  text-align: inherit;
-  width: 100%;
-  background: none;
-  border: 0;
+  &,
+  & > a {
+    display: block;
+    clear: both;
+    font-weight: normal;
+    line-height: $line-height;
+    color: $dropdown-link-color;
+    white-space: nowrap; // prevent links from randomly breaking onto new lines
 
-  @include hover-focus {
-    color: $dropdown-link-hover-color;
-    text-decoration: none;
-    background-color: $dropdown-link-hover-bg;
-    cursor: pointer;
-    outline: 0;
+    // For `<button>`s
+    text-align: inherit;
+    width: 100%;
+    background: none;
+    border: 0;
+
+    @include hover-focus {
+      color: $dropdown-link-hover-color;
+      text-decoration: none;
+      background-color: $dropdown-link-hover-bg;
+      cursor: pointer;
+      outline: 0;
+    }
   }
 
   // Active state
-  &.active {
+  &.active,
+  &.active > a {
     @include plain-hover-focus {
       color: $dropdown-link-active-color;
       text-decoration: none;
@@ -154,7 +159,8 @@
   // Disabled state
   //
   // Gray out text and ensure the hover/focus state remains gray
-  &.disabled {
+  &.disabled,
+  &.disabled > a {
     @include plain-hover-focus {
       color: $dropdown-link-disabled-color;
     }
