@@ -62,7 +62,7 @@ var Dropdown = (function ($) {
   }
 
   var Selector = {
-    DATA_TOGGLE: '.dropdown-toggle',
+    DATA_TOGGLE: '.dropdown-toggle,[data-toggle="dropdown"]',
     DATA_TOGGLE_HOVER: '.dropdown-toggle.hover',
     DROPDOWN_MENU: '.dropdown-menu',
     VISIBLE_ITEMS: '.dropdown-menu li:not(.disabled) a'

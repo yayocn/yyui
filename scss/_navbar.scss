@@ -7,11 +7,43 @@
   position: relative;
   padding: $navbar-padding-vertical $navbar-padding-horizontal;
   @include clearfix();
+}
 
-  @include media-breakpoint-up(sm) {
-    @if $enable-rounded {
-      @include border-radius($navbar-border-radius);
+.navbar-theme {
+  background-color: $brand-primary;
+  color: $component-active-color;
+
+  .navbar-brand {
+    color: inherit;
+  }
+
+  @include media-breakpoint-down(sm) {
+    .nav-item:not(:last-child) {
+      border-bottom: 1px solid #ccc;
     }
+
+    .navbar-form {
+      padding: 0;
+    }
+  }
+  .nav-item {
+
+    > a {
+      color: inherit;
+    }
+
+    .nav-link {
+      @include hover-focus {
+        background-color: darken($brand-primary, 10%);
+      }
+    }
+  }
+
+  .dropdown-toggle:after {
+    border-top-color: #fff;
+  }
+  .dropdown.up .dropdown-toggle:after {
+    border-bottom-color: #fff;
   }
 }
 
@@ -48,8 +80,11 @@
   padding-top:    .25rem;
   padding-bottom: .25rem;
   font-size: $font-size-lg;
+  color: $gray-light;
+  font-weight: bold;
 
   @include hover-focus {
+    color: lighten($gray-light, 10%);
     text-decoration: none;
   }
 
@@ -111,7 +146,69 @@
 }
 
 .navbar-form {
-  float: left;
   width: auto;
+  padding-left: $space-base * 3;
+  padding-right: $space-base * 3;
 }
+
+.navbar-collapse {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &.in {
+      display: block;
+
+      .navbar-nav,
+      .dropdown-menu,
+      .navbar-form,
+      .nav-item {
+        float: none;
+        width: 100%;
+      }
+
+      .nav-item + .nav-item {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+// Navbar toggle
+//
+// Custom button for toggling the `.navbar-collapse`, powered by the collapse
+// Bootstrap JavaScript plugin.
+
+.navbar-toggle {
+  display: block;
+  float: right;
+  padding: .5rem .75rem;
+  font-size: $font-size-lg;
+  line-height: 1;
+  background-color: darken($brand-primary, 10%);
+  border-color: darken($brand-primary, 10%);
+
+  @if $enable-rounded {
+    @include border-radius($border-radius);
+  }
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  @include focus-none();
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+
+  &.collapsed {
+    background: none;
+    box-shadow: none;
+    border: $border-width solid #ccc;
+  }
+}
+
 
