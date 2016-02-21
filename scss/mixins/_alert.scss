@@ -1,0 +1,26 @@
+// Alerts
+
+@mixin alert-variant ($background, $border, $color) {
+  background-color: $background;
+  border: 1px solid $border;
+  color: $color;
+
+  hr {
+    border-top-color: darken($border, 5%);
+  }
+  .alert-link {
+    color: darken($color, 10%);
+  }
+}
+
+// Sizing
+//
+@mixin alert-size($font-size: $font-size-root) {
+  .alert-sm {
+    font-size: $font-size * .85;
+    //padding: $alert-padding-sm;
+    .close {
+      font-size: $font-size * 1.6;
+    }
+  }
+}
