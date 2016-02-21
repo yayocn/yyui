@@ -1,0 +1,30 @@
+// Navigation path
+//
+//
+//
+
+.breadcrumb {
+  padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
+  margin-bottom: $space-y;
+  list-style: none;
+  background-color: $breadcrumb-bg;
+  @if $enable-rounded {
+    @include border-radius($border-radius);
+  }
+
+  > li {
+    display: inline-block;
+
+    + li:before {
+      $nbsp: "\00a0";
+      padding-right: .5rem;
+      padding-left: .5rem;
+      color: $breadcrumb-divider-color;
+      content: "#{$breadcrumb-divider}#{$nbsp}";
+    }
+  }
+
+  > .active {
+    color: $breadcrumb-active-color;
+  }
+}

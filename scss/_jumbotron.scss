@@ -1,0 +1,30 @@
+// jumbotron
+//
+//
+//
+
+.jumbotron {
+  padding: $jumbotron-padding ($jumbotron-padding /2);
+  margin-bottom: $jumbotron-padding;
+  background-color: $jumbotron-bg;
+
+  @if $enable-rounded {
+    @include border-radius($border-radius-lg);
+  }
+}
+
+.jumbotron-hr {
+  border-top: 1px solid darken($jumbotron-bg, 10%);
+  margin-bottom: $space-default;
+}
+
+@include media-breakpoint-up(sm) {
+  .jumbotron {
+    padding: ($jumbotron-padding * 2) $jumbotron-padding;
+  }
+}
+
+.jumbotron-full {
+  padding-right: 0;
+  padding-left: 0;
+}

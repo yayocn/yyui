@@ -212,3 +212,57 @@
 }
 
 
+// Dark
+//
+.navbar-dark {
+  background-color: $navbar-dark-bg;
+  .navbar-brand {
+    color: $navbar-dark-active-color;
+
+    @include hover-focus {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-dark-color;
+
+      @include hover-focus {
+        color: $navbar-dark-hover-color;
+        background-color: $navbar-dark-hover-bg;
+      }
+    }
+
+    .dropdown {
+      &.active {
+        .dropdown-toggle {
+          background-color: $navbar-dark-hover-bg;
+        }
+      }
+    }
+    .dropdown-toggle {
+      &:after {
+        border-top-color: $navbar-dark-color;
+      }
+    }
+
+    .dropdown.up .dropdown-toggle:after {
+      border-bottom-color: $navbar-dark-color;
+    }
+
+    .active > .nav-link,
+    .nav-link.active {
+      @include plain-hover-focus {
+        color: $navbar-dark-active-color;
+      }
+    }
+  }
+
+
+  .navbar-divider {
+    background-color: rgba(255,255,255,.075);
+  }
+}
+
+

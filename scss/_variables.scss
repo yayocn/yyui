@@ -420,9 +420,11 @@ $navbar-border-radius:              $border-radius !default;
 $navbar-padding-horizontal:         $space-default !default;
 $navbar-padding-vertical:           ($space-default / 2) !default;
 
-$navbar-dark-color:                 rgba(255,255,255,.5);
+$navbar-dark-color:                 rgba(255,255,255,.8);
+$navbar-dark-bg:                    rgba(0,0,0,.9);
 $navbar-dark-hover-color:           rgba(255,255,255,.75);
 $navbar-dark-active-color:          rgba(255,255,255,1);
+$navbar-dark-hover-bg:              rgba(0,0,0,1);
 $navbar-dark-disabled-color:        rgba(255,255,255,.25);
 
 $navbar-light-color:                rgba(0,0,0,.3);
@@ -454,3 +456,70 @@ $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 $nav-brands-border-radius:                   $border-radius !default;
 $nav-brands-active-link-hover-bg:            $component-active-bg !default;
 $nav-brands-active-link-hover-color:         $component-active-color !default;
+
+// Breadcrumbs
+
+$breadcrumb-padding-vertical:   .75rem !default;
+$breadcrumb-padding-horizontal: 1rem !default;
+
+$breadcrumb-bg:                 $gray-lighter !default;
+$breadcrumb-divider-color:      $gray-light !default;
+$breadcrumb-active-color:       $gray-light !default;
+$breadcrumb-divider:            "/" !default;
+
+// Pagination
+
+$pagination-padding-x:                .75rem !default;
+$pagination-padding-y:                .5rem !default;
+$pagination-padding-x-sm:             .75rem !default;
+$pagination-padding-y-sm:             .275rem !default;
+$pagination-padding-x-lg:             1.5rem !default;
+$pagination-padding-y-lg:             .75rem !default;
+
+
+$pagination-color:                     $brand-primary !default;
+$pagination-bg:                        #fff !default;
+$pagination-border:                    #ddd !default;
+
+$pagination-hover-color:               $link-hover-color !default;
+$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-border:              #ddd !default;
+
+$pagination-active-color:              #fff !default;
+$pagination-active-bg:                 $brand-primary !default;
+$pagination-active-border:             $brand-primary !default;
+
+$pagination-disabled-color:            $gray-light !default;
+$pagination-disabled-bg:               #fff !default;
+$pagination-disabled-border:           #ddd !default;
+
+// Pager
+
+$pager-bg:                             $pagination-bg !default;
+$pager-border:                         $pagination-border !default;
+$pager-border-radius:                  15px !default;
+
+$pager-hover-bg:                       $pagination-hover-bg !default;
+
+$pager-active-bg:                      $pagination-active-bg !default;
+$pager-active-color:                   $pagination-active-color !default;
+
+$pager-disabled-color:                 $pagination-disabled-color !default;
+
+// Labels
+
+$label-default-bg:            $gray-light !default;
+$label-primary-bg:            $brand-primary !default;
+$label-secondary-bg:          $brand-secondary !default;
+$label-success-bg:            $brand-success !default;
+$label-info-bg:               $brand-info !default;
+$label-warning-bg:            $brand-warning !default;
+$label-danger-bg:             $brand-danger !default;
+
+$label-color:                 #fff !default;
+$label-link-hover-color:      #fff !default;
+
+// Jumbotron
+
+$jumbotron-padding:              2rem !default;
+$jumbotron-bg:                   $gray-lighter !default;
