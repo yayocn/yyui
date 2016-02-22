@@ -15,12 +15,12 @@
 
 // Sizing
 //
-@mixin alert-size($font-size: $font-size-root) {
-  .alert-sm {
-    font-size: $font-size * .85;
-    //padding: $alert-padding-sm;
-    .close {
-      font-size: $font-size * 1.6;
-    }
+@mixin alert-size($padding-vertical, $font-size, $close-size) {
+  font-size: $font-size;
+  padding-top: $padding-vertical;
+  padding-bottom: $padding-vertical;
+
+  .close {
+    font-size: $close-size;
   }
 }

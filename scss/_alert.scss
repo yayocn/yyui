@@ -63,9 +63,9 @@
 //
 
 .alert-sm {
-  font-size: 14px;
+  @include alert-size($alert-padding-sm, $alert-size-sm, $alert-close-size-sm);
+}
 
-  .close {
-    font-size: $font-size-root * 1.6;
-  }
+.alert-xs {
+  @include alert-size($alert-padding-xs, $alert-size-xs, $alert-close-size-xs);
 }

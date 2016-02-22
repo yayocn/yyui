@@ -530,8 +530,13 @@ $jumbotron-bg:                   $gray-lighter !default;
 
 $alert-padding:               15px !default;
 $alert-padding-sm:            10px !default;
+$alert-padding-xs:            6px !default;
 $alert-border-radius:         $border-radius !default;
 $alert-link-font-weight:      bold !default;
+$alert-size-sm:               .85rem;
+$alert-close-size-sm:         1.6rem;
+$alert-size-xs:               .75rem;
+$alert-close-size-xs:         1.5rem;
 
 $alert-success-bg:            $state-success-bg !default;
 $alert-success-text:          $state-success-text !default;
@@ -548,3 +553,18 @@ $alert-warning-border:        $state-warning-border !default;
 $alert-danger-bg:             $state-danger-bg !default;
 $alert-danger-text:           $state-danger-text !default;
 $alert-danger-border:         $state-danger-border !default;
+
+// Progress bars
+
+$progress-height:             15px;
+$progress-bg:                 #f5f5f5 !default;
+$progress-color:              #fff !default;
+$progress-bar-color:          $brand-primary !default;
+$progress-border-radius:      $border-radius !default;
+
+$progress-bar-secondary-bg:   $brand-secondary!default;
+$progress-bar-gray-bg:        $gray !default;
+$progress-bar-success-bg:     $brand-success !default;
+$progress-bar-warning-bg:     $brand-warning !default;
+$progress-bar-danger-bg:      $brand-danger !default;
+$progress-bar-info-bg:        $brand-info !default;
