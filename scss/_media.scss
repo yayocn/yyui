@@ -1,0 +1,87 @@
+// Media
+// communicate and comment
+//
+//
+
+@if $enable-flex {
+  .media {
+    display: flex;
+    margin-bottom: $space-base;
+  }
+  .media-body {
+    flex: 1;
+  }
+} @else {
+  .media {
+    margin-top: 15px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .media,
+  .media-body {
+    overflow: hidden;
+    zoom: 1;
+  }
+  .media-body {
+    width: 10000px;
+  }
+  .media-left,
+  .media-right,
+  .media-body {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .media-middle {
+    vertical-align: middle;
+  }
+  .media-bottom {
+    vertical-align: bottom;
+  }
+}
+
+// Alignment
+//
+//
+.media-left,
+.media-right {
+  img {
+    width: 64px;
+    height: 64px;
+    background-image: url($img-64-64);
+  }
+}
+
+//
+// body
+//
+
+.media-body {
+  > p {
+    font-size: $font-size-sm;
+    text-align: justify;
+    text-indent: 2em;
+  }
+}
+
+.media-left {
+  padding-left: 10px;
+  padding-right: $space-base * 2;
+}
+
+.media-right {
+  padding-right: 10px;
+  padding-left: $space-base * 2;
+}
+
+// heading
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
