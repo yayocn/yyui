@@ -1,18 +1,33 @@
 // List Groups
 
 @mixin list-group-variant($state, $background, $color) {
+  .list-group-#{$state} {
+    .list-group-item,
+    a.list-group-item,
+    button.list-group-item{
 
+      @include hover-focus {
+        color: $color;
+        background-color: $background;
+      }
+
+      &.active {
+        @include plain-hover-focus {
+          color: #fff;
+          background-color: $background;
+          border-color: $background;
+        }
+      }
+    }
+  }
 }
 
 @mixin list-group-item-variant($state, $background, $color) {
-  .list-group-item-#{$state} {
+  .list-group-item-#{$state},
+  a.list-group-item-#{$state},
+  button.list-group-item-#{$state}{
     color: $color;
     background-color: $background;
-  }
-
-  a.list-group-item-#{$state},
-  button.list-group-item-#{$state} {
-    color: $color;
 
     .list-group-item-heading {
       color: inherit;
@@ -21,6 +36,10 @@
     @include hover-focus {
       color: $color;
       background-color: darken($background, 5%);
+      border-color: $color;
+      &:not(:last-child){
+        border-bottom-width: 2px;
+      }
     }
 
     &.active {
@@ -28,6 +47,7 @@
         color: #fff;
         background-color: $color;
         border-color: $color;
+        //border-bottom-width: 2px;
       }
     }
   }
