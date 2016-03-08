@@ -52,3 +52,14 @@
     }
   }
 }
+
+//
+// Sizing
+//
+
+@mixin list-group-size($font-size, $padding-vt, $padding-hz) {
+  .list-group-item {
+    font-size: $font-size;
+    padding: $padding-vt $padding-hz;
+  }
+}

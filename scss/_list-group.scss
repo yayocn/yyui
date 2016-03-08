@@ -125,3 +125,15 @@ button.list-group-item {
 
 @include list-group-item-variant(state, $list-grouup-item-danger-bg, $brand-danger);
 
+// Sizing
+//
+.list-group-lg {
+  @include list-group-size($list-group-size-lg, $list-group-padding-vt-lg, $list-group-padding-hz-lg);
+}
+.list-group-sm {
+  @include list-group-size($list-group-size-sm, $list-group-padding-vt-sm, $list-group-padding-hz-sm);
+}
+.list-group-xs {
+  @include list-group-size($list-group-size-xs, $list-group-padding-vt-xs, $list-group-padding-hz-xs);
+}
+
