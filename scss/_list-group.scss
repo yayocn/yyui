@@ -123,4 +123,5 @@ button.list-group-item {
 @include list-group-item-variant(warning, $list-grouup-item-warning-bg, $brand-warning);
 @include list-group-item-variant(danger, $list-grouup-item-danger-bg, $brand-danger);
 
+@include list-group-item-variant(state, $list-grouup-item-danger-bg, $brand-danger);
 
