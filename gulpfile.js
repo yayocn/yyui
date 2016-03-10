@@ -11,7 +11,9 @@ gulp.task('css', function() {
 gulp.task('sourcemap', function() {
   gulp.src('js/*.js')
     .pipe(sourcemaps.init())
-    .pipe(sourcemaps.write());
+    .pipe(concat('flyimt.min.js'))
+    .pipe(sourcemaps.write('../maps'))
+    .pipe(gulp.dest('dist/js/'))
 })
 
 gulp.task('concatjs', function() {
