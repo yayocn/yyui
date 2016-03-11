@@ -20,8 +20,8 @@ var Alert = (function ($) {
    */
 
   var NAME = 'alert';
-  var VERSION = '1.0.0';
-  var DATA_KEY = 'fi.alert';
+  var VERSION = '4.0.0';
+  var DATA_KEY = 'bs.alert';
   var EVENT_KEY = '.' + DATA_KEY;
   var DATA_API_KEY = '.data-api';
   var JQUERY_NO_CONFLICT = $.fn[NAME];
@@ -62,7 +62,7 @@ var Alert = (function ($) {
      * ------------------------------------------------------------------------
      */
 
-      // getters
+    // getters
 
     _createClass(Alert, [{
       key: 'close',
