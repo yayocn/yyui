@@ -9,9 +9,13 @@
   @include clearfix();
 }
 
-.navbar-theme {
+.navbar-primary{
   background-color: $brand-primary;
   color: $component-active-color;
+
+  .navbar-brand {
+    color: $component-active-color;
+  }
 
   @include media-breakpoint-down(sm) {
     .nav-item:not(:last-child) {
@@ -35,11 +39,16 @@
     }
   }
 
+
+  .dropdown.active .nav-link {
+    color: $component-active-color !important;
+  }
+
   .dropdown-toggle:after {
-    border-top-color: #fff;
+    border-top-color: #fff !important;
   }
   .dropdown.up .dropdown-toggle:after {
-    border-bottom-color: #fff;
+    border-bottom-color: #fff !important;
   }
 }
 

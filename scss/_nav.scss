@@ -12,6 +12,28 @@ nav,
   list-style: none;
 }
 
+.nav {
+  .nav-item {
+    display: inline-block;
+    + .nav-item {
+      margin-left: -.24rem; // clear up space between inline blocks.
+    }
+  }
+
+  .nav-link {
+    padding: $nav-link-padding;
+    @if $enable-rounded {
+      @include border-radius($nav-brands-border-radius);
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.active .nav-link {
+    color: $gray-dark;
+    cursor: default;
+    background-color: $gray-lighter;
+  }
+}
 
 .nav-item {
   &.disabled,
@@ -54,21 +76,22 @@ nav,
     }
   }
 }
+
 .nav-link {
   display: inline-block;
-  color: $brand-primary;
+  color: $gray;
 
   &.dropdown-toggle:after {
-    border-top-color: $brand-primary;
+    border-top-color: $gray;
   }
 
   @include hover-focus {
-    color: darken($brand-primary, 15%);
+    color: darken($gray, 15%);
     text-decoration: none;
     background-color: $nav-link-hover-bg;
 
     &.dropdown-toggle:after {
-      border-top-color: darken($brand-primary, 15%);
+      border-top-color: darken($gray, 15%);
     }
   }
 
@@ -88,6 +111,27 @@ nav,
   }
 }
 
+.nav-primary {
+  .nav-link.active,
+  .nav-item.active .nav-link {
+    color: $component-active-color;
+    cursor: default;
+    background-color: $component-active-bg;
+  }
+
+  .nav-link {
+    color: $brand-primary;
+
+    &.dropdown-toggle:after {
+      border-top-color: $component-active-color;
+    }
+
+    @include hover-focus {
+      color: darken($brand-primary, 15%);
+    }
+  }
+}
+
 // Nav inline
 
 //.nav-inline {
@@ -95,37 +139,6 @@ nav,
 //    margin-left: 1rem;
 //  }
 //}
-
-
-// Brands
-// Default style
-//
-.nav-brands {
-  .nav-item {
-    display: inline-block;
-
-    + .nav-item {
-      margin-left: -.24rem; // clear up space between inline blocks.
-    }
-  }
-
-  .nav-link {
-    display: block;
-    padding: $nav-link-padding;
-    @if $enable-rounded {
-      @include border-radius($nav-brands-border-radius);
-    }
-  }
-
-  .nav-link.active,
-  .nav-item.active .nav-link {
-    @include plain-hover-focus {
-      color: $component-active-color;
-      cursor: default;
-      background-color: $component-active-bg;
-    }
-  }
-}
 
 .nav-vt {
   .nav-item {
