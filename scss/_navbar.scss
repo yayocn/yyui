@@ -5,17 +5,13 @@
 
 .navbar {
   position: relative;
-  padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  padding: $navbar-padding-vertical 0;
   @include clearfix();
 }
 
 .navbar-theme {
   background-color: $brand-primary;
   color: $component-active-color;
-
-  .navbar-brand {
-    color: inherit;
-  }
 
   @include media-breakpoint-down(sm) {
     .nav-item:not(:last-child) {
@@ -187,27 +183,23 @@
   padding: .5rem .75rem;
   font-size: $font-size-lg;
   line-height: 1;
-  background-color: darken($brand-primary, 10%);
-  border-color: darken($brand-primary, 10%);
+  background: none;
+  box-shadow: none;
+  border: $border-width solid #ccc;
 
   @if $enable-rounded {
     @include border-radius($border-radius);
   }
 
-  @include hover-focus {
+  @include hover {
     text-decoration: none;
+    background-color: rgba(0,0,0, .1);
   }
 
   @include focus-none();
 
   @include media-breakpoint-up(md) {
     display: none;
-  }
-
-  &.collapsed {
-    background: none;
-    box-shadow: none;
-    border: $border-width solid #ccc;
   }
 }
 
@@ -216,11 +208,13 @@
 //
 .navbar-dark {
   background-color: $navbar-dark-bg;
+
+  .navbar-toggle,
   .navbar-brand {
-    color: $navbar-dark-active-color;
+    color: $navbar-dark-color;
 
     @include hover-focus {
-      color: $navbar-dark-active-color;
+      color: lighten($navbar-dark-color, 10%);
     }
   }
 

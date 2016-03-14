@@ -430,9 +430,9 @@ $navbar-padding-vertical:           ($space-default / 2) !default;
 
 $navbar-dark-color:                 rgba(255,255,255,.8);
 $navbar-dark-bg:                    rgba(0,0,0,.9);
-$navbar-dark-hover-color:           rgba(255,255,255,.75);
-$navbar-dark-active-color:          rgba(255,255,255,1);
-$navbar-dark-hover-bg:              rgba(0,0,0,1);
+$navbar-dark-hover-color:           rgba(0,0,0, .85);
+$navbar-dark-active-color:          rgba(0,0,0, .85);
+$navbar-dark-hover-bg:              rgba(255,255,255,1);
 $navbar-dark-disabled-color:        rgba(255,255,255,.25);
 
 $navbar-light-color:                rgba(0,0,0,.3);
