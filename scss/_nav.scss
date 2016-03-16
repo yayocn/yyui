@@ -23,7 +23,7 @@ nav,
   .nav-link {
     padding: $nav-link-padding;
     @if $enable-rounded {
-      @include border-radius($nav-brands-border-radius);
+      @include border-radius($nav-border-radius);
     }
   }
 
