@@ -34,7 +34,7 @@ var Dropdown = (function ($) {
 
   var ClassName = {
     DISABLED: 'disabled',
-    ACTIVE: 'active'
+    OPEN: 'open'
   }
 
   var Selector = {
@@ -73,18 +73,18 @@ var Dropdown = (function ($) {
         }
 
         var parent = Dropdown._getParentFromElement(this);
-        var isActive = $(parent).hasClass(ClassName.ACTIVE);
+        var isOPEN = $(parent).hasClass(ClassName.OPEN);
 
         // close the other dropdown
         Dropdown._clearMenus();
 
-        if (isActive) {
+        if (isOPEN) {
           return false;
         }
 
         this.focus();
 
-        $(parent).toggleClass(ClassName.ACTIVE);
+        $(parent).toggleClass(ClassName.OPEN);
 
         return false;
       }
@@ -126,7 +126,7 @@ var Dropdown = (function ($) {
         for (var i = 0; i < toggles.length; i++) {
           var _parent = Dropdown._getParentFromElement(toggles[i]);
 
-          if (!$(_parent).hasClass(ClassName.ACTIVE)) {
+          if (!$(_parent).hasClass(ClassName.OPEN)) {
             continue;
           }
 
@@ -134,7 +134,7 @@ var Dropdown = (function ($) {
             continue;
           }
 
-          $(_parent).removeClass(ClassName.ACTIVE);
+          $(_parent).removeClass(ClassName.OPEN);
         }
       }
     }, {
@@ -152,9 +152,9 @@ var Dropdown = (function ($) {
         }
 
         var parent = Dropdown._getParentFromElement(this);
-        var isActive = $(parent).hasClass(ClassName.ACTIVE);
+        var isOPEN = $(parent).hasClass(ClassName.OPEN);
 
-        if (!isActive && event.which !== 27 || isActive && event.which === 27) {
+        if (!isOPEN && event.which !== 27 || isOPEN && event.which === 27) {
 
           if (event.which === 27) {
             var toggle = $(parent).find(Selector.DATA_TOGGLE)[0];
