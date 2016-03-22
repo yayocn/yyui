@@ -137,3 +137,13 @@ button.list-group-item {
   @include list-group-size($list-group-size-xs, $list-group-padding-vt-xs, $list-group-padding-hz-xs);
 }
 
+.list-group-hz {
+  display: table;
+
+  .list-group-item {
+    display: table-cell;
+    padding: $space-base $space-base * 2;
+    border: none !important;
+  }
+}
+
