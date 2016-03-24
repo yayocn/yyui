@@ -423,6 +423,7 @@ $thumbnail-border-radius:     $border-radius !default;
 //
 // Navbar
 //
+$navbar-bg:                         #fff !default;
 
 $navbar-border-radius:              $border-radius !default;
 $navbar-padding-horizontal:         $space-default !default;
@@ -445,10 +446,10 @@ $navbar-light-disabled-color:       rgba(0,0,0,.15);
 //
 
 $nav-link-padding:                          .5em 1em !default;
-$nav-link-hover-bg:                         $gray-lightest !default;
+$nav-link-hover-bg:                         $gray-lighter !default;
 
-$nav-disabled-link-color:                   #ccc !default;
-$nav-disabled-link-hover-color:             #ccc !default;
+$nav-disabled-link-color:                   $gray-light !default;
+$nav-disabled-link-hover-color:             $gray-light !default;
 
 $nav-tabs-border-color:                     #ddd !default;
 
@@ -461,9 +462,9 @@ $nav-tabs-active-link-hover-border-color:   #ddd !default;
 $nav-tabs-justified-link-border-color:            #ddd !default;
 $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
-$nav-border-radius:                   $border-radius !default;
-$nav-active-link-hover-bg:            $component-active-bg !default;
-$nav-active-link-hover-color:         $component-active-color !default;
+$nav-pills-border-radius:                   $border-radius !default;
+$nav-pills-active-link-hover-bg:            $gray-lighter !default;
+$nav-pills-active-link-hover-color:         $gray !default;
 
 // Breadcrumbs
 

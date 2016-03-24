@@ -1,108 +1,29 @@
-// Nav
+// Base class
 //
-//
-//
+// Kickstart any navigation component with a set of style resets. Works with
+// `<nav>`s or `<ul>`s.
 
-// Default
-// `<nav>` or `<ul>`
-nav,
 .nav {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
 
-.nav {
-  .nav-item {
-    display: inline-block;
-    + .nav-item {
-      margin-left: -.24rem; // clear up space between inline blocks.
-    }
-  }
-
-  .nav-link {
-    padding: $nav-link-padding;
-    @if $enable-rounded {
-      @include border-radius($nav-border-radius);
-    }
-  }
-
-  .nav-link.active,
-  .nav-item.active .nav-link {
-    color: $gray-dark;
-    cursor: default;
-    background-color: $gray-lighter;
-  }
-}
-
-.nav-item {
-  &.disabled,
-  &.disabled > .nav-link {
-    color: $nav-disabled-link-color;
-
-    &.dropdown-toggle:after {
-      border-top-color: $nav-disabled-link-color;
-    }
-
-    @include plain-hover-focus {
-      color: $nav-disabled-link-hover-color;
-      cursor: $cursor-disabled;
-      background-color: transparent;
-    }
-  }
-
-  &.active,
-  &.active > .nav-link {
-    &.dropdown-toggle:after {
-      border-top-color: $component-active-color;
-    }
-  }
-
-  &.dropdown.up {
-    &.disabled,
-    &.disabled > .nav-link {
-      &.dropdown-toggle:after {
-        border-top: none;
-        border-bottom-color: $nav-disabled-link-color;
-      }
-    }
-
-    &.active,
-    &.active > .nav-link {
-      &.dropdown-toggle:after {
-        border-top: none;
-        border-bottom-color: $component-active-color;
-      }
-    }
-  }
-}
-
 .nav-link {
   display: inline-block;
-  color: $gray;
 
-  &.dropdown-toggle:after {
-    border-top-color: $gray;
+  @if $enable-rounded {
+    @include border-radius($border-radius);
   }
 
   @include hover-focus {
-    color: darken($gray, 15%);
     text-decoration: none;
-    background-color: $nav-link-hover-bg;
-
-    &.dropdown-toggle:after {
-      border-top-color: darken($gray, 15%);
-    }
   }
 
   // Disabled state lightens text and removes hover/tab effects
   &.disabled {
     color: $nav-disabled-link-color;
 
-    &.dropdown-toggle:after {
-      border-top-color: $nav-disabled-link-color;
-    }
-
     @include plain-hover-focus {
       color: $nav-disabled-link-hover-color;
       cursor: $cursor-disabled;
@@ -111,34 +32,104 @@ nav,
   }
 }
 
-.nav-primary {
-  .nav-link.active,
-  .nav-item.active .nav-link {
-    color: $component-active-color;
-    cursor: default;
-    background-color: $component-active-bg;
+
+// Nav inline
+
+.nav-inline {
+  .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
+}
+
+
+//
+// Tabs
+//
+
+.nav-tabs {
+  background-color: $nav-tabs-active-link-hover-bg;
+  border-bottom: 1px solid $nav-tabs-border-color;
+  @include clearfix();
+
+  .nav-item {
+    float: left;
+    // Make the list-items overlay the bottom border
+    margin-bottom: -1px;
+
+    + .nav-item {
+      margin-left: .2rem;
+    }
   }
 
   .nav-link {
-    color: $brand-primary;
+    display: block;
+    padding: $nav-link-padding;
+    border: 1px solid transparent;
 
-    &.dropdown-toggle:after {
-      border-top-color: $component-active-color;
+    @if $enable-rounded {
+      @include border-radius($border-radius $border-radius 0 0);
     }
 
     @include hover-focus {
-      color: darken($brand-primary, 15%);
+      border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+    }
+
+    &.disabled {
+      @include plain-hover-focus {
+        color: $nav-disabled-link-color;
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.active .nav-link {
+    @include plain-hover-focus {
+      color: $nav-tabs-active-link-hover-color;
+      background-color: $nav-tabs-active-link-hover-bg;
+      border-color: $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-border-color transparent;
     }
   }
 }
 
-// Nav inline
 
-//.nav-inline {
-//  .nav-link + .nav-link {
-//    margin-left: 1rem;
-//  }
-//}
+//
+// pills
+//
+
+.nav-pills {
+  .nav-item {
+    float: left;
+
+    + .nav-item {
+      margin-left: .2rem;
+    }
+  }
+
+  .nav-link {
+    display: block;
+    padding: $nav-link-padding;
+    color: $gray-light;
+
+    @if $enable-rounded {
+      @include border-radius($nav-pills-border-radius);
+    }
+
+    @include hover-focus {
+      color: $gray;
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.active .nav-link {
+    @include plain-hover-focus {
+      color: $nav-pills-active-link-hover-color;
+      cursor: default;
+      background-color: $nav-pills-active-link-hover-bg;
+    }
+  }
+}
 
 .nav-vt {
   .nav-item {
@@ -146,7 +137,43 @@ nav,
     float: none;
 
     + .nav-item {
+      margin-top: .2rem;
       margin-left: 0;
     }
   }
+}
+
+
+//
+// Tabbable tabs
+//
+
+// Hide tabbable panes to start, show them when `.active`
+@keyframes fadeIn {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+@keyframes fadeOut {
+  from{opacity: 1}
+  to{opacity: 0}
+}
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
+}
+
+
+//
+// Dropdowns
+//
+
+.nav-tabs .dropdown-menu {
+  // Make dropdown border overlap tab border
+  margin-top: -1px;
+  // Remove the top rounded corners here since there is a hard edge above the menu
+  @include border-top-radius(0);
 }

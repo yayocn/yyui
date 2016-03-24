@@ -34,7 +34,7 @@ var Dropdown = (function ($) {
 
   var ClassName = {
     DISABLED: 'disabled',
-    OPEN: 'open'
+    OPEN: 'active'
   }
 
   var Selector = {

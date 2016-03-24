@@ -6,6 +6,7 @@
 .navbar {
   position: relative;
   padding: $navbar-padding-vertical 0;
+  background-color: $navbar-bg;
   @include clearfix();
 }
 
@@ -137,8 +138,7 @@
 
   .nav-link {
     display: block;
-    padding-top:    .425rem;
-    padding-bottom: .425rem;
+    padding: .425rem $space-base * 3;
 
     + .nav-link {
       margin-left: 1rem;
@@ -246,29 +246,41 @@
   }
 
   .dropdown {
-    &.active {
+    &.active,
+    &:hover,
+    &:focus {
       .dropdown-toggle {
         background-color: $navbar-dark-hover-bg;
-      }
-      .dropdown-toggle {
+
         &:after {
           border-top-color: $navbar-dark-active-color;
         }
       }
+    }
 
-      .dropdown.up .dropdown-toggle:after {
-        border-bottom-color: $navbar-dark-active-color;
+    &.up {
+      .dropdown-toggle {
+        &:after {
+          border-bottom-color: $navbar-dark-color;
+        }
+      }
+
+      &.active,
+      &:hover,
+      &:focus {
+        .dropdown-toggle {
+          &:after {
+            border-bottom-color: $navbar-dark-active-color;
+          }
+        }
       }
     }
   }
+
   .dropdown-toggle {
     &:after {
       border-top-color: $navbar-dark-color;
     }
-  }
-
-  .dropdown.up .dropdown-toggle:after {
-    border-bottom-color: $navbar-dark-color;
   }
 
   .navbar-divider {
