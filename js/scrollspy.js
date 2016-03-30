@@ -27,7 +27,7 @@ var ScrollSpy = (function ($) {
   var JQUERY_NO_CONFLICT = $.fn[NAME];
 
   var Default = {
-    offset: 180,
+    offset: 0,
     method: 'auto',
     target: ''
   };

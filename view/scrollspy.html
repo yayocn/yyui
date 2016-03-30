@@ -3,6 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/flyimt.css"/>
+  <style>
+    /* line 3, ../scss/global.scss */
+    .sidebar {
+      padding-top: 40px;
+    }
+    /* line 6, ../scss/global.scss */
+    .sidebar .nav-link {
+      padding-left: 20px;
+      color: #55595c;
+    }
+    /* line 11, ../scss/global.scss */
+    .sidebar .nav .nav-link.active {
+      color: #2EC6A0;
+      border-left: 2px solid #2EC6A0;
+    }
+    /* line 18, ../scss/global.scss */
+    .sidebar ul > ul {
+      display: none;
+      font-size: 80%;
+    }
+    /* line 23, ../scss/global.scss */
+    .sidebar ul .nav-link.active + ul {
+      display: block;
+    }
+  </style>
   <title></title>
   <style>
     body {
@@ -17,13 +42,20 @@
     }
   </style>
 </head>
-<body data-spy="scroll">
-<ul class="nav nav-tabs" style="position: fixed;top: 0;">
-  <li class="nav-item"><a class="nav-link" href="#a" data-toggle="tab">Item</a></li>
-  <li class="nav-item"><a class="nav-link" href="#b" data-toggle="tab">Item</a></li>
-  <li class="nav-item"><a class="nav-link" href="#c" data-toggle="tab">Item</a></li>
-  <li class="nav-item"><a class="nav-link" href="#d" data-toggle="tab">Item</a></li>
-</ul>
+<body data-spy="scroll" data-target="#dafdasf" data-offset="180">
+<div class="sidebar">
+  <ul class="nav" style="position: fixed;top: 0;" id="dafdasf">
+    <li class="nav-item">
+      <a class="nav-link" href="#a" >Item</a>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#b" >Item</a></li>
+        <li class="nav-item"><a class="nav-link" href="#c" >Item</a></li>
+        <li class="nav-item"><a class="nav-link" href="#d" >Item</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
 <div class="tab-cont">
   <div class="aa" style="background-color: red" id="a"></div>
   <div class="aa" style="background-color: blue" id="b"></div>
@@ -31,7 +63,8 @@
   <div class="aa" style="background-color: pink;" id="d"></div>
 </div>
 <script src="../jquery-1.11.1.min.js"></script>
-<script src="../js/util.js"></script>
-<script src="../js/scrollspy.js"></script>
+<!--<script src="../js/util.js"></script>-->
+<!--<script src="../js/scrollspy.js"></script>-->
+<script src="../js/dist/flyimt.js"></script>
 </body>
 </html>
