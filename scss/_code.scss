@@ -2,7 +2,7 @@
 code,
 kbd,
 pre {
-  font-family: $font-family-monospace;
+  font-family: $font-family-base;
 }
 
 // Inline code
@@ -38,12 +38,11 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: $space-base * 2 $space-base * 4;
-  font-size: 90%;
+  padding: $space-base * 2 0;
+  font-size: 14px;
   line-height: $line-height;
   color: $pre-color;
   background-color: $pre-bg;
-  white-space: nowrap;
   @include border-radius($border-radius-lg);
 
   // Account for some code outputs that place code tags in pre tags
@@ -64,8 +63,52 @@ pre {
 
 pre,
 code {
-  .label {color: $code-label-color;}
-  .attr {color: $code-attr-color;}
-  .value {color: $code-attr-value-color;}
-  .note {color: $code-note-color;}
+  font-size: 14px !important;
+  .label-begin,
+  .label-end
+  .attr,
+  .value,
+  .note {
+    padding: 0;
+    font-size: 14px !important;
+  }
+  .label-begin {
+    color: $code-label-color;
+    &:before {
+      content: "<";
+    }
+  }
+  .label-end {
+    color: $code-label-color;
+    &:after {
+      content: ">";
+    }
+  }
+  .attr {
+    color: $code-attr-color;
+    &:before {
+      content: " ";
+    }
+    &:after {
+      content: "=";
+    }
+  }
+  .value {
+    color: $code-attr-value-color;
+    &:before {
+      content: '"';
+    }
+    &:after {
+      content: '"';
+    }
+  }
+  .note {
+    color: $code-note-color;
+    &:before {
+      content: "<!-- ";
+    }
+    &:after {
+      content: " -->";
+    }
+  }
 }
