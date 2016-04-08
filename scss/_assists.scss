@@ -13,7 +13,7 @@
 //
 .close {
   float: right;
-  font-size: ($font-size-base * 2.5);
+  font-size: ($font-size-base * 2);
   font-weight: $close-font-weight;
   line-height: 1;
   color: $close-color;
@@ -114,6 +114,8 @@ button.close {
 .text-warning { color: $brand-warning !important;}
 .text-danger { color: $brand-danger !important;}
 .text-muted { color: $text-muted !important;}
+.text-black { color: $gray-dark !important;}
+.text-white { color: $gray-lightest !important;}
 
 
 //
@@ -127,6 +129,8 @@ button.close {
 @include bg-variant('.bg-warning', $brand-warning);
 @include bg-variant('.bg-danger', $brand-danger);
 @include bg-variant('.bg-muted', $text-muted);
+@include bg-variant('.bg-black', $gray-dark);
+@include bg-variant('.bg-white', $gray-lightest);
 
 
 //

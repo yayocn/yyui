@@ -27,7 +27,7 @@
 // left
 //
 @mixin float($float) {
-  float: $float;
+  float: $float !important;
 }
 
 // triangle
@@ -120,7 +120,6 @@
 
 @mixin bg-variant($parent, $color) {
   #{$parent} {
-    color: #fff;
     background-color: $color;
   }
   a#{$parent} {
