@@ -39,8 +39,8 @@ pre {
   background-color: $pre-bg;
   border: 1px solid #ccc;
   color: $pre-color;
-  font-size: 13px;
-  line-height: $line-height;
+  font-size: $pre-font-size;
+  line-height: $pre-line-height;
   margin: 0;
   padding: $space-base * 2 $space-base * 3;
   word-break: break-all;
@@ -65,54 +65,25 @@ pre {
   overflow-y: scroll;
 }
 
-pre,
-code {
-  font-size: 14px !important;
-  .label-begin,
-  .label-end
+pre {
+  font-size: $pre-font-size !important;
+  .label,
   .attr,
   .value,
   .note {
     padding: 0;
-    font-size: 14px !important;
+    font-size: $pre-font-size !important;
   }
-  .label-begin {
+  .label {
     color: $code-label-color;
-    &:before {
-      content: "<";
-    }
-  }
-  .label-end {
-    color: $code-label-color;
-    &:after {
-      content: ">";
-    }
   }
   .attr {
     color: $code-attr-color;
-    &:before {
-      content: " ";
-    }
-    &:after {
-      content: "=";
-    }
   }
   .value {
     color: $code-attr-value-color;
-    &:before {
-      content: '"';
-    }
-    &:after {
-      content: '"';
-    }
   }
   .note {
     color: $code-note-color;
-    &:before {
-      content: "<!-- ";
-    }
-    &:after {
-      content: " -->";
-    }
   }
 }
