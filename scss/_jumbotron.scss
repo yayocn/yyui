@@ -7,9 +7,15 @@
   padding: $jumbotron-padding ($jumbotron-padding /2);
   margin-bottom: $jumbotron-padding;
   background-color: $jumbotron-bg;
+  font-size: $jumbotron-size;
 
   @if $enable-rounded {
     @include border-radius($border-radius-lg);
+  }
+
+  > h1 {
+    font-size: $jumbotron-h1-size;
+    font-weight: $jumbotron-h1-weight;
   }
 }
 

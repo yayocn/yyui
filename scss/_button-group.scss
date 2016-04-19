@@ -8,7 +8,10 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  margin-top: $space-base;
+  margin-bottom: $space-base;
 
+  > .dropdown,
   > .btn {
     position: relative;
     float: left;
@@ -23,15 +26,28 @@
       z-index: 2;
     }
   }
+
+  > .btn-group {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.btn-group {
+  @include btn-group-brand-border('.btn-primary', $brand-primary);
+  @include btn-group-brand-border('.btn-secondary', $brand-secondary);
+  @include btn-group-brand-border('.btn-info', $brand-info);
+  @include btn-group-brand-border('.btn-success', $brand-success);
+  @include btn-group-brand-border('.btn-warning', $brand-warning);
+  @include btn-group-brand-border('.btn-danger', $brand-danger);
 }
 
 // Clear up double borders
 //
 .btn-group {
-  .btn + .btn,
-  .btn + .btn-group,
-  .btn-group + .btn,
-  .btn-group + .btn-group {
+  .dropdown,
+  .btn,
+  .btn-group {
     margin-left: -1px;
   }
 }
@@ -72,6 +88,8 @@
 //
 .btn-bar {
   margin-left: -5px;
+  margin-top: $space-base;
+  margin-bottom: $space-base;
   @include clearfix();
 
   > .btn,
@@ -79,6 +97,8 @@
   > .input-group {
     float: left;
     margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   > .input-group {
@@ -148,6 +168,7 @@
 //
 
 .btn-group-vt {
+  >.dropdown,
   > .btn,
   > .btn-group,
   > .btn-group > .btn {
@@ -158,10 +179,9 @@
   }
 
   // Clear up the double borders.
-  > .btn + .btn,
-  > .btn + .btn-group,
-  > .btn-group + .btn,
-  > .btn-group + .btn-group {
+  > .dropdown,
+  > .btn,
+  > .btn-group {
     margin-top: -1px;
     margin-left: 0;
   }

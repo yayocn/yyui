@@ -15,7 +15,7 @@ var Util = (function ($) {
    * ------------------------------------------------------------------------
    */
 
-  var transition = false;
+  var transition = true;
 
   var TransitionEndEvent = {
     WebkitTransition: 'webkitTransitionEnd',
