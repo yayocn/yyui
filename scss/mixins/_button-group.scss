@@ -1,0 +1,7 @@
+// Set border of brand button groups.
+//
+@mixin btn-group-brand-border($btn, $border-color) {
+  #{$btn}:not(:first-child) {
+    border-left-color: darken($border-color, 5%);
+  }
+}

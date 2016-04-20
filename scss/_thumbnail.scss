@@ -1,0 +1,50 @@
+// Thumbmial
+//
+//
+//
+
+.thumbnail {
+  display: block;
+  padding: $thumbnail-padding;
+  margin-bottom: $thumbnail-margin-bottom;
+  line-height: $line-height;
+  background-color: $thumbnail-bg-color;
+  border: 1px solid $thumbnail-border-color;
+  font-size: 14px;
+  @if $enable-rounded {
+    border-radius: $thumbnail-border-radius;
+  }
+  @include transition(border .2s ease-in-out);
+
+  > img,
+  a > img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @if $enable-rounded {
+      border-radius: $thumbnail-border-radius;
+    }
+  }
+
+  a:hover,
+  a:focus,
+  a.active {
+    border-color: $link-color;
+  }
+
+  .caption {
+    padding: $thumbnail-caption-padding;
+    color: $thumbnail-caption-color;
+
+    h1,h2,h3,h4,h5,h6 {
+      margin-top: $space-base * 2;
+      margin-bottom: $space-base * 2;
+    }
+    > p {
+      text-align: justify;
+    }
+  }
+
+
+}
