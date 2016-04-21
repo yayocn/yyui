@@ -572,15 +572,15 @@ $alert-danger-border:         $state-danger-border !default;
 $progress-height:             15px;
 $progress-bg:                 #f5f5f5 !default;
 $progress-color:              #fff !default;
-$progress-bar-color:          $brand-primary !default;
+$progress-value-color:          $brand-primary !default;
 $progress-border-radius:      $border-radius !default;
 
-$progress-bar-secondary-bg:   $brand-secondary!default;
-$progress-bar-gray-bg:        $gray !default;
-$progress-bar-success-bg:     $brand-success !default;
-$progress-bar-warning-bg:     $brand-warning !default;
-$progress-bar-danger-bg:      $brand-danger !default;
-$progress-bar-info-bg:        $brand-info !default;
+$progress-value-secondary-bg:   $brand-secondary!default;
+$progress-value-gray-bg:        $gray !default;
+$progress-value-success-bg:     $brand-success !default;
+$progress-value-warning-bg:     $brand-warning !default;
+$progress-value-danger-bg:      $brand-danger !default;
+$progress-value-info-bg:        $brand-info !default;
 
 // Example img
 //

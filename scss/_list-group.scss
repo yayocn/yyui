@@ -56,6 +56,8 @@ button.list-group-item {
     color: $list-group-link-hover-color;
     text-decoration: none;
     background-color: $list-group-hover-bg;
+    border-left-color: $list-group-hover-bg;
+    border-right-color: $list-group-hover-bg;
     outline: none;
   }
 }
