@@ -1,8 +1,11 @@
 <html>
+<head>
+  <meta charset="utf-8">
+</head>
 <script>
   function Foo() {
-    getName = function(){console.log(1);}; //前面没有var，实际上是修改了window中的getName的值，如果没有就会在window上创建
-    return this; // this的指向是随着调用方式决定的。
+    getName = function(){console.log(1);}; //
+    return this; //
   }
 
   Foo.getName = function(){console.log(2);};
@@ -12,25 +15,21 @@
     console.log(5);
   }
 
-  // 函数表达式会被拆分成两份：var 变量声明 和 赋值
-  // var x = 1 会被肢解为
-  // var x; 声明的执行顺序会被提升顶端
-  // x = 1;
-
-
-  //后者正确答案
+  //
+  //
+  //
   Foo.getName();          //2   //2
 
   /*
-  实际的执行顺序
   function Foo() {
     getName = function(){console.log(1);};
     return this;
+    console.log(11)
   }
   var getName;
   function getName(){
     console.log(5);
-  }//覆盖getName的变量声明
+  }//
 
   Foo.getName = function(){console.log(2);};
   Foo.prototype.getName = function(){console.log(3);};
@@ -39,22 +38,21 @@
 
   getName();              //5   //4
 
-  // 这里Foo是直接调用，即window.Foo(),this指向window
+  //
   Foo().getName();        //1   //1
 
-  // 因为执行了前一个函数，window上的getName已经被修改，所以返回1.
+  //
   getName();              //5   //1
 
-  // `.`的优先级高于new，
-  // 实际上是 new (Foo.getName)();将Foo的getName属性作为了构造函数
+  //
   new Foo.getName();      //2   //2
 
   // (new Foo()).getName();
-  // new Foo() 实例化一个对象，该实例对象中没有getName的属性，因此会到原型中去找
+  // new Foo()
   new Foo().getName();    //1   //3
 
   // new ((new Foo()).getName)();
-  // 将Foo实例的原型对象的getName属性作为构造函数
+  //
   new new Foo().getName();//1   //3
 </script>
 </html>
