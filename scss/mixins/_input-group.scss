@@ -1,0 +1,14 @@
+@mixin input-group-variant($color, $bg, $border-color) {
+  .input-group-addon,
+  .form-control {
+    border-color: $border-color;
+  }
+
+  .input-group-addon {
+    color: $color;
+  }
+
+  .form-control:focus {
+    @include box-shadow(0 0 6px 0px rgba($border-color, .75),inset 0 0 6px 0 rgba($border-color, .15));
+  }
+}
