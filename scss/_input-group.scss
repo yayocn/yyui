@@ -18,6 +18,7 @@
   }
 
   .form-control {
+    color: $gray;
     position: relative;
     z-index: 2;
     @if $enable-flex {
@@ -253,5 +254,3 @@
     border-bottom-right-radius: 1000px !important;
   }
 }
-
-//

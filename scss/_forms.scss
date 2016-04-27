@@ -20,13 +20,6 @@
       @include border-radius($input-border-radius-sm); // compass
     }
   }
-
-  .radio input[type="radio"],
-  .radio-inline input[type="radio"],
-  .checkbox input[type="checkbox"],
-  .checkbox-inline input[type="checkbox"] {
-    bottom: .13rem;
-  }
 }
 
 .form-group-lg {
@@ -153,12 +146,50 @@ select.form-control {
   position: relative;
   display: block;
   margin-bottom: $space-base * 2;
+}
 
-  label {
-    padding-left: 1.25rem;
+.radio,
+.checkbox,
+.radio-inline,
+.checkbox-inline {
+  > label {
     margin-bottom: 0;
-    font-weight: normal;
-    //cursor: pointer;
+    color: rgb(68,68,68);
+    font-size: $input-checkbox-font-size;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      top: -1px;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box;
+      vertical-align: middle;
+      border: 1px solid #ccc;
+    }
+  }
+
+  input:not(:disabled) + label:hover:before {
+    border-width: 2px;
+  }
+
+  input:checked + label:before {
+    content: '\2714';
+    font-size: 12px;
+    border: 2px solid #777;
+    color: #333;
+    text-align: center;
+  }
+}
+
+.radio,
+.radio-inline {
+  > label:before {
+    @include border-radius($border-radius-hg);
   }
 }
 
@@ -166,9 +197,7 @@ select.form-control {
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-  position: absolute;
-  left: 0;
-  bottom: .25rem;
+  display: none;
 }
 
 .radio + .radio,
@@ -181,25 +210,36 @@ select.form-control {
 .checkbox-inline {
   position: relative;
   display: inline-block;
-  padding-left: 1.25rem;
   margin-bottom: 0;
   margin-right: .75rem;
   font-weight: normal;
   vertical-align: middle;
-  //cursor: pointer;
 }
+
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
+  margin-left: 15px;
   margin-top: 0;
 }
+
+// Situation
+//
+//
+@include radio-checkbox-variant('primary', $brand-primary);
+@include radio-checkbox-variant('secondary', $brand-secondary);
+@include radio-checkbox-variant('success', $brand-success);
+@include radio-checkbox-variant('info', $brand-info);
+@include radio-checkbox-variant('warning', $brand-warning);
+@include radio-checkbox-variant('danger', $brand-danger);
 
 // switch checkbox
 //
 .checkbox-switch {
   position: relative;
   display: inline-block;
-  width: 4.75rem;
-  height: 2.375rem;
+  vertical-align: middle;
+  width: 3rem;
+  height: 1.5rem;
   margin-bottom: $space-base * 2;
 
   & input[type="checkbox"] {
@@ -214,8 +254,8 @@ select.form-control {
     position: absolute;
     left: 0;
     text-indent: -9999px;
-    width: 4.75rem;
-    height: 2.375rem;
+    width: 3rem;
+    height: 1.5rem;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
@@ -225,11 +265,11 @@ select.form-control {
     background-color: #fff;
     border-radius: 1000px;
     content: "";
-    left: .125rem;
+    left: .12rem;
     position: absolute;
-    top: .125rem;
-    width: 2.125rem;
-    height: 2.125rem;
+    top: 0.08rem;
+    width: 1.375rem;
+    height: 1.375rem;
     -webkit-transition: left 0.3s;
     transition: left 0.3s;
   }
@@ -239,7 +279,7 @@ select.form-control {
   }
 
   & input[type="checkbox"]:checked + label:after {
-    left: 2.5rem;
+    left: 1.6rem;
   }
 
   &.disabled input[type="checkbox"] + label {
@@ -250,6 +290,44 @@ select.form-control {
   &.disabled input[type="checkbox"] + label:after {
     cursor: $cursor-disabled;
     left: .125rem;
+  }
+}
+.checkbox-switch-lg {
+  width: 4rem;
+  height: 2rem;
+
+  & input[type="checkbox"]:checked + label,
+  & input[type="checkbox"]:not(:checked) + label {
+    width: 4rem;
+    height: 2rem;
+  }
+
+  & input[type="checkbox"]:checked + label:after,
+  & input[type="checkbox"]:not(:checked) + label:after {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  & input[type="checkbox"]:checked + label:after {
+    left: 2.1rem;
+  }
+}
+.checkbox-switch-sm {
+  width: 2rem;
+  height: 1rem;
+
+  & input[type="checkbox"]:checked + label,
+  & input[type="checkbox"]:not(:checked) + label {
+    width: 2rem;
+    height: 1rem;
+  }
+
+  & input[type="checkbox"]:checked + label:after,
+  & input[type="checkbox"]:not(:checked) + label:after {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+  & input[type="checkbox"]:checked + label:after {
+    left: 1.1rem;
   }
 }
 

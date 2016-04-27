@@ -10,6 +10,7 @@
   <div class="row">
     <div class="col-xs-12">
       <form action="">
+        <h4>form-control</h4>
         <fieldset class="form-group">
           <label>large</label>
           <input type="text" class="form-control form-control-lg" placeholder="user name"/>
@@ -23,6 +24,7 @@
           <input type="text" class="form-control form-control-sm" placeholder="user name"/>
         </fieldset>
 
+        <h4>form-group</h4>
         <fieldset class="form-group form-group-lg">
           <label>form group large</label>
           <input type="text" class="form-control" placeholder="user name"/>
@@ -51,88 +53,118 @@
         </fieldset>
         <fieldset class="form-group">
           <label>radio</label>
-          <div class="radio ">
-            <label>
-              <input type="radio"  name="radio1"/>默认radio
-            </label>
+          <div class="radio radio">
+            <input id="raido_1_1" type="radio"  name="radio1" checked/>
+            <label for="raido_1_1">默认radio</label>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="radio1"/>This is default redio.
-            </label>
+          <div class="radio radio-primary">
+            <input id="raido_1_2" type="radio"  name="radio1"/>
+            <label for="raido_1_2">radio-primary</label>
+          </div>
+          <div class="radio radio-secondary">
+            <input id="raido_1_3" type="radio"  name="radio1"/>
+            <label for="raido_1_3">radio-secondary</label>
+          </div>
+          <div class="radio radio-success">
+            <input id="raido_1_4" type="radio"  name="radio1"/>
+            <label for="raido_1_4">radio-success</label>
+          </div>
+          <div class="radio radio-info">
+            <input id="raido_1_5" type="radio"  name="radio1"/>
+            <label for="raido_1_5">radio-info</label>
+          </div>
+          <div class="radio radio-warning">
+            <input id="raido_1_6" type="radio"  name="radio1"/>
+            <label for="raido_1_6">radio-warning</label>
+          </div>
+          <div class="radio radio-danger">
+            <input id="raido_1_7" type="radio"  name="radio1"/>
+            <label for="raido_1_7">radio-danger</label>
+          </div>
+          <div class="radio disabled">
+            <input id="raido_1_8" type="radio"  name="radio1" disabled/>
+            <label for="raido_1_8">disabled</label>
           </div>
           <label>inline radio</label>
           <br/>
-          <div class="radio-inline ">
-            <label>
-              <input type="radio"  name="radio2"/>默认radio
-            </label>
+          <div class="radio-inline">
+            <input id="raido_2_1" type="radio"  name="radio2" checked/>
+            <label for="raido_2_1">默认radio</label>
           </div>
           <div class="radio-inline">
-            <label>
-              <input type="radio" name="radio2"/>This is default radio.
-            </label>
+            <input id="raido_2_2" type="radio"  name="radio2"/>
+            <label for="raido_2_2">默认radio</label>
           </div>
         </fieldset>
 
-        <fieldset class="form-group form-group-sm">
-          <label>small radio</label>
-          <div class="radio ">
-            <label>
-              <input type="radio"  name="radio1"/>默认radio
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="radio1"/>This is default redio.
-            </label>
-          </div>
-          <label>inline radio</label>
-          <br/>
-          <div class="radio-inline ">
-            <label>
-              <input type="radio"  name="radio2"/>默认radio
-            </label>
-          </div>
-          <div class="radio-inline">
-            <label>
-              <input type="radio" name="radio2"/>This is default radio.
-            </label>
-          </div>
-        </fieldset>
 
         <fieldset class="form-group">
           <label>checkBox</label>
-          <div class="checkbox ">
-            <label>
-              <input type="checkbox" />默认checkbox
-            </label>
-          </div>
           <div class="checkbox">
-            <label>
-              <input type="checkbox"/>This is default checkbox.
-            </label>
+            <input id="checkbox_1_1" type="checkbox" name="checkbox1" checked/>
+            <label for="checkbox_1_1">默认checkbox</label>
+          </div>
+          <div class="checkbox checkbox-primary">
+            <input id="checkbox_1_2" type="checkbox" name="checkbox1"/>
+            <label for="checkbox_1_2">checkbox-primary</label>
+          </div>
+          <div class="checkbox checkbox-secondary">
+            <input id="checkbox_1_3" type="checkbox" name="checkbox1"/>
+            <label for="checkbox_1_3">checkbox-secondary</label>
+          </div>
+          <div class="checkbox checkbox-success">
+            <input id="checkbox_1_4" type="checkbox" name="checkbox1"/>
+            <label for="checkbox_1_4">checkbox-success</label>
+          </div>
+          <div class="checkbox checkbox-info">
+            <input id="checkbox_1_5" type="checkbox" name="checkbox1"/>
+            <label for="checkbox_1_5">checkbox-info</label>
+          </div>
+          <div class="checkbox checkbox-warning">
+            <input id="checkbox_1_6" type="checkbox" name="checkbox1"/>
+            <label for="checkbox_1_6">checkbox-warning</label>
+          </div>
+          <div class="checkbox checkbox-danger">
+            <input id="checkbox_1_7" type="checkbox" name="checkbox1"/>
+            <label for="checkbox_1_7">checkbox-danger</label>
+          </div>
+          <div class="checkbox disabled">
+            <input id="checkbox_1_8" type="checkbox" name="checkbox1" disabled/>
+            <label for="checkbox_1_8">disabled</label>
           </div>
           <label>inline checkBox</label>
           <br/>
-          <div class="checkbox-inline disabled">
-            <label>
-              <input type="checkbox" disabled/>默认checkbox
-            </label>
+          <div class="checkbox-inline">
+            <input id="checkbox_2_1" type="checkbox" name="checkbox2" checked/>
+            <label for="checkbox_2_1">默认checkbox</label>
           </div>
           <div class="checkbox-inline">
-            <label>
-              <input type="checkbox"/>This is default checkbox.
-            </label>
+            <input id="checkbox_2_2" type="checkbox" name="checkbox2"/>
+            <label for="checkbox_2_2">默认checkbox</label>
           </div>
           <br/>
-          <div class="checkbox-switch">
+          <h4>checkbox-switch-lg</h4>
+          <div class="checkbox-switch checkbox-switch-lg">
             <input id="example1" type="checkbox" checked>
             <label for="example1">Check</label>
           </div>
-          <div class="checkbox-switch disabled">
-            <input id="example2" type="checkbox" disabled>
+          <br/>
+          <label>checkbox-switch</label><br/>
+          <div class="checkbox-switch">
+            <input id="example2" type="checkbox" checked>
             <label for="example2">Check</label>
+          </div>
+          <br/>
+          <label>checkbox-switch-sm</label><br/>
+          <div class="checkbox-switch checkbox-switch-sm">
+            <input id="example3" type="checkbox" checked>
+            <label for="example3">Check</label>
+          </div>
+          <br/>
+          <label>disabled</label><br/>
+          <div class="checkbox-switch disabled">
+            <input id="example10" type="checkbox" disabled>
+            <label for="example10">Check</label>
           </div>
         </fieldset>
 
