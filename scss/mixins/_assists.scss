@@ -119,12 +119,18 @@
 //
 
 @mixin bg-variant($parent, $color) {
-  #{$parent} {
-    background-color: $color;
-  }
-  a#{$parent} {
-    @include hover-focus {
-      background-color: darken($color, 10%);
+  @if $color == 'transparent' {
+    #{$parent} {
+      background: $color;
+    }
+  } @else {
+    #{$parent} {
+      background-color: $color;
+    }
+    a#{$parent} {
+      @include hover-focus {
+        background-color: darken($color, 10%);
+      }
     }
   }
 }

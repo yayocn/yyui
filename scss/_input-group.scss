@@ -29,10 +29,6 @@
     }
     margin-bottom: 0;
   }
-
-  > *:not(:first-child) {
-    margin-left: -1px;
-  }
 }
 
 .input-group-addon,
@@ -186,7 +182,7 @@
   &:first-child {
     > .btn,
     > .btn-group {
-      margin-right: -1px;
+      margin-right: -2px;
     }
   }
   &:last-child {

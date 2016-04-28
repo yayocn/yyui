@@ -114,8 +114,8 @@ button.close {
 .text-warning { color: $brand-warning !important;}
 .text-danger { color: $brand-danger !important;}
 .text-muted { color: $text-muted !important;}
-.text-black { color: $gray-dark !important;}
-.text-white { color: $gray-lightest !important;}
+.text-dark { color: $gray-dark !important;}
+.text-light { color: $gray-lightest !important;}
 
 
 //
@@ -129,8 +129,9 @@ button.close {
 @include bg-variant('.bg-warning', $brand-warning);
 @include bg-variant('.bg-danger', $brand-danger);
 @include bg-variant('.bg-muted', $text-muted);
-@include bg-variant('.bg-black', $gray-dark);
-@include bg-variant('.bg-white', $gray-lightest);
+@include bg-variant('.bg-dark', $gray-dark);
+@include bg-variant('.bg-light', $gray-lightest);
+@include bg-variant('.bg-perspective', 'transparent');
 
 
 //

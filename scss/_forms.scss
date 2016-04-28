@@ -330,6 +330,13 @@ select.form-control {
     left: 1.1rem;
   }
 }
+// Situation
+//
+@include checkbox-switch-variant('secondary',$brand-secondary);
+@include checkbox-switch-variant('success',$brand-success);
+@include checkbox-switch-variant('info',$brand-info);
+@include checkbox-switch-variant('warning',$brand-warning);
+@include checkbox-switch-variant('danger',$brand-danger);
 
 // Disabled
 //
@@ -356,13 +363,40 @@ input[type="checkbox"] {
 }
 
 //
+// File upload
+//
+.form-file {
+  position: relative;
+  input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    background-color: transparent;
+  }
+  .file-surface {
+    width: 100%;
+    padding: .37rem .75rem;
+    background-color: $brand-primary;
+    @if $enable-rounded {
+      @include border-radius($border-radius);
+    }
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;//
+  }
+}
+
+// Situation
+//
+
+//
 // Form status
-// success, wraning and error
+// success, warning and error
 
 // Form control status
 // this status can't influence the lable of this group.
 .form-control-success,
-.form-control-wraning,
+.form-control-warning,
 .form-control-error {
   padding-right: ($input-padding-x * 3);
   background-position: center right ($input-height * .25);
@@ -374,17 +408,19 @@ input[type="checkbox"] {
   @include form-control-status(success, $brand-success);
   background-image: url($form-icon-success);
 }
-.form-control-wraning {
+.form-control-warning {
+  @include form-control-status(warning, $brand-warning);
   background-image: url($form-icon-warning);
 }
 .form-control-error {
+  @include form-control-status(error, $brand-danger);
   background-image: url($form-icon-error);
 }
 
 // Form group status {
 //
 .form-group-success,
-.form-group-wraning,
+.form-group-warning,
 .form-group-error {
   .form-control {
     padding-right: ($input-padding-x * 3);
@@ -402,7 +438,7 @@ input[type="checkbox"] {
   }
 }
 
-.form-group-wraning {
+.form-group-warning {
   color: $brand-warning;
   @include form-group-status(warning, $brand-warning);
 

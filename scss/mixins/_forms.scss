@@ -13,6 +13,7 @@
 @mixin form-control-status($state, $color) {
   // Color the label and help text
   & {
+    background-repeat: no-repeat;
     border-color: $color;
     &:focus {
       border-color: darken($color, 10%);
@@ -142,4 +143,14 @@
      color: #fff;
    }
  }
+}
+
+// Checkbox-switch situations
+//
+@mixin checkbox-switch-variant($name, $color) {
+  .checkbox-switch-#{$name} {
+    & input[type="checkbox"]:checked + label {
+      background-color: $color;
+    }
+  }
 }
