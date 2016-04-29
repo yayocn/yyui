@@ -127,10 +127,10 @@
         <input type="text" class="form-control"/>
       </div>
       <h4>underline</h4>
-      <div class="input-group input-group-primary input-group-underline">
+      <div class="input-group input-group-underline">
         <input type="text" class="form-control"/>
         <div class="input-group-btn">
-          <button class="btn btn-primary-outline"><i class="fa fa-search"></i></button>
+          <button class="btn btn-default-outline"><i class="fa fa-search"></i></button>
         </div>
       </div>
       <br/>
@@ -142,17 +142,27 @@
         </div>
       </div>
       <br/>
+      <h4>circle</h4>
+      <div class="input-group input-group-primary input-group-circle">
+        <input type="text" class="form-control"/>
+        <div class="input-group-btn">
+          <button class="btn btn-primary-outline"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+      <br/>
       <h4>下拉</h4>
       <div class="input-group">
         <div class="input-group-btn">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle dropdown-toggle-hover">dropdown</button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item disabled">Action</li>
+              <li class="dropdown-item"><a href="javascript:;">Another action</a></li>
+              <li class="dropdown-header">Another action</li>
+              <a class="dropdown-item" href="javascript:;">Something else here</a>
+              <li><a class="dropdown-item" href="javascript:;">Separated link</a></li>
+            </ul>
+          </div>
         </div>
         <input type="text" class="form-control"/>
       </div>

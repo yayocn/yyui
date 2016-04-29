@@ -180,12 +180,15 @@
   }
 
   &:first-child {
+    > .dropdown,
     > .btn,
     > .btn-group {
       margin-right: -2px;
     }
   }
+
   &:last-child {
+    > .dropdown,
     > .btn,
     > .btn-group {
       z-index: 2;
@@ -239,6 +242,21 @@
 // Round
 //
 .input-group-round {
+  > :first-child {
+    border-top-left-radius: $border-radius !important;
+    border-bottom-left-radius: $border-radius !important;
+  }
+
+  > :last-child,
+  > :last-child * {
+    border-top-right-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
+  }
+}
+
+// Circle
+//
+.input-group-circle {
   > :first-child {
     border-top-left-radius: 1000px !important;
     border-bottom-left-radius: 1000px !important;

@@ -477,11 +477,12 @@ $navbar-light-disabled-color:       rgba(0,0,0,.15);
 // Navs
 //
 
-$nav-link-padding:                          .5em 1em !default;
-$nav-link-hover-bg:                         $gray-lighter !default;
+$nav-active-color:                          #fff !default;
+$nav-active-bg:                             $brand-primary !default;
+$nav-active-border-color:                   $brand-primary !default;
 
-$nav-disabled-link-color:                   $gray-light !default;
-$nav-disabled-link-hover-color:             $gray-light !default;
+$nav-disabled-color:                        #ccc !default;
+$nav-disabled-hover-color:                  #ddd !default;
 
 $nav-tabs-border-color:                     #ddd !default;
 
@@ -503,9 +504,11 @@ $nav-pills-active-link-hover-color:         $gray !default;
 $breadcrumb-padding-vertical:   .75rem !default;
 $breadcrumb-padding-horizontal: 1rem !default;
 
-$breadcrumb-bg:                 $gray-lighter !default;
-$breadcrumb-divider-color:      $gray-light !default;
-$breadcrumb-active-color:       $gray-light !default;
+$breadcrumb-color:              #999 !default;
+$breadcrumb-bg:                 $gray-lightest !default;
+$breadcrumb-divider-color:      #ccc !default;
+$breadcrumb-active-color:       #aaa !default;
+$breadcrumb-hover-color:        #777 !default;
 $breadcrumb-divider:            "/" !default;
 
 // Pagination

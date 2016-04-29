@@ -14,7 +14,6 @@
 
   > li {
     display: inline-block;
-
     + li:before {
       $nbsp: "\00a0";
       padding-right: .5rem;
@@ -24,7 +23,13 @@
     }
   }
 
-  > .active {
-    color: $breadcrumb-active-color;
+  a {
+    color: $breadcrumb-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $breadcrumb-hover-color;
+    }
   }
+
 }
