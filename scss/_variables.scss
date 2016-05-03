@@ -476,18 +476,21 @@ $navbar-light-disabled-color:       rgba(0,0,0,.15);
 //
 // Navs
 //
+$nav-default-color:                         $gray-dark !default;
+$nav-default-bg:                            #fff !default;
 
-$nav-active-color:                          #fff !default;
-$nav-active-bg:                             $brand-primary !default;
-$nav-active-border-color:                   $brand-primary !default;
+$nav-active-color:                          $gray !default;
+$nav-active-bg:                             $gray-lighter !default;
+$nav-active-border-color:                   $nav-active-bg !default;
 
 $nav-disabled-color:                        #ccc !default;
 $nav-disabled-hover-color:                  #ddd !default;
 
+$nav-link-padding:                          .5em 1em !default;
+$nav-link-hover-bg:                         $gray-lighter !default;
+
 $nav-tabs-border-color:                     #ddd !default;
-
 $nav-tabs-link-hover-border-color:          $gray-lighter !default;
-
 $nav-tabs-active-link-hover-bg:             $body-bg !default;
 $nav-tabs-active-link-hover-color:          $gray !default;
 $nav-tabs-active-link-hover-border-color:   #ddd !default;
@@ -495,9 +498,12 @@ $nav-tabs-active-link-hover-border-color:   #ddd !default;
 $nav-tabs-justified-link-border-color:            #ddd !default;
 $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
-$nav-pills-border-radius:                   $border-radius !default;
-$nav-pills-active-link-hover-bg:            $gray-lighter !default;
-$nav-pills-active-link-hover-color:         $gray !default;
+$nav-pills-color:                           $brand-primary;
+$nav-pills-hover-color:                     darken($brand-primary, 10%) !default;
+$nav-pills-hover-bg:                        $gray-lighter !default;
+$nav-pills-active-color:                    #fff !default;
+$nav-pills-active-border-color:             $brand-primary !default;
+$nav-pills-active-bg:                       $brand-primary !default;
 
 // Breadcrumbs
 
@@ -575,15 +581,15 @@ $jumbotron-bg:                   $gray-lighter !default;
 //
 // Define alert colors, border radius, and padding.
 
-$alert-padding:               15px !default;
-$alert-padding-sm:            10px !default;
-$alert-padding-xs:            6px !default;
+$alert-padding:               10px !default;
 $alert-border-radius:         $border-radius !default;
 $alert-link-font-weight:      bold !default;
-$alert-size-sm:               .85rem;
-$alert-close-size-sm:         1.6rem;
-$alert-size-xs:               .75rem;
-$alert-close-size-xs:         1.5rem;
+$alert-padding-lg:            15px !default;
+$alert-size-lg:               1rem;
+$alert-close-size-lg:         1.8rem;
+$alert-padding-sm:            6px !default;
+$alert-size-sm:               .75rem;
+$alert-close-size-sm:         1.5rem;
 
 $alert-success-bg:            $state-success-bg !default;
 $alert-success-text:          $state-success-text !default;
