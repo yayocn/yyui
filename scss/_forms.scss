@@ -102,7 +102,6 @@
 .form-group > label {
   display: inline-block;
   font-weight: 700;
-  margin-bottom: 5px;
   max-width: 100%;
 }
 
@@ -238,8 +237,8 @@ select.form-control {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 3rem;
-  height: 1.5rem;
+  width: 48px;
+  height: 24px;
   margin-bottom: $space-base * 2;
 
   & input[type="checkbox"] {
@@ -254,8 +253,8 @@ select.form-control {
     position: absolute;
     left: 0;
     text-indent: -9999px;
-    width: 3rem;
-    height: 1.5rem;
+    width: 48px;
+    height: 24px;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
@@ -265,11 +264,11 @@ select.form-control {
     background-color: #fff;
     border-radius: 1000px;
     content: "";
-    left: .12rem;
+    left: 1px;
     position: absolute;
-    top: 0.08rem;
-    width: 1.375rem;
-    height: 1.375rem;
+    top: 1px;
+    width: 22px;
+    height: 22px;
     -webkit-transition: left 0.3s;
     transition: left 0.3s;
   }
@@ -279,7 +278,7 @@ select.form-control {
   }
 
   & input[type="checkbox"]:checked + label:after {
-    left: 1.6rem;
+    left: 25px;
   }
 
   &.disabled input[type="checkbox"] + label {
@@ -289,45 +288,45 @@ select.form-control {
 
   &.disabled input[type="checkbox"] + label:after {
     cursor: $cursor-disabled;
-    left: .125rem;
+    left: 1px;
   }
 }
 .checkbox-switch-lg {
-  width: 4rem;
-  height: 2rem;
+  width: 64px;
+  height: 32px;
 
   & input[type="checkbox"]:checked + label,
   & input[type="checkbox"]:not(:checked) + label {
-    width: 4rem;
-    height: 2rem;
+    width: 64px;
+    height: 32px;
   }
 
   & input[type="checkbox"]:checked + label:after,
   & input[type="checkbox"]:not(:checked) + label:after {
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 30px;
+    height: 30px;
   }
   & input[type="checkbox"]:checked + label:after {
-    left: 2.1rem;
+    left: 33px;
   }
 }
 .checkbox-switch-sm {
-  width: 2rem;
-  height: 1rem;
+  width: 32px;
+  height: 16px;
 
   & input[type="checkbox"]:checked + label,
   & input[type="checkbox"]:not(:checked) + label {
-    width: 2rem;
-    height: 1rem;
+    width: 32px;
+    height: 16px;
   }
 
   & input[type="checkbox"]:checked + label:after,
   & input[type="checkbox"]:not(:checked) + label:after {
-    width: 0.875rem;
-    height: 0.875rem;
+    width: 14px;
+    height: 14px;
   }
   & input[type="checkbox"]:checked + label:after {
-    left: 1.1rem;
+    left: 17px;
   }
 }
 // Situation
@@ -369,11 +368,13 @@ input[type="checkbox"] {
   position: relative;
   input[type="file"] {
     position: absolute;
+    height: 100%;
     opacity: 0;
     background-color: transparent;
   }
   .file-surface {
     width: 100%;
+    height: 100%;
     padding: .37rem .75rem;
     background-color: $brand-primary;
     @if $enable-rounded {
