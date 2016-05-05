@@ -5,57 +5,85 @@
 
 .navbar {
   position: relative;
-  padding: $navbar-padding-vertical 0;
-  background-color: $navbar-bg;
-  @include clearfix();
+  padding: $navbar-padding-y $navbar-padding-x;
+  background-color: $navbar-light-bg;
+  @include clearfix;
+
+  @include media-breakpoint-up(sm) {
+    @if $enable-rounded {
+      @include border-radius($navbar-border-radius);
+    }
+  }
+
+  a {
+    border: none ;
+    &:hover {
+      border: none ;
+    }
+  }
 }
 
-.navbar-primary{
-  background-color: $brand-primary;
-  color: $component-active-color;
+// Navbar collapse
+//
+.navbar-collapse {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
 
-  .navbar-brand {
-    color: $component-active-color;
+// navbar nav
+//
+.navbar-nav {
+  li,
+  li:hover  {
+    border: none !important;
   }
 
-  @include media-breakpoint-down(sm) {
-    .nav-item:not(:last-child) {
-      border-bottom: 1px solid #ccc;
-    }
-
-    .navbar-form {
-      padding: 0;
-    }
-  }
-  .nav-item {
-
+  > li {
     > a {
-      color: inherit;
-    }
-
-    .nav-link {
-      @include hover-focus {
-        background-color: darken($brand-primary, 10%);
+      background-color: $navbar-light-bg;
+      color: $navbar-light-color;
+      font-weight: 400;
+      &:hover {
+        color: $navbar-light-hover-color;
       }
     }
   }
+}
 
+//
+// Brand/project name
+//
 
-  .dropdown.active .nav-link {
-    color: $component-active-color !important;
+.navbar-brand {
+  float: left;
+  margin-right: 1rem;
+  padding-top:    .25rem;
+  padding-bottom: .25rem;
+  background-color: $navbar-light-bg;
+  color: $navbar-light-color;
+  font-size: $navbar-brand-font-size;
+  font-weight: $navbar-brand-font-weight;
+
+  @include hover-focus {
+    text-decoration: none;
+    color:　$navbar-light-hover-color;
   }
 
-  .dropdown-toggle:after {
-    border-top-color: #fff !important;
-  }
-  .dropdown.up .dropdown-toggle:after {
-    border-bottom-color: #fff !important;
+  > img {
+    display: block;
   }
 }
 
-// Fixed
-// Fix the top/bottom navbars when screen real estate supports it
 //
+// Position
+// Fix the top/bottom navbars when screen real estate supports it
+
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
@@ -64,11 +92,8 @@
   z-index: $zindex-navbar-fixed;
   margin-bottom: 0;
 
-  // Undo the rounded corners
   @include media-breakpoint-up(sm) {
-    @if $enable-rounded {
-      @include border-radius(0);
-    }
+    @include border-radius(0);
   }
 }
 
@@ -80,212 +105,42 @@
   bottom: 0;
 }
 
-.navbar-brand {
-  float: left;
-  margin-right: 1rem;
-  padding-top:    .25rem;
-  padding-bottom: .25rem;
-  font-size: $font-size-lg;
-  color: $gray-light;
-  font-weight: bold;
-
-  @include hover-focus {
-    color: lighten($gray-light, 10%);
-    text-decoration: none;
-  }
-
-  > img {
-    display: block;
-    max-width: 100%;
-  }
-}
-
 .navbar-sticky-top {
-  position: -webkit-sticky;
-  position:sticky;
+  position: sticky;
   top: 0;
   z-index: $zindex-navbar-sticky;
   width: 100%;
 
-  // Undo the rounded corners
   @include media-breakpoint-up(sm) {
     @include border-radius(0);
   }
 }
 
-.navbar-divider {
-  float: left;
-  width: 1px;
-  padding-top: .425rem;
-  padding-bottom: .425rem;
-  overflow: hidden;
-  margin-left:  $navbar-padding-horizontal;
-  margin-right: $navbar-padding-horizontal;
 
-  &:before {
-    content: '\00a0';
-  }
-}
-
-// Navigation
+// navbar-dark
 //
-// Custom navbar navigation built on the base `.nav` styles.
-
-.navbar-nav {
-  .nav-item {
-    float: left;
-  }
-
-  .nav-link {
-    display: block;
-    padding: .425rem $space-base * 3;
-
-    + .nav-link {
-      margin-left: 1rem;
-    }
-  }
-
-  .nav-item + .nav-item {
-    margin-left: 1rem;
-  }
-}
-
-.navbar-form {
-  width: auto;
-  padding-left: $space-base * 3;
-  padding-right: $space-base * 3;
-}
-
-.navbar-collapse {
-  display: none;
-  @include media-breakpoint-up(md) {
-    display: block;
-  }
-
-  @include media-breakpoint-down(sm) {
-    &.in {
-      display: block;
-
-      .navbar-nav,
-      .dropdown-menu,
-      .navbar-form,
-      .nav-item {
-        float: none;
-        width: 100%;
-      }
-
-      .nav-item + .nav-item {
-        margin-left: 0px;
-      }
-    }
-  }
-}
-
-// Navbar toggle
-//
-// Custom button for toggling the `.navbar-collapse`, powered by the collapse
-// Bootstrap JavaScript plugin.
-
-.navbar-toggle {
-  display: block;
-  float: right;
-  padding: .5rem .75rem;
-  font-size: $font-size-lg;
-  line-height: 1;
-  background: none;
-  box-shadow: none;
-  border: $border-width solid #ccc;
-
-  @if $enable-rounded {
-    @include border-radius($border-radius);
-  }
-
-  @include hover {
-    text-decoration: none;
-    background-color: rgba(0,0,0, .1);
-  }
-
-  @include focus-none();
-
-  @include media-breakpoint-up(md) {
-    display: none;
-  }
-}
-
-
-// Dark
 //
 .navbar-dark {
   background-color: $navbar-dark-bg;
 
-  .navbar-toggle,
   .navbar-brand {
     color: $navbar-dark-color;
-
+    background-color: $navbar-dark-bg;
     @include hover-focus {
-      color: lighten($navbar-dark-color, 10%);
+      color: $navbar-dark-active-color;
     }
   }
 
   .navbar-nav {
-    .nav-link {
-      color: $navbar-dark-color;
-
-      @include hover-focus {
-        color: $navbar-dark-hover-color;
-        background-color: $navbar-dark-hover-bg;
-      }
-    }
-
-    .active > .nav-link,
-    .nav-link.active {
-      @include plain-hover-focus {
-        color: $navbar-dark-active-color;
-      }
-    }
-  }
-
-  .dropdown {
-    &.active,
-    &:hover,
-    &:focus {
-      .dropdown-toggle {
-        background-color: $navbar-dark-hover-bg;
-
-        &:after {
-          border-top-color: $navbar-dark-active-color;
+    > li {
+      > a {
+        background-color: $navbar-dark-bg;
+        color: $navbar-dark-color;
+        &:hover {
+          color: $navbar-dark-hover-color;
         }
       }
     }
-
-    &.up {
-      .dropdown-toggle {
-        &:after {
-          border-bottom-color: $navbar-dark-color;
-        }
-      }
-
-      &.active,
-      &:hover,
-      &:focus {
-        .dropdown-toggle {
-          &:after {
-            border-bottom-color: $navbar-dark-active-color;
-          }
-        }
-      }
-    }
-  }
-
-  .dropdown-toggle {
-    &:after {
-      border-top-color: $navbar-dark-color;
-    }
-  }
-
-  .navbar-divider {
-    background-color: rgba(255,255,255,.075);
   }
 }
-
 
