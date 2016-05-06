@@ -16,10 +16,37 @@
   }
 
   a {
-    border: none ;
+    border: none;
+    color: $navbar-light-color;
     &:hover {
-      border: none ;
+      color: $navbar-light-hover-color;
+      border: none;
     }
+  }
+}
+
+// Navbar toggle
+//
+// Custom button for toggling the `.navbar-collapse`, powered by the collapse
+
+.navbar-toggle {
+  float: right;
+  display: none;
+  padding: .5rem .75rem;
+  line-height: 1;
+  background: none;
+  border: 1px solid transparent;
+  color: $navbar-light-color;
+  font-size: $font-size-lg;
+  @include border-radius($border-radius);
+
+  @include hover-focus-active {
+    text-decoration: none;
+    outline: none;
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: block;
   }
 }
 
@@ -33,6 +60,10 @@
   }
   &:after {
     clear: both;
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: none;
   }
 }
 
@@ -66,13 +97,11 @@
   padding-top:    .25rem;
   padding-bottom: .25rem;
   background-color: $navbar-light-bg;
-  color: $navbar-light-color;
   font-size: $navbar-brand-font-size;
   font-weight: $navbar-brand-font-weight;
 
   @include hover-focus {
     text-decoration: none;
-    color:　$navbar-light-hover-color;
   }
 
   > img {
@@ -131,6 +160,10 @@
     }
   }
 
+  .navbar-toggle {
+    color: $navbar-dark-color;
+  }
+
   .navbar-nav {
     > li {
       > a {
@@ -138,6 +171,61 @@
         color: $navbar-dark-color;
         &:hover {
           color: $navbar-dark-hover-color;
+        }
+      }
+    }
+  }
+}
+
+//
+// Transparent navbar
+//
+.navbar-perspective {
+  background-color: $navbar-perspective-bg !important;
+
+  .navbar-brand {
+    background-color: $navbar-perspective-bg !important;
+  }
+
+  .navbar-nav {
+    > li {
+      background-color: $navbar-perspective-bg !important;
+      > a {
+        background-color: $navbar-perspective-bg !important;
+        &:hover {
+          background-color: $navbar-perspective-bg !important;
+        }
+      }
+    }
+  }
+}
+
+//
+// Theme navbar
+//
+
+.navbar-theme {
+  background-color: $navbar-theme-bg;
+
+  .navbar-brand {
+    color: $navbar-theme-color;
+    background-color: $navbar-theme-bg;
+    @include hover-focus {
+      color: $navbar-theme-hover-color;
+    }
+  }
+
+  .navbar-toggle {
+    color: $navbar-theme-color;
+  }
+
+  .navbar-nav {
+    > li {
+      > a {
+        background-color: $navbar-theme-bg;
+        color: $navbar-theme-color;
+        &:hover {
+          color: $navbar-theme-hover-color;
         }
       }
     }
