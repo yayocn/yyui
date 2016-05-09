@@ -455,39 +455,55 @@ $thumbnail-border-radius:     $border-radius !default;
 //
 // Navbar
 //
-$navbar-bg:                         #fff !default;
-
-$navbar-border-radius:              $border-radius !default;
-$navbar-padding-horizontal:         $space-default !default;
-$navbar-padding-vertical:           ($space-default / 2) !default;
-
-$navbar-dark-color:                 rgba(255,255,255,.8);
-$navbar-dark-bg:                    rgba(0,0,0,.9);
-$navbar-dark-hover-color:           rgba(0,0,0, .85);
-$navbar-dark-active-color:          rgba(0,0,0, .85);
-$navbar-dark-hover-bg:              rgba(255,255,255,1);
-$navbar-dark-disabled-color:        rgba(255,255,255,.25);
-
-$navbar-light-color:                rgba(0,0,0,.3);
+$navbar-light-bg:                   #fff !default;
+$navbar-light-color:                rgba(0,0,0,.4);
 $navbar-light-hover-color:          rgba(0,0,0,.6);
 $navbar-light-active-color:         rgba(0,0,0,.8);
 $navbar-light-disabled-color:       rgba(0,0,0,.15);
+$navbar-light-toggle-border:        #ddd;
+$navbar-light-toggle-hover-bg:      #ccc;
+$navbar-light-toggle-active-bg:     $navbar-light-toggle-hover-bg;
+
+$navbar-brand-font-size:            $font-size-lg;
+$navbar-brand-font-weight:          600;
+
+$navbar-border-radius:              $border-radius !default;
+$navbar-padding-x:                  $space-base * 2 !default;
+$navbar-padding-y:                  $space-base !default;
+
+$navbar-dark-bg:                   #333 !default;
+$navbar-dark-color:                #999;
+$navbar-dark-hover-color:          #ccc;
+$navbar-dark-active-color:         #f5f5f5;
+$navbar-dark-disabled-color:       #ccc;
+
+$navbar-theme-bg:                  #fff !default;
+$navbar-theme-color:               #2EC6A0 !default;
+$navbar-theme-hover-color:         darken($navbar-theme-color, 5%) !default;
+$navbar-theme-active-color:        #fff !default;
+$navbar-theme-active-bg:           $navbar-theme-color !default;
+$navbar-dark-disabled-color:       lighter($navbar-theme-color, 10%) !default;
+
+$navbar-perspective-bg:            transparent !default;
 
 //
 // Navs
 //
+$nav-default-color:                         $gray-dark !default;
+$nav-default-bg:                            #fff !default;
 
-$nav-active-color:                          #fff !default;
-$nav-active-bg:                             $brand-primary !default;
-$nav-active-border-color:                   $brand-primary !default;
+$nav-active-color:                          $gray !default;
+$nav-active-bg:                             $gray-lighter !default;
+$nav-active-border-color:                   $nav-active-bg !default;
 
 $nav-disabled-color:                        #ccc !default;
 $nav-disabled-hover-color:                  #ddd !default;
 
+$nav-link-padding:                          .5em 1em !default;
+$nav-link-hover-bg:                         $gray-lighter !default;
+
 $nav-tabs-border-color:                     #ddd !default;
-
 $nav-tabs-link-hover-border-color:          $gray-lighter !default;
-
 $nav-tabs-active-link-hover-bg:             $body-bg !default;
 $nav-tabs-active-link-hover-color:          $gray !default;
 $nav-tabs-active-link-hover-border-color:   #ddd !default;
@@ -495,9 +511,12 @@ $nav-tabs-active-link-hover-border-color:   #ddd !default;
 $nav-tabs-justified-link-border-color:            #ddd !default;
 $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
-$nav-pills-border-radius:                   $border-radius !default;
-$nav-pills-active-link-hover-bg:            $gray-lighter !default;
-$nav-pills-active-link-hover-color:         $gray !default;
+$nav-pills-color:                           $brand-primary;
+$nav-pills-hover-color:                     darken($brand-primary, 10%) !default;
+$nav-pills-hover-bg:                        $gray-lighter !default;
+$nav-pills-active-color:                    #fff !default;
+$nav-pills-active-border-color:             $brand-primary !default;
+$nav-pills-active-bg:                       $brand-primary !default;
 
 // Breadcrumbs
 
@@ -575,15 +594,15 @@ $jumbotron-bg:                   $gray-lighter !default;
 //
 // Define alert colors, border radius, and padding.
 
-$alert-padding:               15px !default;
-$alert-padding-sm:            10px !default;
-$alert-padding-xs:            6px !default;
+$alert-padding:               10px !default;
 $alert-border-radius:         $border-radius !default;
 $alert-link-font-weight:      bold !default;
-$alert-size-sm:               .85rem;
-$alert-close-size-sm:         1.6rem;
-$alert-size-xs:               .75rem;
-$alert-close-size-xs:         1.5rem;
+$alert-padding-lg:            15px !default;
+$alert-size-lg:               1rem;
+$alert-close-size-lg:         1.8rem;
+$alert-padding-sm:            6px !default;
+$alert-size-sm:               .75rem;
+$alert-close-size-sm:         1.5rem;
 
 $alert-success-bg:            $state-success-bg !default;
 $alert-success-text:          $state-success-text !default;

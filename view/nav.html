@@ -23,13 +23,20 @@
           <li><a href="javascript:;">Item</a></li>
           <li><a href="javascript:;">Item</a></li>
         </ul>
+        <h4>胶囊导航</h4>
+        <ul class="nav nav-pills">
+          <li class="active"><a href="javascript:;">Item</a></li>
+          <li class="disabled"><a href="javascript:;">Item</a></li>
+          <li><a href="javascript:;">Item</a></li>
+          <li><a href="javascript:;">Item</a></li>
+        </ul>
         <h4>带下拉框</h4>
         <ul class="nav">
           <li><a href="javascript:;">Item</a></li>
           <li><a href="javascript:;">Item</a></li>
           <li><a href="javascript:;">Item</a></li>
           <li class="dropdown">
-            <a class="btn btn-primary-outline dropdown-toggle" href="javascript:;">dropdown</a>
+            <a class="btn dropdown-toggle" href="javascript:;">dropdown</a>
             <ul class="dropdown-menu">
               <li class="dropdown-item"><a href="javascript:;">item</a></li>
               <li class="dropdown-item"><a href="javascript:;">item</a></li>
@@ -43,7 +50,7 @@
           <li><a href="javascript:;">Item</a></li>
           <li><a href="javascript:;">Item</a></li>
           <li class="dropdown">
-            <a class="btn btn-primary-outline dropdown-toggle" href="javascript:;">dropdown</a>
+            <a class="btn dropdown-toggle" href="javascript:;">dropdown</a>
             <ul class="dropdown-menu">
               <li class="dropdown-item"><a href="javascript:;">item</a></li>
               <li class="dropdown-item"><a href="javascript:;">item</a></li>
@@ -51,21 +58,47 @@
             </ul>
           </li>
         </ul>
-        <!--<h4>nav-tabs</h4>-->
-        <!--<div>-->
-          <!--<ul class="nav nav-tabs" id="nav">-->
-            <!--<li class="nav-item active"><a class="nav-link" href="#a" data-toggle="tab">Item</a></li>-->
-            <!--<li class="nav-item"><a class="nav-link" href="#b" data-toggle="tab">Item</a></li>-->
-            <!--<li class="nav-item"><a class="nav-link" href="#c" data-toggle="tab">Item</a></li>-->
-            <!--<li class="nav-item"><a class="nav-link" href="#d" data-toggle="tab">Item</a></li>-->
-          <!--</ul>-->
-          <!--<div class="tab-content">-->
-            <!--<div class="tab-pane active" style="background-color: red" id="a"></div>-->
-            <!--<div class="tab-pane" style="background-color: blue" id="b"></div>-->
-            <!--<div class="tab-pane" style="background-color: darkblue;" id="c"></div>-->
-            <!--<div class="tab-pane" style="background-color: pink;" id="d"></div>-->
-          <!--</div>-->
-        <!--</div>-->
+        <h4>nav-tabs</h4>
+        <div>
+          <ul class="nav nav-tabs" id="nav1">
+            <li class="nav-item"><a class="active" href="#a2" data-toggle="tab">Item</a></li>
+            <li class="nav-item"><a href="#b2" data-toggle="tab">Item</a></li>
+            <li class="nav-item"><a href="#c2" data-toggle="tab">Item</a></li>
+            <li class="nav-item dropdown">
+              <a class="btn dropdown-toggle" href="javascript:;">dropdown</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="javascript:;">item</a></li>
+                <li class="dropdown-item"><a href="javascript:;">item</a></li>
+                <li class="dropdown-item"><a href="javascript:;">item</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" style="background-color: red" id="a2"></div>
+            <div class="tab-pane" style="background-color: blue" id="b2"></div>
+            <div class="tab-pane" style="background-color: darkblue;" id="c2"></div>
+            <div class="tab-pane" style="background-color: pink;" id="d2"></div>
+          </div>
+        </div>
+        <h4>nav-tabs nav-vt</h4>
+        <div class="row">
+          <div class="col-sm-2 p-r-0">
+            <ul class="nav nav-tabs nav-vt" id="nav2">
+              <li class="nav-item"><a class="active" href="#a" data-toggle="tab">Item</a></li>
+              <li class="nav-item"><a href="#b" data-toggle="tab">Item</a></li>
+              <li class="nav-item"><a href="#c" data-toggle="tab">Item</a></li>
+              <li class="nav-item"><a href="#d" data-toggle="tab">Item</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-10 p-l-0">
+            <div class="tab-content">
+              <div class="tab-pane active" style="background-color: red" id="a"></div>
+              <div class="tab-pane" style="background-color: blue" id="b"></div>
+              <div class="tab-pane" style="background-color: darkblue;" id="c"></div>
+              <div class="tab-pane" style="background-color: pink;" id="d"></div>
+            </div>
+          </div>
+        </div>
 
         <!--<h4>nav-pills</h4>-->
         <!--<ul class="nav nav-pills">-->

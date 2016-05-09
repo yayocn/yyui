@@ -7,6 +7,7 @@
   padding: $alert-padding;
   margin-bottom: $space-y;
   border: 1px solid transparent;
+  font-size: .85rem;
 
   @if $enable-rounded {
     @include border-radius($alert-border-radius);
@@ -37,7 +38,7 @@
     top: -2px;
     right: -21px;
     color: inherit;
-    font-size: $font-size-base * 1.8;
+    font-size: $font-size-base * 1.6;
   }
 }
 
@@ -62,10 +63,10 @@
 // Size
 //
 
-.alert-sm {
-  @include alert-size($alert-padding-sm, $alert-size-sm, $alert-close-size-sm);
+.alert-lg {
+  @include alert-size($alert-padding-lg, $alert-size-lg, $alert-close-size-lg);
 }
 
-.alert-xs {
-  @include alert-size($alert-padding-xs, $alert-size-xs, $alert-close-size-xs);
+.alert-sm {
+  @include alert-size($alert-padding-sm, $alert-size-sm, $alert-close-size-sm);
 }
