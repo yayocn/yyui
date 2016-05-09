@@ -230,5 +230,15 @@
       }
     }
   }
+
+  .dropdown-toggle {
+    &:after {
+      border-top-color: $navbar-theme-color;
+    }
+    &.up:after {
+      border-bottom-color: $navbar-theme-color;
+    }
+  }
+
 }
 
