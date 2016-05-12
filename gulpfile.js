@@ -12,8 +12,8 @@ var rename = require('gulp-rename');
 // compress the css file.
 //
 gulp.task('minifier', function() {
-  return gulp.src('css/flyimt.css')
-    .pipe(concat('flyimt.min.css'))
+  return gulp.src('css/yyui.css')
+    .pipe(concat('yyui.min.css'))
     .pipe(cssmin())
     .pipe(gulp.dest('css/dist/'))
     .pipe(gulp.dest('dist/css/'))
@@ -22,7 +22,7 @@ gulp.task('minifier', function() {
 // create css for distribution
 //
 gulp.task('distCss', ['minifier'], function() {
-  return gulp.src('css/flyimt.css')
+  return gulp.src('css/yyui.css')
     .pipe(gulp.dest('dist/css/'))
 })
 
@@ -35,14 +35,14 @@ gulp.task('distCss', ['minifier'], function() {
 //
 gulp.task('concatJsAll', function() {
   return gulp.src('js/*.js')
-    .pipe(concat('flyimt.js'))
+    .pipe(concat('yyui.js'))
     .pipe(gulp.dest('js/dist/'));
 })
 
 // Compress the connected js
 //
 gulp.task('uglify', ['concatJsAll'], function() {
-  return gulp.src('js/dist/flyimt.js')
+  return gulp.src('js/dist/yyui.js')
     .pipe(uglify())
     .pipe(gulp.dest('js/dist'));
 })
@@ -59,8 +59,8 @@ gulp.task('sourcemap',['concatJsAll', 'uglify'], function() {
 // create js for distribution.
 //
 gulp.task('distJs', ['uglify'], function() {
-  return gulp.src('js/dist/flyimt.js')
-    .pipe(rename('flyimt.min.js'))
+  return gulp.src('js/dist/yyui.js')
+    .pipe(rename('yyui.min.js'))
     .pipe(gulp.dest('dist/js/'))
 })
 

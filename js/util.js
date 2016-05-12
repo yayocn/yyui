@@ -1,93 +1,13 @@
+'use strict';
+
 /**
  * --------------------------------------------------------------------------
- * Bootstrap (v4.0.0): util.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * yy-ui (v1.0.0): dropdown.js
+ * Refer: Bootstrap v4.0.0 dropdown.js
  * --------------------------------------------------------------------------
  */
 
-'use strict';
-
 var Util = (function ($) {
-
-  /**
-   * ------------------------------------------------------------------------
-   * Private TransitionEnd Helpers
-   * ------------------------------------------------------------------------
-   */
-
-  var transition = true;
-
-  var TransitionEndEvent = {
-    WebkitTransition: 'webkitTransitionEnd',
-    MozTransition: 'transitionend',
-    OTransition: 'oTransitionEnd otransitionend',
-    transition: 'transitionend'
-  };
-
-  // shoutout AngusCroll (https://goo.gl/pxwQGp)
-  function toType(obj) {
-    return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
-  }
-
-  function isElement(obj) {
-    return (obj[0] || obj).nodeType;
-  }
-
-  function getSpecialTransitionEndEvent() {
-    return {
-      bindType: transition.end,
-      delegateType: transition.end,
-      handle: function handle(event) {
-        if ($(event.target).is(this)) {
-          return event.handleObj.handler.apply(this, arguments);
-        }
-      }
-    };
-  }
-
-  function transitionEndTest() {
-    if (window.QUnit) {
-      return false;
-    }
-
-    var el = document.createElement('bootstrap');
-
-    for (var _name in TransitionEndEvent) {
-      if (el.style[_name] !== undefined) {
-        return { end: TransitionEndEvent[_name] };
-      }
-    }
-
-    return false;
-  }
-
-  function transitionEndEmulator(duration) {
-    var _this = this;
-
-    var called = false;
-
-    $(this).one(Util.TRANSITION_END, function () {
-      called = true;
-    });
-
-    setTimeout(function () {
-      if (!called) {
-        Util.triggerTransitionEnd(_this);
-      }
-    }, duration);
-
-    return this;
-  }
-
-  function setTransitionEndSupport() {
-    transition = transitionEndTest();
-
-    $.fn.emulateTransitionEnd = transitionEndEmulator;
-
-    if (Util.supportsTransitionEnd()) {
-      $.event.special[Util.TRANSITION_END] = getSpecialTransitionEndEvent();
-    }
-  }
 
   /**
    * --------------------------------------------------------------------------
@@ -96,61 +16,56 @@ var Util = (function ($) {
    */
 
   var Util = {
+    getTargetFromElement: function getTargetFromElement(element) {
+      var target = element.getAttribute('data-target');
 
-    TRANSITION_END: 'bsTransitionEnd',
-
-    getUID: function getUID(prefix) {
-      do {
-        prefix += ~ ~(Math.random() * 1000000);
-      } while (document.getElementById(prefix));
-      return prefix;
-    },
-
-    getSelectorFromElement: function getSelectorFromElement(element) {
-      var selector = element.getAttribute('data-target');
-
-      if (!selector) {
-        selector = element.getAttribute('href') || '';
-        selector = /^#[a-z]/i.test(selector) ? selector : null;
+      if (!target) {
+        target = element.getAttribute('href') || '';
+        target = /^#[a-z]/i.test(target) ? target : null;
       }
 
-      return selector;
+      return target;
     },
+    setAnimateToggleForTarget: function setAnimateToggleForTarget(target, type, duration) {
+      type = type || 'slide';
+      duration = duration || 'fast';
 
-    reflow: function reflow(element) {
-      new Function('bs', 'return bs')(element.offsetHeight);
+      switch (type) {
+        case 'slide':
+          $(target).slideToggle(duration);
+          break;
+        case 'fade':
+          $(target).fadeToggle(duration);
+          break;
+      }
     },
+    setAnimateShowForTarget: function setAnimateShowForTarget(target, type, duration) {
+      type = type || 'slide';
+      duration = duration || 'fast';
 
-    triggerTransitionEnd: function triggerTransitionEnd(element) {
-      $(element).trigger(transition.end);
+      switch (type) {
+        case 'slide':
+          $(target).slideUp(duration);
+          break;
+        case 'fade':
+          $(target).fadeIn(duration);
+          break;
+      }
     },
+    setAnimateHideForTarget: function setAnimateHideForTarget(target, type, duration) {
+      type = type || 'slide';
+      duration = duration || 'fast';
 
-    supportsTransitionEnd: function supportsTransitionEnd() {
-      return Boolean(transition);
-    },
-
-    typeCheckConfig: function typeCheckConfig(componentName, config, configTypes) {
-      for (var property in configTypes) {
-        if (configTypes.hasOwnProperty(property)) {
-          var expectedTypes = configTypes[property];
-          var value = config[property];
-          var valueType = undefined;
-
-          if (value && isElement(value)) {
-            valueType = 'element';
-          } else {
-            valueType = toType(value);
-          }
-
-          if (!new RegExp(expectedTypes).test(valueType)) {
-            throw new Error(componentName.toUpperCase() + ': ' + ('Option "' + property + '" provided type "' + valueType + '" ') + ('but expected type "' + expectedTypes + '".'));
-          }
-        }
+      switch (type) {
+        case 'slide':
+          $(target).slideDown(duration);
+          break;
+        case 'fade':
+          $(target).fadeOut(duration);
+          break;
       }
     }
   };
-
-  setTransitionEndSupport();
 
   return Util;
 })(jQuery);

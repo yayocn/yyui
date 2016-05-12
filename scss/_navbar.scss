@@ -53,6 +53,29 @@
 // Navbar collapse
 //
 .navbar-collapse {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &.in {
+      display: block;
+
+      .navbar-nav,
+      .dropdown-menu,
+      .navbar-form,
+      li {
+        float: none;
+        width: 100%;
+      }
+
+      li + li {
+        margin-left: 0px;
+      }
+    }
+  }
+
   &:before,
   &:after {
     content: "";
@@ -60,10 +83,6 @@
   }
   &:after {
     clear: both;
-  }
-
-  @include media-breakpoint-down(sm) {
-    display: none;
   }
 }
 

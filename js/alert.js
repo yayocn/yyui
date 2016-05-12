@@ -1,17 +1,43 @@
 'use strict';
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+      if ('value' in descriptor)
+        descriptor.writable = true;
+
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps)
+      defineProperties(Constructor.prototype, protoProps);
+    if (staticProps)
+      defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+})();
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError('Cannot call a class as a function');
+  }
+}
 
 /**
- * --------------------------------------------------------------------------
- * Bootstrap (v4.0.0): alert.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * --------------------------------------------------------------------------
+ * ------------------------------------------------------------------
+ * yy-ui (v1.0.0)
+ * name: alert.js
+ * version: 1.0.0
+ * refer: Bootstrap v4.0.0 alert.js
+ * ------------------------------------------------------------------
  */
 
-var Alert = (function ($) {
+var Alert = (function($) {
 
   /**
    * ------------------------------------------------------------------------
@@ -19,13 +45,12 @@ var Alert = (function ($) {
    * ------------------------------------------------------------------------
    */
 
-  var NAME = 'alert';
-  var VERSION = '4.0.0';
-  var DATA_KEY = 'bs.alert';
+  var DATA_KEY = 'yyui.alert';
   var EVENT_KEY = '.' + DATA_KEY;
   var DATA_API_KEY = '.data-api';
-  var JQUERY_NO_CONFLICT = $.fn[NAME];
-  var TRANSITION_DURATION = 150;
+  var ANIMATION = true;
+  var ANIMATION_TYPE = 'fade'; // fade, slide
+  var ANIMATION_DURATION = 500;
 
   var Selector = {
     DISMISS: '[data-dismiss="alert"]'
@@ -39,17 +64,16 @@ var Alert = (function ($) {
 
   var ClassName = {
     ALERT: 'alert',
-    FADE: 'fade',
-    IN: 'in'
   };
 
   /**
-   * ------------------------------------------------------------------------
-   * Class Definition
-   * ------------------------------------------------------------------------
+   * --------------------------------------------------------------------
+   * Class definition
+   * --------------------------------------------------------------------
    */
 
-  var Alert = (function () {
+  var Alert = (function() {
+    // Constructor
     function Alert(element) {
       _classCallCheck(this, Alert);
 
@@ -57,115 +81,56 @@ var Alert = (function ($) {
     }
 
     /**
-     * ------------------------------------------------------------------------
-     * Data Api implementation
-     * ------------------------------------------------------------------------
+     * ----------------------------------------------------------------
+     * Data api implementation
+     * ----------------------------------------------------------------
      */
-
-    // getters
 
     _createClass(Alert, [{
       key: 'close',
-
-      // public
-
       value: function close(element) {
         element = element || this._element;
 
         var rootElement = this._getRootElement(element);
-        var customEvent = this._triggerCloseEvent(rootElement);
-
-        if (customEvent.isDefaultPrevented()) {
-          return;
-        }
 
         this._removeElement(rootElement);
       }
     }, {
-      key: 'dispose',
-      value: function dispose() {
-        $.removeData(this._element, DATA_KEY);
-        this._element = null;
-      }
-
-      // private
-
-    }, {
       key: '_getRootElement',
       value: function _getRootElement(element) {
-        var selector = Util.getSelectorFromElement(element);
-        var parent = false;
-
-        if (selector) {
-          parent = $(selector)[0];
-        }
-
-        if (!parent) {
-          parent = $(element).closest('.' + ClassName.ALERT)[0];
-        }
+        var parent = $(element).closest('.' + ClassName.ALERT)[0];
 
         return parent;
       }
     }, {
-      key: '_triggerCloseEvent',
-      value: function _triggerCloseEvent(element) {
-        var closeEvent = $.Event(Event.CLOSE);
-
-        $(element).trigger(closeEvent);
-        return closeEvent;
-      }
-    }, {
       key: '_removeElement',
       value: function _removeElement(element) {
-        $(element).removeClass(ClassName.IN);
-
-        if (!Util.supportsTransitionEnd() || !$(element).hasClass(ClassName.FADE)) {
-          this._destroyElement(element);
+        var self = this;
+        if(ANIMATION) {
+          Util.setAnimateHideForTarget(element, ANIMATION_TYPE, ANIMATION_DURATION);
+          setTimeout(function() {
+            self._destroyElement(element);
+          }, ANIMATION_DURATION);
           return;
         }
 
-        $(element).one(Util.TRANSITION_END, $.proxy(this._destroyElement, this, element)).emulateTransitionEnd(TRANSITION_DURATION);
+        this._destroyElement(element);
       }
     }, {
       key: '_destroyElement',
       value: function _destroyElement(element) {
-        $(element).detach().trigger(Event.CLOSED).remove();
+        $(element).detach().remove();
       }
-
-      // static
-
     }], [{
-      key: '_jQueryInterface',
-      value: function _jQueryInterface(config) {
-        return this.each(function () {
-          var $element = $(this);
-          var data = $element.data(DATA_KEY);
-
-          if (!data) {
-            data = new Alert(this);
-            $element.data(DATA_KEY, data);
-          }
-
-          if (config === 'close') {
-            data[config](this);
-          }
-        });
-      }
-    }, {
       key: '_handleDismiss',
-      value: function _handleDismiss(alertInstance) {
-        return function (event) {
-          if (event) {
+      value: function _handleDismiss(instance) {
+        return function(event) {
+          if(event) {
             event.preventDefault();
           }
 
-          alertInstance.close(this);
+          instance.close(this);
         };
-      }
-    }, {
-      key: 'VERSION',
-      get: function get() {
-        return VERSION;
       }
     }]);
 
@@ -173,19 +138,6 @@ var Alert = (function ($) {
   })();
 
   $(document).on(Event.CLICK_DATA_API, Selector.DISMISS, Alert._handleDismiss(new Alert()));
-
-  /**
-   * ------------------------------------------------------------------------
-   * jQuery
-   * ------------------------------------------------------------------------
-   */
-
-  $.fn[NAME] = Alert._jQueryInterface;
-  $.fn[NAME].Constructor = Alert;
-  $.fn[NAME].noConflict = function () {
-    $.fn[NAME] = JQUERY_NO_CONFLICT;
-    return Alert._jQueryInterface;
-  };
 
   return Alert;
 })(jQuery);
