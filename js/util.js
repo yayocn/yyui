@@ -26,16 +26,16 @@ var Util = (function ($) {
 
       return target;
     },
-    setAnimateToggleForTarget: function setAnimateToggleForTarget(target, type, duration) {
+    setAnimateToggleForTarget: function setAnimateToggleForTarget(target, type, duration, callback) {
       type = type || 'slide';
       duration = duration || 'fast';
 
       switch (type) {
         case 'slide':
-          $(target).slideToggle(duration);
+          $(target).slideToggle(duration, callback);
           break;
         case 'fade':
-          $(target).fadeToggle(duration);
+          $(target).fadeToggle(duration, callback);
           break;
       }
     },

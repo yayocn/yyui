@@ -53,14 +53,15 @@
 // Navbar collapse
 //
 .navbar-collapse {
-  display: none;
-  @include media-breakpoint-up(md) {
-    display: block;
-  }
 
   @include media-breakpoint-down(sm) {
+    display: none;
+
     &.in {
       display: block;
+      height: 0;
+      overflow: hidden;
+      margin-top: 38px;
 
       .navbar-nav,
       .dropdown-menu,
