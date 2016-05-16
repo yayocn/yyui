@@ -16,15 +16,15 @@ var Util = (function ($) {
    */
 
   var Util = {
-    getTargetFromElement: function getTargetFromElement(element) {
-      var target = element.getAttribute('data-target');
+    getSelectorFromElement: function getSelectorFromElement(element) {
+      var selector = element.getAttribute('data-target');
 
-      if (!target) {
-        target = element.getAttribute('href') || '';
-        target = /^#[a-z]/i.test(target) ? target : null;
+      if (!selector) {
+        selector = element.getAttribute('href') || '';
+        selector = /^#[a-z]/i.test(selector) ? selector : null;
       }
 
-      return target;
+      return selector;
     },
     setAnimateToggleForTarget: function setAnimateToggleForTarget(target, type, duration, callback) {
       type = type || 'slide';
@@ -39,29 +39,29 @@ var Util = (function ($) {
           break;
       }
     },
-    setAnimateShowForTarget: function setAnimateShowForTarget(target, type, duration) {
+    setAnimateShowForTarget: function setAnimateShowForTarget(target, type, duration, callback) {
       type = type || 'slide';
       duration = duration || 'fast';
 
       switch (type) {
         case 'slide':
-          $(target).slideUp(duration);
+          $(target).slideUp(duration, callback);
           break;
         case 'fade':
-          $(target).fadeIn(duration);
+          $(target).fadeIn(duration, callback);
           break;
       }
     },
-    setAnimateHideForTarget: function setAnimateHideForTarget(target, type, duration) {
+    setAnimateHideForTarget: function setAnimateHideForTarget(target, type, duration, callback) {
       type = type || 'slide';
       duration = duration || 'fast';
 
       switch (type) {
         case 'slide':
-          $(target).slideDown(duration);
+          $(target).slideDown(duration, callback);
           break;
         case 'fade':
-          $(target).fadeOut(duration);
+          $(target).fadeOut(duration, callback);
           break;
       }
     }

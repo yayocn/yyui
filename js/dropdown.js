@@ -123,10 +123,10 @@ var Dropdown = (function ($) {
       key: '_getParentFromElement',
       value: function _getParentFromElement(element) {
         var parent = undefined;
-        var target = Util.getTargetFromElement(element);
+        var selector = Util.getSelectorFromElement(element);
 
-        if(target) {
-          parent = $(target)[0];
+        if(selector) {
+          parent = $(selector)[0];
         }
 
         return parent || element.parentNode;

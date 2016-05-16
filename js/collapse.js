@@ -86,16 +86,16 @@ var Collapse = (function($) {
     _createClass(Collapse, [{
       key: 'toggle',
       value: function toggle() {
-        var target = Util.getTargetFromElement(this);
+        var selector = Util.getSelectorFromElement(this);
 
-        if($(target).hasClass('in')) {
-          Collapse._hide(target);
+        if($(selector).hasClass('in')) {
+          Collapse._hide(selector);
           setTimeout(function() {
-            $(target).removeClass('in');
+            $(selector).removeClass('in');
           }, ANIMATE_DURATION)
         } else {
-          $(target).addClass('in');
-          Collapse._show(target);
+          $(selector).addClass('in');
+          Collapse._show(selector);
         }
       }
     }], [{

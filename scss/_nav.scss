@@ -21,10 +21,6 @@
   float: left;
   padding: .37rem .75rem;
 
-  &:not(.dropdown) {
-    border: 1px solid transparent;
-  }
-
   @if $enable-rounded {
     &:first-child {
       border-top-left-radius: $border-radius;
@@ -103,11 +99,11 @@
   border-bottom: 1px solid $nav-tabs-border-color;
   @include clearfix();
 
-  .nav-item {
+  li:not(.dropdown-item) {
     float: left;
-    margin-bottom: -2px;
+    margin-bottom: -1px;
 
-    + .nav-item {
+    + li {
       margin-left: .2rem;
     }
   }
@@ -119,10 +115,6 @@
       @include border-radius($border-radius $border-radius 0 0);
     }
 
-    //@include hover-focus {
-    //  border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color transparent $nav-tabs-border-color;
-    //}
-
     &.disabled {
       @include plain-hover-focus {
         color: $nav-disabled-color;
@@ -132,8 +124,14 @@
     }
   }
 
+  > li,
+  > li:hover {
+    border-bottom-width: 0;
+    border-color: transparent;
+  }
+
   > li > a.active,
-  .nav-item.active > a {
+  > li.active > a {
     @include plain-hover-focus {
       color: $nav-tabs-active-link-hover-color;
       background-color: $nav-tabs-active-link-hover-bg;
@@ -160,10 +158,18 @@
 .nav-tabs.nav-vt {
   border-right: 1px solid $nav-tabs-border-color;
   border-bottom: none;
-  .nav-item {
+  li:not(.dropdown-item) {
     float: none;
     margin-top: .1rem;
+    margin-left: 0;
     margin-right: -2px;
+  }
+
+  > li,
+  > li:hover {
+    border-bottom-width: 1px;
+    border-color: transparent;
+    border-right-width: 0;
   }
 
   > li > a {
