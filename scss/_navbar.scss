@@ -90,19 +90,21 @@
 // navbar nav
 //
 .navbar-nav {
+  margin-top: 1px;
+
   li,
   li:hover  {
     border: none !important;
   }
 
-  > li {
-    > a {
-      background-color: $navbar-light-bg;
-      color: $navbar-light-color;
-      font-weight: 400;
-      &:hover {
-        color: $navbar-light-hover-color;
-      }
+  > li > a {
+    background-color: $navbar-light-bg !important;
+    color: $navbar-light-color;
+    font-weight: 400;
+
+    &:hover {
+      background-color: $navbar-light-bg !important;
+      color: $navbar-light-hover-color;
     }
   }
 }
@@ -185,13 +187,12 @@
   }
 
   .navbar-nav {
-    > li {
-      > a {
-        background-color: $navbar-dark-bg;
-        color: $navbar-dark-color;
-        &:hover {
-          color: $navbar-dark-hover-color;
-        }
+    > li > a {
+      background-color: $navbar-dark-bg !important;
+      color: $navbar-dark-color;
+      &:hover {
+        background-color: $navbar-dark-bg !important;
+        color: $navbar-dark-hover-color;
       }
     }
   }
@@ -208,14 +209,10 @@
   }
 
   .navbar-nav {
-    > li {
+    > li,
+    > li > a,
+    > li > a:hover{
       background-color: $navbar-perspective-bg !important;
-      > a {
-        background-color: $navbar-perspective-bg !important;
-        &:hover {
-          background-color: $navbar-perspective-bg !important;
-        }
-      }
     }
   }
 }
@@ -240,13 +237,11 @@
   }
 
   .navbar-nav {
-    > li {
-      > a {
-        background-color: $navbar-theme-bg;
-        color: $navbar-theme-color;
-        &:hover {
-          color: $navbar-theme-hover-color;
-        }
+    > li > a {
+      background-color: $navbar-theme-bg;
+      color: $navbar-theme-color;
+      &:hover {
+        color: $navbar-theme-hover-color;
       }
     }
   }

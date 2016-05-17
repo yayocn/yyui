@@ -112,13 +112,14 @@ var Tab = (function ($) {
 
         Tab._hide(previous, selector);
 
-        $(element).addClass('active');
+        $(element).closest('li').addClass('active');
       }
     }], [{
       key: '_hide',
       value: function _hide(element, target) {
         $(element).removeClass('active');
-        var selector = Util.getSelectorFromElement(element);
+        var anchor = $(element).find('a')[0];
+        var selector = Util.getSelectorFromElement(anchor);
         Util.setAnimateHideForTarget(selector, ANIAMTION_TYPE, ANIMATION_DURATION, function() {
           Util.setAnimateShowForTarget(target, ANIAMTION_TYPE, ANIMATION_DURATION)
         });

@@ -41,16 +41,18 @@
   }
 
   &.active:not(.dropdown) {
-    background-color: $nav-active-bg;
-    a {
+    > a {
+      background-color: $nav-active-bg;
       border-color: $nav-active-border-color;
       color: $nav-active-color;
     }
   }
 
   &:not(.disabled) {
-    @include hover-focus {
-      background-color: $nav-active-bg;
+    > a {
+      @include hover-focus {
+        background-color: $nav-active-bg;
+      }
     }
   }
 
@@ -58,7 +60,7 @@
   &.disabled:hover,
   &.disabled:active{
     border-color: transparent;
-    a {
+    > a {
       color: $nav-disabled-color;
       cursor: not-allowed;
     }
@@ -72,6 +74,16 @@
 .nav {
   & + nav {
     margin-left: $space-base * 2;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  li.active {
+    .nav {
+      display: block;
+    }
   }
 }
 
@@ -131,11 +143,11 @@
   }
 
   > li > a.active,
-  > li.active > a {
+  > li.active:not(.dropdown) > a {
+    background-color: $nav-tabs-active-link-hover-bg;
     @include plain-hover-focus {
       color: $nav-tabs-active-link-hover-color;
-      background-color: $nav-tabs-active-link-hover-bg;
-      border-color: $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-border-color transparent;
+      border-color: $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-border-color transparent !important;
     }
   }
 }
@@ -178,10 +190,10 @@
     }
   }
 
-  >li > a.active,
-  .nav-item.active > a {
+  > li > a.active,
+  > li.active > a {
     @include plain-hover-focus {
-      border-color: $nav-tabs-active-link-hover-border-color transparent $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-border-color;
+      border-color: $nav-tabs-active-link-hover-border-color transparent $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-border-color !important;
     }
   }
 }
@@ -194,9 +206,9 @@
 .nav-pills {
   > li {
     &.active:not(.dropdown) {
-      background-color: $nav-pills-active-bg;
       @include box-shadow(1px 0 0 0 $brand-primary);
       a {
+        background-color: $nav-pills-active-bg;
         border-color: $nav-pills-active-border-color;
         color: $nav-pills-active-color;
       }
