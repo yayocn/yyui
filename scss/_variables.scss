@@ -411,8 +411,8 @@ $zindex-collapse:           990 !default;
 //$zindex-tooltip:           1070 !default;
 $zindex-navbar-fixed:      1030 !default;
 $zindex-navbar-sticky:     1030 !default;
-//$zindex-modal-bg:          1040 !default;
-//$zindex-modal:             1050 !default;
+$zindex-modal-bg:          1040 !default;
+$zindex-modal:             1050 !default;
 
 // Dropdowns
 //
@@ -696,3 +696,23 @@ $carousel-indicator-active-bg:                #fff !default;
 $carousel-indicator-border-color:             #fff !default;
 
 $carousel-caption-color:                      #fff !default;
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:         15px !default;
+
+$modal-title-padding:         15px !default;
+$modal-title-line-height:     $line-height !default;
+
+$modal-content-bg:                             #fff !default;
+$modal-content-border-color:                   rgba(0,0,0,.2) !default;
+
+$modal-backdrop-bg:           #000 !default;
+$modal-backdrop-opacity:      .5 !default;
+$modal-header-border-color:   #e5e5e5 !default;
+$modal-footer-border-color:   $modal-header-border-color !default;
+
+$modal-lg:                    900px !default;
+$modal-md:                    600px !default;
+$modal-sm:                    300px !default;

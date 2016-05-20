@@ -1,7 +1,3 @@
 /bootstrap-4.0.0-alpha
 /.idea
 /.sass-cache
-/config.rb
-/css
-/node_modules
-/dist
