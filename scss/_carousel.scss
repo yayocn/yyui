@@ -52,11 +52,6 @@
     }
   }
 
-  .left,
-  .right {
-    float: none;
-  }
-
   > .active,
   > .next,
   > .prev {
@@ -111,12 +106,12 @@
   opacity: $carousel-control-opacity;
 
   &.left {
-    @include gradient-horizontal($start-color: rgba(0,0,0,.3), $end-color: rgba(0,0,0,.0001));
+    //@include gradient-horizontal($start-color: rgba(0,0,0,.3), $end-color: rgba(0,0,0,.0001));
   }
   &.right {
     right: 0;
     left: auto;
-    @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.3));
+    //@include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.3));
   }
 
   // Hover/focus state
@@ -215,7 +210,7 @@
   .carousel-control {
     .icon-prev,
     .icon-next {
-      width: 30px;
+      width: 50px;
       height: 30px;
       margin-top: -15px;
       font-size: 30px;

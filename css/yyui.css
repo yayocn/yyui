@@ -651,12 +651,12 @@ button.close {
 }
 
 /* line 50, ../scss/_assists.scss */
-.left {
+.f-l {
   float: left !important;
 }
 
 /* line 54, ../scss/_assists.scss */
-.right {
+.f-r {
   float: right !important;
 }
 
@@ -1668,6 +1668,41 @@ a.bg-light:focus, a.bg-light:hover {
 /* line 242, ../scss/_assists.scss */
 .border-square {
   border-radius: 0 !important;
+}
+
+/* line 251, ../scss/_assists.scss */
+.divider,
+.divider-lg,
+.divider-sm {
+  border-top: 1px solid #ddd;
+}
+
+/* line 257, ../scss/_assists.scss */
+.divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 262, ../scss/_assists.scss */
+.divider-lg {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 267, ../scss/_assists.scss */
+.divider-sm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 276, ../scss/_assists.scss */
+.pt-relative {
+  position: relative !important;
+}
+
+/* line 280, ../scss/_assists.scss */
+.pt-sticky {
+  position: sticky !important;
 }
 
 /* line 13, ../scss/_grid.scss */
@@ -8904,33 +8939,33 @@ pre .note {
 }
 /* line 227, ../scss/_navbar.scss */
 .navbar-theme .navbar-brand {
-  color: #2EC6A0;
+  color: #0275d8;
   background-color: #fff;
 }
 /* line 18, ../scss/mixins/_hover.scss */
 .navbar-theme .navbar-brand:focus, .navbar-theme .navbar-brand:hover {
-  color: #29b18f;
+  color: #0267bf;
 }
 /* line 235, ../scss/_navbar.scss */
 .navbar-theme .navbar-toggle {
-  color: #2EC6A0;
+  color: #0275d8;
 }
 /* line 240, ../scss/_navbar.scss */
 .navbar-theme .navbar-nav > li > a {
   background-color: #fff;
-  color: #2EC6A0;
+  color: #0275d8;
 }
 /* line 243, ../scss/_navbar.scss */
 .navbar-theme .navbar-nav > li > a:hover {
-  color: #29b18f;
+  color: #0267bf;
 }
 /* line 250, ../scss/_navbar.scss */
 .navbar-theme .dropdown-toggle:after {
-  border-top-color: #2EC6A0;
+  border-top-color: #0275d8;
 }
 /* line 253, ../scss/_navbar.scss */
 .navbar-theme .dropdown-toggle.up:after {
-  border-bottom-color: #2EC6A0;
+  border-bottom-color: #0275d8;
 }
 
 /* line 6, ../scss/_breadcrumb.scss */
@@ -9000,7 +9035,6 @@ pre .note {
   text-decoration: none;
   padding: 0.5rem 0.75rem;
   color: #0275d8;
-  color: #0275d8;
 }
 /* line 18, ../scss/mixins/_hover.scss */
 .pagination > li > a:focus, .pagination > li > a:hover,
@@ -9028,19 +9062,19 @@ pre .note {
   background-color: #fff;
 }
 
-/* line 70, ../scss/_paginations.scss */
+/* line 69, ../scss/_paginations.scss */
 .pagination-border {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 74, ../scss/_paginations.scss */
+/* line 73, ../scss/_paginations.scss */
 .pagination-border > li > a,
 .pagination-border > li > span {
   margin-left: -1px;
   border: 1px solid #ddd;
 }
-/* line 81, ../scss/_paginations.scss */
+/* line 80, ../scss/_paginations.scss */
 .pagination-border > li:first-child > a,
 .pagination-border > li:first-child > span {
   margin-left: 0;
@@ -9082,7 +9116,7 @@ pre .note {
   line-height: 1.5;
 }
 
-/* line 139, ../scss/_paginations.scss */
+/* line 138, ../scss/_paginations.scss */
 .pager {
   text-align: center;
   list-style: none;
@@ -9096,7 +9130,7 @@ pre .note {
 .pager:after {
   clear: both;
 }
-/* line 145, ../scss/_paginations.scss */
+/* line 144, ../scss/_paginations.scss */
 .pager li > a,
 .pager li > span {
   display: inline-block;
@@ -9116,20 +9150,20 @@ pre .note {
   cursor: not-allowed;
   background-color: #fff;
 }
-/* line 171, ../scss/_paginations.scss */
+/* line 170, ../scss/_paginations.scss */
 .pager .disabled > span {
   color: #818a91;
   cursor: not-allowed;
   background-color: #fff;
 }
 
-/* line 180, ../scss/_paginations.scss */
+/* line 179, ../scss/_paginations.scss */
 .pager-next > a,
 .pager-next > span {
   float: right;
 }
 
-/* line 187, ../scss/_paginations.scss */
+/* line 186, ../scss/_paginations.scss */
 .pager-prev > a,
 .pager-prev > span {
   float: left;
@@ -10296,50 +10330,45 @@ progress[value]::-moz-progress-bar {
   }
 }
 /* line 55, ../scss/_carousel.scss */
-.carousel-content .left,
-.carousel-content .right {
-  float: none;
-}
-/* line 60, ../scss/_carousel.scss */
 .carousel-content > .active,
 .carousel-content > .next,
 .carousel-content > .prev {
   display: block;
 }
-/* line 66, ../scss/_carousel.scss */
+/* line 61, ../scss/_carousel.scss */
 .carousel-content > .active {
   left: 0;
 }
-/* line 70, ../scss/_carousel.scss */
+/* line 65, ../scss/_carousel.scss */
 .carousel-content > .next,
 .carousel-content > .prev {
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 77, ../scss/_carousel.scss */
+/* line 72, ../scss/_carousel.scss */
 .carousel-content > .next {
   left: 100%;
 }
-/* line 80, ../scss/_carousel.scss */
+/* line 75, ../scss/_carousel.scss */
 .carousel-content > .prev {
   left: -100%;
 }
-/* line 83, ../scss/_carousel.scss */
+/* line 78, ../scss/_carousel.scss */
 .carousel-content > .next.left,
 .carousel-content > .prev.right {
   left: 0;
 }
-/* line 88, ../scss/_carousel.scss */
+/* line 83, ../scss/_carousel.scss */
 .carousel-content > .active.left {
   left: -100%;
 }
-/* line 91, ../scss/_carousel.scss */
+/* line 86, ../scss/_carousel.scss */
 .carousel-content > .active.right {
   left: 100%;
 }
 
-/* line 101, ../scss/_carousel.scss */
+/* line 96, ../scss/_carousel.scss */
 .carousel-control {
   position: absolute;
   top: 0;
@@ -10352,19 +10381,10 @@ progress[value]::-moz-progress-bar {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   opacity: 0.5;
 }
-/* line 113, ../scss/_carousel.scss */
-.carousel-control.left {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4D000000', endColorstr='#00000000', GradientType=1);
-}
-/* line 116, ../scss/_carousel.scss */
+/* line 111, ../scss/_carousel.scss */
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.3) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#4D000000', GradientType=1);
 }
 /* line 18, ../scss/mixins/_hover.scss */
 .carousel-control:focus, .carousel-control:hover {
@@ -10373,7 +10393,7 @@ progress[value]::-moz-progress-bar {
   outline: 0;
   opacity: .8;
 }
-/* line 131, ../scss/_carousel.scss */
+/* line 126, ../scss/_carousel.scss */
 .carousel-control .icon-prev,
 .carousel-control .icon-next {
   position: absolute;
@@ -10383,18 +10403,18 @@ progress[value]::-moz-progress-bar {
   margin-top: -10px;
   line-height: 1;
 }
-/* line 140, ../scss/_carousel.scss */
+/* line 135, ../scss/_carousel.scss */
 .carousel-control .icon-prev {
   left: 50%;
   margin-left: -10px;
 }
-/* line 144, ../scss/_carousel.scss */
+/* line 139, ../scss/_carousel.scss */
 .carousel-control .icon-next {
   right: 50%;
   margin-right: -10px;
 }
 
-/* line 156, ../scss/_carousel.scss */
+/* line 151, ../scss/_carousel.scss */
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
@@ -10406,7 +10426,7 @@ progress[value]::-moz-progress-bar {
   text-align: center;
   list-style: none;
 }
-/* line 167, ../scss/_carousel.scss */
+/* line 162, ../scss/_carousel.scss */
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
@@ -10418,7 +10438,7 @@ progress[value]::-moz-progress-bar {
   border: 1px solid #fff;
   border-radius: 10px;
 }
-/* line 178, ../scss/_carousel.scss */
+/* line 173, ../scss/_carousel.scss */
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
@@ -10426,7 +10446,7 @@ progress[value]::-moz-progress-bar {
   background-color: #fff;
 }
 
-/* line 191, ../scss/_carousel.scss */
+/* line 186, ../scss/_carousel.scss */
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -10439,37 +10459,37 @@ progress[value]::-moz-progress-bar {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
-/* line 203, ../scss/_carousel.scss */
+/* line 198, ../scss/_carousel.scss */
 .carousel-caption .btn {
   text-shadow: none;
 }
 
 @media (min-width: 34em) {
-  /* line 216, ../scss/_carousel.scss */
+  /* line 211, ../scss/_carousel.scss */
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-top: -15px;
     font-size: 30px;
   }
-  /* line 223, ../scss/_carousel.scss */
+  /* line 218, ../scss/_carousel.scss */
   .carousel-control .icon-prev {
     margin-left: -15px;
   }
-  /* line 226, ../scss/_carousel.scss */
+  /* line 221, ../scss/_carousel.scss */
   .carousel-control .icon-next {
     margin-right: -15px;
   }
 
-  /* line 232, ../scss/_carousel.scss */
+  /* line 227, ../scss/_carousel.scss */
   .carousel-caption {
     right: 20%;
     left: 20%;
     padding-bottom: 30px;
   }
 
-  /* line 239, ../scss/_carousel.scss */
+  /* line 234, ../scss/_carousel.scss */
   .carousel-indicators {
     bottom: 20px;
   }

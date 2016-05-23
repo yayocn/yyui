@@ -47,11 +47,11 @@ button.close {
   @include center-block();
 }
 
-.left {
+.f-l {
   @include float(left);
 }
 
-.right {
+.f-r {
   @include float(right);
 }
 //
@@ -241,4 +241,42 @@ button.close {
 }
 .border-square {
   border-radius: 0 !important;
+}
+
+
+//
+// divider
+//
+
+.divider,
+.divider-lg,
+.divider-sm {
+  border-top: 1px solid $divider-color;
+}
+
+.divider {
+  margin-top: $divider-margin;
+  margin-bottom: $divider-margin;
+}
+
+.divider-lg {
+  margin-top: $divider-margin-lg;
+  margin-bottom: $divider-margin-lg;
+}
+
+.divider-sm {
+  margin-top: $divider-margin-sm;
+  margin-bottom: $divider-margin-sm;
+}
+
+//
+// Position
+//
+
+.pt-relative {
+  position: relative !important;
+}
+
+.pt-sticky {
+  position: sticky !important;
 }
