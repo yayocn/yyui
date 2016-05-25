@@ -1,0 +1,25 @@
+//
+// Base styles
+//
+
+// Situation
+//
+//
+.input-group-primary {
+  @include input-group-variant($input-group-primary-color,$input-group-primary-bg,$input-group-primary-border);
+}
+.input-group-secondary {
+  @include input-group-variant($input-group-secondary-color,$input-group-secondary-bg,$input-group-secondary-border);
+}
+.input-group-success {
+  @include input-group-variant($input-group-success-color,$input-group-success-bg,$input-group-success-border);
+}
+.input-group-info {
+  @include input-group-variant($input-group-info-color,$input-group-info-bg,$input-group-info-border);
+}
+.input-group-warning {
+  @include input-group-variant($input-group-warning-color,$input-group-warning-bg,$input-group-warning-border);
+}
+.input-group-danger {
+  @include input-group-variant($input-group-danger-color,$input-group-danger-bg,$input-group-danger-border);
+}

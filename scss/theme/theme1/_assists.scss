@@ -1,0 +1,33 @@
+// This file define the special class and styles
+//
+//
+//
+
+// Colors
+//
+//
+.text-primary { color: $brand-primary !important;}
+.text-secondary { color: $brand-secondary !important;}
+.text-info { color: $brand-info !important;}
+.text-success { color: $brand-success !important;}
+.text-warning { color: $brand-warning !important;}
+.text-danger { color: $brand-danger !important;}
+.text-muted { color: $text-muted !important;}
+.text-dark { color: $gray-dark !important;}
+.text-light { color: $gray-lightest !important;}
+
+
+//
+// Background
+//
+
+@include bg-variant('.bg-primary', $brand-primary);
+@include bg-variant('.bg-secondary', $brand-secondary);
+@include bg-variant('.bg-info', $brand-info);
+@include bg-variant('.bg-success', $brand-success);
+@include bg-variant('.bg-warning', $brand-warning);
+@include bg-variant('.bg-danger', $brand-danger);
+@include bg-variant('.bg-muted', $text-muted);
+@include bg-variant('.bg-dark', $gray-dark);
+@include bg-variant('.bg-light', $gray-lightest);
+@include bg-variant('.bg-perspective', 'transparent');

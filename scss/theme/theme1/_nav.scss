@@ -1,0 +1,28 @@
+// Base class
+//
+//
+//
+
+//
+// Pills
+//
+
+.nav-pills {
+  > li {
+    &.active:not(.dropdown) {
+      @include box-shadow(1px 0 0 0 $brand-primary);
+      a {
+        background-color: $nav-pills-active-bg;
+        border-color: $nav-pills-active-border-color;
+        color: $nav-pills-active-color;
+      }
+    }
+  }
+
+  > li:not(.disabled) > a {
+    color: $nav-pills-color;
+    @include hover-focus {
+      color: $nav-pills-hover-color;
+    }
+  }
+}

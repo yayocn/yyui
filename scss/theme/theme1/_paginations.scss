@@ -1,0 +1,48 @@
+// Paginations
+//
+//
+//
+
+.pagination {
+  > li {
+    > a,
+    > span {
+      color: $pagination-color;
+    }
+  }
+
+  > li > a,
+  > li > span {
+    @include hover-focus {
+      color: $pagination-hover-color;
+      background-color: $pagination-hover-bg;
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    @include plain-hover-focus {
+      color: $pagination-active-color;
+      background-color: $pagination-active-bg;
+    }
+  }
+
+  > .disabled {
+    > span,
+    > a {
+      @include plain-hover-focus {
+        color: $pagination-disabled-color;
+        background-color: $pagination-disabled-bg;
+      }
+    }
+  }
+}
+
+.pagination-border {
+  > .active > a,
+  > .active > span {
+    @include plain-hover-focus {
+      border-color: $pagination-active-border;
+    }
+  }
+}

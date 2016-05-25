@@ -1,0 +1,7 @@
+@include table-row-variant(active, $table-bg-active);
+@include table-row-variant(primary, $brand-primary);
+@include table-row-variant(secondary, $brand-secondary);
+@include table-row-variant(success, $brand-success);
+@include table-row-variant(info, $brand-info);
+@include table-row-variant(warning, $brand-warning);
+@include table-row-variant(danger, $brand-danger);

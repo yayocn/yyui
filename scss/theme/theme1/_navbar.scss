@@ -1,0 +1,44 @@
+// Navbar
+//
+//
+//
+
+//
+// Theme navbar
+//
+
+.navbar-theme {
+  background-color: $navbar-theme-bg;
+
+  .navbar-brand {
+    color: $navbar-theme-color;
+    background-color: $navbar-theme-bg;
+    @include hover-focus {
+      color: $navbar-theme-hover-color;
+    }
+  }
+
+  .navbar-toggle {
+    color: $navbar-theme-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      background-color: $navbar-theme-bg;
+      color: $navbar-theme-color;
+      &:hover {
+        color: $navbar-theme-hover-color;
+      }
+    }
+  }
+
+  .dropdown-toggle {
+    &:after {
+      border-top-color: $navbar-theme-color;
+    }
+    &.up:after {
+      border-bottom-color: $navbar-theme-color;
+    }
+  }
+}
+

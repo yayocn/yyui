@@ -1,0 +1,30 @@
+// Dropdown
+//
+//
+//
+
+%border-white {
+  border-top-color: #fff;
+}
+
+// Dropdown buttons
+//
+.dropdown-toggle {
+  @each $color in map_keys($theme-colors) {
+    &.btn-#{$color}:after {
+      @extend %border-white;
+    }
+
+    &.btn-#{$color}-outline:after {
+      border-top-color: map-get($theme-colors, $color);
+    }
+
+    &.btn-#{$color}-outline:hover:after,
+    &.btn-#{$color}-outline:focus:after,
+    &.btn-#{$color}-outline:active:after,
+    &.btn-#{$color}-outline.active:after {
+      @extend %border-white;
+      @include transition(all .1s ease-in-out); // compass
+    }
+  }
+}

@@ -1,0 +1,78 @@
+// Forms
+//
+//
+//
+
+//
+// Checkbox and radio
+//
+
+// Situation
+//
+//
+@include radio-checkbox-variant('primary', $brand-primary);
+@include radio-checkbox-variant('secondary', $brand-secondary);
+@include radio-checkbox-variant('success', $brand-success);
+@include radio-checkbox-variant('info', $brand-info);
+@include radio-checkbox-variant('warning', $brand-warning);
+@include radio-checkbox-variant('danger', $brand-danger);
+
+// switch checkbox
+//
+.checkbox-switch {
+  & input[type="checkbox"]:checked + label {
+    background-color: $brand-primary;
+  }
+}
+
+// Situation
+//
+@include checkbox-switch-variant('secondary',$brand-secondary);
+@include checkbox-switch-variant('success',$brand-success);
+@include checkbox-switch-variant('info',$brand-info);
+@include checkbox-switch-variant('warning',$brand-warning);
+@include checkbox-switch-variant('danger',$brand-danger);
+
+//
+// File upload
+//
+.form-file {
+  .file-surface {
+    background-color: $brand-primary;
+  }
+}
+
+// Situation
+//
+
+//
+// Form status
+// success, warning and error
+
+.form-control-success {
+  @include form-control-status(success, $brand-success);
+  background-image: url($form-icon-success);
+}
+.form-control-warning {
+  @include form-control-status(warning, $brand-warning);
+  background-image: url($form-icon-warning);
+}
+.form-control-error {
+  @include form-control-status(error, $brand-danger);
+  background-image: url($form-icon-error);
+}
+
+.form-group-success {
+  color: $brand-success;
+  @include form-group-status(success, $brand-success);
+}
+
+.form-group-warning {
+  color: $brand-warning;
+  @include form-group-status(warning, $brand-warning);
+}
+
+.form-group-error {
+  color: $brand-danger;
+  @include form-group-status(error, $brand-danger);
+}

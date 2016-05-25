@@ -1,0 +1,45 @@
+// Progress
+//
+//
+//
+
+//
+// Progress bars
+//
+
+.progress-value {
+  background-color: $progress-value-color;
+}
+
+progress[value] {
+  &::-webkit-progress-value {
+    background-color: $progress-value-color;
+  }
+
+  &::-moz-progress-bar {
+    background-color: $progress-value-color;
+  }
+}
+
+//
+// Colors
+//
+
+.progress-secondary {
+  @include progress-variant($progress-value-secondary-bg);
+}
+.progress-gray {
+  @include progress-variant($progress-value-gray-bg);
+}
+.progress-success {
+  @include progress-variant($progress-value-success-bg);
+}
+.progress-info {
+  @include progress-variant($progress-value-info-bg);
+}
+.progress-warning {
+  @include progress-variant($progress-value-warning-bg);
+}
+.progress-danger {
+  @include progress-variant($progress-value-danger-bg);
+}

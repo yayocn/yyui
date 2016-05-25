@@ -1,0 +1,55 @@
+// This scss determine the style of buttons.
+// Determine several types of buttons.
+//
+//
+
+
+// Brand buttons
+//
+//
+.btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+.btn-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
+.btn-info {
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+}
+.btn-success {
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+.btn-warning {
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+}
+.btn-danger {
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+
+// Outline buttons
+// Invert brand buttons, remove all backgrounds.
+//
+.btn-default-outline {
+  @include button-outline-variant($btn-default-border);
+}
+.btn-primary-outline {
+  @include button-outline-variant($btn-primary-bg);
+}
+.btn-secondary-outline {
+  @include button-outline-variant($btn-secondary-bg);
+}
+.btn-info-outline {
+  @include button-outline-variant($btn-info-bg);
+}
+.btn-success-outline {
+  @include button-outline-variant($btn-success-bg);
+}
+.btn-warning-outline {
+  @include button-outline-variant($btn-warning-bg);
+}
+.btn-danger-outline {
+  @include button-outline-variant($btn-danger-bg);
+}

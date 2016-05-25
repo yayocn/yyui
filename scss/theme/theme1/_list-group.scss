@@ -1,0 +1,21 @@
+// List groups
+//
+//
+//
+
+// style
+//
+@include list-group-variant(primary, $brand-primary, $list-group-style-color);
+@include list-group-variant(secondary, $brand-secondary, $list-group-style-color);
+@include list-group-variant(success, $brand-success, $list-group-style-color);
+@include list-group-variant(info, $brand-info, $list-group-style-color);
+@include list-group-variant(warning, $brand-warning, $list-group-style-color);
+@include list-group-variant(danger, $brand-danger, $list-group-style-color);
+
+// Colors of item
+@include list-group-item-variant(primary, $list-grouup-item-primary-bg, $brand-primary);
+@include list-group-item-variant(secondary, $list-grouup-item-secondary-bg, $brand-secondary);
+@include list-group-item-variant(success, $list-grouup-item-success-bg, $brand-success);
+@include list-group-item-variant(info, $list-grouup-item-info-bg, $brand-info);
+@include list-group-item-variant(warning, $list-grouup-item-warning-bg, $brand-warning);
+@include list-group-item-variant(danger, $list-grouup-item-danger-bg, $brand-danger);
