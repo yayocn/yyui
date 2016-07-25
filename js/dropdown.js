@@ -104,18 +104,12 @@ var Dropdown = (function ($) {
         // close the other dropdown
         Dropdown._clearMenus();
 
-        if (isACTIVE) {
-          return false;
-        }
-
         this.focus();
 
-        if(ANIMATE) {
+        if(ANIMATE && !isACTIVE) {
           Util.setAnimateToggleForTarget($(this).nextAll(Selector.DROPDOWN_MENU)[0], ANIMATE_TYPE, ANIMATE_DURATION);
-          return false;
+          $(parent).addClass(ClassName.ACTIVE);
         }
-
-        $(parent).toggleClass(ClassName.ACTIVE);
 
         return false;
       }
@@ -144,12 +138,11 @@ var Dropdown = (function ($) {
         for (var i = 0; i < toggles.length; i++) {
           if(ANIMATE) {
             $(toggles[i]).nextAll('.dropdown-menu').slideUp(ANIMATE_DURATION);
-            continue;
-          }
 
-          var _parent = Dropdown._getParentFromElement(toggles[i]);
-
-          if (!$(_parent).hasClass(ClassName.ACTIVE)) {
+            var _parent = Dropdown._getParentFromElement(toggles[i]);
+            if ($(_parent).hasClass(ClassName.ACTIVE)) {
+              $(_parent).removeClass(ClassName.ACTIVE);
+            }
             continue;
           }
 
@@ -158,7 +151,7 @@ var Dropdown = (function ($) {
             continue;
           }
 
-          $(_parent).removeClass(ClassName.ACTIVE);
+
         }
       }
     }]);
