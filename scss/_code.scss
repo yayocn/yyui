@@ -75,15 +75,15 @@ pre {
     font-size: $pre-font-size !important;
   }
   .label {
-    color: $code-label-color;
+    color: $html-label-color;
   }
   .attr {
-    color: $code-attr-color;
+    color: $html-attr-color;
   }
   .value {
-    color: $code-attr-value-color;
+    color: $html-attr-value-color;
   }
   .note {
-    color: $code-note-color;
+    color: $html-comment-color;
   }
 }

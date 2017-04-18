@@ -700,7 +700,7 @@ button.close {
 
 /* line 79, ../scss/_assists.scss */
 .text-indent {
-  text-indent: 2em;
+  text-indent: 2em !important;
 }
 
 /* line 84, ../scss/_assists.scss */
@@ -4540,19 +4540,19 @@ pre .note {
 }
 /* line 77, ../scss/_code.scss */
 pre .label {
-  color: #7CB7F1;
+  color: #F92672;
 }
 /* line 80, ../scss/_code.scss */
 pre .attr {
-  color: #2CC92E;
+  color: #A6E22E;
 }
 /* line 83, ../scss/_code.scss */
 pre .value {
-  color: #EFD167;
+  color: #E6DB74;
 }
 /* line 86, ../scss/_code.scss */
 pre .note {
-  color: #C4C4C4;
+  color: #75715E;
 }
 
 /* line 8, ../scss/_images.scss */
