@@ -4,13 +4,13 @@
 //
 
 //
-// Form group
+// fieldset
 //
 
-.form-group {
-  margin-bottom: $space-default;
+fieldset {
+  margin-bottom: $space-base * 2;
 }
-.form-group-sm {
+.fieldset-sm {
   font-size: $font-size-sm;
 
   & .form-control {
@@ -22,7 +22,7 @@
   }
 }
 
-.form-group-lg {
+.fieldset-lg {
   font-size: $font-size-lg;
 
   & .form-control {
@@ -99,14 +99,14 @@
   }
 }
 
-.form-group > label {
+fieldset > label {
   display: inline-block;
   font-weight: 700;
   max-width: 100%;
 }
 
 
-// Define the label style of form-group
+// Define the label style of fieldset
 .form-control-label {
   padding: ($input-padding-y + $border-width) $input-padding-x;
   margin-bottom: 0 !important;
@@ -420,9 +420,9 @@ input[type="checkbox"] {
 
 // Form group status {
 //
-.form-group-success,
-.form-group-warning,
-.form-group-error {
+.fieldset-success,
+.fieldset-warning,
+.fieldset-error {
   .form-control {
     padding-right: ($input-padding-x * 3);
     background-position: center right ($input-height * .25);
@@ -430,27 +430,27 @@ input[type="checkbox"] {
     background-repeat: no-repeat;
   }
 }
-.form-group-success {
+.fieldset-success {
   color: $brand-success;
-  @include form-group-status(success, $brand-success);
+  @include fieldset-status(success, $brand-success);
 
   .form-control {
     background-image: url($form-icon-success);
   }
 }
 
-.form-group-warning {
+.fieldset-warning {
   color: $brand-warning;
-  @include form-group-status(warning, $brand-warning);
+  @include fieldset-status(warning, $brand-warning);
 
   .form-control {
     background-image: url($form-icon-warning);
   }
 }
 
-.form-group-error {
+.fieldset-error {
   color: $brand-danger;
-  @include form-group-status(error, $brand-danger);
+  @include fieldset-status(error, $brand-danger);
 
   .form-control {
     background-image: url($form-icon-error);
@@ -461,7 +461,7 @@ input[type="checkbox"] {
 // Form horizontal
 //
 .form-hz {
-  .form-group {
+  fieldset {
     margin-left: ($grid-gutter-width / -2);
     margin-right: ($grid-gutter-width / -2);
     overflow: auto;
@@ -481,7 +481,7 @@ input[type="checkbox"] {
   // `form-inline` will work when the device width more than `sm`.
   //
   @include media-breakpoint-up(sm) {
-    .form-group {
+    fieldset {
       display: inline-block;
       margin-bottom: 0;
       vertical-align: middle;
@@ -493,7 +493,7 @@ input[type="checkbox"] {
     }
     .form-control {
       display: inline-block;
-      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      width: auto; // Prevent labels from stacking above inputs in `fieldset`
       vertical-align: middle;
     }
 

@@ -3021,26 +3021,26 @@ a.bg-light:focus, a.bg-light:hover {
   }
 }
 /* line 10, ../scss/_forms.scss */
-.form-group {
-  margin-bottom: 15px;
+fieldset {
+  margin-bottom: 10px;
 }
 
 /* line 13, ../scss/_forms.scss */
-.form-group-sm {
+.fieldset-sm {
   font-size: 0.85rem;
 }
 /* line 16, ../scss/_forms.scss */
-.form-group-sm .form-control {
+.fieldset-sm .form-control {
   padding: 0.27rem 0.75rem;
   line-height: 1.5;
 }
 
 /* line 25, ../scss/_forms.scss */
-.form-group-lg {
+.fieldset-lg {
   font-size: 1.25rem;
 }
 /* line 28, ../scss/_forms.scss */
-.form-group-lg .form-control {
+.fieldset-lg .form-control {
   padding: 0.75rem 1.25rem;
   line-height: 1.33333;
 }
@@ -3104,7 +3104,7 @@ fieldset[disabled] .form-control {
 }
 
 /* line 102, ../scss/_forms.scss */
-.form-group > label {
+fieldset > label {
   display: inline-block;
   font-weight: 700;
   max-width: 100%;
@@ -3588,9 +3588,9 @@ input[type="checkbox"] {
 }
 
 /* line 426, ../scss/_forms.scss */
-.form-group-success .form-control,
-.form-group-warning .form-control,
-.form-group-error .form-control {
+.fieldset-success .form-control,
+.fieldset-warning .form-control,
+.fieldset-error .form-control {
   padding-right: 2.25rem;
   background-position: center right 0.59125rem;
   background-size: 1.53725rem 1.53725rem;
@@ -3598,150 +3598,150 @@ input[type="checkbox"] {
 }
 
 /* line 433, ../scss/_forms.scss */
-.form-group-success {
+.fieldset-success {
   color: #2EC6A0;
 }
 /* line 34, ../scss/mixins/_forms.scss */
-.form-group-success .help-block,
-.form-group-success .form-control-label,
-.form-group-success .radio,
-.form-group-success .checkbox,
-.form-group-success .radio-inline,
-.form-group-success .checkbox-inline, .form-group-success.radio label, .form-group-success.checkbox label, .form-group-success.radio-inline label, .form-group-success.checkbox-inline label {
+.fieldset-success .help-block,
+.fieldset-success .form-control-label,
+.fieldset-success .radio,
+.fieldset-success .checkbox,
+.fieldset-success .radio-inline,
+.fieldset-success .checkbox-inline, .fieldset-success.radio label, .fieldset-success.checkbox label, .fieldset-success.radio-inline label, .fieldset-success.checkbox-inline label {
   color: #2EC6A0;
 }
 /* line 47, ../scss/mixins/_forms.scss */
-.form-group-success .form-control {
+.fieldset-success .form-control {
   border-color: #2EC6A0;
 }
 /* line 50, ../scss/mixins/_forms.scss */
-.form-group-success .form-control:focus {
+.fieldset-success .form-control:focus {
   border-color: #249d7f;
   -moz-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075), 0 0 6px #7ae0c7;
   -webkit-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075), 0 0 6px #7ae0c7;
   box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075), 0 0 6px #7ae0c7;
 }
 /* line 57, ../scss/mixins/_forms.scss */
-.form-group-success .input-group-addon {
+.fieldset-success .input-group-addon {
   color: #2EC6A0;
   border-color: #2EC6A0;
   background-color: #cdf3ea;
 }
 /* line 64, ../scss/mixins/_forms.scss */
-.form-group-success .form-control-feedback {
+.fieldset-success .form-control-feedback {
   color: #2EC6A0;
   font-size: 0.75rem;
   padding: 0.27rem 0.75rem;
 }
 /* line 437, ../scss/_forms.scss */
-.form-group-success .form-control {
+.fieldset-success .form-control {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNoZWNrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjYxMnB4IiBoZWlnaHQ9Ijc5MnB4IiB2aWV3Qm94PSIwIDAgNjEyIDc5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjEyIDc5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjMkVDNkEwIiBkPSJNMjMzLjgsNjEwLjFjLTEzLjMsMC0yNS45LTYuMi0zNC0xNi45TDkwLjUsNDQ4LjgwMUM3Ni4zLDQzMCw4MCw0MDMuMyw5OC44LDM4OS4xDQoJYzE4LjgtMTQuMzAxLDQ1LjUtMTAuNSw1OS44LDguM2w3MS45LDk1TDQ1MS40LDI0MS45YzEyLjUtMjAsMzguOC0yNi4xMDEsNTguOC0xMy42MDFjMjAsMTIuNCwyNi4xMDEsMzguNywxMy42MDEsNTguODAxTDI3MCw1OTANCgljLTcuNCwxMi0yMC4yLDE5LjQtMzQuMywyMC4xMDFDMjM1LjEsNjEwLjEsMjM0LjUsNjEwLjEsMjMzLjgsNjEwLjF6Ii8+DQo8L3N2Zz4NCg==");
 }
 
 /* line 442, ../scss/_forms.scss */
-.form-group-warning {
+.fieldset-warning {
   color: #f0ad4e;
 }
 /* line 34, ../scss/mixins/_forms.scss */
-.form-group-warning .help-block,
-.form-group-warning .form-control-label,
-.form-group-warning .radio,
-.form-group-warning .checkbox,
-.form-group-warning .radio-inline,
-.form-group-warning .checkbox-inline, .form-group-warning.radio label, .form-group-warning.checkbox label, .form-group-warning.radio-inline label, .form-group-warning.checkbox-inline label {
+.fieldset-warning .help-block,
+.fieldset-warning .form-control-label,
+.fieldset-warning .radio,
+.fieldset-warning .checkbox,
+.fieldset-warning .radio-inline,
+.fieldset-warning .checkbox-inline, .fieldset-warning.radio label, .fieldset-warning.checkbox label, .fieldset-warning.radio-inline label, .fieldset-warning.checkbox-inline label {
   color: #f0ad4e;
 }
 /* line 47, ../scss/mixins/_forms.scss */
-.form-group-warning .form-control {
+.fieldset-warning .form-control {
   border-color: #f0ad4e;
 }
 /* line 50, ../scss/mixins/_forms.scss */
-.form-group-warning .form-control:focus {
+.fieldset-warning .form-control:focus {
   border-color: #ec971f;
   -moz-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075), 0 0 6px #f8d9ac;
   -webkit-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075), 0 0 6px #f8d9ac;
   box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075), 0 0 6px #f8d9ac;
 }
 /* line 57, ../scss/mixins/_forms.scss */
-.form-group-warning .input-group-addon {
+.fieldset-warning .input-group-addon {
   color: #f0ad4e;
   border-color: #f0ad4e;
   background-color: white;
 }
 /* line 64, ../scss/mixins/_forms.scss */
-.form-group-warning .form-control-feedback {
+.fieldset-warning .form-control-feedback {
   color: #f0ad4e;
   font-size: 0.75rem;
   padding: 0.27rem 0.75rem;
 }
 /* line 446, ../scss/_forms.scss */
-.form-group-warning .form-control {
+.fieldset-warning .form-control {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ildhcm5pbmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNjEyIDc5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjEyIDc5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iI0YwQUQ0RSIgZD0iTTYwMyw2NDAuMmwtMjc4LjUtNTA5Yy0zLjgtNi42LTEwLjgtMTAuNi0xOC41LTEwLjZzLTE0LjcsNC4xLTE4LjUsMTAuNkw5LDY0MC4yYy0zLjcsNi41LTMuNiwxNC40LDAuMiwyMC44YzMuOCw2LjUsMTAuOCwxMC40LDE4LjMsMTAuNGg1NTcuMWM3LjUsMCwxNC41LTMuOSwxOC4zLTEwLjRDNjA2LjYsNjU0LjYsNjA2LjcsNjQ2LjYsNjAzLDY0MC4yeiBNMzM2LjYsNjEwLjJoLTYxLjJWNTQ5aDYxLjJWNjEwLjJ6IE0zMzYuNiw1MDMuMWgtNjEuMlYzMDQuMmg2MS4yVjUwMy4xeiIvPjwvc3ZnPg==");
 }
 
 /* line 451, ../scss/_forms.scss */
-.form-group-error {
+.fieldset-error {
   color: #d9534f;
 }
 /* line 34, ../scss/mixins/_forms.scss */
-.form-group-error .help-block,
-.form-group-error .form-control-label,
-.form-group-error .radio,
-.form-group-error .checkbox,
-.form-group-error .radio-inline,
-.form-group-error .checkbox-inline, .form-group-error.radio label, .form-group-error.checkbox label, .form-group-error.radio-inline label, .form-group-error.checkbox-inline label {
+.fieldset-error .help-block,
+.fieldset-error .form-control-label,
+.fieldset-error .radio,
+.fieldset-error .checkbox,
+.fieldset-error .radio-inline,
+.fieldset-error .checkbox-inline, .fieldset-error.radio label, .fieldset-error.checkbox label, .fieldset-error.radio-inline label, .fieldset-error.checkbox-inline label {
   color: #d9534f;
 }
 /* line 47, ../scss/mixins/_forms.scss */
-.form-group-error .form-control {
+.fieldset-error .form-control {
   border-color: #d9534f;
 }
 /* line 50, ../scss/mixins/_forms.scss */
-.form-group-error .form-control:focus {
+.fieldset-error .form-control:focus {
   border-color: #c9302c;
   -moz-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075), 0 0 6px #eba5a3;
   -webkit-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075), 0 0 6px #eba5a3;
   box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075), 0 0 6px #eba5a3;
 }
 /* line 57, ../scss/mixins/_forms.scss */
-.form-group-error .input-group-addon {
+.fieldset-error .input-group-addon {
   color: #d9534f;
   border-color: #d9534f;
   background-color: #fdf7f7;
 }
 /* line 64, ../scss/mixins/_forms.scss */
-.form-group-error .form-control-feedback {
+.fieldset-error .form-control-feedback {
   color: #d9534f;
   font-size: 0.75rem;
   padding: 0.27rem 0.75rem;
 }
 /* line 455, ../scss/_forms.scss */
-.form-group-error .form-control {
+.fieldset-error .form-control {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNyb3NzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYxMiA3OTIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYxMiA3OTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiNEOTUzNEYiIGQ9Ik00NDcsNTQ0LjRjLTE0LjQsMTQuNC0zNy42LDE0LjQtNTEuOSwwTDMwNiw0NTEuN2wtODkuMSw5Mi43Yy0xNC40LDE0LjQtMzcuNiwxNC40LTUxLjksMGMtMTQuNC0xNC40LTE0LjQtMzcuNiwwLTUxLjlsOTIuNC05Ni40TDE2NSwyOTkuNmMtMTQuNC0xNC40LTE0LjQtMzcuNiwwLTUxLjlzMzcuNi0xNC40LDUxLjksMGw4OS4yLDkyLjdsODkuMS05Mi43YzE0LjQtMTQuNCwzNy42LTE0LjQsNTEuOSwwYzE0LjQsMTQuNCwxNC40LDM3LjYsMCw1MS45TDM1NC43LDM5Nmw5Mi40LDk2LjRDNDYxLjQsNTA2LjgsNDYxLjQsNTMwLDQ0Nyw1NDQuNHoiLz48L3N2Zz4=");
 }
 
 /* line 464, ../scss/_forms.scss */
-.form-hz .form-group {
+.form-hz fieldset {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
   overflow: auto;
   zoom: 1;
 }
 /* line 470, ../scss/_forms.scss */
-.form-hz .form-group .form-control-label {
+.form-hz fieldset .form-control-label {
   text-align: right;
 }
 
 @media (min-width: 34em) {
   /* line 484, ../scss/_forms.scss */
-  .form-inline .form-group {
+  .form-inline fieldset {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
     margin-right: 10px;
   }
   /* line 490, ../scss/_forms.scss */
-  .form-inline .form-group:last-child {
+  .form-inline fieldset:last-child {
     margin-right: 0;
   }
   /* line 494, ../scss/_forms.scss */

@@ -28,8 +28,8 @@
   }
 }
 
-// Form group status
-@mixin form-group-status($state, $color) {
+// Form fieldset status
+@mixin fieldset-status($state, $color) {
   // Color the label and help text
   .help-block,
   .form-control-label,
@@ -117,7 +117,7 @@
   .input-group-addon + .form-control,
   .input-group-btn + .input-group-btn,
   .input-group-btn + .input-group-addon,
-  .input-group-btn + .form-control, {
+  .input-group-btn + .form-control {
     margin-left: -1px;
   }
 }
