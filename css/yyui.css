@@ -4547,10 +4547,22 @@ pre .attr {
   color: #A6E22E;
 }
 /* line 83, ../scss/_code.scss */
+pre .attr:before {
+  content: " ";
+}
+/* line 87, ../scss/_code.scss */
+pre .attr:after {
+  content: "=";
+}
+/* line 91, ../scss/_code.scss */
 pre .value {
   color: #E6DB74;
 }
-/* line 86, ../scss/_code.scss */
+/* line 94, ../scss/_code.scss */
+pre .value:before, pre .value:after {
+  content: "\"";
+}
+/* line 99, ../scss/_code.scss */
 pre .note {
   color: #75715E;
 }

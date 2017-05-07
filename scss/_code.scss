@@ -79,9 +79,22 @@ pre {
   }
   .attr {
     color: $html-attr-color;
+
+    &:before {
+      content: " ";
+    }
+
+    &:after {
+      content: "=";
+    }
   }
   .value {
     color: $html-attr-value-color;
+
+    &:before,
+    &:after {
+      content: "\"";
+    }
   }
   .note {
     color: $html-comment-color;
