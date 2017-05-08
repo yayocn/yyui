@@ -157,6 +157,7 @@ select.form-control {
     font-size: $input-checkbox-font-size;
     font-weight: 400;
     cursor: pointer;
+    z-index: 10;
 
     &:before {
       content: "";
@@ -196,7 +197,12 @@ select.form-control {
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  z-index: 11;
 }
 
 .radio + .radio,
@@ -281,11 +287,13 @@ select.form-control {
     left: 25px;
   }
 
+  &.disabled input[type="checkbox"],
   &.disabled input[type="checkbox"] + label {
     cursor: $cursor-disabled;
     background-color: #e0e0e0;
   }
 
+  &.disabled input[type="checkbox"],
   &.disabled input[type="checkbox"] + label:after {
     cursor: $cursor-disabled;
     left: 1px;
@@ -341,6 +349,14 @@ select.form-control {
 //
 input[type="radio"],
 input[type="checkbox"] {
+  &:hover {
+    cursor: pointer;
+
+    + label:before {
+      border-width: 2px;
+    }
+  }
+
   &:disabled,
   &.disabled,
   fieldset[disabled] & {
