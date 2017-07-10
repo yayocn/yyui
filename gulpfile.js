@@ -69,7 +69,7 @@ gulp.task('distJs', ['uglify'], function() {
 //
 
 gulp.task('produce',['distJs', 'distCss'], function() {
-  gulp.src('jquery-1.11.1.min.js')
+  gulp.src('jquery-1.12.4.min.js')
     .pipe(rename('jquery.min.js'))
     .pipe(gulp.dest('dist/js'));
 })
