@@ -7,7 +7,7 @@
   padding: $alert-padding;
   margin-bottom: $space-y;
   border: 1px solid transparent;
-  font-size: .85rem;
+  font-size: 1.36rem;
 
   @if $enable-rounded {
     @include border-radius($alert-border-radius);

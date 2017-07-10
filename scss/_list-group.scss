@@ -12,7 +12,7 @@
   position: relative;
   display: block;
   padding: 8px 15px;
-  margin-bottom: -.0625rem;
+  margin-bottom: -.1rem;
   font-size: 14px;
   background-color: $list-group-bg;
   border: 1px solid $list-group-border;
@@ -33,7 +33,7 @@
 //
 .list-group-flush {
   .list-group-item {
-    border-width: .0625rem 0;
+    border-width: .1rem 0;
     border-radius: 0;
   }
 }

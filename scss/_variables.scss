@@ -90,19 +90,19 @@ $font-family-base:          $font-family-sans-serif !default;
 // Size
 //
 //
-$font-size-root:    1rem !default;
+$font-size-root:    10px !default;
 
-$font-size-base:    1rem !default; //16px
-$font-size-lg:      1.25rem !default; //20px
-$font-size-sm:      .85rem !default; //~14px
-$font-size-xs:      .75rem !default; // 12px
+$font-size-base:    1.4rem !default; // 14px
+$font-size-lg:      1.6rem !default; // 16px
+$font-size-sm:      1.3rem !default; // 13px
+$font-size-xs:      1.2rem !default; // 12px
 
-$font-size-h1:      2.5rem !default; //40px
-$font-size-h2:      2rem !default; // 32px
-$font-size-h3:      1.75rem !default; //28px
-$font-size-h4:      1.5rem !default; //24px
-$font-size-h5:      1.25rem !default; //20px
-$font-size-h6:      1rem !default; //16px
+$font-size-h1:      3.4rem !default; // 34px
+$font-size-h2:      3rem !default; // 30px
+$font-size-h3:      2.6rem !default; //26px
+$font-size-h4:      2.2rem !default; //22px
+$font-size-h5:      1.8rem !default; //18px
+$font-size-h6:      1.4rem !default; //14px
 
 
 // Line-height
@@ -117,21 +117,21 @@ $line-height-xs:      1.5 !default;
 // Border
 // the base styles of border.
 //
-$border-width:      .0625rem !default;
+$border-width:      .1rem !default;
 
-$border-radius:     .25rem !default;
+$border-radius:     .4rem !default;
 $border-radius-no:  0rem !default;
-$border-radius-lg:  .3rem !default;
-$border-radius-sm:  .2rem !default;
-$border-radius-xs:  .1875rem !default;
-$border-radius-hg:  1000px;
+$border-radius-lg:  .48rem !default;
+$border-radius-sm:  .32rem !default;
+$border-radius-xs:  .3rem !default;
+$border-radius-hg:  1000rem;
 
 
 // Buttons
 // For each of buttons
 //
-$btn-padding-x:     1rem;
-$btn-padding-y:     .37rem;
+$btn-padding-x:     1.6rem;
+$btn-padding-y:     .59rem;
 $btn-font-weight:   normal !default;
 
 $btn-primary-color:     #fff !default;
@@ -164,14 +164,14 @@ $btn-danger-border:     $btn-danger-bg !default;
 
 $btn-link-disabled-color:     $gray-light !default;
 
-$btn-padding-x-xs:      .3125rem !default;
-$btn-padding-y-xs:      .02rem !default;
+$btn-padding-x-xs:      .5rem !default;
+$btn-padding-y-xs:      .032rem !default;
 
-$btn-padding-x-sm:      .75rem !default;
-$btn-padding-y-sm:      .25rem !default;
+$btn-padding-x-sm:      1.2rem !default;
+$btn-padding-y-sm:      .4rem !default;
 
-$btn-padding-x-lg:      1.25rem !default;
-$btn-padding-y-lg:      .75rem !default;
+$btn-padding-x-lg:      2rem !default;
+$btn-padding-y-lg:      1.2rem !default;
 
 
 //
@@ -183,17 +183,17 @@ $btn-padding-y-lg:      .75rem !default;
 // Define the maximum width of `.container` for different screen sizes.
 //
 $container-max-widths: (
-        sm: 30rem,    // 480
-        md: 45rem,    // 720
-        lg: 60rem,    // 960
-        xl: 80rem,    // 1280
+        sm: 48rem,    // 480
+        md: 72rem,    // 720
+        lg: 96rem,    // 960
+        xl: 128rem,    // 1280
 ) !default;
 
 // Grid columns$link-color
 // Set the number of columns and specify the width of the gutters.
 //
 $grid-columns:               12 !default;
-$grid-gutter-width:          1.875rem !default; // 30px
+$grid-gutter-width:          3rem !default; // 30px
 
 // Grid breakpoints
 //
@@ -222,8 +222,8 @@ $abbr-border-color:           $gray-light !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:            .75rem !default;
-$table-sm-cell-padding:         .3rem !default;
+$table-cell-padding:            1.2rem !default;
+$table-sm-cell-padding:         .48rem !default;
 
 $table-bg:                      transparent !default;
 $table-bg-accent:               #eee !default;
@@ -236,8 +236,8 @@ $table-border-color:            $gray-lighter !default;
 // Forms
 //
 
-$input-padding-x:                .75rem !default;
-$input-padding-y:                .37rem !default;
+$input-padding-x:                1.2rem !default;
+$input-padding-y:                .59rem !default;
 
 $input-bg:                       #fff !default;
 $input-bg-disabled:              $gray-lighter !default;
@@ -255,11 +255,11 @@ $input-box-shadow-color-focus:         rgba(102,175,233,.6) !default;
 
 $input-color-placeholder:        #999 !default;
 
-$input-padding-x-sm:             .75rem !default;
-$input-padding-y-sm:             .27rem !default;
+$input-padding-x-sm:             1.2rem !default;
+$input-padding-y-sm:             .43rem !default;
 
-$input-padding-x-lg:             1.25rem !default;
-$input-padding-y-lg:             .75rem !default;
+$input-padding-x-lg:             2rem !default;
+$input-padding-y-lg:             1.2rem !default;
 
 $input-checkbox-font-size:       14px !default;
 
@@ -314,7 +314,7 @@ $directions: (up, right, down, left) !default;
 
 // Lead
 //
-$lead-font-size: 1.25rem !default;
+$lead-font-size: 2rem !default;
 $lead-font-weight: 300 !default;
 
 //
@@ -455,7 +455,7 @@ $triangle-color: #555;
 
 // Image thumbnails
 //
-$thumbnail-padding:           .25rem !default;
+$thumbnail-padding:           .4rem !default;
 $thumbnail-bg:                $body-bg !default;
 $thumbnail-border:            #ddd !default;
 $thumbnail-border-radius:     $border-radius !default;
@@ -528,8 +528,8 @@ $nav-pills-active-bg:                       $brand-primary !default;
 
 // Breadcrumbs
 
-$breadcrumb-padding-vertical:   .75rem !default;
-$breadcrumb-padding-horizontal: 1rem !default;
+$breadcrumb-padding-vertical:   1.2rem !default;
+$breadcrumb-padding-horizontal: 1.6rem !default;
 
 $breadcrumb-color:              #999 !default;
 $breadcrumb-bg:                 $gray-lightest !default;
@@ -540,12 +540,12 @@ $breadcrumb-divider:            "/" !default;
 
 // Pagination
 
-$pagination-padding-x:                .75rem !default;
-$pagination-padding-y:                .5rem !default;
-$pagination-padding-x-sm:             .75rem !default;
-$pagination-padding-y-sm:             .275rem !default;
-$pagination-padding-x-lg:             1.5rem !default;
-$pagination-padding-y-lg:             .75rem !default;
+$pagination-padding-x:                1.2rem !default;
+$pagination-padding-y:                .8rem !default;
+$pagination-padding-x-sm:             1.2rem !default;
+$pagination-padding-y-sm:             .44rem !default;
+$pagination-padding-x-lg:             2.4rem !default;
+$pagination-padding-y-lg:             1.2rem !default;
 
 
 $pagination-color:                     $brand-primary !default;
@@ -595,7 +595,7 @@ $label-link-hover-color:      #fff !default;
 $jumbotron-size:                 21px !default;
 $jumbotron-h1-size:              60px !default;
 $jumbotron-h1-weight:            500 !default;
-$jumbotron-padding:              2rem !default;
+$jumbotron-padding:              3.2rem !default;
 $jumbotron-bg:                   $gray-lighter !default;
 
 // Alerts
@@ -606,11 +606,11 @@ $alert-padding:               10px !default;
 $alert-border-radius:         $border-radius !default;
 $alert-link-font-weight:      bold !default;
 $alert-padding-lg:            15px !default;
-$alert-size-lg:               1rem;
-$alert-close-size-lg:         1.8rem;
+$alert-size-lg:               1.6rem;
+$alert-close-size-lg:         2.88rem;
 $alert-padding-sm:            6px !default;
-$alert-size-sm:               .75rem;
-$alert-close-size-sm:         1.5rem;
+$alert-size-sm:               1.2rem;
+$alert-close-size-sm:         2.4rem;
 
 $alert-success-bg:            $state-success-bg !default;
 $alert-success-text:          $state-success-text !default;

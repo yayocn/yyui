@@ -72,9 +72,6 @@ gulp.task('produce',['distJs', 'distCss'], function() {
   gulp.src('jquery-1.11.1.min.js')
     .pipe(rename('jquery.min.js'))
     .pipe(gulp.dest('dist/js'));
-
-  gulp.src('fonts/*')
-    .pipe(gulp.dest('dist/fonts/'));
 })
 
 //gulp.task('default', ['css','sourcemap','concatjs','uglifyjs']);

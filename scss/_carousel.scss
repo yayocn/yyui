@@ -127,18 +127,19 @@
   .icon-next {
     position: absolute;
     top: 50%;
+    width: 50px;
+    height: 100px;
+    font-size: 100px;
     z-index: 5;
     display: inline-block;
-    margin-top: -10px;
     line-height: 1;
+    transform: translateY(-50%);
   }
   .icon-prev {
     left: 50%;
-    margin-left: -10px;
   }
   .icon-next {
     right: 50%;
-    margin-right: -10px;
   }
 }
 
@@ -207,21 +208,21 @@
 
 @include media-breakpoint-up(sm) {
   // Scale up the controls a smidge
-  .carousel-control {
-    .icon-prev,
-    .icon-next {
-      width: 50px;
-      height: 30px;
-      margin-top: -15px;
-      font-size: 30px;
-    }
-    .icon-prev {
-      margin-left: -15px;
-    }
-    .icon-next {
-      margin-right: -15px;
-    }
-  }
+  //.carousel-control {
+  //  .icon-prev,
+  //  .icon-next {
+  //    width: 50px;
+  //    height: 30px;
+  //    margin-top: -15px;
+  //    font-size: 30px;
+  //  }
+  //  .icon-prev {
+  //    margin-left: -15px;
+  //  }
+  //  .icon-next {
+  //    margin-right: -15px;
+  //  }
+  //}
 
   // Show and left align the captions
   .carousel-caption {
