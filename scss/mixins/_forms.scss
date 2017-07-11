@@ -137,6 +137,10 @@
      border: 2px solid $color;
    }
 
+   input:checked + label {
+     color: $color;
+   }
+
    input:checked + label:before {
      border: 2px solid $color;
      background-color: $color;
