@@ -85,6 +85,14 @@ button.close {
 .text-uppercase      { text-transform: uppercase !important; }
 .text-capitalize     { text-transform: capitalize !important; }
 
+
+// font family
+//
+//
+.text-web { font-family: $font-family-sans-serif !important; }
+.text-paper { font-family: $font-family-serif !important; }
+.text-letter { font-family: $font-family-monospace !important; }
+
 //
 // Visibility
 //
