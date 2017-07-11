@@ -2,7 +2,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /* line 9, ../scss/_normalize.scss */
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Microsoft Yahei, Helvetica, Arial, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: 10px;
@@ -19,7 +19,7 @@ html {
 /* line 26, ../scss/_normalize.scss */
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Microsoft Yahei, Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
   color: #373a3c;
@@ -720,7 +720,7 @@ button.close {
 
 /* line 92, ../scss/_assists.scss */
 .text-web {
-  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Arial, sans-serif !important;
+  font-family: "Helvetica Neue", Microsoft Yahei, Helvetica, Arial, sans-serif !important;
 }
 
 /* line 93, ../scss/_assists.scss */
@@ -5580,7 +5580,7 @@ pre {
 .navbar-brand {
   float: left;
   margin-right: 1.6rem;
-  padding-top: .4rem;
+  padding-top: .6rem;
   padding-bottom: .4rem;
   background-color: #fff;
   font-size: 1.6rem;
