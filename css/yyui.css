@@ -1744,7 +1744,7 @@ a.bg-light:focus, a.bg-light:hover {
 @media (min-width: 34em) {
   /* line 13, ../scss/_grid.scss */
   .container {
-    max-width: 48rem;
+    max-width: 48;
   }
 }
 @media (min-width: 48em) {
@@ -1756,13 +1756,13 @@ a.bg-light:focus, a.bg-light:hover {
 @media (min-width: 62em) {
   /* line 13, ../scss/_grid.scss */
   .container {
-    max-width: 96rem;
+    max-width: 960px;
   }
 }
 @media (min-width: 85em) {
   /* line 13, ../scss/_grid.scss */
   .container {
-    max-width: 128rem;
+    max-width: 1280px;
   }
 }
 

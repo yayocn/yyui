@@ -183,10 +183,10 @@ $btn-padding-y-lg:      1.2rem !default;
 // Define the maximum width of `.container` for different screen sizes.
 //
 $container-max-widths: (
-        sm: 48rem,    // 480
-        md: 72rem,    // 720
-        lg: 96rem,    // 960
-        xl: 128rem,    // 1280
+        sm: 480px,    // 480
+        md: 720px,    // 720
+        lg: 960px,    // 960
+        xl: 1280px,    // 1280
 ) !default;
 
 // Grid columns$link-color
