@@ -4559,38 +4559,24 @@ kbd kbd {
 /* line 37, ../scss/_code.scss */
 pre {
   display: block;
-  background-color: #3f3f3f;
-  border: 1px solid #ccc;
-  color: #fff;
   font-size: 14px;
-  line-height: 1.25;
-  margin: 0;
-  padding: 10px 15px;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: nowrap;
-  -moz-border-radius: 0.48rem;
-  -webkit-border-radius: 0.48rem;
-  border-radius: 0.48rem;
+  line-height: 1.4;
+  -moz-border-radius: 0rem;
+  -webkit-border-radius: 0rem;
+  border-radius: 0rem;
 }
-/* line 53, ../scss/_code.scss */
+/* line 46, ../scss/_code.scss */
 pre code {
-  padding: 0;
   font-size: inherit;
   color: inherit;
   background-color: transparent;
   border-radius: 0;
 }
 
-/* line 63, ../scss/_code.scss */
+/* line 55, ../scss/_code.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
-}
-
-/* line 68, ../scss/_code.scss */
-pre {
-  font-size: 14px !important;
 }
 
 /* line 8, ../scss/_images.scss */

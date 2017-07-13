@@ -36,22 +36,13 @@ kbd {
 // Blocks of code
 pre {
   display: block;
-  background-color: $pre-bg;
-  border: 1px solid #ccc;
-  color: $pre-color;
   font-size: $pre-font-size;
   line-height: $pre-line-height;
-  margin: 0;
-  padding: $space-base * 2 $space-base * 3;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: nowrap;
 
-  @include border-radius($border-radius-lg);
+  @include border-radius($border-radius-no);
 
   // Account for some code outputs that place code tags in pre tags
   code {
-    padding: 0;
     font-size: inherit;
     color: inherit;
     background-color: transparent;
@@ -63,8 +54,4 @@ pre {
 .pre-scrollable {
   max-height: $pre-scrollable-max-height;
   overflow-y: scroll;
-}
-
-pre {
-  font-size: $pre-font-size !important;
 }
