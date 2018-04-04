@@ -11,13 +11,14 @@
 //
 // Close
 //
+$close-shadow: (0 0 2px rgba($gray-dark, 1));
 .close {
   float: right;
   font-size: ($font-size-base * 2);
   font-weight: $close-font-weight;
   line-height: 1;
   color: $close-color;
-  @include text-shadow(inset 0 0 1px rgba($close-color, 1), 0 0 2px rgba($gray-dark, 1));
+  @include text-shadow($close-shadow);
   opacity: .5;
 
   @include hover-focus {
@@ -143,64 +144,52 @@ button.close {
 @include bg-variant('.bg-muted', $text-muted);
 @include bg-variant('.bg-dark', $gray-dark);
 @include bg-variant('.bg-light', $gray-lightest);
-@include bg-variant('.bg-perspective', 'transparent');
+@include bg-variant('.bg-perspective', $transparent);
 
 
 //
 // Margin and padding
 //
 
-.m-0 { margin:        0 !important; }
-.m-t-0 { margin-top:    0 !important; }
-.m-r-0 { margin-right:  0 !important; }
-.m-b-0 { margin-bottom: 0 !important; }
-.m-l-0 { margin-left:   0 !important; }
-.m-vt-0 { margin-top:  0 !important; margin-bottom:   0 !important; }
-.m-hz-0 { margin-left:    0 !important; margin-right: 0 !important; }
-
-.p-0 { padding:        0 !important; }
-.p-t-0 { padding-top:    0 !important; }
-.p-r-0 { padding-right:  0 !important; }
-.p-b-0 { padding-bottom: 0 !important; }
-.p-l-0 { padding-left:   0 !important; }
-.p-vt-0 { padding-top:    0 !important; padding-bottom: 0 !important; }
-.p-hz-0 { padding-right:  0 !important; padding-left:   0 !important; }
-
-@each $dir in (t, r, b, l, vt, hz) {
-  @for $i from 1 through $margin-padding-range {
-    .m-#{$dir}-#{$i} {
-      @if $dir == t {
-        margin-top: $space-base * $i;
+@each $dir in $margin-padding-direction {
+  @each $i in $margin-padding-range {
+    .m#{$dir}-#{$i} {
+      @if $dir == '' {
+        margin: $i + px;
+      }@else if $dir == t {
+        margin-top: $i + px;
       }@else if($dir == r) {
-        margin-right: $space-base * $i;
+        margin-right: $i + px;
       }@else if($dir == b) {
-        margin-bottom: $space-base * $i;
+        margin-bottom: $i + px;
       }@else if($dir == l) {
-        margin-left: $space-base * $i;
-      }@else if($dir == vt) {
-        margin-top: $space-base * $i;
-        margin-bottom: $space-base * $i;
-      }@else if($dir == hz) {
-        margin-left: $space-base * $i;
-        margin-right: $space-base * $i;
+        margin-left: $i + px;
+      }@else if($dir == v) {
+        margin-top: $i + px;
+        margin-bottom: $i + px;
+      }@else if($dir == h) {
+        margin-left: $i + px;
+        margin-right: $i + px;
       }
     }
 
-    .p-#{$dir}-#{$i} {
+    .p#{$dir}-#{$i} {
       @if $dir == t {
-        padding-top: $space-base * $i;
+        padding: $i + px;
+      }@else if($dir == t) {
+        padding-top: $i + px;
       }@else if($dir == r) {
-        padding-right: $space-base * $i;
+        padding-right: $i + px;
       }@else if($dir == b) {
-        padding-bottom: $space-base * $i;
+        padding-bottom: $i + px;
       }@else if($dir == l) {
-        padding-left: $space-base * $i;
-      }@else if($dir == vt) {
-        padding-top: $space-base * $i;
-        padding-bottom: $space-base * $i;
-      }@else if($dir == hz) {
-        padding-left: $space-base * $i;
-        padding-right: $space-base * $i;
+        padding-left: $i + px;
+      }@else if($dir == v) {
+        padding-top: $i + px;
+        padding-bottom: $i + px;
+      }@else if($dir == h) {
+        padding-left: $i + px;
+        padding-right: $i + px;
       }
     }
   }
