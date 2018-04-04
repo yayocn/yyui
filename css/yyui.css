@@ -1652,7 +1652,7 @@ a.bg-light:focus, a.bg-light:hover {
 }
 
 /* line 220, ../scss/_assists.scss */
-.list-none {
+.list-bare {
   padding-left: 0;
   list-style: none;
 }
