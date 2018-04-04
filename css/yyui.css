@@ -125,7 +125,7 @@ h1 {
 /* line 176, ../scss/_normalize.scss */
 p {
   margin-top: 0;
-  margin-bottom: 1.6rem;
+  margin-bottom: 0;
 }
 
 /* line 182, ../scss/_normalize.scss */
@@ -4565,7 +4565,7 @@ pre {
   -webkit-border-radius: 0rem;
   border-radius: 0rem;
 }
-/* line 46, ../scss/_code.scss */
+/* line 45, ../scss/_code.scss */
 pre code {
   font-size: inherit;
   color: inherit;
@@ -4573,7 +4573,7 @@ pre code {
   border-radius: 0;
 }
 
-/* line 55, ../scss/_code.scss */
+/* line 54, ../scss/_code.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
