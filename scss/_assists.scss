@@ -89,6 +89,13 @@ button.close {
 .text-paper { font-family: $font-family-serif !important; }
 .text-letter { font-family: $font-family-monospace !important; }
 
+// textarea
+//
+//
+.size-dead {
+  resize: none !important;
+}
+
 //
 // Visibility
 //
