@@ -43,15 +43,11 @@ button.close {
   @include clearfix();
 }
 
-.center {
-  @include center-block();
-}
-
-.f-l {
+.fl {
   @include float(left);
 }
 
-.f-r {
+.fr {
   @include float(right);
 }
 //
@@ -288,4 +284,16 @@ button.close {
 
 .pt-sticky {
   position: sticky !important;
+}
+
+.pt-hc {
+  @include center-block('h');
+}
+
+.pt-vc {
+  @include center-block('v');
+}
+
+.pt-center {
+  @include center-block('');
 }
