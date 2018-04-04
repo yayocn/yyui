@@ -446,23 +446,22 @@ small code,
 /* line 66, ../scss/_type.scss */
 mark,
 .mark {
-  padding: .2em;
-  background-color: #fcf8e3;
+  padding: 2;
 }
 
-/* line 74, ../scss/_type.scss */
+/* line 73, ../scss/_type.scss */
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small,
 .h1 small,
 .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
   color: #777;
 }
 
-/* line 81, ../scss/_type.scss */
+/* line 80, ../scss/_type.scss */
 address {
   font-size: 1.3rem;
 }
 
-/* line 88, ../scss/_type.scss */
+/* line 87, ../scss/_type.scss */
 blockquote {
   padding-top: 7.5px;
   padding-bottom: 7.5px;
@@ -472,24 +471,24 @@ blockquote {
   font-size: 1.4rem;
   border-left: 0.4rem solid #eceeef;
 }
-/* line 100, ../scss/_type.scss */
+/* line 99, ../scss/_type.scss */
 blockquote p:last-child,
 blockquote ul:last-child,
 blockquote ol:last-child {
   margin-bottom: 0;
 }
-/* line 105, ../scss/_type.scss */
+/* line 104, ../scss/_type.scss */
 blockquote footer {
   display: block;
   font-size: 80%;
   line-height: 1.5;
   color: #818a91;
 }
-/* line 111, ../scss/_type.scss */
+/* line 110, ../scss/_type.scss */
 blockquote footer:before {
   content: "\2014 \00A0";
 }
-/* line 116, ../scss/_type.scss */
+/* line 115, ../scss/_type.scss */
 blockquote.blockquote-reverse {
   padding-left: 0;
   padding-right: 15px;
@@ -497,16 +496,16 @@ blockquote.blockquote-reverse {
   border-right: 0.4rem solid #eceeef;
   border-left: 0;
 }
-/* line 125, ../scss/_type.scss */
+/* line 124, ../scss/_type.scss */
 blockquote.blockquote-reverse footer:before {
   content: "";
 }
-/* line 126, ../scss/_type.scss */
+/* line 125, ../scss/_type.scss */
 blockquote.blockquote-reverse footer:after {
   content: "\00A0 \2014";
 }
 
-/* line 135, ../scss/_type.scss */
+/* line 134, ../scss/_type.scss */
 dl {
   font-size: 1.3rem;
   margin-bottom: 20px;
@@ -523,22 +522,22 @@ dl {
   clear: both;
 }
 
-/* line 144, ../scss/_type.scss */
+/* line 143, ../scss/_type.scss */
 dd, dt {
   line-height: 1.5;
 }
 
-/* line 147, ../scss/_type.scss */
+/* line 146, ../scss/_type.scss */
 dt {
   font-weight: 700;
 }
 
-/* line 150, ../scss/_type.scss */
+/* line 149, ../scss/_type.scss */
 dd {
   margin: 0;
 }
 
-/* line 155, ../scss/_type.scss */
+/* line 154, ../scss/_type.scss */
 .dl-hz dt {
   clear: left;
   float: left;
@@ -548,7 +547,7 @@ dd {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 162, ../scss/_type.scss */
+/* line 161, ../scss/_type.scss */
 .dl-hz dd {
   margin-left: 180px;
 }
