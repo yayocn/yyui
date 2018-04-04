@@ -148,17 +148,8 @@ dt {
 }
 dd {
   margin: 0;
-}
 
-.dl-hz {
-  dt {
-    clear: left;
-    float: left;
-    text-align: right;
-    width: 160px;
-    @include text-truncate;
-  }
-  dd {
-    margin-left: 180px;
+  + dt {
+    margin-top: $space-default;
   }
 }

@@ -446,7 +446,7 @@ small code,
 /* line 66, ../scss/_type.scss */
 mark,
 .mark {
-  padding: 2;
+  padding: 2px 3px;
 }
 
 /* line 73, ../scss/_type.scss */
@@ -536,20 +536,9 @@ dt {
 dd {
   margin: 0;
 }
-
-/* line 154, ../scss/_type.scss */
-.dl-hz dt {
-  clear: left;
-  float: left;
-  text-align: right;
-  width: 160px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-/* line 161, ../scss/_type.scss */
-.dl-hz dd {
-  margin-left: 180px;
+/* line 152, ../scss/_type.scss */
+dd + dt {
+  margin-top: 15px;
 }
 
 /* line 53, ../scss/mixins/_assists.scss */
