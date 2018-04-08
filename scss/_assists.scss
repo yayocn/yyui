@@ -97,21 +97,6 @@ button.close {
   resize: none !important;
 }
 
-//
-// Visibility
-//
-
-// `hidden` HTML attribute
-//
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
 .text-hidden {
   @include text-hidden();
 }
@@ -252,28 +237,4 @@ button.close {
 .divider-sm {
   margin-top: $divider-margin-sm;
   margin-bottom: $divider-margin-sm;
-}
-
-//
-// Position
-//
-
-.pt-relative {
-  position: relative !important;
-}
-
-.pt-sticky {
-  position: sticky !important;
-}
-
-.pt-hc {
-  @include center-block('h');
-}
-
-.pt-vc {
-  @include center-block('v');
-}
-
-.pt-center {
-  @include center-block('');
 }

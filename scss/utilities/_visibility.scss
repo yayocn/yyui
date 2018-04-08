@@ -1,0 +1,51 @@
+//
+// Display
+//
+
+
+// Visibility
+//
+
+// `hidden` HTML attribute
+//
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+// Opacity
+@for $i from 0 through 10 {
+  .opacity-#{$i} {
+    opacity: $i * 0.1;
+  }
+}
+
+
+// Flex
+//
+
+.flex {
+  @include display-flex($display: flex !important);
+}
+
+.flex-inline {
+  @include display-flex($display: inline-flex !important);
+}
+
+.justify-start { @include justify-content(flex-start !important) }
+.justify-end { @include justify-content(flex-end !important) }
+.justify-center { @include justify-content(center !important) }
+.justify-between { @include justify-content(space-between !important) }
+.justify-around { @include justify-content(space-around !important) }
+
+.block {
+  display: block !important;
+}
+
+.block-inline {
+  display: inline-block !important;
+}
