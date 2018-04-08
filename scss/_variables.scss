@@ -44,7 +44,7 @@ $component-active-bg:    $brand-primary !default;
 // Options
 // Quickly modify global styling by enabling and disabling optional feature.
 //
-$enable-flex:                 false !default;
+$enable-flex:                 true !default;
 $enable-transitions:          true !default;
 $enable-rounded:              false !default;
 $enable-shadows:              false !default;
@@ -186,10 +186,10 @@ $btn-padding-y-lg:      1.2rem !default;
 // Define the maximum width of `.container` for different screen sizes.
 //
 $container-max-widths: (
-        sm: 480px,    // 480
-        md: 720px,    // 720
-        lg: 960px,    // 960
-        xl: 1280px,    // 1280
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px
 ) !default;
 
 // Grid columns$link-color
@@ -201,16 +201,11 @@ $grid-gutter-width:          3rem !default; // 30px
 // Grid breakpoints
 //
 $grid-breakpoints: (
-        // Extra small screen / phone
         xs: 0,
-        // Small screen / phone
-        sm: 34em,
-        // Medium screen / tablet
-        md: 48em,
-        // Large screen / desktop
-        lg: 62em,
-        // Extra large screen / wide desktop
-        xl: 85em
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
 ) !default;
 
 // Flex
