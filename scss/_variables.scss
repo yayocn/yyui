@@ -12,8 +12,10 @@ $gray:              #55595c !default;
 $gray-light:        #818a91 !default;
 $gray-lighter:      #eceeef !default;
 $gray-lightest:     #f7f7f9 !default;
+
 $transparent:       transparent !default;
 $white:             #fff !default;
+$dark:              #212529 !default;
 
 $brand-primary:     #0275d8 !default;
 $brand-secondary:   #375A7F !default;
@@ -122,7 +124,7 @@ $border-width:      .1rem !default;
 $border-color:      #ccc !default;
 
 $border-radius:     .4rem !default;
-$border-radius-no:  0rem !default;
+$border-radius-no:  0 !default;
 $border-radius-lg:  .48rem !default;
 $border-radius-sm:  .32rem !default;
 $border-radius-xs:  .3rem !default;
