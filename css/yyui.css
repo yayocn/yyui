@@ -541,6 +541,135 @@ dd + dt {
   margin-top: 15px;
 }
 
+/* line 4, ../scss/utilities/_border.scss */
+.border {
+  border: 0.1rem solid #ccc !important;
+}
+
+/* line 5, ../scss/utilities/_border.scss */
+.border-top {
+  border-top: 0.1rem solid #ccc !important;
+}
+
+/* line 6, ../scss/utilities/_border.scss */
+.border-right {
+  border-right: 0.1rem solid #ccc !important;
+}
+
+/* line 7, ../scss/utilities/_border.scss */
+.border-bottom {
+  border-bottom: 0.1rem solid #ccc !important;
+}
+
+/* line 8, ../scss/utilities/_border.scss */
+.border-left {
+  border-left: 0.1rem solid #ccc !important;
+}
+
+/* line 10, ../scss/utilities/_border.scss */
+.border-0 {
+  border: 0 !important;
+}
+
+/* line 11, ../scss/utilities/_border.scss */
+.border-top-0 {
+  border-top: 0 !important;
+}
+
+/* line 12, ../scss/utilities/_border.scss */
+.border-right-0 {
+  border-right: 0 !important;
+}
+
+/* line 13, ../scss/utilities/_border.scss */
+.border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+/* line 14, ../scss/utilities/_border.scss */
+.border-left-0 {
+  border-left: 0 !important;
+}
+
+/* line 17, ../scss/utilities/_border.scss */
+.border-primary {
+  border-color: #0275d8 !important;
+}
+
+/* line 17, ../scss/utilities/_border.scss */
+.border-secondary {
+  border-color: #375A7F !important;
+}
+
+/* line 17, ../scss/utilities/_border.scss */
+.border-info {
+  border-color: #14adea !important;
+}
+
+/* line 17, ../scss/utilities/_border.scss */
+.border-success {
+  border-color: #2EC6A0 !important;
+}
+
+/* line 17, ../scss/utilities/_border.scss */
+.border-warning {
+  border-color: #f0ad4e !important;
+}
+
+/* line 17, ../scss/utilities/_border.scss */
+.border-danger {
+  border-color: #d9534f !important;
+}
+
+/* line 22, ../scss/utilities/_border.scss */
+.border-white {
+  border-color: #fff !important;
+}
+
+/* line 23, ../scss/utilities/_border.scss */
+.border-transparent {
+  border-color: transparent !important;
+}
+
+/* line 25, ../scss/utilities/_border.scss */
+.border-round-0 {
+  border-radius: 0rem !important;
+}
+
+/* line 26, ../scss/utilities/_border.scss */
+.border-round-circle {
+  border-radius: 50% !important;
+}
+
+/* line 27, ../scss/utilities/_border.scss */
+.border-round {
+  border-radius: 0.4rem !important;
+}
+
+/* line 28, ../scss/utilities/_border.scss */
+.border-round-top {
+  border-top-left-radius: 0.4rem !important;
+  border-top-right-radius: 0.4rem !important;
+}
+
+/* line 32, ../scss/utilities/_border.scss */
+.border-round-right {
+  border-top-right-radius: 0.4rem !important;
+  border-bottom-right-radius: 0.4rem !important;
+}
+
+/* line 36, ../scss/utilities/_border.scss */
+.border-round-bottom {
+  border-bottom-right-radius: 0.4rem !important;
+  border-bottom-left-radius: 0.4rem !important;
+}
+
+/* line 40, ../scss/utilities/_border.scss */
+.border-round-left {
+  border-top-left-radius: 0.4rem !important;
+  border-bottom-left-radius: 0.4rem !important;
+}
+
 /* line 53, ../scss/mixins/_assists.scss */
 .triangle-up, .triangle-right, .triangle-down, .triangle-left {
   display: inline-block;
@@ -2809,69 +2938,49 @@ a.bg-perspective:focus, a.bg-perspective:hover {
   padding-left: 5px;
 }
 
-/* line 234, ../scss/_assists.scss */
-.border-none {
-  border: none !important;
-}
-
-/* line 237, ../scss/_assists.scss */
-.border-round {
-  border-radius: 0.4rem !important;
-}
-
-/* line 240, ../scss/_assists.scss */
-.border-circle {
-  border-radius: 1000rem !important;
-}
-
-/* line 243, ../scss/_assists.scss */
-.border-square {
-  border-radius: 0 !important;
-}
-
-/* line 252, ../scss/_assists.scss */
+/* line 236, ../scss/_assists.scss */
 .divider,
 .divider-lg,
 .divider-sm {
   border-top: 1px solid #ddd;
 }
 
-/* line 258, ../scss/_assists.scss */
+/* line 242, ../scss/_assists.scss */
 .divider {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 263, ../scss/_assists.scss */
+/* line 247, ../scss/_assists.scss */
 .divider-lg {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-/* line 268, ../scss/_assists.scss */
+/* line 252, ../scss/_assists.scss */
 .divider-sm {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 277, ../scss/_assists.scss */
+/* line 261, ../scss/_assists.scss */
 .pt-relative {
   position: relative !important;
 }
 
-/* line 281, ../scss/_assists.scss */
+/* line 265, ../scss/_assists.scss */
 .pt-sticky {
   position: sticky !important;
 }
 
-/* line 285, ../scss/_assists.scss */
+/* line 269, ../scss/_assists.scss */
 .pt-hc {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 289, ../scss/_assists.scss */
+/* line 273, ../scss/_assists.scss */
 .pt-vc {
   display: block;
   position: absolute;
@@ -2882,7 +2991,7 @@ a.bg-perspective:focus, a.bg-perspective:hover {
   transform: translateY(-50%);
 }
 
-/* line 293, ../scss/_assists.scss */
+/* line 277, ../scss/_assists.scss */
 .pt-center {
   display: block;
   position: absolute;

@@ -13,6 +13,7 @@ $gray-light:        #818a91 !default;
 $gray-lighter:      #eceeef !default;
 $gray-lightest:     #f7f7f9 !default;
 $transparent:       transparent !default;
+$white:             #fff !default;
 
 $brand-primary:     #0275d8 !default;
 $brand-secondary:   #375A7F !default;
@@ -118,6 +119,7 @@ $line-height-xs:      1.5 !default;
 // the base styles of border.
 //
 $border-width:      .1rem !default;
+$border-color:      #ccc !default;
 
 $border-radius:     .4rem !default;
 $border-radius-no:  0rem !default;
@@ -125,6 +127,7 @@ $border-radius-lg:  .48rem !default;
 $border-radius-sm:  .32rem !default;
 $border-radius-xs:  .3rem !default;
 $border-radius-hg:  1000rem;
+$border-radius-circle:  50% !default;
 
 
 // Buttons
