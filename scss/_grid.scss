@@ -24,7 +24,7 @@
 
 // Full container
 // The unit of width is `%`.
-.container-full {
+.container-fluid {
   @include create-container();
 }
 
