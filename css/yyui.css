@@ -7476,6 +7476,55 @@ pre code {
   background-color: #373a3c !important;
 }
 
+/* line 5, ../scss/_dot.scss */
+.dot {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+}
+
+/* line 3, ../scss/mixins/_dot.scss */
+.dot-primary {
+  background-color: #0275d8 !important;
+}
+
+/* line 3, ../scss/mixins/_dot.scss */
+.dot-secondary {
+  background-color: #375A7F !important;
+}
+
+/* line 3, ../scss/mixins/_dot.scss */
+.dot-info {
+  background-color: #14adea !important;
+}
+
+/* line 3, ../scss/mixins/_dot.scss */
+.dot-success {
+  background-color: #2EC6A0 !important;
+}
+
+/* line 3, ../scss/mixins/_dot.scss */
+.dot-warning {
+  background-color: #f0ad4e !important;
+}
+
+/* line 3, ../scss/mixins/_dot.scss */
+.dot-danger {
+  background-color: #d9534f !important;
+}
+
+/* line 3, ../scss/mixins/_dot.scss */
+.dot-light {
+  background-color: #f7f7f9 !important;
+}
+
+/* line 3, ../scss/mixins/_dot.scss */
+.dot-dark {
+  background-color: #373a3c !important;
+}
+
 /* line 6, ../scss/_jumbotron.scss */
 .jumbotron {
   padding: 3.2rem 1.6rem;

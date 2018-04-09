@@ -1,0 +1,13 @@
+// dot
+//
+//
+
+.dot {
+  display: inline-block;
+  vertical-align: middle;
+  width: $dot-width;
+  height: $dot-height;
+  border-radius: $dot-border-radius;
+}
+
+@include create-dot-element($theme-colors);
