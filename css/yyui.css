@@ -428,7 +428,7 @@ hr {
   margin-top: 15px;
   margin-bottom: 15px;
   border: 0;
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* line 56, ../scss/_type.scss */
@@ -543,27 +543,27 @@ dd + dt {
 
 /* line 4, ../scss/utilities/_border.scss */
 .border {
-  border: 0.1rem solid #ccc !important;
+  border: 1px solid #ccc !important;
 }
 
 /* line 5, ../scss/utilities/_border.scss */
 .border-top {
-  border-top: 0.1rem solid #ccc !important;
+  border-top: 1px solid #ccc !important;
 }
 
 /* line 6, ../scss/utilities/_border.scss */
 .border-right {
-  border-right: 0.1rem solid #ccc !important;
+  border-right: 1px solid #ccc !important;
 }
 
 /* line 7, ../scss/utilities/_border.scss */
 .border-bottom {
-  border-bottom: 0.1rem solid #ccc !important;
+  border-bottom: 1px solid #ccc !important;
 }
 
 /* line 8, ../scss/utilities/_border.scss */
 .border-left {
-  border-left: 0.1rem solid #ccc !important;
+  border-left: 1px solid #ccc !important;
 }
 
 /* line 10, ../scss/utilities/_border.scss */
@@ -4321,7 +4321,7 @@ fieldset {
 }
 /* line 16, ../scss/_forms.scss */
 .fieldset-sm .form-control {
-  padding: 0.43rem 1.2rem;
+  padding: 0.25rem 0.5rem;
   line-height: 1.5;
 }
 
@@ -4331,7 +4331,7 @@ fieldset {
 }
 /* line 28, ../scss/_forms.scss */
 .fieldset-lg .form-control {
-  padding: 1.2rem 2rem;
+  padding: 0.5rem 1rem;
   line-height: 1.33333;
 }
 
@@ -4339,13 +4339,14 @@ fieldset {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.59rem 1.2rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1.4rem;
   line-height: 1.5;
   color: #55595c;
-  background-image: none;
   background-color: #fff;
-  border: 0.1rem solid #ccc;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border-radius: 0;
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -4354,10 +4355,10 @@ fieldset {
   -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-/* line 59, ../scss/_forms.scss */
-.form-control::placeholder {
-  color: #999;
-  opacity: 1;
+/* line 66, ../scss/_forms.scss */
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
 }
 /* line 4, ../scss/mixins/_forms.scss */
 .form-control:focus {
@@ -4367,69 +4368,62 @@ fieldset {
   -webkit-box-shadow: inset 0 0 5px rgba(2, 117, 216, 0.35), 0 0 10px rgba(2, 117, 216, 0.45);
   box-shadow: inset 0 0 5px rgba(2, 117, 216, 0.35), 0 0 10px rgba(2, 117, 216, 0.45);
 }
-/* line 69, ../scss/_forms.scss */
-.form-control:disabled, .form-control.disabled, .form-control[readonly]
-fieldset[disabled] .form-control {
-  background-color: #eceeef;
-  border: transparent;
-  opacity: .6;
+/* line 75, ../scss/_forms.scss */
+.form-control::placeholder {
+  color: #818a91;
+  opacity: 1;
 }
-/* line 78, ../scss/_forms.scss */
-.form-control[disabled], fieldset[disabled] .form-control {
-  cursor: not-allowed;
+/* line 86, ../scss/_forms.scss */
+.form-control:disabled, .form-control[readonly] {
+  background-color: #eceeef;
+  opacity: 1;
 }
 
-/* line 84, ../scss/_forms.scss */
+/* line 94, ../scss/_forms.scss */
 .form-control-sm {
-  padding: 0.43rem 1.2rem;
-  font-size: 1.3rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
-/* line 93, ../scss/_forms.scss */
+/* line 103, ../scss/_forms.scss */
 .form-control-lg {
-  padding: 1.2rem 2rem;
+  padding: 0.5rem 1rem;
   font-size: 1.6rem;
-  line-height: 1.33333;
+  line-height: 1.5;
 }
 
-/* line 102, ../scss/_forms.scss */
+/* line 112, ../scss/_forms.scss */
 fieldset > label {
   display: inline-block;
   font-weight: 700;
   max-width: 100%;
 }
 
-/* line 110, ../scss/_forms.scss */
-.form-control-label {
-  padding: 0.69rem 1.2rem;
-  margin-bottom: 0 !important;
-}
-
-/* line 117, ../scss/_forms.scss */
+/* line 127, ../scss/_forms.scss */
 .select {
   position: relative;
 }
 
-/* line 120, ../scss/_forms.scss */
+/* line 130, ../scss/_forms.scss */
 select.form-control {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
 }
-/* line 126, ../scss/_forms.scss */
+/* line 136, ../scss/_forms.scss */
 select.form-control + div[class^="triangle"] {
   position: absolute;
   top: 43%;
   right: 10px;
 }
-/* line 132, ../scss/_forms.scss */
+/* line 142, ../scss/_forms.scss */
 select.form-control > option {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 143, ../scss/_forms.scss */
+/* line 153, ../scss/_forms.scss */
 .radio,
 .checkbox {
   position: relative;
@@ -4437,19 +4431,19 @@ select.form-control > option {
   margin-bottom: 10px;
 }
 
-/* line 154, ../scss/_forms.scss */
+/* line 164, ../scss/_forms.scss */
 .radio > label,
 .checkbox > label,
 .radio-inline > label,
 .checkbox-inline > label {
   margin-bottom: 0;
   color: #444444;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
   cursor: pointer;
   z-index: 10;
 }
-/* line 162, ../scss/_forms.scss */
+/* line 172, ../scss/_forms.scss */
 .radio > label:before,
 .checkbox > label:before,
 .radio-inline > label:before,
@@ -4466,14 +4460,14 @@ select.form-control > option {
   border: 1px solid #ccc;
   line-height: 15px;
 }
-/* line 178, ../scss/_forms.scss */
+/* line 188, ../scss/_forms.scss */
 .radio input:not(:disabled) + label:hover:before,
 .checkbox input:not(:disabled) + label:hover:before,
 .radio-inline input:not(:disabled) + label:hover:before,
 .checkbox-inline input:not(:disabled) + label:hover:before {
   border-width: 2px;
 }
-/* line 182, ../scss/_forms.scss */
+/* line 192, ../scss/_forms.scss */
 .radio input:checked + label:before,
 .checkbox input:checked + label:before,
 .radio-inline input:checked + label:before,
@@ -4485,7 +4479,7 @@ select.form-control > option {
   text-align: center;
 }
 
-/* line 193, ../scss/_forms.scss */
+/* line 203, ../scss/_forms.scss */
 .radio > label:before,
 .radio-inline > label:before {
   -moz-border-radius: 1000rem;
@@ -4493,7 +4487,7 @@ select.form-control > option {
   border-radius: 1000rem;
 }
 
-/* line 198, ../scss/_forms.scss */
+/* line 208, ../scss/_forms.scss */
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
@@ -4506,13 +4500,13 @@ select.form-control > option {
   z-index: 11;
 }
 
-/* line 210, ../scss/_forms.scss */
+/* line 220, ../scss/_forms.scss */
 .radio + .radio,
 .checkbox + .checkbox {
   margin-top: -.25rem;
 }
 
-/* line 216, ../scss/_forms.scss */
+/* line 226, ../scss/_forms.scss */
 .radio-inline,
 .checkbox-inline {
   position: relative;
@@ -4523,7 +4517,7 @@ select.form-control > option {
   vertical-align: middle;
 }
 
-/* line 226, ../scss/_forms.scss */
+/* line 236, ../scss/_forms.scss */
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-left: 15px;
@@ -4668,7 +4662,7 @@ select.form-control > option {
   color: #fff;
 }
 
-/* line 244, ../scss/_forms.scss */
+/* line 254, ../scss/_forms.scss */
 .checkbox-switch {
   position: relative;
   display: inline-block;
@@ -4677,11 +4671,11 @@ select.form-control > option {
   height: 24px;
   margin-bottom: 10px;
 }
-/* line 252, ../scss/_forms.scss */
+/* line 262, ../scss/_forms.scss */
 .checkbox-switch input[type="checkbox"] {
   opacity: 0;
 }
-/* line 255, ../scss/_forms.scss */
+/* line 265, ../scss/_forms.scss */
 .checkbox-switch input[type="checkbox"]:checked + label, .checkbox-switch input[type="checkbox"]:not(:checked) + label {
   background-color: #e0e0e0;
   border-radius: 1000px;
@@ -4695,7 +4689,7 @@ select.form-control > option {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-/* line 270, ../scss/_forms.scss */
+/* line 280, ../scss/_forms.scss */
 .checkbox-switch input[type="checkbox"]:checked + label:after, .checkbox-switch input[type="checkbox"]:not(:checked) + label:after {
   background-color: #fff;
   border-radius: 1000px;
@@ -4708,61 +4702,61 @@ select.form-control > option {
   -webkit-transition: left 0.3s;
   transition: left 0.3s;
 }
-/* line 284, ../scss/_forms.scss */
+/* line 294, ../scss/_forms.scss */
 .checkbox-switch input[type="checkbox"]:checked + label {
   background-color: #0275d8;
 }
-/* line 288, ../scss/_forms.scss */
+/* line 298, ../scss/_forms.scss */
 .checkbox-switch input[type="checkbox"]:checked + label:after {
   left: 25px;
 }
-/* line 292, ../scss/_forms.scss */
+/* line 302, ../scss/_forms.scss */
 .checkbox-switch.disabled input[type="checkbox"], .checkbox-switch.disabled input[type="checkbox"] + label {
   cursor: not-allowed;
   background-color: #e0e0e0;
 }
-/* line 298, ../scss/_forms.scss */
+/* line 308, ../scss/_forms.scss */
 .checkbox-switch.disabled input[type="checkbox"], .checkbox-switch.disabled input[type="checkbox"] + label:after {
   cursor: not-allowed;
   left: 1px;
 }
 
-/* line 304, ../scss/_forms.scss */
+/* line 314, ../scss/_forms.scss */
 .checkbox-switch-lg {
   width: 64px;
   height: 32px;
 }
-/* line 308, ../scss/_forms.scss */
+/* line 318, ../scss/_forms.scss */
 .checkbox-switch-lg input[type="checkbox"]:checked + label, .checkbox-switch-lg input[type="checkbox"]:not(:checked) + label {
   width: 64px;
   height: 32px;
 }
-/* line 314, ../scss/_forms.scss */
+/* line 324, ../scss/_forms.scss */
 .checkbox-switch-lg input[type="checkbox"]:checked + label:after, .checkbox-switch-lg input[type="checkbox"]:not(:checked) + label:after {
   width: 30px;
   height: 30px;
 }
-/* line 319, ../scss/_forms.scss */
+/* line 329, ../scss/_forms.scss */
 .checkbox-switch-lg input[type="checkbox"]:checked + label:after {
   left: 33px;
 }
 
-/* line 323, ../scss/_forms.scss */
+/* line 333, ../scss/_forms.scss */
 .checkbox-switch-sm {
   width: 32px;
   height: 16px;
 }
-/* line 327, ../scss/_forms.scss */
+/* line 337, ../scss/_forms.scss */
 .checkbox-switch-sm input[type="checkbox"]:checked + label, .checkbox-switch-sm input[type="checkbox"]:not(:checked) + label {
   width: 32px;
   height: 16px;
 }
-/* line 333, ../scss/_forms.scss */
+/* line 343, ../scss/_forms.scss */
 .checkbox-switch-sm input[type="checkbox"]:checked + label:after, .checkbox-switch-sm input[type="checkbox"]:not(:checked) + label:after {
   width: 14px;
   height: 14px;
 }
-/* line 338, ../scss/_forms.scss */
+/* line 348, ../scss/_forms.scss */
 .checkbox-switch-sm input[type="checkbox"]:checked + label:after {
   left: 17px;
 }
@@ -4792,17 +4786,17 @@ select.form-control > option {
   background-color: #d9534f;
 }
 
-/* line 354, ../scss/_forms.scss */
+/* line 364, ../scss/_forms.scss */
 input[type="radio"]:hover,
 input[type="checkbox"]:hover {
   cursor: pointer;
 }
-/* line 357, ../scss/_forms.scss */
+/* line 367, ../scss/_forms.scss */
 input[type="radio"]:hover + label:before,
 input[type="checkbox"]:hover + label:before {
   border-width: 2px;
 }
-/* line 362, ../scss/_forms.scss */
+/* line 372, ../scss/_forms.scss */
 input[type="radio"]:disabled, input[type="radio"].disabled, fieldset[disabled] input[type="radio"],
 input[type="checkbox"]:disabled,
 input[type="checkbox"].disabled, fieldset[disabled]
@@ -4810,7 +4804,7 @@ input[type="checkbox"] {
   cursor: not-allowed;
 }
 
-/* line 375, ../scss/_forms.scss */
+/* line 385, ../scss/_forms.scss */
 .radio-inline.disabled label, fieldset[disabled] .radio-inline label,
 .checkbox-inline.disabled label, fieldset[disabled]
 .checkbox-inline label,
@@ -4822,18 +4816,18 @@ input[type="checkbox"] {
   opacity: .6;
 }
 
-/* line 385, ../scss/_forms.scss */
+/* line 395, ../scss/_forms.scss */
 .form-file {
   position: relative;
 }
-/* line 387, ../scss/_forms.scss */
+/* line 397, ../scss/_forms.scss */
 .form-file input[type="file"] {
   position: absolute;
   height: 100%;
   opacity: 0;
   background-color: transparent;
 }
-/* line 393, ../scss/_forms.scss */
+/* line 403, ../scss/_forms.scss */
 .form-file .file-surface {
   width: 100%;
   height: 100%;
@@ -4845,17 +4839,17 @@ input[type="checkbox"] {
   font-weight: 400;
 }
 
-/* line 417, ../scss/_forms.scss */
+/* line 427, ../scss/_forms.scss */
 .form-control-success,
 .form-control-warning,
 .form-control-error {
-  padding-right: 3.6rem;
-  background-position: center right 0.87rem;
-  background-size: 2.262rem 2.262rem;
+  padding-right: 2.25rem;
+  background-position: center right 0.375rem;
+  background-size: calc(calc(2.85rem + 2px) * .65) calc(calc(2.85rem + 2px) * .65);
   background-repeat: no-repeat;
 }
 
-/* line 426, ../scss/_forms.scss */
+/* line 436, ../scss/_forms.scss */
 .form-control-success {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNoZWNrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjYxMnB4IiBoZWlnaHQ9Ijc5MnB4IiB2aWV3Qm94PSIwIDAgNjEyIDc5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjEyIDc5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjMkVDNkEwIiBkPSJNMjMzLjgsNjEwLjFjLTEzLjMsMC0yNS45LTYuMi0zNC0xNi45TDkwLjUsNDQ4LjgwMUM3Ni4zLDQzMCw4MCw0MDMuMyw5OC44LDM4OS4xDQoJYzE4LjgtMTQuMzAxLDQ1LjUtMTAuNSw1OS44LDguM2w3MS45LDk1TDQ1MS40LDI0MS45YzEyLjUtMjAsMzguOC0yNi4xMDEsNTguOC0xMy42MDFjMjAsMTIuNCwyNi4xMDEsMzguNywxMy42MDEsNTguODAxTDI3MCw1OTANCgljLTcuNCwxMi0yMC4yLDE5LjQtMzQuMywyMC4xMDFDMjM1LjEsNjEwLjEsMjM0LjUsNjEwLjEsMjMzLjgsNjEwLjF6Ii8+DQo8L3N2Zz4NCg==");
 }
@@ -4875,10 +4869,10 @@ input[type="checkbox"] {
 .form-control-success + .form-control-feedback {
   color: #2EC6A0;
   font-size: 1.2rem;
-  padding: 0.43rem 1.2rem;
+  padding: 0.25rem 0.5rem;
 }
 
-/* line 430, ../scss/_forms.scss */
+/* line 440, ../scss/_forms.scss */
 .form-control-warning {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ildhcm5pbmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNjEyIDc5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjEyIDc5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iI0YwQUQ0RSIgZD0iTTYwMyw2NDAuMmwtMjc4LjUtNTA5Yy0zLjgtNi42LTEwLjgtMTAuNi0xOC41LTEwLjZzLTE0LjcsNC4xLTE4LjUsMTAuNkw5LDY0MC4yYy0zLjcsNi41LTMuNiwxNC40LDAuMiwyMC44YzMuOCw2LjUsMTAuOCwxMC40LDE4LjMsMTAuNGg1NTcuMWM3LjUsMCwxNC41LTMuOSwxOC4zLTEwLjRDNjA2LjYsNjU0LjYsNjA2LjcsNjQ2LjYsNjAzLDY0MC4yeiBNMzM2LjYsNjEwLjJoLTYxLjJWNTQ5aDYxLjJWNjEwLjJ6IE0zMzYuNiw1MDMuMWgtNjEuMlYzMDQuMmg2MS4yVjUwMy4xeiIvPjwvc3ZnPg==");
 }
@@ -4898,10 +4892,10 @@ input[type="checkbox"] {
 .form-control-warning + .form-control-feedback {
   color: #f0ad4e;
   font-size: 1.2rem;
-  padding: 0.43rem 1.2rem;
+  padding: 0.25rem 0.5rem;
 }
 
-/* line 434, ../scss/_forms.scss */
+/* line 444, ../scss/_forms.scss */
 .form-control-error {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNyb3NzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYxMiA3OTIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYxMiA3OTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiNEOTUzNEYiIGQ9Ik00NDcsNTQ0LjRjLTE0LjQsMTQuNC0zNy42LDE0LjQtNTEuOSwwTDMwNiw0NTEuN2wtODkuMSw5Mi43Yy0xNC40LDE0LjQtMzcuNiwxNC40LTUxLjksMGMtMTQuNC0xNC40LTE0LjQtMzcuNiwwLTUxLjlsOTIuNC05Ni40TDE2NSwyOTkuNmMtMTQuNC0xNC40LTE0LjQtMzcuNiwwLTUxLjlzMzcuNi0xNC40LDUxLjksMGw4OS4yLDkyLjdsODkuMS05Mi43YzE0LjQtMTQuNCwzNy42LTE0LjQsNTEuOSwwYzE0LjQsMTQuNCwxNC40LDM3LjYsMCw1MS45TDM1NC43LDM5Nmw5Mi40LDk2LjRDNDYxLjQsNTA2LjgsNDYxLjQsNTMwLDQ0Nyw1NDQuNHoiLz48L3N2Zz4=");
 }
@@ -4921,20 +4915,20 @@ input[type="checkbox"] {
 .form-control-error + .form-control-feedback {
   color: #d9534f;
   font-size: 1.2rem;
-  padding: 0.43rem 1.2rem;
+  padding: 0.25rem 0.5rem;
 }
 
-/* line 444, ../scss/_forms.scss */
+/* line 454, ../scss/_forms.scss */
 .fieldset-success .form-control,
 .fieldset-warning .form-control,
 .fieldset-error .form-control {
-  padding-right: 3.6rem;
-  background-position: center right 0.87rem;
-  background-size: 2.262rem 2.262rem;
+  padding-right: 2.25rem;
+  background-position: center right 0.375rem;
+  background-size: calc(calc(2.85rem + 2px) * .65) calc(calc(2.85rem + 2px) * .65);
   background-repeat: no-repeat;
 }
 
-/* line 451, ../scss/_forms.scss */
+/* line 461, ../scss/_forms.scss */
 .fieldset-success {
   color: #2EC6A0;
 }
@@ -4968,14 +4962,14 @@ input[type="checkbox"] {
 .fieldset-success .form-control-feedback {
   color: #2EC6A0;
   font-size: 1.2rem;
-  padding: 0.43rem 1.2rem;
+  padding: 0.25rem 0.5rem;
 }
-/* line 455, ../scss/_forms.scss */
+/* line 465, ../scss/_forms.scss */
 .fieldset-success .form-control {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNoZWNrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjYxMnB4IiBoZWlnaHQ9Ijc5MnB4IiB2aWV3Qm94PSIwIDAgNjEyIDc5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjEyIDc5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjMkVDNkEwIiBkPSJNMjMzLjgsNjEwLjFjLTEzLjMsMC0yNS45LTYuMi0zNC0xNi45TDkwLjUsNDQ4LjgwMUM3Ni4zLDQzMCw4MCw0MDMuMyw5OC44LDM4OS4xDQoJYzE4LjgtMTQuMzAxLDQ1LjUtMTAuNSw1OS44LDguM2w3MS45LDk1TDQ1MS40LDI0MS45YzEyLjUtMjAsMzguOC0yNi4xMDEsNTguOC0xMy42MDFjMjAsMTIuNCwyNi4xMDEsMzguNywxMy42MDEsNTguODAxTDI3MCw1OTANCgljLTcuNCwxMi0yMC4yLDE5LjQtMzQuMywyMC4xMDFDMjM1LjEsNjEwLjEsMjM0LjUsNjEwLjEsMjMzLjgsNjEwLjF6Ii8+DQo8L3N2Zz4NCg==");
 }
 
-/* line 460, ../scss/_forms.scss */
+/* line 470, ../scss/_forms.scss */
 .fieldset-warning {
   color: #f0ad4e;
 }
@@ -5009,14 +5003,14 @@ input[type="checkbox"] {
 .fieldset-warning .form-control-feedback {
   color: #f0ad4e;
   font-size: 1.2rem;
-  padding: 0.43rem 1.2rem;
+  padding: 0.25rem 0.5rem;
 }
-/* line 464, ../scss/_forms.scss */
+/* line 474, ../scss/_forms.scss */
 .fieldset-warning .form-control {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ildhcm5pbmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNjEyIDc5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjEyIDc5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iI0YwQUQ0RSIgZD0iTTYwMyw2NDAuMmwtMjc4LjUtNTA5Yy0zLjgtNi42LTEwLjgtMTAuNi0xOC41LTEwLjZzLTE0LjcsNC4xLTE4LjUsMTAuNkw5LDY0MC4yYy0zLjcsNi41LTMuNiwxNC40LDAuMiwyMC44YzMuOCw2LjUsMTAuOCwxMC40LDE4LjMsMTAuNGg1NTcuMWM3LjUsMCwxNC41LTMuOSwxOC4zLTEwLjRDNjA2LjYsNjU0LjYsNjA2LjcsNjQ2LjYsNjAzLDY0MC4yeiBNMzM2LjYsNjEwLjJoLTYxLjJWNTQ5aDYxLjJWNjEwLjJ6IE0zMzYuNiw1MDMuMWgtNjEuMlYzMDQuMmg2MS4yVjUwMy4xeiIvPjwvc3ZnPg==");
 }
 
-/* line 469, ../scss/_forms.scss */
+/* line 479, ../scss/_forms.scss */
 .fieldset-error {
   color: #d9534f;
 }
@@ -5050,64 +5044,64 @@ input[type="checkbox"] {
 .fieldset-error .form-control-feedback {
   color: #d9534f;
   font-size: 1.2rem;
-  padding: 0.43rem 1.2rem;
+  padding: 0.25rem 0.5rem;
 }
-/* line 473, ../scss/_forms.scss */
+/* line 483, ../scss/_forms.scss */
 .fieldset-error .form-control {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNyb3NzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYxMiA3OTIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYxMiA3OTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiNEOTUzNEYiIGQ9Ik00NDcsNTQ0LjRjLTE0LjQsMTQuNC0zNy42LDE0LjQtNTEuOSwwTDMwNiw0NTEuN2wtODkuMSw5Mi43Yy0xNC40LDE0LjQtMzcuNiwxNC40LTUxLjksMGMtMTQuNC0xNC40LTE0LjQtMzcuNiwwLTUxLjlsOTIuNC05Ni40TDE2NSwyOTkuNmMtMTQuNC0xNC40LTE0LjQtMzcuNiwwLTUxLjlzMzcuNi0xNC40LDUxLjksMGw4OS4yLDkyLjdsODkuMS05Mi43YzE0LjQtMTQuNCwzNy42LTE0LjQsNTEuOSwwYzE0LjQsMTQuNCwxNC40LDM3LjYsMCw1MS45TDM1NC43LDM5Nmw5Mi40LDk2LjRDNDYxLjQsNTA2LjgsNDYxLjQsNTMwLDQ0Nyw1NDQuNHoiLz48L3N2Zz4=");
 }
 
-/* line 482, ../scss/_forms.scss */
+/* line 492, ../scss/_forms.scss */
 .form-hz fieldset {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
   overflow: auto;
   zoom: 1;
 }
-/* line 488, ../scss/_forms.scss */
+/* line 498, ../scss/_forms.scss */
 .form-hz fieldset .form-control-label {
   text-align: right;
 }
 
 @media (min-width: 576px) {
-  /* line 502, ../scss/_forms.scss */
+  /* line 512, ../scss/_forms.scss */
   .form-inline fieldset {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
     margin-right: 10px;
   }
-  /* line 508, ../scss/_forms.scss */
+  /* line 518, ../scss/_forms.scss */
   .form-inline fieldset:last-child {
     margin-right: 0;
   }
-  /* line 512, ../scss/_forms.scss */
+  /* line 522, ../scss/_forms.scss */
   .form-inline .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  /* line 518, ../scss/_forms.scss */
+  /* line 528, ../scss/_forms.scss */
   .form-inline .input-group {
     display: inline-table;
     vertical-align: middle;
   }
-  /* line 522, ../scss/_forms.scss */
+  /* line 532, ../scss/_forms.scss */
   .form-inline .input-group .input-group-addon,
   .form-inline .input-group .input-group-btn,
   .form-inline .input-group .form-control {
     width: auto;
   }
-  /* line 530, ../scss/_forms.scss */
+  /* line 540, ../scss/_forms.scss */
   .form-inline .input-group > .form-control {
     width: 100%;
   }
-  /* line 534, ../scss/_forms.scss */
+  /* line 544, ../scss/_forms.scss */
   .form-inline .form-control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 541, ../scss/_forms.scss */
+  /* line 551, ../scss/_forms.scss */
   .form-inline .radio,
   .form-inline .checkbox {
     display: inline-block;
@@ -5115,12 +5109,12 @@ input[type="checkbox"] {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 548, ../scss/_forms.scss */
+  /* line 558, ../scss/_forms.scss */
   .form-inline .radio label,
   .form-inline .checkbox label {
     padding-left: 0;
   }
-  /* line 552, ../scss/_forms.scss */
+  /* line 562, ../scss/_forms.scss */
   .form-inline .radio input[type="radio"],
   .form-inline .checkbox input[type="checkbox"] {
     position: relative;
@@ -5138,7 +5132,7 @@ input[type="checkbox"] {
   touch-action: manipulation;
   cursor: pointer;
   user-select: none;
-  border: 0.1rem solid transparent;
+  border: 1px solid transparent;
   padding: 0.59rem 1.6rem;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -8261,14 +8255,14 @@ progress[value]::-moz-progress-bar {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  padding: 1.2rem 2rem;
+  padding: 0.5rem 1rem;
   font-size: 1.6rem;
   line-height: 1.33333;
 }
 
 /* line 97, ../scss/_input-group.scss */
 .input-group-addon {
-  padding: 0.59rem 1.2rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1;
@@ -8279,12 +8273,12 @@ progress[value]::-moz-progress-bar {
 }
 /* line 111, ../scss/_input-group.scss */
 .input-group-addon.form-control-sm {
-  padding: 0.43rem 1.2rem;
-  font-size: 1.3rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.2rem;
 }
 /* line 118, ../scss/_input-group.scss */
 .input-group-addon.form-control-lg {
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   font-size: 1.6rem;
 }
 /* line 126, ../scss/_input-group.scss */

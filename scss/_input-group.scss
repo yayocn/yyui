@@ -96,7 +96,7 @@
 
 .input-group-addon {
   padding: $input-padding-y $input-padding-x;
-  font-size: $font-size-base;
+  font-size: $input-font-size;
   font-weight: normal;
   line-height: 1;
   color: $input-color;
@@ -110,7 +110,7 @@
   // Sizing
   &.form-control-sm {
     padding: $input-padding-y-sm $input-padding-x-sm;
-    font-size: $font-size-sm;
+    font-size: $font-size-xs;
     @if $enable-rounded {
       @include border-radius($border-radius-sm);
     }
