@@ -30,8 +30,14 @@ $theme-colors: (
         info: $brand-info,
         success: $brand-success,
         warning: $brand-warning,
-        danger: $brand-danger
+        danger: $brand-danger,
+        light: $gray-lightest,
+        dark: $gray-dark
 ) !default;
+
+$yiq-contrasted-threshold: 150 !default;
+$yiq-text-dark: $dark !default;
+$yiq-text-light: $white !default;
 
 //
 // Components
@@ -77,7 +83,6 @@ $link-color:              $brand-primary !default;
 $link-hover-color:        darken($link-color, 15%) !default;
 $link-hover-decoration:   underline !default;
 
-
 //
 // Typography
 //
@@ -106,6 +111,12 @@ $font-size-h3:      2.6rem !default; //26px
 $font-size-h4:      2.2rem !default; //22px
 $font-size-h5:      1.8rem !default; //18px
 $font-size-h6:      1.4rem !default; //14px
+
+// Weight
+//
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
 
 
 // Line-height
@@ -578,18 +589,16 @@ $pager-active-color:                   $pagination-active-color !default;
 
 $pager-disabled-color:                 $pagination-disabled-color !default;
 
-// Labels
+// Badge
 
-$label-default-bg:            $gray-light !default;
-$label-primary-bg:            $brand-primary !default;
-$label-secondary-bg:          $brand-secondary !default;
-$label-success-bg:            $brand-success !default;
-$label-info-bg:               $brand-info !default;
-$label-warning-bg:            $brand-warning !default;
-$label-danger-bg:             $brand-danger !default;
+$badge-padding-y:             .25em !default;
+$badge-padding-x:             .4em !default;
+$badge-font-size:             75% !default;
+$badge-font-weight:           $font-weight-bold !default;
+$badge-border-radius:         $border-radius !default;
 
-$label-color:                 #fff !default;
-$label-link-hover-color:      #fff !default;
+$badge-pill-padding-x:        .6em !default;
+$badge-pill-border-radius:    10rem !default;
 
 // Jumbotron
 

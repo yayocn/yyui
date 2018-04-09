@@ -5936,7 +5936,7 @@ pre code {
   float: left;
 }
 
-/* line 6, ../scss/_labels.scss */
+/* line 6, ../scss/_badge.scss */
 .label {
   display: inline-block;
   padding: .25em .4em;
@@ -5951,7 +5951,7 @@ pre code {
   -webkit-border-radius: 0.4rem;
   border-radius: 0.4rem;
 }
-/* line 18, ../scss/_labels.scss */
+/* line 18, ../scss/_badge.scss */
 .label[empty] {
   display: none;
 }
@@ -5963,14 +5963,14 @@ a.label:focus, a.label:hover {
   cursor: pointer;
 }
 
-/* line 31, ../scss/_labels.scss */
+/* line 31, ../scss/_badge.scss */
 .label-badge {
   padding-left: .6em;
   padding-right: .6em;
   border-radius: 1000rem;
 }
 
-/* line 41, ../scss/_labels.scss */
+/* line 41, ../scss/_badge.scss */
 .label-default {
   background-color: #818a91;
 }
@@ -5979,7 +5979,7 @@ a.label:focus, a.label:hover {
   background-color: #687077;
 }
 
-/* line 45, ../scss/_labels.scss */
+/* line 45, ../scss/_badge.scss */
 .label-primary {
   background-color: #0275d8;
 }
@@ -5988,7 +5988,7 @@ a.label:focus, a.label:hover {
   background-color: #025aa5;
 }
 
-/* line 49, ../scss/_labels.scss */
+/* line 49, ../scss/_badge.scss */
 .label-secondary {
   background-color: #375A7F;
 }
@@ -5997,7 +5997,7 @@ a.label:focus, a.label:hover {
   background-color: #28415b;
 }
 
-/* line 53, ../scss/_labels.scss */
+/* line 53, ../scss/_badge.scss */
 .label-success {
   background-color: #2EC6A0;
 }
@@ -6006,7 +6006,7 @@ a.label:focus, a.label:hover {
   background-color: #249d7f;
 }
 
-/* line 57, ../scss/_labels.scss */
+/* line 57, ../scss/_badge.scss */
 .label-info {
   background-color: #3bb4f2;
 }
@@ -6015,7 +6015,7 @@ a.label:focus, a.label:hover {
   background-color: #10a0ea;
 }
 
-/* line 61, ../scss/_labels.scss */
+/* line 61, ../scss/_badge.scss */
 .label-warning {
   background-color: #f0ad4e;
 }
@@ -6024,7 +6024,7 @@ a.label:focus, a.label:hover {
   background-color: #ec971f;
 }
 
-/* line 65, ../scss/_labels.scss */
+/* line 65, ../scss/_badge.scss */
 .label-danger {
   background-color: #d9534f;
 }

@@ -621,6 +621,16 @@ dd + dt {
   border-color: #d9534f !important;
 }
 
+/* line 17, ../scss/utilities/_border.scss */
+.border-light {
+  border-color: #f7f7f9 !important;
+}
+
+/* line 17, ../scss/utilities/_border.scss */
+.border-dark {
+  border-color: #373a3c !important;
+}
+
 /* line 22, ../scss/utilities/_border.scss */
 .border-white {
   border-color: #fff !important;
@@ -6074,7 +6084,7 @@ pre code {
 }
 
 /* line 11, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-primary:after, .dropdown-toggle.btn-primary-outline:hover:after, .dropdown-toggle.btn-primary-outline:focus:after, .dropdown-toggle.btn-primary-outline:active:after, .dropdown-toggle.btn-primary-outline.active:after, .dropdown-toggle.btn-secondary:after, .dropdown-toggle.btn-secondary-outline:hover:after, .dropdown-toggle.btn-secondary-outline:focus:after, .dropdown-toggle.btn-secondary-outline:active:after, .dropdown-toggle.btn-secondary-outline.active:after, .dropdown-toggle.btn-info:after, .dropdown-toggle.btn-info-outline:hover:after, .dropdown-toggle.btn-info-outline:focus:after, .dropdown-toggle.btn-info-outline:active:after, .dropdown-toggle.btn-info-outline.active:after, .dropdown-toggle.btn-success:after, .dropdown-toggle.btn-success-outline:hover:after, .dropdown-toggle.btn-success-outline:focus:after, .dropdown-toggle.btn-success-outline:active:after, .dropdown-toggle.btn-success-outline.active:after, .dropdown-toggle.btn-warning:after, .dropdown-toggle.btn-warning-outline:hover:after, .dropdown-toggle.btn-warning-outline:focus:after, .dropdown-toggle.btn-warning-outline:active:after, .dropdown-toggle.btn-warning-outline.active:after, .dropdown-toggle.btn-danger:after, .dropdown-toggle.btn-danger-outline:hover:after, .dropdown-toggle.btn-danger-outline:focus:after, .dropdown-toggle.btn-danger-outline:active:after, .dropdown-toggle.btn-danger-outline.active:after {
+.dropdown-toggle.btn-primary:after, .dropdown-toggle.btn-primary-outline:hover:after, .dropdown-toggle.btn-primary-outline:focus:after, .dropdown-toggle.btn-primary-outline:active:after, .dropdown-toggle.btn-primary-outline.active:after, .dropdown-toggle.btn-secondary:after, .dropdown-toggle.btn-secondary-outline:hover:after, .dropdown-toggle.btn-secondary-outline:focus:after, .dropdown-toggle.btn-secondary-outline:active:after, .dropdown-toggle.btn-secondary-outline.active:after, .dropdown-toggle.btn-info:after, .dropdown-toggle.btn-info-outline:hover:after, .dropdown-toggle.btn-info-outline:focus:after, .dropdown-toggle.btn-info-outline:active:after, .dropdown-toggle.btn-info-outline.active:after, .dropdown-toggle.btn-success:after, .dropdown-toggle.btn-success-outline:hover:after, .dropdown-toggle.btn-success-outline:focus:after, .dropdown-toggle.btn-success-outline:active:after, .dropdown-toggle.btn-success-outline.active:after, .dropdown-toggle.btn-warning:after, .dropdown-toggle.btn-warning-outline:hover:after, .dropdown-toggle.btn-warning-outline:focus:after, .dropdown-toggle.btn-warning-outline:active:after, .dropdown-toggle.btn-warning-outline.active:after, .dropdown-toggle.btn-danger:after, .dropdown-toggle.btn-danger-outline:hover:after, .dropdown-toggle.btn-danger-outline:focus:after, .dropdown-toggle.btn-danger-outline:active:after, .dropdown-toggle.btn-danger-outline.active:after, .dropdown-toggle.btn-light:after, .dropdown-toggle.btn-light-outline:hover:after, .dropdown-toggle.btn-light-outline:focus:after, .dropdown-toggle.btn-light-outline:active:after, .dropdown-toggle.btn-light-outline.active:after, .dropdown-toggle.btn-dark:after, .dropdown-toggle.btn-dark-outline:hover:after, .dropdown-toggle.btn-dark-outline:focus:after, .dropdown-toggle.btn-dark-outline:active:after, .dropdown-toggle.btn-dark-outline.active:after {
   border-top-color: #fff;
 }
 
@@ -6166,6 +6176,28 @@ pre code {
 }
 /* line 48, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-danger-outline:hover:after, .dropdown-toggle.btn-danger-outline:focus:after, .dropdown-toggle.btn-danger-outline:active:after, .dropdown-toggle.btn-danger-outline.active:after {
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 44, ../scss/_dropdown.scss */
+.dropdown-toggle.btn-light-outline:after {
+  border-top-color: #f7f7f9;
+}
+/* line 48, ../scss/_dropdown.scss */
+.dropdown-toggle.btn-light-outline:hover:after, .dropdown-toggle.btn-light-outline:focus:after, .dropdown-toggle.btn-light-outline:active:after, .dropdown-toggle.btn-light-outline.active:after {
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 44, ../scss/_dropdown.scss */
+.dropdown-toggle.btn-dark-outline:after {
+  border-top-color: #373a3c;
+}
+/* line 48, ../scss/_dropdown.scss */
+.dropdown-toggle.btn-dark-outline:hover:after, .dropdown-toggle.btn-dark-outline:focus:after, .dropdown-toggle.btn-dark-outline:active:after, .dropdown-toggle.btn-dark-outline.active:after {
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
@@ -7201,14 +7233,13 @@ pre code {
   float: left;
 }
 
-/* line 6, ../scss/_labels.scss */
-.label {
+/* line 6, ../scss/_badge.scss */
+.badge {
   display: inline-block;
-  padding: .25em .4em;
+  padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
-  color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -7216,86 +7247,120 @@ pre code {
   -webkit-border-radius: 0.4rem;
   border-radius: 0.4rem;
 }
-/* line 18, ../scss/_labels.scss */
-.label[empty] {
+/* line 17, ../scss/_badge.scss */
+.badge:empty {
   display: none;
 }
 
-/* line 18, ../scss/mixins/_hover.scss */
-a.label:focus, a.label:hover {
+/* line 22, ../scss/_badge.scss */
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+
+/* line 27, ../scss/_badge.scss */
+.badge-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  -moz-border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  border-radius: 10rem;
+}
+
+/* line 37, ../scss/_badge.scss */
+.badge-primary {
   color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* line 31, ../scss/_labels.scss */
-.label-badge {
-  padding-left: .6em;
-  padding-right: .6em;
-  border-radius: 1000rem;
-}
-
-/* line 41, ../scss/_labels.scss */
-.label-default {
-  background-color: #818a91;
-}
-/* line 18, ../scss/mixins/_hover.scss */
-.label-default[href]:focus, .label-default[href]:hover {
-  background-color: #687077;
-}
-
-/* line 45, ../scss/_labels.scss */
-.label-primary {
   background-color: #0275d8;
 }
 /* line 18, ../scss/mixins/_hover.scss */
-.label-primary[href]:focus, .label-primary[href]:hover {
+.badge-primary[href]:focus, .badge-primary[href]:hover {
+  color: #fff;
+  text-decoration: none;
   background-color: #025aa5;
 }
 
-/* line 49, ../scss/_labels.scss */
-.label-secondary {
+/* line 37, ../scss/_badge.scss */
+.badge-secondary {
+  color: #fff;
   background-color: #375A7F;
 }
 /* line 18, ../scss/mixins/_hover.scss */
-.label-secondary[href]:focus, .label-secondary[href]:hover {
+.badge-secondary[href]:focus, .badge-secondary[href]:hover {
+  color: #fff;
+  text-decoration: none;
   background-color: #28415b;
 }
 
-/* line 53, ../scss/_labels.scss */
-.label-success {
-  background-color: #2EC6A0;
-}
-/* line 18, ../scss/mixins/_hover.scss */
-.label-success[href]:focus, .label-success[href]:hover {
-  background-color: #249d7f;
-}
-
-/* line 57, ../scss/_labels.scss */
-.label-info {
+/* line 37, ../scss/_badge.scss */
+.badge-info {
+  color: #fff;
   background-color: #14adea;
 }
 /* line 18, ../scss/mixins/_hover.scss */
-.label-info[href]:focus, .label-info[href]:hover {
+.badge-info[href]:focus, .badge-info[href]:hover {
+  color: #fff;
+  text-decoration: none;
   background-color: #108abb;
 }
 
-/* line 61, ../scss/_labels.scss */
-.label-warning {
+/* line 37, ../scss/_badge.scss */
+.badge-success {
+  color: #fff;
+  background-color: #2EC6A0;
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.badge-success[href]:focus, .badge-success[href]:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #249d7f;
+}
+
+/* line 37, ../scss/_badge.scss */
+.badge-warning {
+  color: #212529;
   background-color: #f0ad4e;
 }
 /* line 18, ../scss/mixins/_hover.scss */
-.label-warning[href]:focus, .label-warning[href]:hover {
+.badge-warning[href]:focus, .badge-warning[href]:hover {
+  color: #212529;
+  text-decoration: none;
   background-color: #ec971f;
 }
 
-/* line 65, ../scss/_labels.scss */
-.label-danger {
+/* line 37, ../scss/_badge.scss */
+.badge-danger {
+  color: #fff;
   background-color: #d9534f;
 }
 /* line 18, ../scss/mixins/_hover.scss */
-.label-danger[href]:focus, .label-danger[href]:hover {
+.badge-danger[href]:focus, .badge-danger[href]:hover {
+  color: #fff;
+  text-decoration: none;
   background-color: #c9302c;
+}
+
+/* line 37, ../scss/_badge.scss */
+.badge-light {
+  color: #212529;
+  background-color: #f7f7f9;
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.badge-light[href]:focus, .badge-light[href]:hover {
+  color: #212529;
+  text-decoration: none;
+  background-color: #dadae3;
+}
+
+/* line 37, ../scss/_badge.scss */
+.badge-dark {
+  color: #fff;
+  background-color: #373a3c;
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.badge-dark[href]:focus, .badge-dark[href]:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #1f2021;
 }
 
 /* line 6, ../scss/_jumbotron.scss */
