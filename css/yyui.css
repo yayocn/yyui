@@ -7363,6 +7363,119 @@ pre code {
   background-color: #1f2021;
 }
 
+/* line 5, ../scss/_elf.scss */
+.elf {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 3, ../scss/mixins/_elf.scss */
+.elf-primary:after, .elf-primary-prev:before, .elf-secondary:after, .elf-secondary-prev:before, .elf-info:after, .elf-info-prev:before, .elf-success:after, .elf-success-prev:before, .elf-warning:after, .elf-warning-prev:before, .elf-danger:after, .elf-danger-prev:before, .elf-light:after, .elf-light-prev:before, .elf-dark:after, .elf-dark-prev:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+/* line 14, ../scss/mixins/_elf.scss */
+.elf-primary:after {
+  right: -10px;
+  background-color: #0275d8 !important;
+}
+
+/* line 20, ../scss/mixins/_elf.scss */
+.elf-primary-prev:before {
+  left: -10px;
+  background-color: #0275d8 !important;
+}
+
+/* line 14, ../scss/mixins/_elf.scss */
+.elf-secondary:after {
+  right: -10px;
+  background-color: #375A7F !important;
+}
+
+/* line 20, ../scss/mixins/_elf.scss */
+.elf-secondary-prev:before {
+  left: -10px;
+  background-color: #375A7F !important;
+}
+
+/* line 14, ../scss/mixins/_elf.scss */
+.elf-info:after {
+  right: -10px;
+  background-color: #14adea !important;
+}
+
+/* line 20, ../scss/mixins/_elf.scss */
+.elf-info-prev:before {
+  left: -10px;
+  background-color: #14adea !important;
+}
+
+/* line 14, ../scss/mixins/_elf.scss */
+.elf-success:after {
+  right: -10px;
+  background-color: #2EC6A0 !important;
+}
+
+/* line 20, ../scss/mixins/_elf.scss */
+.elf-success-prev:before {
+  left: -10px;
+  background-color: #2EC6A0 !important;
+}
+
+/* line 14, ../scss/mixins/_elf.scss */
+.elf-warning:after {
+  right: -10px;
+  background-color: #f0ad4e !important;
+}
+
+/* line 20, ../scss/mixins/_elf.scss */
+.elf-warning-prev:before {
+  left: -10px;
+  background-color: #f0ad4e !important;
+}
+
+/* line 14, ../scss/mixins/_elf.scss */
+.elf-danger:after {
+  right: -10px;
+  background-color: #d9534f !important;
+}
+
+/* line 20, ../scss/mixins/_elf.scss */
+.elf-danger-prev:before {
+  left: -10px;
+  background-color: #d9534f !important;
+}
+
+/* line 14, ../scss/mixins/_elf.scss */
+.elf-light:after {
+  right: -10px;
+  background-color: #f7f7f9 !important;
+}
+
+/* line 20, ../scss/mixins/_elf.scss */
+.elf-light-prev:before {
+  left: -10px;
+  background-color: #f7f7f9 !important;
+}
+
+/* line 14, ../scss/mixins/_elf.scss */
+.elf-dark:after {
+  right: -10px;
+  background-color: #373a3c !important;
+}
+
+/* line 20, ../scss/mixins/_elf.scss */
+.elf-dark-prev:before {
+  left: -10px;
+  background-color: #373a3c !important;
+}
+
 /* line 6, ../scss/_jumbotron.scss */
 .jumbotron {
   padding: 3.2rem 1.6rem;

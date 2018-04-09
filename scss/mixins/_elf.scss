@@ -1,0 +1,27 @@
+
+@mixin create-elf-element ($colors: $theme-colors) {
+  %elf {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    width: $elf-width;
+    height: $elf-height;
+    border-radius: $border-radius-circle;
+  }
+
+  @each $color, $value in $colors {
+    .elf-#{$color}:after {
+      @extend %elf;
+      right: -10px;
+      background-color: $value !important;
+    }
+
+    .elf-#{$color}-prev:before {
+      @extend %elf;
+      left: -10px;
+      background-color: $value !important;
+    }
+  }
+
+}
