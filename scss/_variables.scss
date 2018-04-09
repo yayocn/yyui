@@ -301,7 +301,7 @@ $form-icon-error: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGl
 // Input group
 //
 $input-group-border-color:       $input-border-color !default;
-$input-group-addon-bg:           $gray-lighter !default;
+$input-group-addon-bg:           $white !default;
 $input-group-addon-border-color: $input-border-color !default;
 
 // Situation
@@ -329,6 +329,10 @@ $input-group-warning-border:     $brand-warning !default;
 $input-group-danger-color:      $brand-danger !default;
 $input-group-danger-bg:         #fff !default;
 $input-group-danger-border:     $brand-danger !default;
+
+$input-group-dark-color:      $dark !default;
+$input-group-dark-bg:         $white !default;
+$input-group-dark-border:     $dark !default;
 
 // Directions
 //

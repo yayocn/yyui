@@ -14,7 +14,7 @@
 
   .form-control,
   .btn {
-    padding: 0.6rem 1.2rem;
+    padding: $input-padding-y $input-padding-x;
   }
 
   .form-control {
@@ -61,20 +61,20 @@
 //
 
 %form-control-sm {
-  padding: .45rem 1.2rem;
-  font-size: $font-size-sm;
-  line-height: $line-height-sm;
+  padding: $input-padding-y-sm $input-padding-x-sm;
+  font-size: $font-size-xs;
+  line-height: $line-height;
   @if $enable-rounded {
-    border-radius: $input-border-radius-sm;
+    @include border-radius($input-border-radius-sm);
   }
 }
 
 %form-control-lg {
   padding: $input-padding-y-lg $input-padding-x-lg;
   font-size: $font-size-lg;
-  line-height: $line-height-lg;
+  line-height: $line-height;
   @if $enable-rounded {
-    border-radius: $input-border-radius-lg;
+    @include border-radius($input-border-radius-lg);
   }
 }
 
@@ -98,29 +98,13 @@
   padding: $input-padding-y $input-padding-x;
   font-size: $input-font-size;
   font-weight: normal;
-  line-height: 1;
+  line-height: $line-height;
   color: $input-color;
   text-align: center;
   background-color: $input-group-addon-bg;
   border: 1px solid $input-group-addon-border-color;
   @if $enable-rounded {
     @include border-radius($border-radius);
-  }
-
-  // Sizing
-  &.form-control-sm {
-    padding: $input-padding-y-sm $input-padding-x-sm;
-    font-size: $font-size-xs;
-    @if $enable-rounded {
-      @include border-radius($border-radius-sm);
-    }
-  }
-  &.form-control-lg {
-    padding: $input-padding-x-lg $input-padding-x-lg;
-    font-size: $font-size-lg;
-    @if $enable-rounded {
-      @include border-radius($border-radius-lg);
-    }
   }
 
   input[type="radio"],
@@ -218,6 +202,9 @@
 }
 .input-group-danger {
   @include input-group-variant($input-group-danger-color,$input-group-danger-bg,$input-group-danger-border);
+}
+.input-group-dark {
+  @include input-group-variant($input-group-dark-color,$input-group-dark-bg,$input-group-dark-border);
 }
 
 // Underline
