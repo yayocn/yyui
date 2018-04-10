@@ -1,0 +1,61 @@
+// triangle
+//
+@mixin triangle($directions: $directions) {
+  %triangle-common {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    vertical-align: middle;
+  }
+
+  @each $dir in $directions {
+    .triangle-#{$dir} {
+      @extend %triangle-common;
+      @if $dir == up {
+        border-bottom: $triangle-bottom solid $triangle-color;
+        border-right: $triangle-height solid transparent;
+        border-left: $triangle-height solid transparent;
+
+        &.disabled,
+        &:disabled,
+        *.disabled > &,
+        *:disabled > & {
+          border-bottom-color: lighten($triangle-color, 12%);
+        }
+      } @else if($dir == right) {
+        border-left: $triangle-bottom solid $triangle-color;
+        border-top: $triangle-height solid transparent;
+        border-bottom: $triangle-height solid transparent;
+
+        &.disabled,
+        &:disabled,
+        *.disabled > &,
+        *:disabled > & {
+          border-left-color: #999;
+        }
+      } @else if($dir == down) {
+        border-top: $triangle-bottom solid $triangle-color;
+        border-right: $triangle-height solid transparent;
+        border-left: $triangle-height solid transparent;
+
+        &.disabled,
+        &:disabled,
+        *.disabled > &,
+        *:disabled > & {
+          border-top-color: #999;
+        }
+      } @else if($dir == left) {
+        border-right: $triangle-bottom solid $triangle-color;
+        border-top: $triangle-height solid transparent;
+        border-bottom: $triangle-height solid transparent;
+
+        &.disabled,
+        &:disabled,
+        *.disabled > &,
+        *:disabled > & {
+          border-right-color: #999;
+        }
+      }
+    }
+  }
+}
