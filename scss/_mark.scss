@@ -1,8 +1,37 @@
 // Mark
 //
 //
+%mark {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: $mark-font-size;
+  font-weight: $mark-font-weight;
+  @include focus-none();
+}
 
-//
 // Triangle
 //
 @include triangle();
+
+// Mark
+//
+%mark {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: $mark-font-size;
+  font-weight: $mark-font-weight;
+  @include focus-none();
+}
+
+@each $name, $value in $mark-list {
+  .mark-#{$name} {
+    @extend %mark;
+    &:after {
+      content: $value;
+    }
+  }
+}
+
+.mark-ok {
+  font-weight: 100;
+}

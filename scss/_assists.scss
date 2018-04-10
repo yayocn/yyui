@@ -4,34 +4,6 @@
 //
 
 //
-// Close
-//
-$close-shadow: (0 0 2px rgba($gray-dark, 1));
-.close {
-  float: right;
-  font-size: ($font-size-base * 2);
-  font-weight: $close-font-weight;
-  line-height: 1;
-  color: $close-color;
-  @include text-shadow($close-shadow);
-  opacity: .5;
-
-  @include hover-focus {
-    text-decoration: none;
-    cursor: pointer;
-    opacity: 1;
-  }
-  @include focus-none();
-}
-button.close {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-}
-
-//
 // Floats
 //
 

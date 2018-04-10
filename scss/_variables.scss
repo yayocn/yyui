@@ -424,10 +424,17 @@ $html-comment-color: #75715E;
 $margin-padding-direction: ('', t, r, b, l, v, h) !default;
 $margin-padding-range: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30, 35, 40, 45, 50) !default;
 
-// Close
+// Mark
 //
-$close-color:        $gray-dark;
-$close-font-weight:  700;
+$mark-font-size:    1.4rem;
+$mark-font-weight:  400;
+
+$mark-list: (
+  close: "\2715",
+  ok: "\2714",
+  arrow-left2: "\00AB",
+  arrow-right2: "\00BB"
+) !default;
 
 // Divider
 //
