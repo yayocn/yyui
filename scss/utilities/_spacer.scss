@@ -1,0 +1,47 @@
+//
+// Margin and padding
+//
+
+@each $dir in $margin-padding-direction {
+  @each $i in $margin-padding-range {
+    .m#{$dir}-#{$i} {
+      @if $dir == '' {
+        margin: $i + px !important;
+      }@else if $dir == t {
+        margin-top: $i + px !important;
+      }@else if($dir == r) {
+        margin-right: $i + px !important;
+      }@else if($dir == b) {
+        margin-bottom: $i + px !important;
+      }@else if($dir == l) {
+        margin-left: $i + px !important;
+      }@else if($dir == v) {
+        margin-top: $i + px !important;
+        margin-bottom: $i + px !important;
+      }@else if($dir == h) {
+        margin-left: $i + px !important;
+        margin-right: $i + px !important;
+      }
+    }
+
+    .p#{$dir}-#{$i} {
+      @if $dir == t {
+        padding: $i + px !important;
+      }@else if($dir == t) {
+        padding-top: $i + px !important;
+      }@else if($dir == r) {
+        padding-right: $i + px !important;
+      }@else if($dir == b) {
+        padding-bottom: $i + px !important;
+      }@else if($dir == l) {
+        padding-left: $i + px !important;
+      }@else if($dir == v) {
+        padding-top: $i + px !important;
+        padding-bottom: $i + px !important;
+      }@else if($dir == h) {
+        padding-left: $i + px !important;
+        padding-right: $i + px !important;
+      }
+    }
+  }
+}

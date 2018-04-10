@@ -1,0 +1,25 @@
+//
+// divider
+//
+.divider {
+  display: block;
+  height: 1px;
+  border-top: 1px solid $divider-color;
+  margin-top: $divider-margin;
+  margin-bottom: $divider-margin;
+}
+
+.divider-lg {
+  margin-top: $divider-margin-lg;
+  margin-bottom: $divider-margin-lg;
+}
+
+.divider-sm {
+  margin-top: $divider-margin-sm;
+  margin-bottom: $divider-margin-sm;
+}
+
+.divider-bold {
+  height: 2px;
+  border-top-width: 2px;
+}

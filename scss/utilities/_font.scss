@@ -1,0 +1,17 @@
+//
+// Font size
+//
+@for $size from 12 through 20 {
+  .font-#{$size} {
+    font-size: $size * 1px !important;
+  }
+}
+
+// weight
+//
+$weight-list: (100, 200, 300, 400, 500, 600, 700, 800, 900, bold, bolder, lighter);
+@each $value in $weight-list {
+  .font-#{$value} {
+    font-weight: $value !important;
+  }
+}

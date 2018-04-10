@@ -1,0 +1,31 @@
+// textarea
+//
+//
+.size-dead {
+  resize: none !important;
+}
+
+//
+// Lists
+//
+
+// Unstyled
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-bare {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Inline style
+// Inline turns list items into inline-block
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
