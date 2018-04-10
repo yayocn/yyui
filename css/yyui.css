@@ -7916,69 +7916,20 @@ progress[value]::-moz-progress-bar {
   background-color: #d9534f;
 }
 
-/* line 7, ../scss/_media.scss */
+/* line 6, ../scss/_media.scss */
 .media {
   display: flex;
-  margin-bottom: 5px;
+  align-items: flex-start;
 }
-
-/* line 11, ../scss/_media.scss */
-.media-body {
-  flex: 1;
-}
-
-/* line 49, ../scss/_media.scss */
-.media-left img,
-.media-right img {
+/* line 10, ../scss/_media.scss */
+.media > img {
   width: 64px;
   height: 64px;
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTMxNTYwYjBjYSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MzE1NjBiMGNhIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==");
 }
 
-/* line 61, ../scss/_media.scss */
-.media-body > p {
-  font-size: 1.3rem;
-  text-align: justify;
-  text-indent: 2em;
-}
-
-/* line 68, ../scss/_media.scss */
-.media-left {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-/* line 73, ../scss/_media.scss */
-.media-right {
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-/* line 79, ../scss/_media.scss */
-.media-heading {
-  margin-top: 3px;
-  margin-bottom: 5px;
-}
-/* line 83, ../scss/_media.scss */
-.media-heading, .media-heading > a {
-  color: #333;
-  font-size: 13px;
-  font-weight: bold;
-}
-/* line 90, ../scss/_media.scss */
-.media-heading > a {
-  margin-right: 10px;
-  text-decoration: none;
-}
-/* line 8, ../scss/mixins/_hover.scss */
-.media-heading > a:hover {
-  color: #0275d8;
-}
-
-/* line 100, ../scss/_media.scss */
-.media-list {
-  padding-left: 0;
-  list-style: none;
+/* line 16, ../scss/_media.scss */
+.media-body {
+  flex: 1;
 }
 
 /* line 6, ../scss/_list-group.scss */
