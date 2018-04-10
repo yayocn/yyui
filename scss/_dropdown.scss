@@ -5,6 +5,7 @@
 
 .dropdown {
   position: relative;
+  display: inline-block;
 }
 
 
@@ -86,6 +87,7 @@
   display: none;
   float: left;
   min-width: 160px;
+  max-width: 90vw;
   padding: 5px 0;
   margin: 2px 0 0;
   font-size: $font-size-base;
@@ -118,7 +120,7 @@
 // Dropdown item
 //
 .dropdown-item {
-  padding: 3px 20px;
+  padding: $dropdown-item-padding-y $dropdown-item-padding-x;
 
   &,
   & > a {
@@ -128,6 +130,7 @@
     line-height: $line-height;
     color: $dropdown-link-color;
     white-space: nowrap; // prevent links from randomly breaking onto new lines
+    @include text-truncate;
 
     // For `<button>`s
     text-align: inherit;
@@ -187,11 +190,13 @@
 //
 .dropdown-header {
   display: block;
-  padding: 3px 20px;
+  padding: $dropdown-item-padding-y $dropdown-item-padding-x;
   font-size: $font-size-lg;
   line-height: $line-height;
   color: $dropdown-header-color;
+  font-weight: bold;
   white-space: nowrap;
+  @include text-truncate;
 }
 
 // Backdrop to catch body clicks on mobile, etc.

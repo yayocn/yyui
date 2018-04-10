@@ -50,7 +50,7 @@ var Dropdown = (function ($) {
   var DATA_API_KEY = '.data-api';
   var ANIMATE = true;
   var ANIMATE_TYPE = 'slide'; // fade, slide
-  var ANIMATE_DURATION = 200;
+  var ANIMATE_DURATION = 100;
 
   var Event = {
     CLICK: 'click' + EVENT_KEY,

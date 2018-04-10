@@ -1074,7 +1074,7 @@ a.bg-transparent:focus, a.bg-transparent:hover {
 }
 
 /* line 33, ../scss/utilities/_text.scss */
-.text-hidden {
+.text-transparent {
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -6126,18 +6126,19 @@ pre code {
 /* line 6, ../scss/_dropdown.scss */
 .dropdown {
   position: relative;
+  display: inline-block;
 }
 
-/* line 11, ../scss/_dropdown.scss */
+/* line 12, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-primary:after, .dropdown-toggle.btn-primary-outline:hover:after, .dropdown-toggle.btn-primary-outline:focus:after, .dropdown-toggle.btn-primary-outline:active:after, .dropdown-toggle.btn-primary-outline.active:after, .dropdown-toggle.btn-secondary:after, .dropdown-toggle.btn-secondary-outline:hover:after, .dropdown-toggle.btn-secondary-outline:focus:after, .dropdown-toggle.btn-secondary-outline:active:after, .dropdown-toggle.btn-secondary-outline.active:after, .dropdown-toggle.btn-info:after, .dropdown-toggle.btn-info-outline:hover:after, .dropdown-toggle.btn-info-outline:focus:after, .dropdown-toggle.btn-info-outline:active:after, .dropdown-toggle.btn-info-outline.active:after, .dropdown-toggle.btn-success:after, .dropdown-toggle.btn-success-outline:hover:after, .dropdown-toggle.btn-success-outline:focus:after, .dropdown-toggle.btn-success-outline:active:after, .dropdown-toggle.btn-success-outline.active:after, .dropdown-toggle.btn-warning:after, .dropdown-toggle.btn-warning-outline:hover:after, .dropdown-toggle.btn-warning-outline:focus:after, .dropdown-toggle.btn-warning-outline:active:after, .dropdown-toggle.btn-warning-outline.active:after, .dropdown-toggle.btn-danger:after, .dropdown-toggle.btn-danger-outline:hover:after, .dropdown-toggle.btn-danger-outline:focus:after, .dropdown-toggle.btn-danger-outline:active:after, .dropdown-toggle.btn-danger-outline.active:after, .dropdown-toggle.btn-light:after, .dropdown-toggle.btn-light-outline:hover:after, .dropdown-toggle.btn-light-outline:focus:after, .dropdown-toggle.btn-light-outline:active:after, .dropdown-toggle.btn-light-outline.active:after, .dropdown-toggle.btn-dark:after, .dropdown-toggle.btn-dark-outline:hover:after, .dropdown-toggle.btn-dark-outline:focus:after, .dropdown-toggle.btn-dark-outline:active:after, .dropdown-toggle.btn-dark-outline.active:after {
   border-top-color: #fff;
 }
 
-/* line 17, ../scss/_dropdown.scss */
+/* line 18, ../scss/_dropdown.scss */
 .dropdown-toggle {
   text-align: left;
 }
-/* line 19, ../scss/_dropdown.scss */
+/* line 20, ../scss/_dropdown.scss */
 .dropdown-toggle:after {
   content: "";
   display: inline-block;
@@ -6149,99 +6150,99 @@ pre code {
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
 }
-/* line 30, ../scss/_dropdown.scss */
+/* line 31, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-block:after {
   position: absolute;
   top: 45%;
   right: 10px;
   margin-left: 0;
 }
-/* line 36, ../scss/_dropdown.scss */
+/* line 37, ../scss/_dropdown.scss */
 .dropdown-toggle:focus {
   outline: none;
 }
-/* line 44, ../scss/_dropdown.scss */
+/* line 45, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-primary-outline:after {
   border-top-color: #0275d8;
 }
-/* line 48, ../scss/_dropdown.scss */
+/* line 49, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-primary-outline:hover:after, .dropdown-toggle.btn-primary-outline:focus:after, .dropdown-toggle.btn-primary-outline:active:after, .dropdown-toggle.btn-primary-outline.active:after {
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 44, ../scss/_dropdown.scss */
+/* line 45, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-secondary-outline:after {
   border-top-color: #375A7F;
 }
-/* line 48, ../scss/_dropdown.scss */
+/* line 49, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-secondary-outline:hover:after, .dropdown-toggle.btn-secondary-outline:focus:after, .dropdown-toggle.btn-secondary-outline:active:after, .dropdown-toggle.btn-secondary-outline.active:after {
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 44, ../scss/_dropdown.scss */
+/* line 45, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-info-outline:after {
   border-top-color: #14adea;
 }
-/* line 48, ../scss/_dropdown.scss */
+/* line 49, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-info-outline:hover:after, .dropdown-toggle.btn-info-outline:focus:after, .dropdown-toggle.btn-info-outline:active:after, .dropdown-toggle.btn-info-outline.active:after {
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 44, ../scss/_dropdown.scss */
+/* line 45, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-success-outline:after {
   border-top-color: #2EC6A0;
 }
-/* line 48, ../scss/_dropdown.scss */
+/* line 49, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-success-outline:hover:after, .dropdown-toggle.btn-success-outline:focus:after, .dropdown-toggle.btn-success-outline:active:after, .dropdown-toggle.btn-success-outline.active:after {
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 44, ../scss/_dropdown.scss */
+/* line 45, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-warning-outline:after {
   border-top-color: #f0ad4e;
 }
-/* line 48, ../scss/_dropdown.scss */
+/* line 49, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-warning-outline:hover:after, .dropdown-toggle.btn-warning-outline:focus:after, .dropdown-toggle.btn-warning-outline:active:after, .dropdown-toggle.btn-warning-outline.active:after {
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 44, ../scss/_dropdown.scss */
+/* line 45, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-danger-outline:after {
   border-top-color: #d9534f;
 }
-/* line 48, ../scss/_dropdown.scss */
+/* line 49, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-danger-outline:hover:after, .dropdown-toggle.btn-danger-outline:focus:after, .dropdown-toggle.btn-danger-outline:active:after, .dropdown-toggle.btn-danger-outline.active:after {
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 44, ../scss/_dropdown.scss */
+/* line 45, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-light-outline:after {
   border-top-color: #f7f7f9;
 }
-/* line 48, ../scss/_dropdown.scss */
+/* line 49, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-light-outline:hover:after, .dropdown-toggle.btn-light-outline:focus:after, .dropdown-toggle.btn-light-outline:active:after, .dropdown-toggle.btn-light-outline.active:after {
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 44, ../scss/_dropdown.scss */
+/* line 45, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-dark-outline:after {
   border-top-color: #373a3c;
 }
-/* line 48, ../scss/_dropdown.scss */
+/* line 49, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-dark-outline:hover:after, .dropdown-toggle.btn-dark-outline:focus:after, .dropdown-toggle.btn-dark-outline:active:after, .dropdown-toggle.btn-dark-outline.active:after {
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
@@ -6249,28 +6250,28 @@ pre code {
   transition: all 0.1s ease-in-out;
 }
 
-/* line 61, ../scss/_dropdown.scss */
+/* line 62, ../scss/_dropdown.scss */
 .active > .dropdown-menu {
   display: block;
 }
-/* line 66, ../scss/_dropdown.scss */
+/* line 67, ../scss/_dropdown.scss */
 .active > a {
   outline: 0;
 }
-/* line 70, ../scss/_dropdown.scss */
+/* line 71, ../scss/_dropdown.scss */
 .active .dropdown-toggle {
   -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-/* line 72, ../scss/_dropdown.scss */
+/* line 73, ../scss/_dropdown.scss */
 .active .dropdown-toggle.btn-link {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 81, ../scss/_dropdown.scss */
+/* line 82, ../scss/_dropdown.scss */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -6279,6 +6280,7 @@ pre code {
   display: none;
   float: left;
   min-width: 160px;
+  max-width: 90vw;
   padding: 5px 0;
   margin: 2px 0 0;
   font-size: 1.4rem;
@@ -6292,28 +6294,31 @@ pre code {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 
-/* line 106, ../scss/_dropdown.scss */
+/* line 108, ../scss/_dropdown.scss */
 .right > .dropdown-menu {
   right: 0;
   left: auto;
 }
 
-/* line 113, ../scss/_dropdown.scss */
+/* line 115, ../scss/_dropdown.scss */
 .dropdown-toggle.btn-block + .dropdown-menu {
   width: 100%;
 }
 
-/* line 120, ../scss/_dropdown.scss */
+/* line 122, ../scss/_dropdown.scss */
 .dropdown-item {
-  padding: 3px 20px;
+  padding: 0.25rem 2rem;
 }
-/* line 123, ../scss/_dropdown.scss */
+/* line 125, ../scss/_dropdown.scss */
 .dropdown-item, .dropdown-item > a {
   display: block;
   clear: both;
   font-weight: normal;
   line-height: 1.5;
   color: #373a3c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
   text-align: inherit;
   width: 100%;
@@ -6347,7 +6352,7 @@ pre code {
   background-image: none;
 }
 
-/* line 179, ../scss/_dropdown.scss */
+/* line 182, ../scss/_dropdown.scss */
 .dropdown-divider {
   height: 1px;
   margin: 7.5px 0;
@@ -6355,23 +6360,27 @@ pre code {
   background-color: #e5e5e5;
 }
 
-/* line 188, ../scss/_dropdown.scss */
+/* line 191, ../scss/_dropdown.scss */
 .dropdown-header {
   display: block;
-  padding: 3px 20px;
+  padding: 0.25rem 2rem;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: #818a91;
+  color: #212529;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-/* line 208, ../scss/_dropdown.scss */
+/* line 213, ../scss/_dropdown.scss */
 .dropdown.up > .dropdown-toggle:after {
   content: "";
   border-top: 0;
   border-bottom: 6px solid;
 }
-/* line 215, ../scss/_dropdown.scss */
+/* line 220, ../scss/_dropdown.scss */
 .dropdown.up .dropdown-menu {
   top: auto;
   bottom: 100%;

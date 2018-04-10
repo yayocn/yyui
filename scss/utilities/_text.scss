@@ -30,7 +30,7 @@ $align-list: (left, right, center, justify);
 .text-paper { font-family: $font-family-serif !important; }
 .text-letter { font-family: $font-family-monospace !important; }
 
-.text-hidden {
+.text-transparent {
   @include text-hidden();
 }
 
