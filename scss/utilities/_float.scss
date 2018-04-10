@@ -1,0 +1,15 @@
+//
+// Floats
+//
+
+.clearfix {
+  @include clearfix();
+}
+
+.fl {
+  @include float(left);
+}
+
+.fr {
+  @include float(right);
+}
