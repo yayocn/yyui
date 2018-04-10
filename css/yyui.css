@@ -7755,7 +7755,7 @@ progress .progress {
   height: 100%;
   text-align: right;
   font-size: 12px;
-  line-height: 1em;
+  line-height: 0.9em;
 }
 
 /* line 41, ../scss/_progress.scss */
