@@ -642,39 +642,79 @@ dd + dt {
 }
 
 /* line 25, ../scss/utilities/_border.scss */
+.border-primary {
+  border-color: #0275d8 !important;
+}
+
+/* line 25, ../scss/utilities/_border.scss */
+.border-secondary {
+  border-color: #375A7F !important;
+}
+
+/* line 25, ../scss/utilities/_border.scss */
+.border-info {
+  border-color: #14adea !important;
+}
+
+/* line 25, ../scss/utilities/_border.scss */
+.border-success {
+  border-color: #2EC6A0 !important;
+}
+
+/* line 25, ../scss/utilities/_border.scss */
+.border-warning {
+  border-color: #f0ad4e !important;
+}
+
+/* line 25, ../scss/utilities/_border.scss */
+.border-danger {
+  border-color: #d9534f !important;
+}
+
+/* line 25, ../scss/utilities/_border.scss */
+.border-light {
+  border-color: #f7f7f9 !important;
+}
+
+/* line 25, ../scss/utilities/_border.scss */
+.border-dark {
+  border-color: #373a3c !important;
+}
+
+/* line 30, ../scss/utilities/_border.scss */
 .border-round-0 {
   border-radius: 0 !important;
 }
 
-/* line 26, ../scss/utilities/_border.scss */
+/* line 31, ../scss/utilities/_border.scss */
 .border-round-circle {
   border-radius: 50% !important;
 }
 
-/* line 27, ../scss/utilities/_border.scss */
+/* line 32, ../scss/utilities/_border.scss */
 .border-round {
   border-radius: 0.4rem !important;
 }
 
-/* line 28, ../scss/utilities/_border.scss */
+/* line 33, ../scss/utilities/_border.scss */
 .border-round-top {
   border-top-left-radius: 0.4rem !important;
   border-top-right-radius: 0.4rem !important;
 }
 
-/* line 32, ../scss/utilities/_border.scss */
+/* line 37, ../scss/utilities/_border.scss */
 .border-round-right {
   border-top-right-radius: 0.4rem !important;
   border-bottom-right-radius: 0.4rem !important;
 }
 
-/* line 36, ../scss/utilities/_border.scss */
+/* line 41, ../scss/utilities/_border.scss */
 .border-round-bottom {
   border-bottom-right-radius: 0.4rem !important;
   border-bottom-left-radius: 0.4rem !important;
 }
 
-/* line 40, ../scss/utilities/_border.scss */
+/* line 45, ../scss/utilities/_border.scss */
 .border-round-left {
   border-top-left-radius: 0.4rem !important;
   border-bottom-left-radius: 0.4rem !important;
