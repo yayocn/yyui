@@ -24,12 +24,6 @@
   .table {
     background-color: $body-bg;
   }
-
-  tbody tr:hover {
-    @include hover {
-      background-color: $table-bg-hover;
-    }
-  }
 }
 
 .table-sm {
@@ -61,6 +55,14 @@
   }
 }
 
+.table-hover {
+  tbody tr {
+    @include hover {
+      background-color: $table-bg-hover;
+    }
+  }
+}
+
 @include table-row-variant(active, $table-bg-active);
 @include table-row-variant(primary, $brand-primary);
 @include table-row-variant(secondary, $brand-secondary);
@@ -68,9 +70,39 @@
 @include table-row-variant(info, $brand-info);
 @include table-row-variant(warning, $brand-warning);
 @include table-row-variant(danger, $brand-danger);
+@include table-row-variant(dark, $dark);
 
 .table-responsive {
   display: block;
   width: 100%;
   overflow-x: auto;
+}
+
+.table-dark {
+  color: $white;
+  background-color: $dark;
+
+  th,
+  td,
+  thead th {
+    border-color: lighten($dark, 7.5%);
+  }
+
+  &.table-bordered {
+    border: 0;
+  }
+
+  &.table-striped {
+    tbody tr:nth-of-type(odd) {
+      background-color: rgba($white, .05);
+    }
+  }
+
+  &.table-hover {
+    tbody tr {
+      @include hover {
+        background-color: rgba($white, .075);
+      }
+    }
+  }
 }

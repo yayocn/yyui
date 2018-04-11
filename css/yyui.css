@@ -5967,160 +5967,210 @@ pre code {
 .table .table {
   background-color: #fff;
 }
-/* line 8, ../scss/mixins/_hover.scss */
-.table tbody tr:hover:hover {
-  background-color: #ddd;
-}
 
-/* line 36, ../scss/_tables.scss */
+/* line 30, ../scss/_tables.scss */
 .table-sm th,
 .table-sm td {
   padding: 0.48rem;
 }
 
-/* line 42, ../scss/_tables.scss */
+/* line 36, ../scss/_tables.scss */
 .table-border {
   border: 1px solid #eceeef;
 }
-/* line 45, ../scss/_tables.scss */
+/* line 39, ../scss/_tables.scss */
 .table-border th,
 .table-border td {
   border: 1px solid #eceeef;
 }
-/* line 51, ../scss/_tables.scss */
+/* line 45, ../scss/_tables.scss */
 .table-border thead th,
 .table-border thead td {
   border-bottom-width: 2px;
 }
 
-/* line 59, ../scss/_tables.scss */
+/* line 53, ../scss/_tables.scss */
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: #eee;
 }
 
-/* line 7, ../scss/mixins/_tables.scss */
-.row-bg-active,
-.row-bg-active > th,
-.row-bg-active > td {
+/* line 8, ../scss/mixins/_hover.scss */
+.table-hover tbody tr:hover {
   background-color: #ddd;
 }
+
+/* line 7, ../scss/mixins/_tables.scss */
+.row-active,
+.row-active > th,
+.row-active > td {
+  background-color: #ddd;
+}
+
 /* line 8, ../scss/mixins/_hover.scss */
-.row-bg-active:hover:hover {
+.table-hover .row-active:hover:hover {
   background-color: #d0d0d0;
 }
-/* line 22, ../scss/mixins/_tables.scss */
-.row-bg-active:hover:hover > td,
-.row-bg-active:hover:hover > th {
+/* line 25, ../scss/mixins/_tables.scss */
+.table-hover .row-active:hover:hover > td,
+.table-hover .row-active:hover:hover > th {
   background-color: #d0d0d0;
 }
 
 /* line 7, ../scss/mixins/_tables.scss */
-.row-bg-primary,
-.row-bg-primary > th,
-.row-bg-primary > td {
+.row-primary,
+.row-primary > th,
+.row-primary > td {
   color: #f5f5f5;
   background-color: #0275d8;
 }
+
 /* line 8, ../scss/mixins/_hover.scss */
-.row-bg-primary:hover:hover {
+.table-hover .row-primary:hover:hover {
   background-color: #0267bf;
 }
-/* line 22, ../scss/mixins/_tables.scss */
-.row-bg-primary:hover:hover > td,
-.row-bg-primary:hover:hover > th {
+/* line 25, ../scss/mixins/_tables.scss */
+.table-hover .row-primary:hover:hover > td,
+.table-hover .row-primary:hover:hover > th {
   background-color: #0267bf;
 }
 
 /* line 7, ../scss/mixins/_tables.scss */
-.row-bg-secondary,
-.row-bg-secondary > th,
-.row-bg-secondary > td {
+.row-secondary,
+.row-secondary > th,
+.row-secondary > td {
   color: #f5f5f5;
   background-color: #375A7F;
 }
+
 /* line 8, ../scss/mixins/_hover.scss */
-.row-bg-secondary:hover:hover {
+.table-hover .row-secondary:hover:hover {
   background-color: #2f4d6d;
 }
-/* line 22, ../scss/mixins/_tables.scss */
-.row-bg-secondary:hover:hover > td,
-.row-bg-secondary:hover:hover > th {
+/* line 25, ../scss/mixins/_tables.scss */
+.table-hover .row-secondary:hover:hover > td,
+.table-hover .row-secondary:hover:hover > th {
   background-color: #2f4d6d;
 }
 
 /* line 7, ../scss/mixins/_tables.scss */
-.row-bg-success,
-.row-bg-success > th,
-.row-bg-success > td {
+.row-success,
+.row-success > th,
+.row-success > td {
   color: #f5f5f5;
   background-color: #2EC6A0;
 }
+
 /* line 8, ../scss/mixins/_hover.scss */
-.row-bg-success:hover:hover {
+.table-hover .row-success:hover:hover {
   background-color: #29b18f;
 }
-/* line 22, ../scss/mixins/_tables.scss */
-.row-bg-success:hover:hover > td,
-.row-bg-success:hover:hover > th {
+/* line 25, ../scss/mixins/_tables.scss */
+.table-hover .row-success:hover:hover > td,
+.table-hover .row-success:hover:hover > th {
   background-color: #29b18f;
 }
 
 /* line 7, ../scss/mixins/_tables.scss */
-.row-bg-info,
-.row-bg-info > th,
-.row-bg-info > td {
+.row-info,
+.row-info > th,
+.row-info > td {
   color: #f5f5f5;
   background-color: #14adea;
 }
+
 /* line 8, ../scss/mixins/_hover.scss */
-.row-bg-info:hover:hover {
+.table-hover .row-info:hover:hover {
   background-color: #129cd3;
 }
-/* line 22, ../scss/mixins/_tables.scss */
-.row-bg-info:hover:hover > td,
-.row-bg-info:hover:hover > th {
+/* line 25, ../scss/mixins/_tables.scss */
+.table-hover .row-info:hover:hover > td,
+.table-hover .row-info:hover:hover > th {
   background-color: #129cd3;
 }
 
 /* line 7, ../scss/mixins/_tables.scss */
-.row-bg-warning,
-.row-bg-warning > th,
-.row-bg-warning > td {
+.row-warning,
+.row-warning > th,
+.row-warning > td {
   color: #f5f5f5;
   background-color: #f0ad4e;
 }
+
 /* line 8, ../scss/mixins/_hover.scss */
-.row-bg-warning:hover:hover {
+.table-hover .row-warning:hover:hover {
   background-color: #eea236;
 }
-/* line 22, ../scss/mixins/_tables.scss */
-.row-bg-warning:hover:hover > td,
-.row-bg-warning:hover:hover > th {
+/* line 25, ../scss/mixins/_tables.scss */
+.table-hover .row-warning:hover:hover > td,
+.table-hover .row-warning:hover:hover > th {
   background-color: #eea236;
 }
 
 /* line 7, ../scss/mixins/_tables.scss */
-.row-bg-danger,
-.row-bg-danger > th,
-.row-bg-danger > td {
+.row-danger,
+.row-danger > th,
+.row-danger > td {
   color: #f5f5f5;
   background-color: #d9534f;
 }
+
 /* line 8, ../scss/mixins/_hover.scss */
-.row-bg-danger:hover:hover {
+.table-hover .row-danger:hover:hover {
   background-color: #d43f3a;
 }
-/* line 22, ../scss/mixins/_tables.scss */
-.row-bg-danger:hover:hover > td,
-.row-bg-danger:hover:hover > th {
+/* line 25, ../scss/mixins/_tables.scss */
+.table-hover .row-danger:hover:hover > td,
+.table-hover .row-danger:hover:hover > th {
   background-color: #d43f3a;
 }
 
-/* line 72, ../scss/_tables.scss */
+/* line 7, ../scss/mixins/_tables.scss */
+.row-dark,
+.row-dark > th,
+.row-dark > td {
+  color: #f5f5f5;
+  background-color: #212529;
+}
+
+/* line 8, ../scss/mixins/_hover.scss */
+.table-hover .row-dark:hover:hover {
+  background-color: #16181b;
+}
+/* line 25, ../scss/mixins/_tables.scss */
+.table-hover .row-dark:hover:hover > td,
+.table-hover .row-dark:hover:hover > th {
+  background-color: #16181b;
+}
+
+/* line 75, ../scss/_tables.scss */
 .table-responsive {
   display: block;
   width: 100%;
   overflow-x: auto;
+}
+
+/* line 81, ../scss/_tables.scss */
+.table-dark {
+  color: #fff;
+  background-color: #212529;
+}
+/* line 85, ../scss/_tables.scss */
+.table-dark th,
+.table-dark td,
+.table-dark thead th {
+  border-color: #32383e;
+}
+/* line 91, ../scss/_tables.scss */
+.table-dark.table-bordered {
+  border: 0;
+}
+/* line 96, ../scss/_tables.scss */
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+/* line 8, ../scss/mixins/_hover.scss */
+.table-dark.table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.075);
 }
 
 /* line 6, ../scss/_dropdown.scss */
