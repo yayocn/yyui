@@ -2,12 +2,18 @@
 // Margin and padding
 //
 
-@each $dir in $margin-padding-direction {
-  @each $i in $margin-padding-range {
+@each $i in $margin-padding-range {
+  .m-#{$i} {
+    margin: $i + px !important;
+  }
+
+  .p-#{$i} {
+    padding: $i + px !important;
+  }
+
+  @each $dir in $margin-padding-direction  {
     .m#{$dir}-#{$i} {
-      @if $dir == '' {
-        margin: $i + px !important;
-      }@else if $dir == t {
+      @if $dir == t {
         margin-top: $i + px !important;
       }@else if($dir == r) {
         margin-right: $i + px !important;
@@ -25,9 +31,7 @@
     }
 
     .p#{$dir}-#{$i} {
-      @if $dir == t {
-        padding: $i + px !important;
-      }@else if($dir == t) {
+      @if($dir == t) {
         padding-top: $i + px !important;
       }@else if($dir == r) {
         padding-right: $i + px !important;

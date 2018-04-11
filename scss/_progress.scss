@@ -6,7 +6,6 @@
 progress {
   display: block;
   width: 100%;
-  margin-bottom: $space-base * 2;
   height: $progress-height;
   border: 1px solid $progress-value-color;
   background-color: $progress-bg;
@@ -107,9 +106,6 @@ progress[value] {
 .progress-secondary {
   @include progress-variant($progress-value-secondary-bg);
 }
-.progress-gray {
-  @include progress-variant($progress-value-gray-bg);
-}
 .progress-success {
   @include progress-variant($progress-value-success-bg);
 }
@@ -121,4 +117,7 @@ progress[value] {
 }
 .progress-danger {
   @include progress-variant($progress-value-danger-bg);
+}
+.progress-dark {
+  @include progress-variant($progress-value-dark-bg);
 }

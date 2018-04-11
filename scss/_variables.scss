@@ -416,7 +416,7 @@ $html-comment-color: #75715E;
 
 // Margin and padding
 //
-$margin-padding-direction: ('', t, r, b, l, v, h) !default;
+$margin-padding-direction: (t, r, b, l, v, h) !default;
 $margin-padding-range: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30, 35, 40, 45, 50) !default;
 
 // Mark
@@ -667,11 +667,11 @@ $progress-value-color:          $brand-primary !default;
 $progress-border-radius:      $border-radius !default;
 
 $progress-value-secondary-bg:   $brand-secondary!default;
-$progress-value-gray-bg:        $gray !default;
 $progress-value-success-bg:     $brand-success !default;
 $progress-value-warning-bg:     $brand-warning !default;
 $progress-value-danger-bg:      $brand-danger !default;
 $progress-value-info-bg:        $brand-info !default;
+$progress-value-dark-bg:        $dark !default;
 
 // Example img
 //
