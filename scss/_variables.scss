@@ -140,7 +140,7 @@ $border-radius-lg:  .48rem !default;
 $border-radius-sm:  .32rem !default;
 $border-radius-xs:  .3rem !default;
 $border-radius-hg:  1000rem;
-$border-radius-circle:  50% !default;
+$border-radius-circle:  $border-radius-hg !default;
 
 
 // Buttons
@@ -572,25 +572,25 @@ $breadcrumb-divider:            "/" !default;
 
 // Pagination
 
-$pagination-padding-x:                1.2rem !default;
-$pagination-padding-y:                .8rem !default;
-$pagination-padding-x-sm:             1.2rem !default;
+$pagination-padding-x:                1rem !default;
+$pagination-padding-y:                .6rem !default;
+$pagination-padding-x-sm:             .84rem !default;
 $pagination-padding-y-sm:             .44rem !default;
-$pagination-padding-x-lg:             2.4rem !default;
-$pagination-padding-y-lg:             1.2rem !default;
+$pagination-padding-x-lg:             1.4rem !default;
+$pagination-padding-y-lg:             1rem !default;
 
 
-$pagination-color:                     $brand-primary !default;
+$pagination-color:                     $dark !default;
 $pagination-bg:                        #fff !default;
 $pagination-border:                    #ddd !default;
 
 $pagination-hover-color:               $link-hover-color !default;
-$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-bg:                  $gray-lightest !default;
 $pagination-hover-border:              #ddd !default;
 
-$pagination-active-color:              #fff !default;
-$pagination-active-bg:                 $brand-primary !default;
-$pagination-active-border:             $brand-primary !default;
+$pagination-active-color:              $gray !default;
+$pagination-active-bg:                 $gray-lighter !default;
+$pagination-active-border:             $pagination-border !default;
 
 $pagination-disabled-color:            $gray-light !default;
 $pagination-disabled-bg:               #fff !default;

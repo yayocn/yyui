@@ -3,14 +3,18 @@
 //
 //
 
-.pager,
 .pagination {
+  display: flex;
   padding-left: 0;
   margin-top: $space-y;
   margin-bottom: $space-y;
 
   > li {
-    display: inline;
+    display: inline-block;
+
+    + li {
+      margin-left: -1px;
+    }
   }
 
   > .disabled {
@@ -24,7 +28,6 @@
 }
 
 .pagination {
-  display: inline-block;
   > li {
     > a,
     > span {
@@ -34,12 +37,13 @@
       text-decoration: none;
       padding: $pagination-padding-y $pagination-padding-x;
       color: $pagination-color;
+      font-family: $font-family-monospace;
     }
   }
 
   > li > a,
   > li > span {
-    @include hover-focus {
+    @include hover {
       color: $pagination-hover-color;
       background-color: $pagination-hover-bg;
     }
@@ -72,7 +76,6 @@
   > li {
     > a,
     > span {
-      margin-left: -1px;
       border: 1px solid $pagination-border;
     }
 
@@ -131,60 +134,12 @@
   @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
 }
 
+// situation
 //
-// Pager
-//
-
-.pager {
-  text-align: center;
-  list-style: none;
-  @include clearfix();
-
-  li {
-    > a,
-    > span {
-      display: inline-block;
-      padding: 5px 14px;
-      background-color: $pager-bg;
-      border: 1px solid $pager-border;
-
-      border-radius: $border-radius-hg;
-    }
-
-    > a {
-      @include hover-focus {
-        text-decoration: none;
-        background-color: $pager-hover-bg;
-      }
-    }
-  }
-
-  .disabled {
-    > a {
-      @include plain-hover-focus {
-        color: $pager-disabled-color;
-        cursor: $cursor-disabled;
-        background-color: $pager-bg;
-      }
-    }
-    > span {
-      color: $pager-disabled-color;
-      cursor: $cursor-disabled;
-      background-color: $pager-bg;
-    }
-  }
-}
-
-.pager-next {
-  > a,
-  > span {
-    float: right;
-  }
-}
-
-.pager-prev {
-  > a,
-  > span {
-    float: left;
-  }
-}
+@include create-pagination-state(primary, $brand-primary);
+@include create-pagination-state(secondary, $brand-secondary);
+@include create-pagination-state(info, $brand-info);
+@include create-pagination-state(success, $brand-success);
+@include create-pagination-state(warning, $brand-warning);
+@include create-pagination-state(danger, $brand-danger);
+@include create-pagination-state(dark, $dark);

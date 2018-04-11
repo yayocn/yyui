@@ -8,17 +8,18 @@
 </head>
 <body>
 <div class="container">
-  <p>&#171;用"&amp;#171;"或"&amp;laquo;"</p>
-  <p>&#171;用"&amp;#187;"或"&amp;raquo;"</p>
+  <p>&#171;用"&amp;#171;"或"&amp;laquo;" 或者使用 mark-arrow-left2</p>
+  <p>&#171;用"&amp;#187;"或"&amp;raquo;" 或者使用 mark-arrow-right2</p>
+  <p>或者使用 mark-arrow-left2</p>
   <h4>默认分页</h4>
   <nav>
     <ul class="pagination">
       <li class="active"><a href="javascript:;">&laquo;</a></li>
       <li><a href="javascript:;">1</a></li>
-      <li><a href="javascript:;">2</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
       <li><a href="javascript:;">3</a></li>
       <li><a href="javascript:;">4</a></li>
-      <li><a href="javascript:;">&raquo;</a></li>
+      <li><a href="javascript:;" class="mark-arrow-right2"></a></li>
     </ul>
   </nav>
   <h4>带边框的分页</h4>
@@ -55,15 +56,154 @@
     </ul>
   </nav>
 
-  <h4>翻页</h4>
-  <ol class="pager">
-    <li><a href="javascript:;">prev</a></li>
-    <li><a href="javascript:;">next</a></li>
-  </ol>
-  <ol class="pager">
-    <li class="pager-prev"><a href="javascript:;">prev</a></li>
-    <li class="pager-next"><a href="javascript:;">next</a></li>
-  </ol>
+  <h4>state</h4>
+  <h4>primary</h4>
+  <nav>
+    <ul class="pagination pagination-primary">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="pagination pagination-border pagination-primary">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <h4>secondary</h4>
+  <nav>
+    <ul class="pagination pagination-secondary">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="pagination pagination-border pagination-secondary">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <h4>info</h4>
+  <nav>
+    <ul class="pagination pagination-info">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="pagination pagination-border pagination-info">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <h4>success</h4>
+  <nav>
+    <ul class="pagination pagination-success">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="pagination pagination-border pagination-success">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <h4>warning</h4>
+  <nav>
+    <ul class="pagination pagination-warning">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="pagination pagination-border pagination-warning">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <h4>danger</h4>
+  <nav>
+    <ul class="pagination pagination-danger">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="pagination pagination-border pagination-danger">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <h4>dark</h4>
+  <nav>
+    <ul class="pagination pagination-dark">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="pagination pagination-border pagination-dark">
+      <li class="active"><a href="javascript:;">&laquo;</a></li>
+      <li><a href="javascript:;">1</a></li>
+      <li class="disabled"><a href="javascript:;">2</a></li>
+      <li><a href="javascript:;">3</a></li>
+      <li><a href="javascript:;">4</a></li>
+      <li><a href="javascript:;">&raquo;</a></li>
+    </ul>
+  </nav>
 </div>
 
 <script src="../jquery-1.12.4.min.js"></script>

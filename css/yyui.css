@@ -125,7 +125,7 @@ h1 {
 /* line 176, ../scss/_normalize.scss */
 p {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1.4rem;
 }
 
 /* line 182, ../scss/_normalize.scss */
@@ -688,7 +688,7 @@ dd + dt {
 
 /* line 32, ../scss/utilities/_border.scss */
 .border-round-circle {
-  border-radius: 50% !important;
+  border-radius: 1000rem !important;
 }
 
 /* line 33, ../scss/utilities/_border.scss */
@@ -7165,51 +7165,44 @@ pre code {
 }
 
 /* line 6, ../scss/_paginations.scss */
-.pager,
 .pagination {
+  display: flex;
   padding-left: 0;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 /* line 12, ../scss/_paginations.scss */
-.pager > li,
 .pagination > li {
-  display: inline;
+  display: inline-block;
+}
+/* line 15, ../scss/_paginations.scss */
+.pagination > li + li {
+  margin-left: -1px;
 }
 /* line 34, ../scss/mixins/_hover.scss */
-.pager > .disabled > span, .pager > .disabled > span:focus, .pager > .disabled > span:hover,
-.pager > .disabled > a,
-.pager > .disabled > a:focus,
-.pager > .disabled > a:hover,
-.pagination > .disabled > span,
-.pagination > .disabled > span:focus,
-.pagination > .disabled > span:hover,
+.pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover,
 .pagination > .disabled > a,
 .pagination > .disabled > a:focus,
 .pagination > .disabled > a:hover {
   cursor: not-allowed;
 }
 
-/* line 26, ../scss/_paginations.scss */
-.pagination {
-  display: inline-block;
-}
-/* line 29, ../scss/_paginations.scss */
+/* line 32, ../scss/_paginations.scss */
 .pagination > li > a,
 .pagination > li > span {
   position: relative;
   float: left;
   line-height: 1.5;
   text-decoration: none;
-  padding: 0.8rem 1.2rem;
-  color: #0275d8;
+  padding: 0.6rem 1rem;
+  color: #212529;
+  font-family: Menlo, Monaco, Consolas, "Courier New", Monospace;
 }
-/* line 18, ../scss/mixins/_hover.scss */
-.pagination > li > a:focus, .pagination > li > a:hover,
-.pagination > li > span:focus,
+/* line 8, ../scss/mixins/_hover.scss */
+.pagination > li > a:hover,
 .pagination > li > span:hover {
   color: #014c8c;
-  background-color: #eceeef;
+  background-color: #f7f7f9;
 }
 /* line 34, ../scss/mixins/_hover.scss */
 .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover,
@@ -7218,8 +7211,8 @@ pre code {
 .pagination > .active > span:hover {
   z-index: 2;
   cursor: default;
-  color: #fff;
-  background-color: #0275d8;
+  color: #55595c;
+  background-color: #eceeef;
 }
 /* line 34, ../scss/mixins/_hover.scss */
 .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover,
@@ -7230,19 +7223,18 @@ pre code {
   background-color: #fff;
 }
 
-/* line 69, ../scss/_paginations.scss */
+/* line 73, ../scss/_paginations.scss */
 .pagination-border {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 73, ../scss/_paginations.scss */
+/* line 77, ../scss/_paginations.scss */
 .pagination-border > li > a,
 .pagination-border > li > span {
-  margin-left: -1px;
   border: 1px solid #ddd;
 }
-/* line 80, ../scss/_paginations.scss */
+/* line 83, ../scss/_paginations.scss */
 .pagination-border > li:first-child > a,
 .pagination-border > li:first-child > span {
   margin-left: 0;
@@ -7258,7 +7250,7 @@ pre code {
 .pagination-border > .active > span,
 .pagination-border > .active > span:focus,
 .pagination-border > .active > span:hover {
-  border-color: #0275d8;
+  border-color: #ddd;
 }
 /* line 34, ../scss/mixins/_hover.scss */
 .pagination-border > .disabled > span, .pagination-border > .disabled > span:focus, .pagination-border > .disabled > span:hover,
@@ -7271,7 +7263,7 @@ pre code {
 /* line 5, ../scss/mixins/_paginations.scss */
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 1.2rem 2.4rem;
+  padding: 1rem 1.4rem;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -7279,62 +7271,275 @@ pre code {
 /* line 5, ../scss/mixins/_paginations.scss */
 .pagination-sm > li > a,
 .pagination-sm > li > span {
-  padding: 0.44rem 1.2rem;
+  padding: 0.44rem 0.84rem;
   font-size: 1.3rem;
   line-height: 1.5;
 }
 
-/* line 138, ../scss/_paginations.scss */
-.pager {
-  text-align: center;
-  list-style: none;
+/* line 35, ../scss/mixins/_paginations.scss */
+.pagination-primary > li > a,
+.pagination-primary > li > span {
+  color: #0275d8;
 }
-/* line 9, ../scss/mixins/_utilities.scss */
-.pager:before, .pager:after {
-  content: '';
-  display: table;
-}
-/* line 14, ../scss/mixins/_utilities.scss */
-.pager:after {
-  clear: both;
-}
-/* line 144, ../scss/_paginations.scss */
-.pager li > a,
-.pager li > span {
-  display: inline-block;
-  padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 1000rem;
-}
-/* line 18, ../scss/mixins/_hover.scss */
-.pager li > a:focus, .pager li > a:hover {
-  text-decoration: none;
-  background-color: #eceeef;
+/* line 8, ../scss/mixins/_hover.scss */
+.pagination-primary > li > a:hover,
+.pagination-primary > li > span:hover {
+  color: #01549b;
+  background-color: rgba(2, 117, 216, 0.2);
 }
 /* line 34, ../scss/mixins/_hover.scss */
-.pager .disabled > a, .pager .disabled > a:focus, .pager .disabled > a:hover {
-  color: #818a91;
-  cursor: not-allowed;
-  background-color: #fff;
+.pagination-primary > .active > a, .pagination-primary > .active > a:focus, .pagination-primary > .active > a:hover,
+.pagination-primary > .active > span,
+.pagination-primary > .active > span:focus,
+.pagination-primary > .active > span:hover {
+  color: #fff;
+  background-color: #0275d8;
 }
-/* line 170, ../scss/_paginations.scss */
-.pager .disabled > span {
-  color: #818a91;
-  cursor: not-allowed;
-  background-color: #fff;
+/* line 60, ../scss/mixins/_paginations.scss */
+.pagination-primary.pagination-border > li > a,
+.pagination-primary.pagination-border > li > span {
+  border-color: rgba(2, 117, 216, 0.3);
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.pagination-primary.pagination-border > li > a:focus, .pagination-primary.pagination-border > li > a:hover,
+.pagination-primary.pagination-border > li > span:focus,
+.pagination-primary.pagination-border > li > span:hover {
+  border-color: rgba(2, 117, 216, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-primary.pagination-border > .active > a, .pagination-primary.pagination-border > .active > a:focus, .pagination-primary.pagination-border > .active > a:hover,
+.pagination-primary.pagination-border > .active > span,
+.pagination-primary.pagination-border > .active > span:focus,
+.pagination-primary.pagination-border > .active > span:hover {
+  border-color: #0275d8;
 }
 
-/* line 179, ../scss/_paginations.scss */
-.pager-next > a,
-.pager-next > span {
-  float: right;
+/* line 35, ../scss/mixins/_paginations.scss */
+.pagination-secondary > li > a,
+.pagination-secondary > li > span {
+  color: #375A7F;
+}
+/* line 8, ../scss/mixins/_hover.scss */
+.pagination-secondary > li > a:hover,
+.pagination-secondary > li > span:hover {
+  color: #253c54;
+  background-color: rgba(55, 90, 127, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-secondary > .active > a, .pagination-secondary > .active > a:focus, .pagination-secondary > .active > a:hover,
+.pagination-secondary > .active > span,
+.pagination-secondary > .active > span:focus,
+.pagination-secondary > .active > span:hover {
+  color: #fff;
+  background-color: #375A7F;
+}
+/* line 60, ../scss/mixins/_paginations.scss */
+.pagination-secondary.pagination-border > li > a,
+.pagination-secondary.pagination-border > li > span {
+  border-color: rgba(55, 90, 127, 0.3);
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.pagination-secondary.pagination-border > li > a:focus, .pagination-secondary.pagination-border > li > a:hover,
+.pagination-secondary.pagination-border > li > span:focus,
+.pagination-secondary.pagination-border > li > span:hover {
+  border-color: rgba(55, 90, 127, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-secondary.pagination-border > .active > a, .pagination-secondary.pagination-border > .active > a:focus, .pagination-secondary.pagination-border > .active > a:hover,
+.pagination-secondary.pagination-border > .active > span,
+.pagination-secondary.pagination-border > .active > span:focus,
+.pagination-secondary.pagination-border > .active > span:hover {
+  border-color: #375A7F;
 }
 
-/* line 186, ../scss/_paginations.scss */
-.pager-prev > a,
-.pager-prev > span {
-  float: left;
+/* line 35, ../scss/mixins/_paginations.scss */
+.pagination-info > li > a,
+.pagination-info > li > span {
+  color: #14adea;
+}
+/* line 8, ../scss/mixins/_hover.scss */
+.pagination-info > li > a:hover,
+.pagination-info > li > span:hover {
+  color: #0f83b2;
+  background-color: rgba(20, 173, 234, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-info > .active > a, .pagination-info > .active > a:focus, .pagination-info > .active > a:hover,
+.pagination-info > .active > span,
+.pagination-info > .active > span:focus,
+.pagination-info > .active > span:hover {
+  color: #fff;
+  background-color: #14adea;
+}
+/* line 60, ../scss/mixins/_paginations.scss */
+.pagination-info.pagination-border > li > a,
+.pagination-info.pagination-border > li > span {
+  border-color: rgba(20, 173, 234, 0.3);
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.pagination-info.pagination-border > li > a:focus, .pagination-info.pagination-border > li > a:hover,
+.pagination-info.pagination-border > li > span:focus,
+.pagination-info.pagination-border > li > span:hover {
+  border-color: rgba(20, 173, 234, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-info.pagination-border > .active > a, .pagination-info.pagination-border > .active > a:focus, .pagination-info.pagination-border > .active > a:hover,
+.pagination-info.pagination-border > .active > span,
+.pagination-info.pagination-border > .active > span:focus,
+.pagination-info.pagination-border > .active > span:hover {
+  border-color: #14adea;
+}
+
+/* line 35, ../scss/mixins/_paginations.scss */
+.pagination-success > li > a,
+.pagination-success > li > span {
+  color: #2EC6A0;
+}
+/* line 8, ../scss/mixins/_hover.scss */
+.pagination-success > li > a:hover,
+.pagination-success > li > span:hover {
+  color: #229478;
+  background-color: rgba(46, 198, 160, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-success > .active > a, .pagination-success > .active > a:focus, .pagination-success > .active > a:hover,
+.pagination-success > .active > span,
+.pagination-success > .active > span:focus,
+.pagination-success > .active > span:hover {
+  color: #fff;
+  background-color: #2EC6A0;
+}
+/* line 60, ../scss/mixins/_paginations.scss */
+.pagination-success.pagination-border > li > a,
+.pagination-success.pagination-border > li > span {
+  border-color: rgba(46, 198, 160, 0.3);
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.pagination-success.pagination-border > li > a:focus, .pagination-success.pagination-border > li > a:hover,
+.pagination-success.pagination-border > li > span:focus,
+.pagination-success.pagination-border > li > span:hover {
+  border-color: rgba(46, 198, 160, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-success.pagination-border > .active > a, .pagination-success.pagination-border > .active > a:focus, .pagination-success.pagination-border > .active > a:hover,
+.pagination-success.pagination-border > .active > span,
+.pagination-success.pagination-border > .active > span:focus,
+.pagination-success.pagination-border > .active > span:hover {
+  border-color: #2EC6A0;
+}
+
+/* line 35, ../scss/mixins/_paginations.scss */
+.pagination-warning > li > a,
+.pagination-warning > li > span {
+  color: #f0ad4e;
+}
+/* line 8, ../scss/mixins/_hover.scss */
+.pagination-warning > li > a:hover,
+.pagination-warning > li > span:hover {
+  color: #eb9316;
+  background-color: rgba(240, 173, 78, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-warning > .active > a, .pagination-warning > .active > a:focus, .pagination-warning > .active > a:hover,
+.pagination-warning > .active > span,
+.pagination-warning > .active > span:focus,
+.pagination-warning > .active > span:hover {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+/* line 60, ../scss/mixins/_paginations.scss */
+.pagination-warning.pagination-border > li > a,
+.pagination-warning.pagination-border > li > span {
+  border-color: rgba(240, 173, 78, 0.3);
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.pagination-warning.pagination-border > li > a:focus, .pagination-warning.pagination-border > li > a:hover,
+.pagination-warning.pagination-border > li > span:focus,
+.pagination-warning.pagination-border > li > span:hover {
+  border-color: rgba(240, 173, 78, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-warning.pagination-border > .active > a, .pagination-warning.pagination-border > .active > a:focus, .pagination-warning.pagination-border > .active > a:hover,
+.pagination-warning.pagination-border > .active > span,
+.pagination-warning.pagination-border > .active > span:focus,
+.pagination-warning.pagination-border > .active > span:hover {
+  border-color: #f0ad4e;
+}
+
+/* line 35, ../scss/mixins/_paginations.scss */
+.pagination-danger > li > a,
+.pagination-danger > li > span {
+  color: #d9534f;
+}
+/* line 8, ../scss/mixins/_hover.scss */
+.pagination-danger > li > a:hover,
+.pagination-danger > li > span:hover {
+  color: #c12e2a;
+  background-color: rgba(217, 83, 79, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-danger > .active > a, .pagination-danger > .active > a:focus, .pagination-danger > .active > a:hover,
+.pagination-danger > .active > span,
+.pagination-danger > .active > span:focus,
+.pagination-danger > .active > span:hover {
+  color: #fff;
+  background-color: #d9534f;
+}
+/* line 60, ../scss/mixins/_paginations.scss */
+.pagination-danger.pagination-border > li > a,
+.pagination-danger.pagination-border > li > span {
+  border-color: rgba(217, 83, 79, 0.3);
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.pagination-danger.pagination-border > li > a:focus, .pagination-danger.pagination-border > li > a:hover,
+.pagination-danger.pagination-border > li > span:focus,
+.pagination-danger.pagination-border > li > span:hover {
+  border-color: rgba(217, 83, 79, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-danger.pagination-border > .active > a, .pagination-danger.pagination-border > .active > a:focus, .pagination-danger.pagination-border > .active > a:hover,
+.pagination-danger.pagination-border > .active > span,
+.pagination-danger.pagination-border > .active > span:focus,
+.pagination-danger.pagination-border > .active > span:hover {
+  border-color: #d9534f;
+}
+
+/* line 35, ../scss/mixins/_paginations.scss */
+.pagination-dark > li > a,
+.pagination-dark > li > span {
+  color: #212529;
+}
+/* line 8, ../scss/mixins/_hover.scss */
+.pagination-dark > li > a:hover,
+.pagination-dark > li > span:hover {
+  color: #060607;
+  background-color: rgba(33, 37, 41, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-dark > .active > a, .pagination-dark > .active > a:focus, .pagination-dark > .active > a:hover,
+.pagination-dark > .active > span,
+.pagination-dark > .active > span:focus,
+.pagination-dark > .active > span:hover {
+  color: #fff;
+  background-color: #212529;
+}
+/* line 60, ../scss/mixins/_paginations.scss */
+.pagination-dark.pagination-border > li > a,
+.pagination-dark.pagination-border > li > span {
+  border-color: rgba(33, 37, 41, 0.3);
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.pagination-dark.pagination-border > li > a:focus, .pagination-dark.pagination-border > li > a:hover,
+.pagination-dark.pagination-border > li > span:focus,
+.pagination-dark.pagination-border > li > span:hover {
+  border-color: rgba(33, 37, 41, 0.2);
+}
+/* line 34, ../scss/mixins/_hover.scss */
+.pagination-dark.pagination-border > .active > a, .pagination-dark.pagination-border > .active > a:focus, .pagination-dark.pagination-border > .active > a:hover,
+.pagination-dark.pagination-border > .active > span,
+.pagination-dark.pagination-border > .active > span:focus,
+.pagination-dark.pagination-border > .active > span:hover {
+  border-color: #212529;
 }
 
 /* line 6, ../scss/_badge.scss */
@@ -7481,7 +7686,7 @@ pre code {
   top: 4px;
   width: 0.5rem;
   height: 0.5rem;
-  border-radius: 50%;
+  border-radius: 1000rem;
 }
 
 /* line 14, ../scss/mixins/_elf.scss */
@@ -7586,7 +7791,7 @@ pre code {
   vertical-align: middle;
   width: 0.8rem;
   height: 0.8rem;
-  border-radius: 50%;
+  border-radius: 1000rem;
 }
 
 /* line 3, ../scss/mixins/_dot.scss */
