@@ -34,6 +34,7 @@ progress {
   text-align: right;
   font-size: 12px;
   line-height: 0.9em;
+  user-select: none;
 }
 
 progress[value] {
@@ -102,7 +103,9 @@ progress[value] {
 //
 // Colors
 //
-
+.progress-primary {
+  @include progress-variant($progress-value-primary-bg);
+}
 .progress-secondary {
   @include progress-variant($progress-value-secondary-bg);
 }

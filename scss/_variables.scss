@@ -672,9 +672,10 @@ $alert-danger-border:         $state-danger-border !default;
 $progress-height:             15px;
 $progress-bg:                 #fff !default;
 $progress-color:              #fff !default;
-$progress-value-color:          $brand-primary !default;
+$progress-value-color:        $gray !default;
 $progress-border-radius:      $border-radius !default;
 
+$progress-value-primary-bg:     $brand-primary !default;
 $progress-value-secondary-bg:   $brand-secondary!default;
 $progress-value-success-bg:     $brand-success !default;
 $progress-value-warning-bg:     $brand-warning !default;
