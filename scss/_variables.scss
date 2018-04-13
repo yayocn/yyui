@@ -101,6 +101,7 @@ $font-family-base:          $font-family-sans-serif !default;
 $font-size-root:    10px !default;
 
 $font-size-base:    1.4rem !default; // 14px
+$font-size-hg:      2rem !default; // 16px
 $font-size-lg:      1.6rem !default; // 16px
 $font-size-sm:      1.3rem !default; // 13px
 $font-size-xs:      1.2rem !default; // 12px
@@ -190,6 +191,10 @@ $btn-padding-y-sm:      .25rem !default;
 $btn-padding-x-lg:      1rem !default;
 $btn-padding-y-lg:      .5rem !default;
 
+$btn-padding-x-hg:      2rem !default;
+$btn-padding-y-hg:      1.356667rem !default;
+$btn-hg-line-height:    1.1 !default;
+
 //
 // Grid
 //
@@ -276,6 +281,10 @@ $input-padding-y-sm:             0.25rem !default;
 
 $input-padding-x-lg:             1rem !default;
 $input-padding-y-lg:             .5rem !default;
+
+$input-padding-x-hg:             $btn-padding-x-hg !default;
+$input-padding-y-hg:             $btn-padding-y-hg !default;
+$input-hg-line-height:           $btn-hg-line-height !default;
 
 $input-checkbox-font-size:       $input-font-size !default;
 
