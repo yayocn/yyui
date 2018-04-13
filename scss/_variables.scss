@@ -568,16 +568,16 @@ $nav-pills-active-border-color:             $brand-primary !default;
 $nav-pills-active-bg:                       $brand-primary !default;
 
 // Breadcrumbs
-
+$breadcrumbs-font-size:         1.3rem !default;
 $breadcrumb-padding-vertical:   1.2rem !default;
 $breadcrumb-padding-horizontal: 1.6rem !default;
 
-$breadcrumb-color:              #999 !default;
+$breadcrumb-color:              $brand-info !default;
 $breadcrumb-bg:                 $gray-lightest !default;
-$breadcrumb-divider-color:      #ccc !default;
-$breadcrumb-active-color:       #aaa !default;
-$breadcrumb-hover-color:        #777 !default;
+$breadcrumb-active-color:       $dark !default;
+$breadcrumb-hover-color:        darken($breadcrumb-color, 6%) !default;
 $breadcrumb-divider:            "/" !default;
+$breadcrumb-divider-color:      #cacaca !default;
 
 // Pagination
 

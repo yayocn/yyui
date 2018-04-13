@@ -4,28 +4,39 @@
 //
 
 .breadcrumb {
-  padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: $space-y;
   list-style: none;
-  background-color: $breadcrumb-bg;
-  @if $enable-rounded {
-    @include border-radius($border-radius);
-  }
+  font-size: $breadcrumbs-font-size;
 
   > li {
     display: inline-block;
-    + li:before {
-      $nbsp: "\00a0";
-      padding-right: .8rem;
-      padding-left: .8rem;
+
+    &::after {
+      content: $breadcrumb-divider;
+      position: relative;
+      margin: 0 0.75rem;
       color: $breadcrumb-divider-color;
-      content: "#{$breadcrumb-divider}#{$nbsp}";
+      font-size: $font-size-xs;
+    }
+
+    &:last-child {
+      color: $breadcrumb-active-color;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &.disabled {
+      cursor: default;
+      color: $breadcrumb-divider-color;
     }
   }
 
   a {
     color: $breadcrumb-color;
-    text-decoration: none;
 
     &:hover {
       color: $breadcrumb-hover-color;
