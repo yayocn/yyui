@@ -9311,3 +9311,130 @@ progress[value]::-moz-progress-bar {
   height: 2px;
   border-top-width: 2px;
 }
+
+@-webkit-keyframes loader-win-bar {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes loader-win-bar {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes loader-win-bar {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader-win-bar {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 36, ../scss/_loader.scss */
+.loader-win-bar span[class*="l-"] {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  display: inline-block;
+  margin: 12px 2px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -moz-animation: loader-win-bar 4s infinite;
+  -webkit-animation: loader-win-bar 4s infinite;
+  animation: loader-win-bar 4s infinite;
+  -moz-animation-timing-function: cubic-bezier(0.03, 0.615, 0.995, 0.415);
+  -webkit-animation-timing-function: cubic-bezier(0.03, 0.615, 0.995, 0.415);
+  animation-timing-function: cubic-bezier(0.03, 0.615, 0.995, 0.415);
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 60, ../scss/_loader.scss */
+.loader-win-bar span.l-1 {
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* line 60, ../scss/_loader.scss */
+.loader-win-bar span.l-2 {
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+/* line 60, ../scss/_loader.scss */
+.loader-win-bar span.l-3 {
+  -moz-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+/* line 60, ../scss/_loader.scss */
+.loader-win-bar span.l-4 {
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+/* line 60, ../scss/_loader.scss */
+.loader-win-bar span.l-5 {
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+/* line 60, ../scss/_loader.scss */
+.loader-win-bar span.l-6 {
+  -moz-animation-delay: 0;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}

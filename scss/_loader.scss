@@ -1,0 +1,64 @@
+// Loader
+//
+//
+
+// Loader-win-bar
+//
+@-webkit-keyframes loader-win-bar {
+  0% { transform: translateX(-30px); opacity: 0; }
+  25% { opacity: 1; }
+  50% { transform: translateX(30px); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes loader-win-bar  {
+  0% { transform: translateX(-30px); opacity: 0; }
+  25% { opacity: 1; }
+  50% { transform: translateX(30px); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes loader-win-bar  {
+  0% { transform: translateX(-30px); opacity: 0; }
+  25% { opacity: 1; }
+  50% { transform: translateX(30px); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes loader-win-bar {
+  0% { transform: translateX(-30px); opacity: 0; }
+  25% { opacity: 1; }
+  50% { transform: translateX(30px); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.loader-win-bar {
+  span[class*="l-"] {
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    display: inline-block;
+    margin: 12px 2px;
+
+    @include border-radius(100%);
+
+    @include animation(loader-win-bar 4s infinite);
+    @include animation-timing-function(cubic-bezier(0.030, 0.615, 0.995, 0.415));
+    @include animation-fill-mode(both);
+  }
+}
+$loader-win-bar-delay: (
+  1: 1s,
+  2: .8s,
+  3: .6s,
+  4: .4s,
+  5: .2s,
+  6: 0
+);
+@each $index, $value in $loader-win-bar-delay {
+  .loader-win-bar {
+    span.l-#{$index} {
+      @include animation-delay($value);
+    }
+  }
+}
