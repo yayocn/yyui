@@ -9477,37 +9477,123 @@ progress[value]::-moz-progress-bar {
   animation-delay: 0;
 }
 
-/* line 57, ../scss/_loader.scss */
+@keyframes loader-win-roll {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(540deg);
+    opacity: 0;
+  }
+  75% {
+    transform: rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(720deg);
+    opacity: 1;
+  }
+}
+/* line 73, ../scss/_loader.scss */
+.loader-win-roll {
+  display: flex;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+/* line 78, ../scss/_loader.scss */
+.loader-win-roll span[class*="l-"] {
+  display: inline-block;
+  position: absolute;
+  width: 8px;
+  height: 100%;
+  top: 0;
+  left: 28px;
+}
+/* line 86, ../scss/_loader.scss */
+.loader-win-roll span[class*="l-"]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  z-index: 1;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+@keyframes loader-win-roll {
+  0% {
+    transform: rotate(-22.5deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(337.5deg);
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(517.5deg);
+    opacity: 0;
+  }
+  75% {
+    transform: rotate(517.5deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(697.5deg);
+    opacity: 1;
+  }
+}
+/* line 136, ../scss/_loader.scss */
+.loader-win-roll span.l-2 {
+  transform: rotate(-22.5deg);
+  -moz-animation: loader-win-roll 4s infinite;
+  -webkit-animation: loader-win-roll 4s infinite;
+  animation: loader-win-roll 4s infinite;
+  -moz-animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+/* line 150, ../scss/_loader.scss */
 .loader-primary span[class*="l-"] {
   background: #0275d8;
 }
 
-/* line 57, ../scss/_loader.scss */
+/* line 150, ../scss/_loader.scss */
 .loader-secondary span[class*="l-"] {
   background: #375A7F;
 }
 
-/* line 57, ../scss/_loader.scss */
+/* line 150, ../scss/_loader.scss */
 .loader-success span[class*="l-"] {
   background: #2EC6A0;
 }
 
-/* line 57, ../scss/_loader.scss */
+/* line 150, ../scss/_loader.scss */
 .loader-info span[class*="l-"] {
   background: #14adea;
 }
 
-/* line 57, ../scss/_loader.scss */
+/* line 150, ../scss/_loader.scss */
 .loader-warning span[class*="l-"] {
   background: #f0ad4e;
 }
 
-/* line 57, ../scss/_loader.scss */
+/* line 150, ../scss/_loader.scss */
 .loader-danger span[class*="l-"] {
   background: #d9534f;
 }
 
-/* line 57, ../scss/_loader.scss */
+/* line 150, ../scss/_loader.scss */
 .loader-dark span[class*="l-"] {
   background: #212529;
 }
