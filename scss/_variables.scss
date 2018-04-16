@@ -786,3 +786,23 @@ $elf-height:             $elf-width !default;
 $dot-width:              .8rem !default;
 $dot-height:             $dot-width !default;
 $dot-border-radius:      $border-radius-circle !default;
+
+//
+// Load
+//
+
+// dot
+//
+$loader-dot-width:              8px !default;
+$loader-dot-height:             $loader-dot-width !default;
+$loader-dot-bg:                 $white !default;
+
+$loader-colors: (
+  primary: $brand-primary,
+  secondary: $brand-secondary,
+  success: $brand-success,
+  info: $brand-info,
+  warning: $brand-warning,
+  danger: $brand-danger,
+  dark: $dark
+);
