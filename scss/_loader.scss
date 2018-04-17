@@ -101,41 +101,28 @@ $loader-win-bar-delay: (
 }
 
 $loader-win-roll-delay: (
-        //1: 0s,
-        2: .25s,
-        //3: .5s,
-        //4: .75s,
-        //5: 1s
+        1: 0s,
+        2: .05s,
+        3: .1s,
+        4: .15s,
+        5: .2s
 );
 @each $index, $value in $loader-win-roll-delay {
-  $deg: -90 / (5 - 1) * ($index - 1);
-  @keyframes loader-win-roll {
+  $deg: -90deg / (5 - 1) * ($index - 1);
+  @keyframes loader-win-roll-#{$index} {
     0% {
-      transform: rotate(($deg+0)+deg);
-      opacity: 1;
+      transform: rotate($deg+0deg);
     }
-    50% {
-      transform: rotate(($deg+360)+deg);
-      opacity: 1;
-    }
-    75% {
-      transform: rotate(($deg+540)+deg);
-      opacity: 0;
-    }
-    75% {
-      transform: rotate(($deg+540)+deg);
-      opacity: 0;
-    }
+
     100% {
-      transform: rotate(($deg+720)+deg);
-      opacity: 1;
+      transform: rotate($deg+360deg);
     }
   };
 
   .loader-win-roll {
     span.l-#{$index} {
-      transform: rotate(($deg)+deg);
-      @include animation(loader-win-roll 4s infinite);
+      transform: rotate($deg);
+      @include animation(loader-win-roll-#{$index} 2s infinite cubic-bezier(.92,.17,.2,.82));
       @include animation-delay($value);
     }
   }
