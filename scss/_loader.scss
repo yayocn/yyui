@@ -102,7 +102,6 @@ $loader-win-bar-delay: (
       width: $loader-dot-width;
       height: $loader-dot-height;
       background: $loader-dot-bg;
-      z-index: 1;
       opacity: 0;
 
       @include border-radius(100%);

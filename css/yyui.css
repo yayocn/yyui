@@ -9534,7 +9534,6 @@ progress[value]::-moz-progress-bar {
   width: 8px;
   height: 8px;
   background: #fff;
-  z-index: 1;
   opacity: 0;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -9549,7 +9548,7 @@ progress[value]::-moz-progress-bar {
     transform: rotate(540deg);
   }
 }
-/* line 135, ../scss/_loader.scss */
+/* line 134, ../scss/_loader.scss */
 .loader-win-roll span.l-1 {
   transform: rotate(180deg);
   -moz-animation: loader-win-roll-1 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
@@ -9568,7 +9567,7 @@ progress[value]::-moz-progress-bar {
     transform: rotate(517.5deg);
   }
 }
-/* line 135, ../scss/_loader.scss */
+/* line 134, ../scss/_loader.scss */
 .loader-win-roll span.l-2 {
   transform: rotate(157.5deg);
   -moz-animation: loader-win-roll-2 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
@@ -9587,7 +9586,7 @@ progress[value]::-moz-progress-bar {
     transform: rotate(495deg);
   }
 }
-/* line 135, ../scss/_loader.scss */
+/* line 134, ../scss/_loader.scss */
 .loader-win-roll span.l-3 {
   transform: rotate(135deg);
   -moz-animation: loader-win-roll-3 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
@@ -9606,7 +9605,7 @@ progress[value]::-moz-progress-bar {
     transform: rotate(472.5deg);
   }
 }
-/* line 135, ../scss/_loader.scss */
+/* line 134, ../scss/_loader.scss */
 .loader-win-roll span.l-4 {
   transform: rotate(112.5deg);
   -moz-animation: loader-win-roll-4 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
@@ -9625,7 +9624,7 @@ progress[value]::-moz-progress-bar {
     transform: rotate(450deg);
   }
 }
-/* line 135, ../scss/_loader.scss */
+/* line 134, ../scss/_loader.scss */
 .loader-win-roll span.l-5 {
   transform: rotate(90deg);
   -moz-animation: loader-win-roll-5 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
@@ -9656,7 +9655,7 @@ progress[value]::-moz-progress-bar {
     opacity: 1;
   }
 }
-/* line 162, ../scss/_loader.scss */
+/* line 161, ../scss/_loader.scss */
 .loader-win-roll span.l-1::after {
   -moz-animation: loader-win-roll-1-after 6s infinite linear;
   -webkit-animation: loader-win-roll-1-after 6s infinite linear;
@@ -9686,7 +9685,7 @@ progress[value]::-moz-progress-bar {
     opacity: 1;
   }
 }
-/* line 162, ../scss/_loader.scss */
+/* line 161, ../scss/_loader.scss */
 .loader-win-roll span.l-2::after {
   -moz-animation: loader-win-roll-2-after 6s infinite linear;
   -webkit-animation: loader-win-roll-2-after 6s infinite linear;
@@ -9716,7 +9715,7 @@ progress[value]::-moz-progress-bar {
     opacity: 1;
   }
 }
-/* line 162, ../scss/_loader.scss */
+/* line 161, ../scss/_loader.scss */
 .loader-win-roll span.l-3::after {
   -moz-animation: loader-win-roll-3-after 6s infinite linear;
   -webkit-animation: loader-win-roll-3-after 6s infinite linear;
@@ -9746,7 +9745,7 @@ progress[value]::-moz-progress-bar {
     opacity: 1;
   }
 }
-/* line 162, ../scss/_loader.scss */
+/* line 161, ../scss/_loader.scss */
 .loader-win-roll span.l-4::after {
   -moz-animation: loader-win-roll-4-after 6s infinite linear;
   -webkit-animation: loader-win-roll-4-after 6s infinite linear;
@@ -9776,7 +9775,7 @@ progress[value]::-moz-progress-bar {
     opacity: 1;
   }
 }
-/* line 162, ../scss/_loader.scss */
+/* line 161, ../scss/_loader.scss */
 .loader-win-roll span.l-5::after {
   -moz-animation: loader-win-roll-5-after 6s infinite linear;
   -webkit-animation: loader-win-roll-5-after 6s infinite linear;
@@ -9786,37 +9785,37 @@ progress[value]::-moz-progress-bar {
   animation-delay: 0.78s;
 }
 
-/* line 175, ../scss/_loader.scss */
+/* line 174, ../scss/_loader.scss */
 .loader-primary span[class*="l-"] {
   background: #0275d8;
 }
 
-/* line 175, ../scss/_loader.scss */
+/* line 174, ../scss/_loader.scss */
 .loader-secondary span[class*="l-"] {
   background: #375A7F;
 }
 
-/* line 175, ../scss/_loader.scss */
+/* line 174, ../scss/_loader.scss */
 .loader-success span[class*="l-"] {
   background: #2EC6A0;
 }
 
-/* line 175, ../scss/_loader.scss */
+/* line 174, ../scss/_loader.scss */
 .loader-info span[class*="l-"] {
   background: #14adea;
 }
 
-/* line 175, ../scss/_loader.scss */
+/* line 174, ../scss/_loader.scss */
 .loader-warning span[class*="l-"] {
   background: #f0ad4e;
 }
 
-/* line 175, ../scss/_loader.scss */
+/* line 174, ../scss/_loader.scss */
 .loader-danger span[class*="l-"] {
   background: #d9534f;
 }
 
-/* line 175, ../scss/_loader.scss */
+/* line 174, ../scss/_loader.scss */
 .loader-dark span[class*="l-"] {
   background: #212529;
 }
