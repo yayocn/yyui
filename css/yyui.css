@@ -9535,6 +9535,7 @@ progress[value]::-moz-progress-bar {
   height: 8px;
   background: #fff;
   z-index: 1;
+  opacity: 0;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
@@ -9542,18 +9543,18 @@ progress[value]::-moz-progress-bar {
 
 @keyframes loader-win-roll-1 {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(540deg);
   }
 }
-/* line 134, ../scss/_loader.scss */
+/* line 135, ../scss/_loader.scss */
 .loader-win-roll span.l-1 {
-  transform: rotate(0deg);
-  -moz-animation: loader-win-roll-1 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
-  -webkit-animation: loader-win-roll-1 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
-  animation: loader-win-roll-1 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  transform: rotate(180deg);
+  -moz-animation: loader-win-roll-1 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
+  -webkit-animation: loader-win-roll-1 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
+  animation: loader-win-roll-1 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
   -moz-animation-delay: 0s;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
@@ -9561,18 +9562,18 @@ progress[value]::-moz-progress-bar {
 
 @keyframes loader-win-roll-2 {
   0% {
-    transform: rotate(-22.5deg);
+    transform: rotate(157.5deg);
   }
   100% {
-    transform: rotate(337.5deg);
+    transform: rotate(517.5deg);
   }
 }
-/* line 134, ../scss/_loader.scss */
+/* line 135, ../scss/_loader.scss */
 .loader-win-roll span.l-2 {
-  transform: rotate(-22.5deg);
-  -moz-animation: loader-win-roll-2 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
-  -webkit-animation: loader-win-roll-2 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
-  animation: loader-win-roll-2 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  transform: rotate(157.5deg);
+  -moz-animation: loader-win-roll-2 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
+  -webkit-animation: loader-win-roll-2 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
+  animation: loader-win-roll-2 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
   -moz-animation-delay: 0.15s;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
@@ -9580,18 +9581,18 @@ progress[value]::-moz-progress-bar {
 
 @keyframes loader-win-roll-3 {
   0% {
-    transform: rotate(-45deg);
+    transform: rotate(135deg);
   }
   100% {
-    transform: rotate(315deg);
+    transform: rotate(495deg);
   }
 }
-/* line 134, ../scss/_loader.scss */
+/* line 135, ../scss/_loader.scss */
 .loader-win-roll span.l-3 {
-  transform: rotate(-45deg);
-  -moz-animation: loader-win-roll-3 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
-  -webkit-animation: loader-win-roll-3 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
-  animation: loader-win-roll-3 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  transform: rotate(135deg);
+  -moz-animation: loader-win-roll-3 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
+  -webkit-animation: loader-win-roll-3 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
+  animation: loader-win-roll-3 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
   -moz-animation-delay: 0.3s;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
@@ -9599,18 +9600,18 @@ progress[value]::-moz-progress-bar {
 
 @keyframes loader-win-roll-4 {
   0% {
-    transform: rotate(-67.5deg);
+    transform: rotate(112.5deg);
   }
   100% {
-    transform: rotate(292.5deg);
+    transform: rotate(472.5deg);
   }
 }
-/* line 134, ../scss/_loader.scss */
+/* line 135, ../scss/_loader.scss */
 .loader-win-roll span.l-4 {
-  transform: rotate(-67.5deg);
-  -moz-animation: loader-win-roll-4 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
-  -webkit-animation: loader-win-roll-4 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
-  animation: loader-win-roll-4 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  transform: rotate(112.5deg);
+  -moz-animation: loader-win-roll-4 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
+  -webkit-animation: loader-win-roll-4 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
+  animation: loader-win-roll-4 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
   -moz-animation-delay: 0.45s;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
@@ -9618,54 +9619,204 @@ progress[value]::-moz-progress-bar {
 
 @keyframes loader-win-roll-5 {
   0% {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
   }
   100% {
-    transform: rotate(270deg);
+    transform: rotate(450deg);
   }
 }
-/* line 134, ../scss/_loader.scss */
+/* line 135, ../scss/_loader.scss */
 .loader-win-roll span.l-5 {
-  transform: rotate(-90deg);
-  -moz-animation: loader-win-roll-5 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
-  -webkit-animation: loader-win-roll-5 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
-  animation: loader-win-roll-5 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  transform: rotate(90deg);
+  -moz-animation: loader-win-roll-5 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
+  -webkit-animation: loader-win-roll-5 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
+  animation: loader-win-roll-5 2s infinite cubic-bezier(0.15, 0.8, 0.87, 0.21);
   -moz-animation-delay: 0.6s;
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-/* line 148, ../scss/_loader.scss */
+@keyframes loader-win-roll-1-after {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  66.66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 162, ../scss/_loader.scss */
+.loader-win-roll span.l-1::after {
+  -moz-animation: loader-win-roll-1-after 6s infinite linear;
+  -webkit-animation: loader-win-roll-1-after 6s infinite linear;
+  animation: loader-win-roll-1-after 6s infinite linear;
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+@keyframes loader-win-roll-2-after {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  66.66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 162, ../scss/_loader.scss */
+.loader-win-roll span.l-2::after {
+  -moz-animation: loader-win-roll-2-after 6s infinite linear;
+  -webkit-animation: loader-win-roll-2-after 6s infinite linear;
+  animation: loader-win-roll-2-after 6s infinite linear;
+  -moz-animation-delay: 0.18s;
+  -webkit-animation-delay: 0.18s;
+  animation-delay: 0.18s;
+}
+
+@keyframes loader-win-roll-3-after {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  66.66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 162, ../scss/_loader.scss */
+.loader-win-roll span.l-3::after {
+  -moz-animation: loader-win-roll-3-after 6s infinite linear;
+  -webkit-animation: loader-win-roll-3-after 6s infinite linear;
+  animation: loader-win-roll-3-after 6s infinite linear;
+  -moz-animation-delay: 0.38s;
+  -webkit-animation-delay: 0.38s;
+  animation-delay: 0.38s;
+}
+
+@keyframes loader-win-roll-4-after {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  66.66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 162, ../scss/_loader.scss */
+.loader-win-roll span.l-4::after {
+  -moz-animation: loader-win-roll-4-after 6s infinite linear;
+  -webkit-animation: loader-win-roll-4-after 6s infinite linear;
+  animation: loader-win-roll-4-after 6s infinite linear;
+  -moz-animation-delay: 0.58s;
+  -webkit-animation-delay: 0.58s;
+  animation-delay: 0.58s;
+}
+
+@keyframes loader-win-roll-5-after {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  66.66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 162, ../scss/_loader.scss */
+.loader-win-roll span.l-5::after {
+  -moz-animation: loader-win-roll-5-after 6s infinite linear;
+  -webkit-animation: loader-win-roll-5-after 6s infinite linear;
+  animation: loader-win-roll-5-after 6s infinite linear;
+  -moz-animation-delay: 0.78s;
+  -webkit-animation-delay: 0.78s;
+  animation-delay: 0.78s;
+}
+
+/* line 175, ../scss/_loader.scss */
 .loader-primary span[class*="l-"] {
   background: #0275d8;
 }
 
-/* line 148, ../scss/_loader.scss */
+/* line 175, ../scss/_loader.scss */
 .loader-secondary span[class*="l-"] {
   background: #375A7F;
 }
 
-/* line 148, ../scss/_loader.scss */
+/* line 175, ../scss/_loader.scss */
 .loader-success span[class*="l-"] {
   background: #2EC6A0;
 }
 
-/* line 148, ../scss/_loader.scss */
+/* line 175, ../scss/_loader.scss */
 .loader-info span[class*="l-"] {
   background: #14adea;
 }
 
-/* line 148, ../scss/_loader.scss */
+/* line 175, ../scss/_loader.scss */
 .loader-warning span[class*="l-"] {
   background: #f0ad4e;
 }
 
-/* line 148, ../scss/_loader.scss */
+/* line 175, ../scss/_loader.scss */
 .loader-danger span[class*="l-"] {
   background: #d9534f;
 }
 
-/* line 148, ../scss/_loader.scss */
+/* line 175, ../scss/_loader.scss */
 .loader-dark span[class*="l-"] {
   background: #212529;
 }

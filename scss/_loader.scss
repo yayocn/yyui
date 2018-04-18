@@ -103,6 +103,7 @@ $loader-win-bar-delay: (
       height: $loader-dot-height;
       background: $loader-dot-bg;
       z-index: 1;
+      opacity: 0;
 
       @include border-radius(100%);
     }
@@ -119,7 +120,7 @@ $loader-win-roll-delay: (
         5: .6s
 );
 @each $index, $value in $loader-win-roll-delay {
-  $deg: -90deg / (5 - 1) * ($index - 1);
+  $deg: -90deg / (5 - 1) * ($index - 1) + 180deg;
   @keyframes loader-win-roll-#{$index} {
     0% {
       transform: rotate($deg+0deg);
@@ -133,7 +134,33 @@ $loader-win-roll-delay: (
   .loader-win-roll {
     span.l-#{$index} {
       transform: rotate($deg);
-      @include animation(loader-win-roll-#{$index} 2s infinite cubic-bezier(.87,.21,.15,.8));
+      @include animation(loader-win-roll-#{$index} 2s infinite cubic-bezier(.15,.8,.87,.21));
+      @include animation-delay($value);
+    }
+  }
+}
+
+$loader-win-roll-delay-after: (
+        1: 0s,
+        2: .18s,
+        3: .38s,
+        4: .58s,
+        5: .78s
+);
+@each $index, $value in $loader-win-roll-delay-after {
+  $deg: -90deg / (5 - 1) * ($index - 1) + 180deg;
+  @keyframes loader-win-roll-#{$index}-after {
+    0% { opacity: 1; }
+    33% { opacity: 1; }
+    33.33% { opacity: 0; }
+    66% { opacity: 0; }
+    66.66% { opacity: 1; }
+    100% { opacity: 1; }
+  };
+
+  .loader-win-roll {
+    span.l-#{$index}::after {
+      @include animation(loader-win-roll-#{$index}-after 6s infinite linear);
       @include animation-delay($value);
     }
   }
