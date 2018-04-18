@@ -9506,7 +9506,17 @@ progress[value]::-moz-progress-bar {
   width: 64px;
   height: 64px;
 }
-/* line 78, ../scss/_loader.scss */
+/* line 79, ../scss/_loader.scss */
+.loader-win-roll::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 89, ../scss/_loader.scss */
 .loader-win-roll span[class*="l-"] {
   display: inline-block;
   position: absolute;
@@ -9515,7 +9525,7 @@ progress[value]::-moz-progress-bar {
   top: 0;
   left: 28px;
 }
-/* line 86, ../scss/_loader.scss */
+/* line 97, ../scss/_loader.scss */
 .loader-win-roll span[class*="l-"]::after {
   content: "";
   position: absolute;
@@ -9538,12 +9548,12 @@ progress[value]::-moz-progress-bar {
     transform: rotate(360deg);
   }
 }
-/* line 123, ../scss/_loader.scss */
+/* line 134, ../scss/_loader.scss */
 .loader-win-roll span.l-1 {
   transform: rotate(0deg);
-  -moz-animation: loader-win-roll-1 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  -webkit-animation: loader-win-roll-1 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  animation: loader-win-roll-1 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
+  -moz-animation: loader-win-roll-1 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  -webkit-animation: loader-win-roll-1 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  animation: loader-win-roll-1 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
   -moz-animation-delay: 0s;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
@@ -9557,15 +9567,15 @@ progress[value]::-moz-progress-bar {
     transform: rotate(337.5deg);
   }
 }
-/* line 123, ../scss/_loader.scss */
+/* line 134, ../scss/_loader.scss */
 .loader-win-roll span.l-2 {
   transform: rotate(-22.5deg);
-  -moz-animation: loader-win-roll-2 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  -webkit-animation: loader-win-roll-2 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  animation: loader-win-roll-2 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  -moz-animation-delay: 0.05s;
-  -webkit-animation-delay: 0.05s;
-  animation-delay: 0.05s;
+  -moz-animation: loader-win-roll-2 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  -webkit-animation: loader-win-roll-2 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  animation: loader-win-roll-2 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  -moz-animation-delay: 0.15s;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
 }
 
 @keyframes loader-win-roll-3 {
@@ -9576,15 +9586,15 @@ progress[value]::-moz-progress-bar {
     transform: rotate(315deg);
   }
 }
-/* line 123, ../scss/_loader.scss */
+/* line 134, ../scss/_loader.scss */
 .loader-win-roll span.l-3 {
   transform: rotate(-45deg);
-  -moz-animation: loader-win-roll-3 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  -webkit-animation: loader-win-roll-3 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  animation: loader-win-roll-3 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  -moz-animation-delay: 0.1s;
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
+  -moz-animation: loader-win-roll-3 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  -webkit-animation: loader-win-roll-3 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  animation: loader-win-roll-3 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 @keyframes loader-win-roll-4 {
@@ -9595,15 +9605,15 @@ progress[value]::-moz-progress-bar {
     transform: rotate(292.5deg);
   }
 }
-/* line 123, ../scss/_loader.scss */
+/* line 134, ../scss/_loader.scss */
 .loader-win-roll span.l-4 {
   transform: rotate(-67.5deg);
-  -moz-animation: loader-win-roll-4 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  -webkit-animation: loader-win-roll-4 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  animation: loader-win-roll-4 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  -moz-animation-delay: 0.15s;
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
+  -moz-animation: loader-win-roll-4 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  -webkit-animation: loader-win-roll-4 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  animation: loader-win-roll-4 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  -moz-animation-delay: 0.45s;
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s;
 }
 
 @keyframes loader-win-roll-5 {
@@ -9614,48 +9624,48 @@ progress[value]::-moz-progress-bar {
     transform: rotate(270deg);
   }
 }
-/* line 123, ../scss/_loader.scss */
+/* line 134, ../scss/_loader.scss */
 .loader-win-roll span.l-5 {
   transform: rotate(-90deg);
-  -moz-animation: loader-win-roll-5 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  -webkit-animation: loader-win-roll-5 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  animation: loader-win-roll-5 2s infinite cubic-bezier(0.92, 0.17, 0.2, 0.82);
-  -moz-animation-delay: 0.2s;
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
+  -moz-animation: loader-win-roll-5 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  -webkit-animation: loader-win-roll-5 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  animation: loader-win-roll-5 2s infinite cubic-bezier(0.87, 0.21, 0.15, 0.8);
+  -moz-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
-/* line 137, ../scss/_loader.scss */
+/* line 148, ../scss/_loader.scss */
 .loader-primary span[class*="l-"] {
   background: #0275d8;
 }
 
-/* line 137, ../scss/_loader.scss */
+/* line 148, ../scss/_loader.scss */
 .loader-secondary span[class*="l-"] {
   background: #375A7F;
 }
 
-/* line 137, ../scss/_loader.scss */
+/* line 148, ../scss/_loader.scss */
 .loader-success span[class*="l-"] {
   background: #2EC6A0;
 }
 
-/* line 137, ../scss/_loader.scss */
+/* line 148, ../scss/_loader.scss */
 .loader-info span[class*="l-"] {
   background: #14adea;
 }
 
-/* line 137, ../scss/_loader.scss */
+/* line 148, ../scss/_loader.scss */
 .loader-warning span[class*="l-"] {
   background: #f0ad4e;
 }
 
-/* line 137, ../scss/_loader.scss */
+/* line 148, ../scss/_loader.scss */
 .loader-danger span[class*="l-"] {
   background: #d9534f;
 }
 
-/* line 137, ../scss/_loader.scss */
+/* line 148, ../scss/_loader.scss */
 .loader-dark span[class*="l-"] {
   background: #212529;
 }

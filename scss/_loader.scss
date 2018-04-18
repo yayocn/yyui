@@ -75,6 +75,17 @@ $loader-win-bar-delay: (
   position: relative;
   width: 64px;
   height: 64px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
   span[class*="l-"] {
     display: inline-block;
     position: absolute;
@@ -102,10 +113,10 @@ $loader-win-bar-delay: (
 
 $loader-win-roll-delay: (
         1: 0s,
-        2: .05s,
-        3: .1s,
-        4: .15s,
-        5: .2s
+        2: .15s,
+        3: .3s,
+        4: .45s,
+        5: .6s
 );
 @each $index, $value in $loader-win-roll-delay {
   $deg: -90deg / (5 - 1) * ($index - 1);
@@ -122,7 +133,7 @@ $loader-win-roll-delay: (
   .loader-win-roll {
     span.l-#{$index} {
       transform: rotate($deg);
-      @include animation(loader-win-roll-#{$index} 2s infinite cubic-bezier(.92,.17,.2,.82));
+      @include animation(loader-win-roll-#{$index} 2s infinite cubic-bezier(.87,.21,.15,.8));
       @include animation-delay($value);
     }
   }
