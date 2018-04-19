@@ -2,6 +2,15 @@
 //
 //
 
+.loader {
+  display: flex;
+
+  span[class*="l-"] {
+    display: inline-block;
+    width: $loader-dot-width;
+  }
+}
+
 // Loader-win-bar
 //
 @include keyframes(loader-win-bar) {
@@ -13,13 +22,11 @@
 };
 
 .loader-win-bar {
-  display: flex;
   justify-content: center;
+
   span[class*="l-"] {
-    display: inline-block;
-    width: $loader-dot-width;
     height: $loader-dot-height;
-    background: $loader-dot-bg;
+    background-color: $loader-dot-bg;
     margin: auto 2px;
 
     @include border-radius(100%);
@@ -71,10 +78,10 @@ $loader-win-bar-delay: (
 }
 
 .loader-win-roll {
-  display: flex;
   position: relative;
-  width: 64px;
-  height: 64px;
+  margin: 0 auto;
+  width: $loader-win-roll-width;
+  height: $loader-win-roll-height;
 
   &::before {
     content: "";
@@ -87,12 +94,10 @@ $loader-win-bar-delay: (
   }
 
   span[class*="l-"] {
-    display: inline-block;
     position: absolute;
-    width: $loader-dot-width;
     height: 100%;
     top: 0;
-    left: 28px;
+    left: ($loader-win-roll-width - $loader-dot-width) / 2;
 
     &::after {
       content: "";
@@ -101,13 +106,11 @@ $loader-win-bar-delay: (
       left: 0;
       width: $loader-dot-width;
       height: $loader-dot-height;
-      background: $loader-dot-bg;
+      background-color: $loader-dot-bg;
       opacity: 0;
 
       @include border-radius(100%);
     }
-
-    //@include animation(loader-win-roll 4s infinite);
   }
 }
 
@@ -165,13 +168,58 @@ $loader-win-roll-delay-after: (
   }
 }
 
+//
+// Size
+//
+.loader-sm {
+  &.loader-win-bar span[class*="l-"] {
+    width: $loader-dot-sm;
+    height: $loader-dot-sm;
+  }
+
+  &.loader-win-roll {
+    width: $loader-win-roll-width-sm;
+    height: $loader-win-roll-height-sm;
+
+    span[class*="l-"] {
+      left: ($loader-win-roll-width-sm - $loader-dot-sm) / 2;
+
+      &::after {
+        width: $loader-dot-sm;
+        height: $loader-dot-sm;
+      }
+    }
+  }
+}
+
+.loader-lg {
+  &.loader-win-bar span[class*="l-"] {
+    width: $loader-dot-lg;
+    height: $loader-dot-lg;
+  }
+
+  &.loader-win-roll {
+    width: $loader-win-roll-width-lg;
+    height: $loader-win-roll-height-lg;
+
+    span[class*="l-"] {
+      left: ($loader-win-roll-width-lg - $loader-dot-lg) / 2;
+
+      &::after {
+        width: $loader-dot-lg;
+        height: $loader-dot-lg;
+      }
+    }
+  }
+}
 
 //
 // State
 //
 @each $name, $value in $loader-colors {
   .loader-#{$name} {
-    span[class*="l-"] {
+    &.loader-win-bar span[class*="l-"],
+    &.loader-win-roll span[class*="l-"]::after {
       background: $value;
     }
   }

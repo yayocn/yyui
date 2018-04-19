@@ -814,6 +814,18 @@ $loader-dot-width:              8px !default;
 $loader-dot-height:             $loader-dot-width !default;
 $loader-dot-bg:                 $white !default;
 
+$loader-win-roll-width:         64px !default;
+$loader-win-roll-height:        $loader-win-roll-width;
+
+$loader-win-roll-width-sm:         30px !default;
+$loader-win-roll-height-sm:        $loader-win-roll-width-sm;
+
+$loader-win-roll-width-lg:         96px !default;
+$loader-win-roll-height-lg:        $loader-win-roll-width-lg;
+
+$loader-dot-sm:                 5px !default;
+$loader-dot-lg:                 12px !default;
+
 $loader-colors: (
   primary: $brand-primary,
   secondary: $brand-secondary,
@@ -821,5 +833,6 @@ $loader-colors: (
   info: $brand-info,
   warning: $brand-warning,
   danger: $brand-danger,
+  muted: $muted,
   dark: $dark
 );
