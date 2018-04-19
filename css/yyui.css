@@ -8164,6 +8164,7 @@ progress .progress {
 
 /* line 29, ../scss/_progress.scss */
 .progress-value {
+  float: left;
   -moz-border-radius: 1000rem;
   -webkit-border-radius: 1000rem;
   border-radius: 1000rem;
@@ -8176,18 +8177,18 @@ progress .progress {
   user-select: none;
 }
 
-/* line 41, ../scss/_progress.scss */
+/* line 42, ../scss/_progress.scss */
 progress[value]::-webkit-progress-bar {
   background-color: transparent;
 }
-/* line 45, ../scss/_progress.scss */
+/* line 46, ../scss/_progress.scss */
 progress[value]::-webkit-progress-value {
   -moz-border-radius: 1000rem;
   -webkit-border-radius: 1000rem;
   border-radius: 1000rem;
   background-color: #55595c;
 }
-/* line 50, ../scss/_progress.scss */
+/* line 51, ../scss/_progress.scss */
 progress[value]::-moz-progress-bar {
   -moz-border-radius: 1000rem;
   -webkit-border-radius: 1000rem;
@@ -8195,18 +8196,18 @@ progress[value]::-moz-progress-bar {
   background-color: #55595c;
 }
 
-/* line 60, ../scss/_progress.scss */
+/* line 61, ../scss/_progress.scss */
 .progress-striped .progress-value {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
   background-size: 25px 25px;
 }
 
-/* line 67, ../scss/_progress.scss */
+/* line 68, ../scss/_progress.scss */
 .progress-striped[value]::-webkit-progress-value {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
   background-size: 25px 25px;
 }
-/* line 71, ../scss/_progress.scss */
+/* line 72, ../scss/_progress.scss */
 .progress-striped[value]::-moz-progress-bar {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
   background-size: 25px 25px;
@@ -8220,20 +8221,20 @@ progress[value]::-moz-progress-bar {
     background-position: 75px 0;
   }
 }
-/* line 88, ../scss/_progress.scss */
+/* line 89, ../scss/_progress.scss */
 .progress-animated .progress-value {
   animation: progress-value-stripes 2s linear infinite;
 }
-/* line 94, ../scss/_progress.scss */
+/* line 95, ../scss/_progress.scss */
 .progress-animated[value]::-webkit-progress-value {
   animation: progress-value-stripes 2s linear infinite;
 }
-/* line 97, ../scss/_progress.scss */
+/* line 98, ../scss/_progress.scss */
 .progress-animated[value]::-moz-progress-bar {
   animation: progress-value-stripes 2s linear infinite;
 }
 
-/* line 106, ../scss/_progress.scss */
+/* line 117, ../scss/_progress.scss */
 .progress-primary {
   border: 1px solid #0275d8;
 }
@@ -8250,7 +8251,7 @@ progress[value]::-moz-progress-bar {
   background-color: #0275d8;
 }
 
-/* line 109, ../scss/_progress.scss */
+/* line 117, ../scss/_progress.scss */
 .progress-secondary {
   border: 1px solid #375A7F;
 }
@@ -8267,7 +8268,7 @@ progress[value]::-moz-progress-bar {
   background-color: #375A7F;
 }
 
-/* line 112, ../scss/_progress.scss */
+/* line 117, ../scss/_progress.scss */
 .progress-success {
   border: 1px solid #2EC6A0;
 }
@@ -8284,7 +8285,7 @@ progress[value]::-moz-progress-bar {
   background-color: #2EC6A0;
 }
 
-/* line 115, ../scss/_progress.scss */
+/* line 117, ../scss/_progress.scss */
 .progress-info {
   border: 1px solid #14adea;
 }
@@ -8301,7 +8302,7 @@ progress[value]::-moz-progress-bar {
   background-color: #14adea;
 }
 
-/* line 118, ../scss/_progress.scss */
+/* line 117, ../scss/_progress.scss */
 .progress-warning {
   border: 1px solid #f0ad4e;
 }
@@ -8318,7 +8319,7 @@ progress[value]::-moz-progress-bar {
   background-color: #f0ad4e;
 }
 
-/* line 121, ../scss/_progress.scss */
+/* line 117, ../scss/_progress.scss */
 .progress-danger {
   border: 1px solid #d9534f;
 }
@@ -8335,7 +8336,7 @@ progress[value]::-moz-progress-bar {
   background-color: #d9534f;
 }
 
-/* line 124, ../scss/_progress.scss */
+/* line 117, ../scss/_progress.scss */
 .progress-dark {
   border: 1px solid #212529;
 }

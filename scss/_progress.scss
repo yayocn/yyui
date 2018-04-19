@@ -27,6 +27,7 @@ progress {
 //
 
 .progress-value {
+  float: left;
   @include border-radius($border-radius-hg);
   padding-right: 10px;
   background-color: $progress-value-color;
@@ -103,24 +104,17 @@ progress[value] {
 //
 // Colors
 //
-.progress-primary {
-  @include progress-variant($progress-value-primary-bg);
-}
-.progress-secondary {
-  @include progress-variant($progress-value-secondary-bg);
-}
-.progress-success {
-  @include progress-variant($progress-value-success-bg);
-}
-.progress-info {
-  @include progress-variant($progress-value-info-bg);
-}
-.progress-warning {
-  @include progress-variant($progress-value-warning-bg);
-}
-.progress-danger {
-  @include progress-variant($progress-value-danger-bg);
-}
-.progress-dark {
-  @include progress-variant($progress-value-dark-bg);
+$state-list: (
+  primary: $progress-value-primary-bg,
+  secondary: $progress-value-secondary-bg,
+  success: $progress-value-success-bg,
+  info: $progress-value-info-bg,
+  warning: $progress-value-warning-bg,
+  danger: $progress-value-danger-bg,
+  dark: $progress-value-dark-bg,
+) !default;
+@each $name, $value in $state-list {
+  .progress-#{$name} {
+    @include progress-variant($value);
+  }
 }
