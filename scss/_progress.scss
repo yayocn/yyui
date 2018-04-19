@@ -118,8 +118,9 @@ progress[value] {
       right: 0;
       bottom: 0;
       border-radius: $border-radius-circle;
-      box-shadow: inset 0 0 7px $progress-running-bg;
-      animation: progress-running 2s ease-out infinite;
+      //box-shadow: inset 0 0 7px $progress-running-bg;
+      background-image: linear-gradient(left, transparent 0%, $progress-running-bg 100%);
+      animation: progress-running 2s ease infinite;
     }
   }
 }
