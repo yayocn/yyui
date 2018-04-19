@@ -102,7 +102,7 @@ $space-none:       0 !default;
 // Settings for the `<body>` element.
 //
 $body-bg:         $white;
-$body-color:      $gray-dark !default;
+$body-color:      $gray-900 !default;
 
 
 // Links
@@ -119,7 +119,20 @@ $link-hover-decoration:   underline !default;
 // Fonts
 // Font, line-height, color for body text and more.
 //
-$font-family-sans-serif:    "Helvetica Neue",Microsoft Yahei,Helvetica,Arial,sans-serif !default;
+$font-family-sans-serif:
+  // Safari for OS X and iOS (San Francisco)
+        -apple-system,
+          // Chrome < 56 for OS X (San Francisco)
+        BlinkMacSystemFont,
+          // Windows
+        "Segoe UI",
+          // Android
+        "Roboto",
+          // Basic web fallback
+        "Helvetica Neue", Arial, sans-serif,
+          // Emoji fonts
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+//$font-family-sans-serif:    "Helvetica Neue",Microsoft Yahei,Helvetica,Arial,sans-serif !default;
 $font-family-serif:         Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:     Menlo, Monaco, Consolas, "Courier New", Monospace !default;
 $font-family-base:          $font-family-sans-serif !default;
@@ -135,12 +148,12 @@ $font-size-lg:      1.6rem !default; // 16px
 $font-size-sm:      1.3rem !default; // 13px
 $font-size-xs:      1.2rem !default; // 12px
 
-$font-size-h1:      3.4rem !default; // 34px
-$font-size-h2:      3rem !default; // 30px
-$font-size-h3:      2.6rem !default; //26px
-$font-size-h4:      2.2rem !default; //22px
-$font-size-h5:      1.8rem !default; //18px
-$font-size-h6:      1.4rem !default; //14px
+$font-size-h1:      4rem !default;
+$font-size-h2:      3.2rem !default;
+$font-size-h3:      2.8rem !default;
+$font-size-h4:      2.4rem !default;
+$font-size-h5:      2rem !default;
+$font-size-h6:      1.6rem !default;
 
 // Weight
 //
@@ -385,7 +398,7 @@ $directions: (up, right, down, left) !default;
 $headings-margin-bottom:     ($space-default / 2) !default;
 $headings-font-family:       inherit !default;
 $headings-font-weight:       500 !default;
-$headings-line-height:       1.1 !default;
+$headings-line-height:       1.2 !default;
 $headings-color:             inherit !default;
 
 // hr
