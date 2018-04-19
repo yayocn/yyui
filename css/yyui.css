@@ -8504,7 +8504,48 @@ progress[value]::-moz-progress-bar {
   animation: progress-value-stripes 2s linear infinite;
 }
 
-/* line 117, ../scss/_progress.scss */
+@-moz-keyframes progress-running {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes progress-running {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes progress-running {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* line 110, ../scss/_progress.scss */
+.progress-emission .progress-value {
+  position: relative;
+}
+/* line 113, ../scss/_progress.scss */
+.progress-emission .progress-value::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1000rem;
+  box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.7);
+  animation: progress-running 2s ease-out infinite;
+}
+
+/* line 140, ../scss/_progress.scss */
 .progress-primary {
   border: 1px solid #007bff;
 }
@@ -8521,7 +8562,7 @@ progress[value]::-moz-progress-bar {
   background-color: #007bff;
 }
 
-/* line 117, ../scss/_progress.scss */
+/* line 140, ../scss/_progress.scss */
 .progress-secondary {
   border: 1px solid #375A7F;
 }
@@ -8538,7 +8579,7 @@ progress[value]::-moz-progress-bar {
   background-color: #375A7F;
 }
 
-/* line 117, ../scss/_progress.scss */
+/* line 140, ../scss/_progress.scss */
 .progress-success {
   border: 1px solid #2EC6A0;
 }
@@ -8555,7 +8596,7 @@ progress[value]::-moz-progress-bar {
   background-color: #2EC6A0;
 }
 
-/* line 117, ../scss/_progress.scss */
+/* line 140, ../scss/_progress.scss */
 .progress-info {
   border: 1px solid #14adea;
 }
@@ -8572,7 +8613,7 @@ progress[value]::-moz-progress-bar {
   background-color: #14adea;
 }
 
-/* line 117, ../scss/_progress.scss */
+/* line 140, ../scss/_progress.scss */
 .progress-warning {
   border: 1px solid #ffc107;
 }
@@ -8589,7 +8630,7 @@ progress[value]::-moz-progress-bar {
   background-color: #ffc107;
 }
 
-/* line 117, ../scss/_progress.scss */
+/* line 140, ../scss/_progress.scss */
 .progress-danger {
   border: 1px solid #dc3545;
 }
@@ -8606,7 +8647,7 @@ progress[value]::-moz-progress-bar {
   background-color: #dc3545;
 }
 
-/* line 117, ../scss/_progress.scss */
+/* line 140, ../scss/_progress.scss */
 .progress-dark {
   border: 1px solid #212529;
 }
