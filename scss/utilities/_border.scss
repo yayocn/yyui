@@ -19,15 +19,6 @@
   }
 }
 
-.border-white { border-color: $white !important; }
-.border-transparent { border-color: $transparent !important; }
-
-@each $color, $value in $theme-colors {
-  .border-#{$color} {
-    border-color: $value !important;
-  }
-}
-
 .border-round-0 { border-radius: $border-radius-no !important; }
 .border-round-circle { border-radius: $border-radius-circle !important; }
 .border-round { border-radius: $border-radius !important; }
@@ -46,4 +37,18 @@
 .border-round-left {
   border-top-left-radius: $border-radius !important;
   border-bottom-left-radius: $border-radius !important;
+}
+
+//
+// Style
+//
+$style-list: (
+  dot: dotted,
+  dash: dashed,
+  solid: solid,
+);
+@each $name, $value in $style-list {
+  .border-#{$name} {
+    border-style: $value !important;
+  }
 }

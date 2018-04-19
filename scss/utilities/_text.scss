@@ -36,18 +36,7 @@ $align-list: (left, right, center, justify);
 
 // Colors
 //
-$text-themes: (
-  primary: $brand-primary,
-  secondary: $brand-secondary,
-  info: $brand-info,
-  success: $brand-success,
-  warning: $brand-warning,
-  danger: $brand-danger,
-  muted: $text-muted,
-  light: $white,
-  dark: $dark,
-);
-@each $name, $value in $text-themes {
+@each $name, $value in $theme-colors {
   .text-#{$name} {
     color: $value !important;
   }

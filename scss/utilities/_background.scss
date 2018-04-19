@@ -1,14 +1,6 @@
 //
 // Background
 //
-
-@include bg-variant('.bg-primary', $brand-primary);
-@include bg-variant('.bg-secondary', $brand-secondary);
-@include bg-variant('.bg-info', $brand-info);
-@include bg-variant('.bg-success', $brand-success);
-@include bg-variant('.bg-warning', $brand-warning);
-@include bg-variant('.bg-danger', $brand-danger);
-@include bg-variant('.bg-muted', $text-muted);
-@include bg-variant('.bg-dark', $dark);
-@include bg-variant('.bg-light', $white);
-@include bg-variant('.bg-transparent', $transparent);
+@each $name, $value in $theme-colors {
+  @include bg-variant('.bg-#{$name}', $value);
+}
