@@ -1,6 +1,6 @@
 // responsive
 //
-@mixin img-responsive($display: block) {
+@mixin img-fluid($display: block) {
   display: $display;
   max-width: 100%;
   height: auto;

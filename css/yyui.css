@@ -6046,7 +6046,7 @@ pre code {
 }
 
 /* line 8, ../scss/_images.scss */
-.img-responsive, .carousel-content > .carousel-item > img,
+.img-fluid, .carousel-content > .carousel-item > img,
 .carousel-content > .carousel-item > a > img {
   display: block;
   max-width: 100%;
@@ -6054,33 +6054,17 @@ pre code {
 }
 
 /* line 14, ../scss/_images.scss */
-.img-circle {
-  -moz-border-radius: 1000rem;
-  -webkit-border-radius: 1000rem;
-  border-radius: 1000rem;
-}
-
-/* line 20, ../scss/_images.scss */
-.img-round {
-  -moz-border-radius: 0.48rem;
-  -webkit-border-radius: 0.48rem;
-  border-radius: 0.48rem;
-}
-
-/* line 26, ../scss/_images.scss */
 .img-thumbnail {
   padding: 4px;
-  line-height: 1.5;
   background-color: #fff;
   border: 1px solid #dee2e6;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  border-radius: 0.4rem;
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-  display: inline-block;
+  display: block;
   max-width: 100%;
   height: auto;
 }
