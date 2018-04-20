@@ -5982,37 +5982,41 @@ fieldset[disabled] a.btn {
 /* line 2, ../scss/_code.scss */
 code,
 kbd,
-pre {
-  font-family: Menlo, Monaco, Consolas, "Courier New", Monospace !important;
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", Monospace;
 }
 
-/* line 9, ../scss/_code.scss */
+/* line 10, ../scss/_code.scss */
 code {
-  padding: .32rem .64rem;
-  font-size: 90%;
+  font-size: 87.5%;
   color: #e83e8c;
-  background-color: #f8f9fa;
+  word-break: break-all;
   -moz-border-radius: 0.4rem;
   -webkit-border-radius: 0.4rem;
   border-radius: 0.4rem;
 }
+/* line 16, ../scss/_code.scss */
+a > code {
+  color: inherit;
+}
 
-/* line 18, ../scss/_code.scss */
+/* line 22, ../scss/_code.scss */
 kbd {
-  padding: .32rem .64rem;
+  padding: 0.32rem 0.64rem;
   margin-left: 5px;
   margin-right: 5px;
-  font-size: 90%;
+  font-size: 87.5%;
   color: #fff;
-  background-color: #343a40;
-  -moz-border-radius: 0.32rem;
-  -webkit-border-radius: 0.32rem;
-  border-radius: 0.32rem;
-  -moz-box-shadow: inset 0 -0.16rem 0 rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: inset 0 -0.16rem 0 rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 -0.16rem 0 rgba(0, 0, 0, 0.25);
+  background-color: #212529;
+  -moz-border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  -moz-box-shadow: inset 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
 }
-/* line 28, ../scss/_code.scss */
+/* line 32, ../scss/_code.scss */
 kbd kbd {
   padding: 0;
   font-size: 100%;
@@ -6022,24 +6026,20 @@ kbd kbd {
   box-shadow: none;
 }
 
-/* line 37, ../scss/_code.scss */
+/* line 41, ../scss/_code.scss */
 pre {
   display: block;
-  font-size: 14px;
-  line-height: 1.4;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
+  font-size: 87.5%;
+  color: #212529;
 }
-/* line 45, ../scss/_code.scss */
+/* line 46, ../scss/_code.scss */
 pre code {
   font-size: inherit;
   color: inherit;
-  background-color: transparent;
-  border-radius: 0;
+  word-break: normal;
 }
 
-/* line 54, ../scss/_code.scss */
+/* line 53, ../scss/_code.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;

@@ -443,18 +443,19 @@ $state-danger-border:            darken($state-danger-bg, 5%) !default;
 // Code
 //
 //
+$code-font-size:              87.5% !default;
 $code-color:                  $pink;
 $code-bg:                     $gray-100;
 
-$kbd-color:                   $white;
-$kbd-bg:                      $gray-800;
+$kbd-font-size:               $code-font-size !default;
+$kbd-padding-y:               .32rem !default;
+$kbd-padding-x:               .64rem !default;
+$kbd-color:                   $white !default;
+$kbd-bg:                      $gray-900 !default;
+$kbd-box-shadow:              inset 0 -.1rem 0 rgba($black, .25) !default;
 
-$pre-bg:                      $gray-800;
-$pre-color:                   $white;
-$pre-border-color:            $border-color;
+$pre-color:                   $gray-900 !default;
 $pre-scrollable-max-height:   340px !default;
-$pre-line-height:             1.4 !default;
-$pre-font-size:               14px;
 
 //
 // Assists
