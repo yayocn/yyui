@@ -8,26 +8,42 @@
 <body>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <h1>h1: yyui <small>yayo</small></h1>
-      <h2>h2: yyui <small>yayo</small></h2>
-      <h3>h3: yyui <small>yayo</small></h3>
-      <h4>h4: yyui <small>yayo</small></h4>
-      <h5>h5: yyui <small>yayo</small></h5>
-      <h6>h6: yyui <small>yayo</small></h6>
+    <div class="col-12">
+      <h1>h1: yyui
+        <small>yayo</small>
+      </h1>
+      <h2>h2: yyui
+        <small>yayo</small>
+      </h2>
+      <h3>h3: yyui
+        <small>yayo</small>
+      </h3>
+      <h4>h4: yyui
+        <small>yayo</small>
+      </h4>
+      <h5>h5: yyui
+        <small>yayo</small>
+      </h5>
+      <h6>h6: yyui
+        <small>yayo</small>
+      </h6>
     </div>
   </div>
   <hr/>
   <div class="row">
-    <div class="col-xs-12">
-      <p>这里有一个<mark>内联</mark>标签mark。</p>
+    <div class="col-12">
+      <p>这里有一个
+        <mark>内联</mark>
+        标签mark。
+      </p>
       <br/>
       <del>被删除的文本信息。</del>
       <br/>
       <ins>插入的文本信息，this is insert text.</ins>
+    </div>
   </div>
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-12">
       <h4>缩略语</h4>
       <abbr title="transformation">trans</abbr>
       <h4>地址</h4>
@@ -43,28 +59,64 @@
         <footer>出自 <cite title="Source Title">杨氏语录</cite></footer>
       </blockquote>
       <h5>靠右引用blockquote-reverse</h5>
-      <blockquote class="blockquote-reverse">
+      <blockquote class="blockquote-right">
         <p>爱生活，爱老婆。</p>
         <footer>出自 <cite title="Source Title">杨氏语录</cite></footer>
       </blockquote>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-12">
-      <h4>描述</h4>
-      <dl>
-        <dt>描述列表</dt>
-        <!--<dd>描述列表适合用来定义</dd>-->
-        <dd>商店晚上关门停止营业。</dd>
-        <dt>打烊</dt>
-        <dd>引申为歇业。</dd>
-      </dl>
-      <h5>水平描述</h5>
-      <dl class="dl-hz">
-        <dt>描述列表 160px</dt>
-        <dd>描述列表适合用来定义</dd>
-        <dt>打烊</dt>
-        <dd>商店晚上关门停止营业。</dd>
+    <div class="col-12">
+      <ul class="list-bare">
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>Nulla volutpat aliquam velit
+          <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+          </ul>
+        </li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+      </ul>
+
+      <ul class="list-inline">
+        <li>Lorem ipsum</li>
+        <li>Phasellus iaculis</li>
+        <li>Nulla volutpat</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <dl class="row">
+        <dt class="col-sm-3">Description lists</dt>
+        <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+        <dt class="col-sm-3">Euismod</dt>
+        <dd class="col-sm-9">
+          <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+          <p>Donec id elit non mi porta gravida at eget metus.</p>
+        </dd>
+
+        <dt class="col-sm-3">Malesuada porta</dt>
+        <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+        <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+        <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+        <dt class="col-sm-3">Nesting</dt>
+        <dd class="col-sm-9">
+          <dl class="row">
+            <dt class="col-sm-4">Nested definition list</dt>
+            <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+          </dl>
+        </dd>
       </dl>
     </div>
   </div>

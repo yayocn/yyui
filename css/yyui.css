@@ -490,7 +490,7 @@ blockquote footer:before {
   content: "\2014 \00A0";
 }
 /* line 115, ../scss/_element.scss */
-blockquote.blockquote-reverse {
+blockquote.blockquote-right {
   padding-left: 0;
   padding-right: 15px;
   text-align: right;
@@ -498,72 +498,48 @@ blockquote.blockquote-reverse {
   border-left: 0;
 }
 /* line 124, ../scss/_element.scss */
-blockquote.blockquote-reverse footer:before {
+blockquote.blockquote-right footer:before {
   content: "";
 }
 /* line 125, ../scss/_element.scss */
-blockquote.blockquote-reverse footer:after {
+blockquote.blockquote-right footer:after {
   content: "\00A0 \2014";
 }
 
 /* line 134, ../scss/_element.scss */
-dl {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-
-/* line 9, ../scss/mixins/_utilities.scss */
-.dl-hz:before, .dl-hz:after {
-  content: '';
-  display: table;
-}
-/* line 14, ../scss/mixins/_utilities.scss */
-.dl-hz:after {
-  clear: both;
-}
-
-/* line 143, ../scss/_element.scss */
-dd, dt {
-  line-height: 1.5;
-}
-
-/* line 146, ../scss/_element.scss */
 dt {
   font-weight: 700;
 }
 
-/* line 149, ../scss/_element.scss */
+/* line 138, ../scss/_element.scss */
 dd {
-  margin: 0;
-}
-/* line 152, ../scss/_element.scss */
-dd + dt {
-  margin-top: 15px;
+  margin-bottom: .5rem;
+  margin-left: 0;
 }
 
-/* line 160, ../scss/_element.scss */
+/* line 146, ../scss/_element.scss */
 .size-dead {
   resize: none !important;
 }
 
-/* line 170, ../scss/_element.scss */
+/* line 156, ../scss/_element.scss */
+.list-inline,
 .list-bare {
   padding-left: 0;
   list-style: none;
 }
 
-/* line 177, ../scss/_element.scss */
+/* line 164, ../scss/_element.scss */
 .list-inline {
-  padding-left: 0;
   margin-left: -5px;
-  list-style: none;
 }
-/* line 182, ../scss/_element.scss */
+/* line 167, ../scss/_element.scss */
 .list-inline > li {
   display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
+}
+/* line 170, ../scss/_element.scss */
+.list-inline > li:not(:last-child) {
+  margin-right: 5px;
 }
 
 /* line 4, ../scss/utilities/_border.scss */
