@@ -6,13 +6,10 @@
 // Clearfix
 //
 @mixin clearfix() {
-  &:before,
-  &:after {
-    content: '';
-    display: table;
-  }
-  &:after {
+  &::after {
+    display: block;
     clear: both;
+    content: "";
   }
 }
 
