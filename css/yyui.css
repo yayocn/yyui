@@ -6069,6 +6069,24 @@ pre code {
   height: auto;
 }
 
+/* line 29, ../scss/_images.scss */
+.figure {
+  display: inline-block;
+  margin: 0 0 1rem;
+}
+
+/* line 34, ../scss/_images.scss */
+.figure-img {
+  margin-bottom: 7.5px;
+  line-height: 1;
+}
+
+/* line 39, ../scss/_images.scss */
+.figure-caption {
+  font-size: 90%;
+  color: #6c757d;
+}
+
 /* line 1, ../scss/_tables.scss */
 .table {
   width: 100%;

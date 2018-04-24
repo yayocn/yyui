@@ -22,3 +22,22 @@
   @include img-fluid();
 }
 
+//
+// Figures
+//
+
+.figure {
+  display: inline-block;
+  margin: 0 0 1rem;
+}
+
+.figure-img {
+  margin-bottom: ($space-default / 2);
+  line-height: 1;
+}
+
+.figure-caption {
+  font-size: $figure-caption-font-size;
+  color: $figure-caption-color;
+}
+
