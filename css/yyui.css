@@ -1089,9 +1089,19 @@ a.bg-transparent:focus, a.bg-transparent:hover {
   color: #007bff !important;
 }
 
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-primary:focus, a.text-primary:hover {
+  color: #0062cc !important;
+}
+
 /* line 40, ../scss/utilities/_text.scss */
 .text-secondary {
   color: #375A7F !important;
+}
+
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-secondary:focus, a.text-secondary:hover {
+  color: #28415b !important;
 }
 
 /* line 40, ../scss/utilities/_text.scss */
@@ -1099,9 +1109,19 @@ a.bg-transparent:focus, a.bg-transparent:hover {
   color: #2EC6A0 !important;
 }
 
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-success:focus, a.text-success:hover {
+  color: #249d7f !important;
+}
+
 /* line 40, ../scss/utilities/_text.scss */
 .text-info {
   color: #14adea !important;
+}
+
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-info:focus, a.text-info:hover {
+  color: #108abb !important;
 }
 
 /* line 40, ../scss/utilities/_text.scss */
@@ -1109,9 +1129,19 @@ a.bg-transparent:focus, a.bg-transparent:hover {
   color: #ffc107 !important;
 }
 
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-warning:focus, a.text-warning:hover {
+  color: #d39e00 !important;
+}
+
 /* line 40, ../scss/utilities/_text.scss */
 .text-danger {
   color: #dc3545 !important;
+}
+
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-danger:focus, a.text-danger:hover {
+  color: #bd2130 !important;
 }
 
 /* line 40, ../scss/utilities/_text.scss */
@@ -1119,9 +1149,19 @@ a.bg-transparent:focus, a.bg-transparent:hover {
   color: #fff !important;
 }
 
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-white:focus, a.text-white:hover {
+  color: #e6e6e6 !important;
+}
+
 /* line 40, ../scss/utilities/_text.scss */
 .text-light {
   color: #dee2e6 !important;
+}
+
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-light:focus, a.text-light:hover {
+  color: #c1c9d0 !important;
 }
 
 /* line 40, ../scss/utilities/_text.scss */
@@ -1129,9 +1169,19 @@ a.bg-transparent:focus, a.bg-transparent:hover {
   color: #6c757d !important;
 }
 
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-muted:focus, a.text-muted:hover {
+  color: #545b62 !important;
+}
+
 /* line 40, ../scss/utilities/_text.scss */
 .text-dark {
   color: #212529 !important;
+}
+
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-dark:focus, a.text-dark:hover {
+  color: #0a0c0d !important;
 }
 
 /* line 40, ../scss/utilities/_text.scss */
@@ -1139,8 +1189,18 @@ a.bg-transparent:focus, a.bg-transparent:hover {
   color: #000 !important;
 }
 
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-black:focus, a.text-black:hover {
+  color: black !important;
+}
+
 /* line 40, ../scss/utilities/_text.scss */
 .text-transparent {
+  color: transparent !important;
+}
+
+/* line 18, ../scss/mixins/_hover.scss */
+a.text-transparent:focus, a.text-transparent:hover {
   color: transparent !important;
 }
 
@@ -9589,7 +9649,7 @@ progress[value]::-moz-progress-bar {
 
 /* line 29, ../scss/_mark.scss */
 .mark-ok:after {
-  content: "✔";
+  content: "✓";
 }
 
 /* line 29, ../scss/_mark.scss */

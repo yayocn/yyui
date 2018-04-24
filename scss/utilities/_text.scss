@@ -40,4 +40,10 @@ $align-list: (left, right, center, justify);
   .text-#{$name} {
     color: $value !important;
   }
+
+  a.text-#{$name} {
+    @include hover-focus {
+      color: darken($value, 10%) !important;
+    }
+  }
 }
