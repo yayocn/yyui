@@ -22,6 +22,9 @@
   }
 
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+  @include hover-focus {
+    text-decoration: none;
+  }
 }
 
 // Brand buttons
