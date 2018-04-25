@@ -1,4 +1,16 @@
 // Alerts
+//
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+@function theme-color-level($color-name: "primary", $level: 0) {
+  $color: theme-color($color-name);
+  $color-base: if($level > 0, #000, #fff);
+  $level: abs($level);
+
+  @return mix($color-base, $color, $level * $theme-color-interval);
+}
 
 @mixin alert-variant ($background, $border, $color) {
   background-color: $background;
@@ -10,17 +22,5 @@
   }
   .alert-link {
     color: darken($color, 10%);
-  }
-}
-
-// Sizing
-//
-@mixin alert-size($padding-vertical, $font-size, $close-size) {
-  font-size: $font-size;
-  padding-top: $padding-vertical;
-  padding-bottom: $padding-vertical;
-
-  .close {
-    font-size: $close-size;
   }
 }

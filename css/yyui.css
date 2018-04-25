@@ -8451,121 +8451,256 @@ pre code {
     padding: 6.4rem 3.2rem;
   }
 }
-/* line 6, ../scss/_alert.scss */
+/* line 4, ../scss/_close.scss */
+.close {
+  float: right;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.close:focus, .close:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: .75;
+}
+/* line 19, ../scss/_close.scss */
+.close:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+/* line 24, ../scss/_close.scss */
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+/* line 5, ../scss/_alert.scss */
 .alert {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid transparent;
-  font-size: 1.36rem;
-}
-/* line 16, ../scss/_alert.scss */
-.alert > p,
-.alert > ul {
-  margin-bottom: 0;
-}
-/* line 21, ../scss/_alert.scss */
-.alert > p + p {
-  margin-top: 5px;
-}
-
-/* line 28, ../scss/_alert.scss */
-.alert-link {
-  font-weight: bold;
-}
-
-/* line 34, ../scss/_alert.scss */
-.alert-dismissible {
-  padding-right: 30px;
-}
-/* line 36, ../scss/_alert.scss */
-.alert-dismissible .close {
   position: relative;
-  top: -2px;
-  right: -21px;
+  padding: 1.2rem 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  -moz-border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+/* line 14, ../scss/_alert.scss */
+.alert-heading {
   color: inherit;
-  font-size: 2.24rem;
 }
 
-/* line 49, ../scss/_alert.scss */
+/* line 20, ../scss/_alert.scss */
+.alert-link {
+  font-weight: 700;
+}
+
+/* line 29, ../scss/_alert.scss */
+.alert-dismissible {
+  padding-right: 6.1rem;
+}
+/* line 33, ../scss/_alert.scss */
+.alert-dismissible .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.2rem 2rem;
+  color: inherit;
+}
+/* line 40, ../scss/_alert.scss */
+.alert-dismissible .close:focus, .alert-dismissible .close.focus, .alert-dismissible .close:active, .alert-dismissible .close.active {
+  outline: 0;
+}
+/* line 47, ../scss/_alert.scss */
+.alert-dismissible .close [class*="mark-"] {
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+/* line 59, ../scss/_alert.scss */
+.alert-primary {
+  background-color: #cce5ff;
+  border: 1px solid #b8daff;
+  color: #004085;
+}
+/* line 20, ../scss/mixins/_alert.scss */
+.alert-primary hr {
+  border-top-color: #9fcdff;
+}
+/* line 23, ../scss/mixins/_alert.scss */
+.alert-primary .alert-link {
+  color: #002752;
+}
+
+/* line 59, ../scss/_alert.scss */
+.alert-secondary {
+  background-color: #d7dee5;
+  border: 1px solid #c7d1db;
+  color: #1d2f42;
+}
+/* line 20, ../scss/mixins/_alert.scss */
+.alert-secondary hr {
+  border-top-color: #b7c4d1;
+}
+/* line 23, ../scss/mixins/_alert.scss */
+.alert-secondary .alert-link {
+  color: #0d161f;
+}
+
+/* line 59, ../scss/_alert.scss */
 .alert-success {
-  background-color: #C6FCF0;
-  border: 1px solid #aefbea;
-  color: #2EC6A0;
+  background-color: #d5f4ec;
+  border: 1px solid #c4efe4;
+  color: #186753;
 }
-/* line 8, ../scss/mixins/_alert.scss */
+/* line 20, ../scss/mixins/_alert.scss */
 .alert-success hr {
-  border-top-color: #96f9e3;
+  border-top-color: #b0eadb;
 }
-/* line 11, ../scss/mixins/_alert.scss */
+/* line 23, ../scss/mixins/_alert.scss */
 .alert-success .alert-link {
-  color: #249d7f;
+  color: #0e3e32;
 }
 
-/* line 52, ../scss/_alert.scss */
+/* line 59, ../scss/_alert.scss */
 .alert-info {
-  background-color: #d9edf7;
-  border: 1px solid #bcdff1;
-  color: #14adea;
+  background-color: #d0effb;
+  border: 1px solid #bde8f9;
+  color: #0a5a7a;
 }
-/* line 8, ../scss/mixins/_alert.scss */
+/* line 20, ../scss/mixins/_alert.scss */
 .alert-info hr {
-  border-top-color: #a6d5ec;
+  border-top-color: #a6e0f7;
 }
-/* line 11, ../scss/mixins/_alert.scss */
+/* line 23, ../scss/mixins/_alert.scss */
 .alert-info .alert-link {
-  color: #108abb;
+  color: #06374b;
 }
 
-/* line 55, ../scss/_alert.scss */
+/* line 59, ../scss/_alert.scss */
 .alert-warning {
-  background-color: #fcf8e3;
-  border: 1px solid #faf2cc;
-  color: #ffc107;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
 }
-/* line 8, ../scss/mixins/_alert.scss */
+/* line 20, ../scss/mixins/_alert.scss */
 .alert-warning hr {
-  border-top-color: #f7ecb5;
+  border-top-color: #ffe8a1;
 }
-/* line 11, ../scss/mixins/_alert.scss */
+/* line 23, ../scss/mixins/_alert.scss */
 .alert-warning .alert-link {
-  color: #d39e00;
+  color: #533f03;
 }
 
-/* line 58, ../scss/_alert.scss */
+/* line 59, ../scss/_alert.scss */
 .alert-danger {
-  background-color: #f2dede;
-  border: 1px solid #ebcccc;
-  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
 }
-/* line 8, ../scss/mixins/_alert.scss */
+/* line 20, ../scss/mixins/_alert.scss */
 .alert-danger hr {
-  border-top-color: #e4b9b9;
+  border-top-color: #f1b0b7;
 }
-/* line 11, ../scss/mixins/_alert.scss */
+/* line 23, ../scss/mixins/_alert.scss */
 .alert-danger .alert-link {
-  color: #bd2130;
+  color: #491217;
 }
 
-/* line 66, ../scss/_alert.scss */
-.alert-lg {
-  font-size: 1.6rem;
-  padding-top: 15px;
-  padding-bottom: 15px;
+/* line 59, ../scss/_alert.scss */
+.alert-white {
+  background-color: white;
+  border: 1px solid white;
+  color: #858585;
+}
+/* line 20, ../scss/mixins/_alert.scss */
+.alert-white hr {
+  border-top-color: #f2f2f2;
 }
 /* line 23, ../scss/mixins/_alert.scss */
-.alert-lg .close {
-  font-size: 2.88rem;
+.alert-white .alert-link {
+  color: #6c6c6c;
 }
 
-/* line 70, ../scss/_alert.scss */
-.alert-sm {
-  font-size: 1.2rem;
-  padding-top: 6px;
-  padding-bottom: 6px;
+/* line 59, ../scss/_alert.scss */
+.alert-light {
+  background-color: #f8f9fa;
+  border: 1px solid #f6f7f8;
+  color: #737678;
+}
+/* line 20, ../scss/mixins/_alert.scss */
+.alert-light hr {
+  border-top-color: #e8eaed;
 }
 /* line 23, ../scss/mixins/_alert.scss */
-.alert-sm .close {
-  font-size: 2.4rem;
+.alert-light .alert-link {
+  color: #5a5c5e;
+}
+
+/* line 59, ../scss/_alert.scss */
+.alert-muted {
+  background-color: #e2e3e5;
+  border: 1px solid #d6d8db;
+  color: #383d41;
+}
+/* line 20, ../scss/mixins/_alert.scss */
+.alert-muted hr {
+  border-top-color: #c8cbcf;
+}
+/* line 23, ../scss/mixins/_alert.scss */
+.alert-muted .alert-link {
+  color: #202326;
+}
+
+/* line 59, ../scss/_alert.scss */
+.alert-dark {
+  background-color: #d3d3d4;
+  border: 1px solid #c1c2c3;
+  color: #111315;
+}
+/* line 20, ../scss/mixins/_alert.scss */
+.alert-dark hr {
+  border-top-color: #b4b5b6;
+}
+/* line 23, ../scss/mixins/_alert.scss */
+.alert-dark .alert-link {
+  color: black;
+}
+
+/* line 59, ../scss/_alert.scss */
+.alert-black {
+  background-color: #cccccc;
+  border: 1px solid #b8b8b8;
+  color: black;
+}
+/* line 20, ../scss/mixins/_alert.scss */
+.alert-black hr {
+  border-top-color: #ababab;
+}
+/* line 23, ../scss/mixins/_alert.scss */
+.alert-black .alert-link {
+  color: black;
+}
+
+/* line 59, ../scss/_alert.scss */
+.alert-transparent {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  color: rgba(0, 0, 0, 0.48);
+}
+/* line 20, ../scss/mixins/_alert.scss */
+.alert-transparent hr {
+  border-top-color: rgba(242, 242, 242, 0.72);
+}
+/* line 23, ../scss/mixins/_alert.scss */
+.alert-transparent .alert-link {
+  color: rgba(0, 0, 0, 0.48);
 }
 
 /* line 5, ../scss/_progress.scss */

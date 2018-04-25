@@ -68,6 +68,9 @@ $yiq-contrasted-threshold: 150 !default;
 $yiq-text-dark: $dark !default;
 $yiq-text-light: $white !default;
 
+// Set a specific jump point for requesting color jumps
+$theme-color-interval:      8% !default;
+
 //
 // Components
 //
@@ -702,32 +705,16 @@ $jumbotron-bg:                   $gray-lighter !default;
 // Alerts
 //
 // Define alert colors, border radius, and padding.
+$alert-padding-y:                   1.2rem !default;
+$alert-padding-x:                   2rem !default;
+$alert-margin-bottom:               1rem !default;
+$alert-border-radius:               $border-radius !default;
+$alert-link-font-weight:            $font-weight-bold !default;
+$alert-border-width:                $border-width !default;
 
-$alert-padding:               10px !default;
-$alert-border-radius:         $border-radius !default;
-$alert-link-font-weight:      bold !default;
-$alert-padding-lg:            15px !default;
-$alert-size-lg:               1.6rem;
-$alert-close-size-lg:         2.88rem;
-$alert-padding-sm:            6px !default;
-$alert-size-sm:               1.2rem;
-$alert-close-size-sm:         2.4rem;
-
-$alert-success-bg:            $state-success-bg !default;
-$alert-success-text:          $state-success-text !default;
-$alert-success-border:        $state-success-border !default;
-
-$alert-info-bg:               $state-info-bg !default;
-$alert-info-text:             $state-info-text !default;
-$alert-info-border:           $state-info-border !default;
-
-$alert-warning-bg:            $state-warning-bg !default;
-$alert-warning-text:          $state-warning-text !default;
-$alert-warning-border:        $state-warning-border !default;
-
-$alert-danger-bg:             $state-danger-bg !default;
-$alert-danger-text:           $state-danger-text !default;
-$alert-danger-border:         $state-danger-border !default;
+$alert-bg-level:                    -10 !default;
+$alert-border-level:                -9 !default;
+$alert-color-level:                 6 !default;
 
 // Progress bars
 
@@ -883,3 +870,10 @@ $loader-colors: (
   muted: $muted,
   dark: $dark
 );
+
+// Close
+
+$close-font-size:                   $font-size-base * 1.5 !default;
+$close-font-weight:                 $font-weight-bold !default;
+$close-color:                       $black !default;
+$close-text-shadow:                 0 1px 0 $white !default;
