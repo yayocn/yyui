@@ -195,6 +195,18 @@ $shadow-sm:              0 .125rem .25rem rgba(0,0,0,.075);
 $shadow-lg:              0 1rem 3rem rgba(0,0,0,.175);
 
 
+// Sizing
+//
+//
+$sizes: () !default;
+$sizes: map-merge((
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%
+), $sizes);
+
+
 // Buttons
 // For each of buttons
 //

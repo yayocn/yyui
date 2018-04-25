@@ -3371,6 +3371,66 @@ a.text-transparent:focus, a.text-transparent:hover {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
+/* line 6, ../scss/utilities/_size.scss */
+.w-25 {
+  width: 25% !important;
+}
+
+/* line 6, ../scss/utilities/_size.scss */
+.w-50 {
+  width: 50% !important;
+}
+
+/* line 6, ../scss/utilities/_size.scss */
+.w-75 {
+  width: 75% !important;
+}
+
+/* line 6, ../scss/utilities/_size.scss */
+.w-100 {
+  width: 100% !important;
+}
+
+/* line 6, ../scss/utilities/_size.scss */
+.h-25 {
+  height: 25% !important;
+}
+
+/* line 6, ../scss/utilities/_size.scss */
+.h-50 {
+  height: 50% !important;
+}
+
+/* line 6, ../scss/utilities/_size.scss */
+.h-75 {
+  height: 75% !important;
+}
+
+/* line 6, ../scss/utilities/_size.scss */
+.h-100 {
+  height: 100% !important;
+}
+
+/* line 10, ../scss/utilities/_size.scss */
+.w-auto {
+  width: auto !important;
+}
+
+/* line 14, ../scss/utilities/_size.scss */
+.h-auto {
+  height: auto !important;
+}
+
+/* line 18, ../scss/utilities/_size.scss */
+.mw-100 {
+  max-width: 100% !important;
+}
+
+/* line 19, ../scss/utilities/_size.scss */
+.mh-100 {
+  max-height: 100% !important;
+}
+
 /* line 13, ../scss/_grid.scss */
 .container {
   width: 100%;
