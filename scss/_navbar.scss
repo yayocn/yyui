@@ -140,7 +140,7 @@
   position: fixed;
   right: 0;
   left: 0;
-  z-index: $zindex-navbar-fixed;
+  z-index: $zindex-fixed;
   margin-bottom: 0;
 
   @include media-breakpoint-up(sm) {
@@ -159,7 +159,7 @@
 .navbar-sticky-top {
   position: sticky;
   top: 0;
-  z-index: $zindex-navbar-sticky;
+  z-index: $zindex-sticky;
   width: 100%;
 
   @include media-breakpoint-up(sm) {

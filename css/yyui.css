@@ -706,24 +706,41 @@ dd {
   border-style: solid !important;
 }
 
-/* line 5, ../scss/utilities/_position.scss */
+/* line 8, ../scss/utilities/_position.scss */
+.pt-static {
+  position: static !important;
+}
+
+/* line 8, ../scss/utilities/_position.scss */
 .pt-relative {
   position: relative !important;
 }
 
-/* line 9, ../scss/utilities/_position.scss */
-.pt-sticky {
-  position: sticky !important;
+/* line 8, ../scss/utilities/_position.scss */
+.pt-absolute {
+  position: absolute !important;
+  z-index: 1030;
 }
 
-/* line 13, ../scss/utilities/_position.scss */
+/* line 8, ../scss/utilities/_position.scss */
+.pt-fixed {
+  position: fixed !important;
+}
+
+/* line 8, ../scss/utilities/_position.scss */
+.pt-sticky {
+  position: sticky !important;
+  z-index: 1020;
+}
+
+/* line 19, ../scss/utilities/_position.scss */
 .pt-hc {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 17, ../scss/utilities/_position.scss */
+/* line 23, ../scss/utilities/_position.scss */
 .pt-vc {
   display: block;
   position: absolute;
@@ -734,7 +751,7 @@ dd {
   transform: translateY(-50%);
 }
 
-/* line 21, ../scss/utilities/_position.scss */
+/* line 27, ../scss/utilities/_position.scss */
 .pt-center {
   display: block;
   position: absolute;
@@ -747,6 +764,20 @@ dd {
   transform: translateY(-50%);
   margin-left: auto;
   margin-right: auto;
+}
+
+/* line 35, ../scss/utilities/_position.scss */
+.pt-top {
+  top: 0 !important;
+  left: 0;
+  right: 0;
+}
+
+/* line 41, ../scss/utilities/_position.scss */
+.pt-bottom {
+  right: 0;
+  bottom: 0 !important;
+  left: 0;
 }
 
 /* line 11, ../scss/utilities/_view.scss */
@@ -7384,7 +7415,7 @@ pre code {
 .navbar-sticky-top {
   position: sticky;
   top: 0;
-  z-index: 1030;
+  z-index: 1020;
   width: 100%;
 }
 @media (min-width: 576px) {

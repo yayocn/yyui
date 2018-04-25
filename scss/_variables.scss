@@ -489,14 +489,14 @@ $divider-margin-sm:       $space-base * 2 !default;
 // z-index
 //
 $zindex-navbar:            1000 !default;
-$zindex-dropdown:          1000 !default;
 $zindex-collapse:           990 !default;
-//$zindex-popover:           1060 !default;
-//$zindex-tooltip:           1070 !default;
-$zindex-navbar-fixed:      1030 !default;
-$zindex-navbar-sticky:     1030 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-sticky:            1020 !default;
+$zindex-fixed:             1030 !default;
 $zindex-modal-bg:          1040 !default;
 $zindex-modal:             1050 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
 
 // Dropdowns
 //

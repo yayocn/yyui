@@ -2,12 +2,18 @@
 // Position
 //
 
-.pt-relative {
-  position: relative !important;
-}
+$positions: static, relative, absolute, fixed, sticky;
 
-.pt-sticky {
-  position: sticky !important;
+@each $position in $positions {
+  .pt-#{$position} {
+    position: $position !important;
+
+    @if $position == 'fixed' {
+      z-index: $zindex-fixed;
+    } @else if($position == 'sticky') {
+      z-index: $zindex-sticky;
+    }
+  }
 }
 
 .pt-hc {
@@ -20,4 +26,20 @@
 
 .pt-center {
   @include center-block('');
+}
+
+//
+// Short
+//
+
+.pt-top {
+  top: 0 !important;
+  left: 0;
+  right: 0;
+}
+
+.pt-bottom {
+  right: 0;
+  bottom: 0 !important;
+  left: 0;
 }
