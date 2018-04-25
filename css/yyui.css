@@ -8023,7 +8023,6 @@ pre code {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: 700;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -8032,18 +8031,18 @@ pre code {
   -webkit-border-radius: 0.4rem;
   border-radius: 0.4rem;
 }
-/* line 17, ../scss/_badge.scss */
+/* line 16, ../scss/_badge.scss */
 .badge:empty {
   display: none;
 }
 
-/* line 22, ../scss/_badge.scss */
+/* line 21, ../scss/_badge.scss */
 .btn .badge {
   position: relative;
   top: -1px;
 }
 
-/* line 27, ../scss/_badge.scss */
+/* line 26, ../scss/_badge.scss */
 .badge-pill {
   padding-right: 0.6em;
   padding-left: 0.6em;
@@ -8052,7 +8051,7 @@ pre code {
   border-radius: 10rem;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-primary {
   color: #fff;
   background-color: #007bff;
@@ -8064,7 +8063,7 @@ pre code {
   background-color: #0062cc;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-secondary {
   color: #fff;
   background-color: #375A7F;
@@ -8076,7 +8075,7 @@ pre code {
   background-color: #28415b;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-success {
   color: #fff;
   background-color: #2EC6A0;
@@ -8088,7 +8087,7 @@ pre code {
   background-color: #249d7f;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-info {
   color: #fff;
   background-color: #14adea;
@@ -8100,7 +8099,7 @@ pre code {
   background-color: #108abb;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-warning {
   color: #212529;
   background-color: #ffc107;
@@ -8112,7 +8111,7 @@ pre code {
   background-color: #d39e00;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-danger {
   color: #fff;
   background-color: #dc3545;
@@ -8124,7 +8123,7 @@ pre code {
   background-color: #bd2130;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-white {
   color: #212529;
   background-color: #fff;
@@ -8136,7 +8135,7 @@ pre code {
   background-color: #e6e6e6;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-light {
   color: #212529;
   background-color: #dee2e6;
@@ -8148,7 +8147,7 @@ pre code {
   background-color: #c1c9d0;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-muted {
   color: #fff;
   background-color: #6c757d;
@@ -8160,7 +8159,7 @@ pre code {
   background-color: #545b62;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-dark {
   color: #fff;
   background-color: #212529;
@@ -8172,7 +8171,7 @@ pre code {
   background-color: #0a0c0d;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-black {
   color: #fff;
   background-color: #000;
@@ -8184,7 +8183,7 @@ pre code {
   background-color: black;
 }
 
-/* line 37, ../scss/_badge.scss */
+/* line 36, ../scss/_badge.scss */
 .badge-transparent {
   color: #fff;
   background-color: transparent;
