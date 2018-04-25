@@ -719,12 +719,12 @@ dd {
 /* line 8, ../scss/utilities/_position.scss */
 .pt-absolute {
   position: absolute !important;
-  z-index: 1030;
 }
 
 /* line 8, ../scss/utilities/_position.scss */
 .pt-fixed {
   position: fixed !important;
+  z-index: 1030;
 }
 
 /* line 8, ../scss/utilities/_position.scss */
@@ -3341,6 +3341,34 @@ a.text-transparent:focus, a.text-transparent:hover {
 /* line 14, ../scss/utilities/_font.scss */
 .font-lighter {
   font-weight: lighter !important;
+}
+
+/* line 13, ../scss/utilities/_shadow.scss */
+.shadow {
+  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* line 17, ../scss/utilities/_shadow.scss */
+.shadow-none {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* line 17, ../scss/utilities/_shadow.scss */
+.shadow-sm {
+  -moz-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* line 17, ../scss/utilities/_shadow.scss */
+.shadow-lg {
+  -moz-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
 /* line 13, ../scss/_grid.scss */

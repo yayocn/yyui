@@ -1,0 +1,21 @@
+//
+// Shadow
+//
+
+$shadow-list: (
+  '': $shadow,
+  none: $shadow-none,
+  sm: $shadow-sm,
+  lg: $shadow-lg,
+);
+@each $name, $value in $shadow-list {
+  @if $name == '' {
+    .shadow {
+      @include box-shadow($value !important);
+    }
+  } @else {
+    .shadow-#{$name} {
+      @include box-shadow($value !important);
+    }
+  }
+}
