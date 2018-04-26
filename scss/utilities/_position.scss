@@ -43,3 +43,11 @@ $positions: static, relative, absolute, fixed, sticky;
   bottom: 0 !important;
   left: 0;
 }
+
+.pt-full {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+}
