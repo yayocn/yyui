@@ -8,46 +8,46 @@
 <body>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-12">
       <form action="">
         <h4>form-control</h4>
-        <fieldset>
+        <div class="form-group">
           <label>Huge</label>
           <input type="text" class="form-control form-control-hg" placeholder="User Name"/>
-        </fieldset>
-        <fieldset>
+        </div>
+        <div class="form-group">
           <label>large</label>
           <input type="text" class="form-control form-control-lg" placeholder="user name"/>
-        </fieldset>
-        <fieldset>
+        </div>
+        <div class="form-group">
           <label>default</label>
           <input type="text" class="form-control" placeholder="user name"/><br/>
           <input type="text" class="form-control form-control-success" placeholder="user name"/><br/>
           <input type="text" class="form-control form-control-warning" placeholder="user name"/><br/>
           <input type="text" class="form-control form-control-error" placeholder="user name"/>
-        </fieldset>
-        <fieldset>
+        </div>
+        <div class="form-group">
           <label>small</label>
           <input type="text" class="form-control form-control-sm" placeholder="user name"/>
-        </fieldset>
+        </div>
 
         <h4>fieldset</h4>
-        <fieldset class="fieldset-lg">
+        <div class="form-group form-group-lg">
           <label>form group large</label>
           <input type="text" class="form-control" placeholder="user name"/>
-        </fieldset>
+        </div>
 
-        <fieldset>
+        <div class="form-group">
           <label>form group default</label>
           <input type="text" class="form-control" placeholder="user name"/>
-        </fieldset>
+        </div>
 
-        <fieldset class="fieldset-sm">
+        <div class="form-group form-group-sm">
           <label>form group small</label>
           <input type="text" class="form-control" placeholder="user name"/>
-        </fieldset>
+        </div>
 
-        <fieldset>
+        <div class="form-group">
           <label>Select</label>
           <div class="select">
             <select class="form-control" name="" id="33">
@@ -57,9 +57,10 @@
             </select>
             <div class="triangle-down"></div>
           </div>
-        </fieldset>
-        <fieldset>
-          <label>radio</label>
+        </div>
+
+        <h4>radio</h4>
+        <div class="form-group">
           <div class="radio">
             <input id="raido_1_1" type="radio"  name="radio1" checked/>
             <label for="raido_1_1">默认radio</label>
@@ -92,20 +93,23 @@
             <input id="raido_1_8" type="radio"  name="radio1" disabled/>
             <label for="raido_1_8">disabled</label>
           </div>
-          <label>inline radio</label>
-          <br/>
-          <div class="radio-inline">
+        </div>
+
+        <h4>inline radio</h4>
+        <br/>
+        <div class="form-group">
+          <div class="radio inline">
             <input id="" type="radio"  name="radio2" checked/>
             <label for="">默认radio</label>
           </div>
-          <div class="radio-inline">
+          <div class="radio inline">
             <input id="" type="radio"  name="radio2"/>
             <label for="">默认radio</label>
           </div>
-        </fieldset>
+        </div>
 
 
-          <label>checkBox</label>
+          <h4>checkBox</h4>
           <div class="checkbox">
             <input id="" type="checkbox" name="checkbox1" checked/>
             <label for="">默认checkbox</label>
@@ -138,13 +142,13 @@
             <input id="checkbox_1_8" type="checkbox" name="checkbox1" disabled/>
             <label for="checkbox_1_8">disabled</label>
           </div>
-          <label>inline checkBox</label>
+          <h4>inline checkBox</h4>
           <br/>
-          <div class="checkbox-inline">
+          <div class="checkbox inline">
             <input id="checkbox_2_1" type="checkbox" name="checkbox2" checked/>
             <label for="checkbox_2_1">默认checkbox</label>
           </div>
-          <div class="checkbox-inline">
+          <div class="checkbox inline">
             <input id="checkbox_2_2" type="checkbox" name="checkbox2"/>
             <label for="checkbox_2_2">默认checkbox</label>
           </div>
@@ -194,62 +198,63 @@
           </div>
 
         <h4>File</h4>
-        <fieldset>
+        <div class="form-group">
           <div class="form-file">
             <input type="file" class="form-control" name="upload"/>
             <label class="file-surface">点击上传</label>
           </div>
-        </fieldset>
+        </div>
         <h4>Status</h4>
-        <fieldset class="fieldset-success">
+        <div class="form-group form-group-success">
           <label>success</label>
           <input type="text" class="form-control" placeholder="user name"/>
-        </fieldset>
+        </div>
 
-        <fieldset class="fieldset-warning">
+        <div class="form-group form-group-warning">
           <label>warning</label>
           <input type="text" class="form-control" placeholder="user name"/>
           <span class="form-control-feedback">
             给你一个小小的警告
           </span>
-        </fieldset>
+        </div>
 
-        <fieldset class="fieldset-error">
+        <div class="form-group form-group-error">
           <label>error</label>
           <input type="text" class="form-control" placeholder="user name"/>
           <span class="form-control-feedback">
             这里输入有错哦
           </span>
-        </fieldset>
+        </div>
       </form>
 
       <h1>Form horizontal</h1>
       <form class="form-hz">
-        <fieldset>
-          <label class="col-xs-3 form-control-label">User Name</label>
-          <div class="col-xs-9">
+        <div class="form-group">
+          <label class="col-3 form-control-label">User Name</label>
+          <div class="col-9">
             <input type="text" class="form-control" placeholder="enter user name"/>
           </div>
-        </fieldset>
-        <fieldset>
-          <label class="col-xs-3 form-control-label">password</label>
-          <div class="col-xs-9">
+        </div>
+
+        <div class="form-group">
+          <label class="col-3 form-control-label">password</label>
+          <div class="col-9">
             <input type="password" class="form-control" placeholder="enter password"/>
           </div>
-        </fieldset>
+        </div>
       </form>
 
       <h1>Form inline</h1>
       <form class="form-inline">
-        <fieldset>
+        <div class="form-group">
           <label>error</label>
           <input type="text" class="form-control" placeholder="user name"/>
-        </fieldset>
+        </div>
 
-        <fieldset>
+        <div class="form-group">
           <label>error</label>
           <input type="password" class="form-control" placeholder="password"/>
-        </fieldset>
+        </div>
         <button class="btn btn-default" type="button">submit</button>
       </form>
     </div>
