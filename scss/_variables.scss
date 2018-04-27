@@ -813,8 +813,10 @@ $carousel-control-width:                      15% !default;
 $carousel-control-opacity:                    .5 !default;
 $carousel-control-font-size:                  20px !default;
 
-$carousel-indicator-active-bg:                $white !default;
-$carousel-indicator-border-color:             $white !default;
+$carousel-indicator-width:          30px !default;
+$carousel-indicator-height:         3px !default;
+$carousel-indicator-spacer:         3px !default;
+$carousel-indicator-active-bg:      $white !default;
 
 $carousel-caption-color:                      $white !default;
 
