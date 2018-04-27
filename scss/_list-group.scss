@@ -133,3 +133,7 @@
 @include list-group-variant(info, $brand-info, $list-group-style-color);
 @include list-group-variant(warning, $brand-warning, $list-group-style-color);
 @include list-group-variant(danger, $brand-danger, $list-group-style-color);
+@include list-group-variant(light, $light, $muted);
+@include list-group-variant(muted, $muted, $list-group-style-color);
+@include list-group-variant(dark, $dark, $list-group-style-color);
+@include list-group-variant(black, $black, $list-group-style-color);
