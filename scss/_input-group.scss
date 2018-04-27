@@ -78,6 +78,20 @@
   }
 }
 
+%form-control-hg {
+  padding: $input-padding-y-hg $input-padding-x-hg;
+  font-size: $font-size-hg;
+  line-height: $input-hg-line-height;
+  @if $enable-rounded {
+    @include border-radius($input-border-radius-lg);
+  }
+}
+
+.input-group-hg > .form-control,
+.input-group-hg > .input-group-addon,
+.input-group-hg > .input-group-btn > .btn {
+  @extend %form-control-hg;
+}
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {

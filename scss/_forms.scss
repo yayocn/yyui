@@ -13,6 +13,8 @@
   flex-flow: row wrap;
   align-items: center;
   margin-bottom: $space-base * 2;
+
+  font-size: $font-size-base;
 }
 
 .form-group-sm {
@@ -32,6 +34,18 @@
 
   & .form-control {
     padding: $input-padding-y-lg $input-padding-x-lg;
+    line-height: $line-height-lg;
+    @if $enable-rounded {
+      @include border-radius($input-border-radius-lg); // compass
+    }
+  }
+}
+
+.form-group-hg {
+  font-size: $font-size-hg;
+
+  & .form-control {
+    padding: $input-padding-y-hg $input-padding-x-hg;
     line-height: $line-height-lg;
     @if $enable-rounded {
       @include border-radius($input-border-radius-lg); // compass
@@ -117,6 +131,7 @@
   display: inline-block;
   font-weight: 700;
   max-width: 100%;
+  line-height: $line-height * 1.5;
 }
 
 
