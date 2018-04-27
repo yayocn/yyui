@@ -8582,6 +8582,49 @@ button.close {
   }
 }
 
+/* line 98, ../scss/_card.scss */
+.card-group {
+  display: flex;
+  flex-direction: column;
+}
+/* line 104, ../scss/_card.scss */
+.card-group > .card {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 576px) {
+  /* line 98, ../scss/_card.scss */
+  .card-group {
+    flex-flow: row wrap;
+  }
+  /* line 112, ../scss/_card.scss */
+  .card-group > .card {
+    flex: 1 0 0%;
+    margin-bottom: 0;
+  }
+  /* line 117, ../scss/_card.scss */
+  .card-group > .card + .card {
+    margin-left: 0;
+    border-left: 0;
+  }
+}
+
+/* line 183, ../scss/_card.scss */
+.card-columns .card {
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 576px) {
+  /* line 182, ../scss/_card.scss */
+  .card-columns {
+    column-count: 3;
+    column-gap: 1.25rem;
+  }
+  /* line 191, ../scss/_card.scss */
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
 /* line 5, ../scss/_alert.scss */
 .alert {
   position: relative;
