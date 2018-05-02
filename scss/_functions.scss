@@ -1,0 +1,56 @@
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+  $n: index($breakpoint-names, $name);
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+// Minimum breakpoint width. Null for the smallest (first) breakpoint.
+//
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+  $next: breakpoint-next($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - 0.1, null);
+}
+
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+@function theme-color-level($color-name: "primary", $level: 0) {
+  $color: theme-color($color-name);
+  $color-base: if($level > 0, #000, #fff);
+  $level: abs($level);
+
+  @return mix($color-base, $color, $level * $theme-color-interval);
+}
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+@function color-yiq($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+  @if ($yiq >= $yiq-contrasted-threshold) {
+    @return $yiq-text-dark;
+  } @else {
+    @return $yiq-text-light;
+  }
+}

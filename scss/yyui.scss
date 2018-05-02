@@ -1,6 +1,7 @@
 // Core variables and mixins
 //
 
+@import "functions";
 @import "variables";
 @import "compass/css3";
 @import "mixins";
@@ -23,6 +24,7 @@
 
 // Components
 //
+@import "transitions";
 @import "dropdown";
 @import "button-group";
 @import "nav";
