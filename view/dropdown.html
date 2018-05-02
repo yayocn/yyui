@@ -6,60 +6,81 @@
   <title></title>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle dropdown-toggle-hover" data-toggle="dropdown">dropdown</button>
-          <div class="dropdown-menu">
-            <li class="dropdown-item disabled">Action</li>
-            <li class="dropdown-item"><a href="javascript:;">Another action</a></li>
-            <li class="dropdown-header">Another action</li>
-            <a class="dropdown-item" href="javascript:;">Something else heredddddddddddddddddddddddddddddddddddddddd</a>
-            <li class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="javascript:;">Separated link</a></li>
-          </div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
         </div>
-        <br/>
-        <div class="dropdown up">
-          <button class="btn btn-primary dropdown-toggle">dropdown</button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-            <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-            <li class="dropdown-header">Another action</li>
-            <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
-            <li><a class="dropdown-item" href="javascript:;">Separated link</a></li>
-          </ul>
+      </div>
+      <br/>
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Action</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
         </div>
-        <br/>
-        <div class="dropdown fr">
-          <button class="btn btn-primary-outline dropdown-toggle">dropdown</button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-            <li><a class="dropdown-item"href="javascript:;">Another action</a></li>
-            <li class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
-            <li><a class="dropdown-item" href="javascript:;">Separated link</a></li>
-          </ul>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div class="dropup">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+          Dropup
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
         </div>
-        <br/>
-        <h4>block</h4>
-        <div class="dropdown block" data-toggle="dropdown">
-          <button class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">dropdown</button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-            <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-            <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
-            <li><a class="dropdown-item" href="javascript:;">Separated link</a></li>
-          </ul>
+      </div>
+
+      <br/>
+      <div class="btn-group dropleft">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+          Dropup
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
         </div>
-        <br/>
-        <div class="dropdown block">
-          <button class="btn btn-primary btn-block dropdown-toggle">dropdown</button>
-        </div>
-        <br/>
-        <div class="dropdown block">
-          <button class="btn btn-primary-outline btn-block dropdown-toggle">dropdown</button>
+      </div>
+
+      <br/>
+      <div class="btn-group dropright">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+          Dropup
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
         </div>
       </div>
     </div>
@@ -67,5 +88,6 @@
   <script src="../jquery-1.12.4.min.js"></script>
   <script src="../js/util.js"></script>
   <script src="../js/dropdown.js"></script>
+</div>
 </body>
 </html>

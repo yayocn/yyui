@@ -6652,199 +6652,31 @@ tbody.collapse.show {
   transition: height 0.35s ease;
 }
 
-/* line 6, ../scss/_dropdown.scss */
+/* line 5, ../scss/_dropdown.scss */
+.dropup,
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
-/* line 12, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-primary:after, .dropdown-toggle.btn-primary-outline:hover:after, .dropdown-toggle.btn-primary-outline:focus:after, .dropdown-toggle.btn-primary-outline:active:after, .dropdown-toggle.btn-primary-outline.active:after, .dropdown-toggle.btn-secondary:after, .dropdown-toggle.btn-secondary-outline:hover:after, .dropdown-toggle.btn-secondary-outline:focus:after, .dropdown-toggle.btn-secondary-outline:active:after, .dropdown-toggle.btn-secondary-outline.active:after, .dropdown-toggle.btn-success:after, .dropdown-toggle.btn-success-outline:hover:after, .dropdown-toggle.btn-success-outline:focus:after, .dropdown-toggle.btn-success-outline:active:after, .dropdown-toggle.btn-success-outline.active:after, .dropdown-toggle.btn-info:after, .dropdown-toggle.btn-info-outline:hover:after, .dropdown-toggle.btn-info-outline:focus:after, .dropdown-toggle.btn-info-outline:active:after, .dropdown-toggle.btn-info-outline.active:after, .dropdown-toggle.btn-warning:after, .dropdown-toggle.btn-warning-outline:hover:after, .dropdown-toggle.btn-warning-outline:focus:after, .dropdown-toggle.btn-warning-outline:active:after, .dropdown-toggle.btn-warning-outline.active:after, .dropdown-toggle.btn-danger:after, .dropdown-toggle.btn-danger-outline:hover:after, .dropdown-toggle.btn-danger-outline:focus:after, .dropdown-toggle.btn-danger-outline:active:after, .dropdown-toggle.btn-danger-outline.active:after, .dropdown-toggle.btn-white:after, .dropdown-toggle.btn-white-outline:hover:after, .dropdown-toggle.btn-white-outline:focus:after, .dropdown-toggle.btn-white-outline:active:after, .dropdown-toggle.btn-white-outline.active:after, .dropdown-toggle.btn-light:after, .dropdown-toggle.btn-light-outline:hover:after, .dropdown-toggle.btn-light-outline:focus:after, .dropdown-toggle.btn-light-outline:active:after, .dropdown-toggle.btn-light-outline.active:after, .dropdown-toggle.btn-muted:after, .dropdown-toggle.btn-muted-outline:hover:after, .dropdown-toggle.btn-muted-outline:focus:after, .dropdown-toggle.btn-muted-outline:active:after, .dropdown-toggle.btn-muted-outline.active:after, .dropdown-toggle.btn-dark:after, .dropdown-toggle.btn-dark-outline:hover:after, .dropdown-toggle.btn-dark-outline:focus:after, .dropdown-toggle.btn-dark-outline:active:after, .dropdown-toggle.btn-dark-outline.active:after, .dropdown-toggle.btn-black:after, .dropdown-toggle.btn-black-outline:hover:after, .dropdown-toggle.btn-black-outline:focus:after, .dropdown-toggle.btn-black-outline:active:after, .dropdown-toggle.btn-black-outline.active:after, .dropdown-toggle.btn-transparent:after, .dropdown-toggle.btn-transparent-outline:hover:after, .dropdown-toggle.btn-transparent-outline:focus:after, .dropdown-toggle.btn-transparent-outline:active:after, .dropdown-toggle.btn-transparent-outline.active:after {
-  border-top-color: #fff;
+/* line 28, ../scss/mixins/_caret.scss */
+.dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+/* line 60, ../scss/mixins/_caret.scss */
+.dropdown-toggle:empty::after {
+  margin-left: 0;
 }
 
 /* line 18, ../scss/_dropdown.scss */
-.dropdown-toggle {
-  text-align: left;
-}
-/* line 20, ../scss/_dropdown.scss */
-.dropdown-toggle:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 0;
-  height: 0;
-  margin-left: .4rem;
-  border-top: 6px solid #212529;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-}
-/* line 31, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-block:after {
-  position: absolute;
-  top: 45%;
-  right: 10px;
-  margin-left: 0;
-}
-/* line 37, ../scss/_dropdown.scss */
-.dropdown-toggle:focus {
-  outline: none;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-primary-outline:after {
-  border-top-color: #007bff;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-primary-outline:hover:after, .dropdown-toggle.btn-primary-outline:focus:after, .dropdown-toggle.btn-primary-outline:active:after, .dropdown-toggle.btn-primary-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-secondary-outline:after {
-  border-top-color: #375A7F;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-secondary-outline:hover:after, .dropdown-toggle.btn-secondary-outline:focus:after, .dropdown-toggle.btn-secondary-outline:active:after, .dropdown-toggle.btn-secondary-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-success-outline:after {
-  border-top-color: #2EC6A0;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-success-outline:hover:after, .dropdown-toggle.btn-success-outline:focus:after, .dropdown-toggle.btn-success-outline:active:after, .dropdown-toggle.btn-success-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-info-outline:after {
-  border-top-color: #14adea;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-info-outline:hover:after, .dropdown-toggle.btn-info-outline:focus:after, .dropdown-toggle.btn-info-outline:active:after, .dropdown-toggle.btn-info-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-warning-outline:after {
-  border-top-color: #ffc107;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-warning-outline:hover:after, .dropdown-toggle.btn-warning-outline:focus:after, .dropdown-toggle.btn-warning-outline:active:after, .dropdown-toggle.btn-warning-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-danger-outline:after {
-  border-top-color: #dc3545;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-danger-outline:hover:after, .dropdown-toggle.btn-danger-outline:focus:after, .dropdown-toggle.btn-danger-outline:active:after, .dropdown-toggle.btn-danger-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-white-outline:after {
-  border-top-color: #fff;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-white-outline:hover:after, .dropdown-toggle.btn-white-outline:focus:after, .dropdown-toggle.btn-white-outline:active:after, .dropdown-toggle.btn-white-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-light-outline:after {
-  border-top-color: #dee2e6;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-light-outline:hover:after, .dropdown-toggle.btn-light-outline:focus:after, .dropdown-toggle.btn-light-outline:active:after, .dropdown-toggle.btn-light-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-muted-outline:after {
-  border-top-color: #6c757d;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-muted-outline:hover:after, .dropdown-toggle.btn-muted-outline:focus:after, .dropdown-toggle.btn-muted-outline:active:after, .dropdown-toggle.btn-muted-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-dark-outline:after {
-  border-top-color: #212529;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-dark-outline:hover:after, .dropdown-toggle.btn-dark-outline:focus:after, .dropdown-toggle.btn-dark-outline:active:after, .dropdown-toggle.btn-dark-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-black-outline:after {
-  border-top-color: #000;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-black-outline:hover:after, .dropdown-toggle.btn-black-outline:focus:after, .dropdown-toggle.btn-black-outline:active:after, .dropdown-toggle.btn-black-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 45, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-transparent-outline:after {
-  border-top-color: transparent;
-}
-/* line 49, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-transparent-outline:hover:after, .dropdown-toggle.btn-transparent-outline:focus:after, .dropdown-toggle.btn-transparent-outline:active:after, .dropdown-toggle.btn-transparent-outline.active:after {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-
-/* line 62, ../scss/_dropdown.scss */
-.active > .dropdown-menu {
-  display: block;
-}
-/* line 67, ../scss/_dropdown.scss */
-.active > a {
-  outline: 0;
-}
-/* line 71, ../scss/_dropdown.scss */
-.active .dropdown-toggle {
-  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-/* line 73, ../scss/_dropdown.scss */
-.active .dropdown-toggle.btn-link {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-/* line 82, ../scss/_dropdown.scss */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -6852,112 +6684,157 @@ tbody.collapse.show {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 160px;
-  max-width: 90vw;
-  padding: 5px 0;
-  margin: 2px 0 0;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
   font-size: 1.4rem;
+  color: #212529;
   text-align: left;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #dee2e6;
-  -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
 }
 
-/* line 108, ../scss/_dropdown.scss */
-.right > .dropdown-menu {
-  right: 0;
-  left: auto;
+/* line 41, ../scss/_dropdown.scss */
+.dropup .dropdown-menu {
+  margin-top: 0;
+  margin-bottom: 0.125rem;
+}
+/* line 28, ../scss/mixins/_caret.scss */
+.dropup .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0.3em solid;
+  border-left: 0.3em solid transparent;
+}
+/* line 60, ../scss/mixins/_caret.scss */
+.dropup .dropdown-toggle:empty::after {
+  margin-left: 0;
 }
 
-/* line 115, ../scss/_dropdown.scss */
-.dropdown-toggle.btn-block + .dropdown-menu {
-  width: 100%;
+/* line 52, ../scss/_dropdown.scss */
+.dropright .dropdown-menu {
+  margin-top: 0;
+  margin-left: 0.125rem;
+}
+/* line 28, ../scss/mixins/_caret.scss */
+.dropright .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid transparent;
+  border-bottom: 0.3em solid transparent;
+  border-left: 0.3em solid;
+}
+/* line 60, ../scss/mixins/_caret.scss */
+.dropright .dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+/* line 59, ../scss/_dropdown.scss */
+.dropright .dropdown-toggle::after {
+  vertical-align: 0;
 }
 
-/* line 122, ../scss/_dropdown.scss */
+/* line 66, ../scss/_dropdown.scss */
+.dropleft .dropdown-menu {
+  margin-top: 0;
+  margin-right: 0.125rem;
+}
+/* line 28, ../scss/mixins/_caret.scss */
+.dropleft .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+}
+/* line 45, ../scss/mixins/_caret.scss */
+.dropleft .dropdown-toggle::after {
+  display: none;
+}
+/* line 49, ../scss/mixins/_caret.scss */
+.dropleft .dropdown-toggle::before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid transparent;
+  border-right: 0.3em solid;
+  border-bottom: 0.3em solid transparent;
+}
+/* line 60, ../scss/mixins/_caret.scss */
+.dropleft .dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+/* line 73, ../scss/_dropdown.scss */
+.dropleft .dropdown-toggle::before {
+  vertical-align: 0;
+}
+
+/* line 82, ../scss/_dropdown.scss */
 .dropdown-item {
-  padding: 0.25rem 2rem;
-}
-/* line 125, ../scss/_dropdown.scss */
-.dropdown-item, .dropdown-item > a {
   display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: normal;
-  line-height: 1.5;
-  color: #343a40;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
   white-space: nowrap;
+  background-color: transparent;
+  border: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  text-align: inherit;
-  width: 100%;
-  background: none;
-  border: 0;
 }
 /* line 18, ../scss/mixins/_hover.scss */
-.dropdown-item:focus, .dropdown-item:hover, .dropdown-item > a:focus, .dropdown-item > a:hover {
-  color: #292d32;
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #16181b;
   text-decoration: none;
-  background-color: #e9ecef;
-  cursor: pointer;
-  outline: 0;
+  background: #f8f9fa linear-gradient(180deg, #f9fafb, #f8f9fa) repeat-x;
 }
-/* line 34, ../scss/mixins/_hover.scss */
-.dropdown-item.active, .dropdown-item.active:focus, .dropdown-item.active:hover, .dropdown-item.active > a, .dropdown-item.active > a:focus, .dropdown-item.active > a:hover {
+/* line 101, ../scss/_dropdown.scss */
+.dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #007bff;
-  outline: 0;
+  background: #007bff linear-gradient(180deg, #268fff, #007bff) repeat-x;
 }
-/* line 34, ../scss/mixins/_hover.scss */
-.dropdown-item.disabled, .dropdown-item.disabled:focus, .dropdown-item.disabled:hover, .dropdown-item.disabled > a, .dropdown-item.disabled > a:focus, .dropdown-item.disabled > a:hover {
-  color: #adb5bd;
-}
-/* line 18, ../scss/mixins/_hover.scss */
-.dropdown-item.disabled:focus, .dropdown-item.disabled:hover, .dropdown-item.disabled > a:focus, .dropdown-item.disabled > a:hover {
-  text-decoration: none;
-  cursor: not-allowed;
+/* line 108, ../scss/_dropdown.scss */
+.dropdown-item.disabled, .dropdown-item:disabled {
+  color: #6c757d;
   background-color: transparent;
   background-image: none;
 }
 
-/* line 182, ../scss/_dropdown.scss */
-.dropdown-divider {
-  height: 1px;
-  margin: 7.5px 0;
-  overflow: hidden;
-  background-color: #e9ecef;
+/* line 117, ../scss/_dropdown.scss */
+.dropdown-menu.show {
+  display: block;
 }
 
-/* line 191, ../scss/_dropdown.scss */
+/* line 122, ../scss/_dropdown.scss */
 .dropdown-header {
   display: block;
-  padding: 0.25rem 2rem;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  color: #212529;
-  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  color: #6c757d;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/* line 213, ../scss/_dropdown.scss */
-.dropdown.up > .dropdown-toggle:after {
-  content: "";
-  border-top: 0;
-  border-bottom: 6px solid;
-}
-/* line 220, ../scss/_dropdown.scss */
-.dropdown.up .dropdown-menu {
-  top: auto;
-  bottom: 100%;
-  margin-bottom: 2px;
 }
 
 /* line 6, ../scss/_button-group.scss */
@@ -9387,48 +9264,6 @@ progress[value]::-moz-progress-bar {
 .list-group-black .list-group-item:not(.disabled).active .list-group-item-text, .list-group-black .list-group-item:not(.disabled).active > a .list-group-item-heading,
 .list-group-black .list-group-item:not(.disabled).active > a .list-group-item-text {
   color: #f5f5f5;
-}
-
-/* line 6, ../scss/_thumbnail.scss */
-.thumbnail {
-  display: block;
-  padding: 4px;
-  margin-bottom: 10px;
-  line-height: 1.5;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  font-size: 14px;
-  -moz-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
-  -webkit-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
-}
-/* line 19, ../scss/_thumbnail.scss */
-.thumbnail > img,
-.thumbnail a > img {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 30, ../scss/_thumbnail.scss */
-.thumbnail a:hover,
-.thumbnail a:focus,
-.thumbnail a.active {
-  border-color: #007bff;
-}
-/* line 36, ../scss/_thumbnail.scss */
-.thumbnail .caption {
-  padding: 9px;
-  color: #343a40;
-}
-/* line 40, ../scss/_thumbnail.scss */
-.thumbnail .caption h1, .thumbnail .caption h2, .thumbnail .caption h3, .thumbnail .caption h4, .thumbnail .caption h5, .thumbnail .caption h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-/* line 44, ../scss/_thumbnail.scss */
-.thumbnail .caption > p {
-  text-align: justify;
 }
 
 /* line 5, ../scss/_input-group.scss */
