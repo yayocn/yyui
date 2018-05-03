@@ -6,6 +6,11 @@
     font-size: $size * 1px !important;
   }
 }
+@for $multiple from 1 through 10 {
+  .font-#{$multiple}x {
+    font-size: $multiple * $font-size-base !important;
+  }
+}
 
 // weight
 //

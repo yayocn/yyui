@@ -3292,62 +3292,112 @@ a.text-transparent:focus, a.text-transparent:hover {
   font-size: 20px !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 10, ../scss/utilities/_font.scss */
+.font-1x {
+  font-size: 1.4rem !important;
+}
+
+/* line 10, ../scss/utilities/_font.scss */
+.font-2x {
+  font-size: 2.8rem !important;
+}
+
+/* line 10, ../scss/utilities/_font.scss */
+.font-3x {
+  font-size: 4.2rem !important;
+}
+
+/* line 10, ../scss/utilities/_font.scss */
+.font-4x {
+  font-size: 5.6rem !important;
+}
+
+/* line 10, ../scss/utilities/_font.scss */
+.font-5x {
+  font-size: 7rem !important;
+}
+
+/* line 10, ../scss/utilities/_font.scss */
+.font-6x {
+  font-size: 8.4rem !important;
+}
+
+/* line 10, ../scss/utilities/_font.scss */
+.font-7x {
+  font-size: 9.8rem !important;
+}
+
+/* line 10, ../scss/utilities/_font.scss */
+.font-8x {
+  font-size: 11.2rem !important;
+}
+
+/* line 10, ../scss/utilities/_font.scss */
+.font-9x {
+  font-size: 12.6rem !important;
+}
+
+/* line 10, ../scss/utilities/_font.scss */
+.font-10x {
+  font-size: 14rem !important;
+}
+
+/* line 19, ../scss/utilities/_font.scss */
 .font-100 {
   font-weight: 100 !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 19, ../scss/utilities/_font.scss */
 .font-200 {
   font-weight: 200 !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 19, ../scss/utilities/_font.scss */
 .font-300 {
   font-weight: 300 !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 19, ../scss/utilities/_font.scss */
 .font-400 {
   font-weight: 400 !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 19, ../scss/utilities/_font.scss */
 .font-500 {
   font-weight: 500 !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 19, ../scss/utilities/_font.scss */
 .font-600 {
   font-weight: 600 !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 19, ../scss/utilities/_font.scss */
 .font-700 {
   font-weight: 700 !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 19, ../scss/utilities/_font.scss */
 .font-800 {
   font-weight: 800 !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 19, ../scss/utilities/_font.scss */
 .font-900 {
   font-weight: 900 !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 19, ../scss/utilities/_font.scss */
 .font-bold {
   font-weight: bold !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 19, ../scss/utilities/_font.scss */
 .font-bolder {
   font-weight: bolder !important;
 }
 
-/* line 14, ../scss/utilities/_font.scss */
+/* line 19, ../scss/utilities/_font.scss */
 .font-lighter {
   font-weight: lighter !important;
 }
@@ -8363,26 +8413,23 @@ tbody.collapse.show {
   padding: 3.2rem 1.6rem;
   margin-bottom: 3.2rem;
   background-color: #e9ecef;
-  font-size: 21px;
 }
-/* line 16, ../scss/_jumbotron.scss */
-.jumbotron > h1 {
-  font-size: 60px;
-  font-weight: 500;
-}
-
-/* line 22, ../scss/_jumbotron.scss */
-.jumbotron-hr {
-  border-top: 1px solid #cbd3da;
-  margin-bottom: 15px;
-}
-
 @media (min-width: 576px) {
-  /* line 28, ../scss/_jumbotron.scss */
+  /* line 6, ../scss/_jumbotron.scss */
   .jumbotron {
     padding: 6.4rem 3.2rem;
   }
 }
+
+/* line 16, ../scss/_jumbotron.scss */
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
 /* line 4, ../scss/_close.scss */
 .close {
   float: right;

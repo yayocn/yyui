@@ -4,28 +4,17 @@
 //
 
 .jumbotron {
-  padding: $jumbotron-padding ($jumbotron-padding /2);
+  padding: $jumbotron-padding ($jumbotron-padding / 2);
   margin-bottom: $jumbotron-padding;
   background-color: $jumbotron-bg;
-  font-size: $jumbotron-size;
 
-  @if $enable-rounded {
-    @include border-radius($border-radius-lg);
-  }
-
-  > h1 {
-    font-size: $jumbotron-h1-size;
-    font-weight: $jumbotron-h1-weight;
-  }
-}
-
-.jumbotron-hr {
-  border-top: 1px solid darken($jumbotron-bg, 10%);
-  margin-bottom: $space-default;
-}
-
-@include media-breakpoint-up(sm) {
-  .jumbotron {
+  @include media-breakpoint-up(sm) {
     padding: ($jumbotron-padding * 2) $jumbotron-padding;
   }
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  @include border-radius(0);
 }
