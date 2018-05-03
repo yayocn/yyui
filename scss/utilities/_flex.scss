@@ -1,0 +1,37 @@
+// Flex
+//
+//
+.flex-row            { @include flex-direction(row !important) }
+.flex-column         { @include flex-direction(column !important) }
+.flex-row-reverse    { @include flex-direction(row-reverse !important) }
+.flex-column-reverse { @include flex-direction(column-reverse !important) }
+
+.flex-wrap         { @include flex-wrap(wrap !important) }
+.flex-nowrap       { @include flex-wrap(nowrap !important) }
+.flex-wrap-reverse { @include flex-wrap(wrap-reverse !important) }
+
+.justify-content-start   { @include justify-content(flex-start !important) }
+.justify-content-end     { @include justify-content(flex-end !important) }
+.justify-content-center  { @include justify-content(center !important) }
+.justify-content-between { @include justify-content(space-between !important) }
+.justify-content-around  { @include justify-content(space-around !important) }
+
+.align-items-start    { @include align-items(flex-start !important) }
+.align-items-end      { @include align-items(flex-end !important) }
+.align-items-center   { @include align-items(center !important) }
+.align-items-baseline { @include align-items(baseline !important) }
+.align-items-stretch  { @include align-items(stretch !important) }
+
+.align-content-start   { @include align-content(flex-start !important) }
+.align-content-end     { @include align-content(flex-end !important) }
+.align-content-center  { @include align-content(center !important) }
+.align-content-between { @include align-content(space-between !important) }
+.align-content-around  { @include align-content(space-around !important) }
+.align-content-stretch { @include align-content(stretch !important) }
+
+.align-self-auto     { @include align-self(auto !important) }
+.align-self-start    { @include align-self(flex-start !important) }
+.align-self-end      { @include align-self(flex-end !important) }
+.align-self-center   { @include align-self(center !important) }
+.align-self-baseline { @include align-self(baseline !important) }
+.align-self-stretch  { @include align-self(stretch !important) }

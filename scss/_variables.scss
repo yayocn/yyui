@@ -583,71 +583,56 @@ $thumbnail-border-width:      $border-width !default;
 $thumbnail-border-color:      $gray-300 !default;
 $thumbnail-box-shadow:        0 1px 2px rgba($black, .075) !default;
 
-//
-// Navbar
-//
-$navbar-light-bg:                   $white;
-$navbar-light-color:                rgba(0,0,0,.4);
-$navbar-light-hover-color:          rgba(0,0,0,.6);
-$navbar-light-active-color:         rgba(0,0,0,.8);
-$navbar-light-disabled-color:       rgba(0,0,0,.15);
-$navbar-light-toggle-border:        $border-color;
-$navbar-light-toggle-hover-bg:      $gray-400;
-$navbar-light-toggle-active-bg:     $navbar-light-toggle-hover-bg;
-
-$navbar-brand-font-size:            $font-size-lg;
-$navbar-brand-font-weight:          600;
-
-$navbar-border-radius:              $border-radius !default;
-$navbar-padding-x:                  12px !default;
-$navbar-padding-y:                  6px !default;
-
-$navbar-dark-bg:                   $gray-800 !default;
-$navbar-dark-color:                $gray-500;
-$navbar-dark-hover-color:          $gray-400;
-$navbar-dark-active-color:         $gray-100;
-$navbar-dark-disabled-color:       $gray-400;
-
-$navbar-theme-bg:                  $white !default;
-$navbar-theme-color:               $brand-primary !default;
-$navbar-theme-hover-color:         darken($navbar-theme-color, 5%) !default;
-$navbar-theme-active-color:        $white !default;
-$navbar-theme-active-bg:           $navbar-theme-color !default;
-$navbar-dark-disabled-color:       lighten($navbar-theme-color, 10%) !default;
-
-$navbar-perspective-bg:            transparent !default;
-
-//
 // Navs
-//
-$nav-default-color:                         $gray-dark !default;
-$nav-default-bg:                            $white !default;
 
-$nav-active-color:                          $gray !default;
-$nav-active-bg:                             $gray-lighter !default;
-$nav-active-border-color:                   $nav-active-bg !default;
+$nav-link-padding-y:                $font-scale * .8rem !default;
+$nav-link-padding-x:                $font-scale * 1.6rem !default;
+$nav-link-disabled-color:           $gray-600 !default;
 
-$nav-disabled-color:                        $gray-400 !default;
-$nav-disabled-hover-color:                  $gray-300 !default;
+$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-border-width:             $border-width !default;
+$nav-tabs-border-radius:            $border-radius-no !default;
+$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        $gray-700 !default;
+$nav-tabs-link-active-bg:           $body-bg !default;
+$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
 
-$nav-link-padding:                          .5em 1em !default;
-$nav-link-hover-bg:                         $gray-lighter !default;
+$nav-pills-border-radius:           $border-radius-no !default;
+$nav-pills-link-active-color:       $component-active-color !default;
+$nav-pills-link-active-bg:          $component-active-bg !default;
 
-$nav-tabs-border-color:                     $gray-300 !default;
-$nav-tabs-link-hover-border-color:          $gray-lighter !default;
-$nav-tabs-active-link-hover-bg:             $body-bg !default;
-$nav-tabs-active-link-hover-color:          $gray !default;
-$nav-tabs-active-link-hover-border-color:   $gray-300 !default;
+// Navbar
 
-$nav-tabs-justified-link-border-color:            $gray-300 !default;
-$nav-tabs-justified-active-link-border-color:     $body-bg !default;
+$navbar-padding-y:                  ($space-default / 2) !default;
+$navbar-padding-x:                  $space-default !default;
 
-$nav-pills-color:                           $brand-primary;
-$nav-pills-hover-color:                     darken($brand-primary, 10%) !default;
-$nav-pills-hover-bg:                        $gray-lighter !default;
-$nav-pills-active-color:                    $white !default;
-$nav-pills-active-border-color:             $brand-primary !default;
-$nav-pills-active-bg:                       $brand-primary !default;
+$navbar-nav-link-padding-x:         $font-scale * .8rem !default;
+
+$navbar-brand-font-size:            $font-size-lg !default;
+// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+$nav-link-height:                   ($font-size-base * $line-height + $nav-link-padding-y * 2) !default;
+$navbar-brand-height:               $navbar-brand-font-size * $line-height !default;
+$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) / 2 !default;
+
+$navbar-toggler-padding-y:          $font-scale * .4rem !default;
+$navbar-toggler-padding-x:          $font-scale * 1.2rem !default;
+$navbar-toggler-font-size:          $font-size-lg !default;
+$navbar-toggler-border-radius:      $border-radius-no !default;
+
+$navbar-dark-color:                 rgba($white, .5) !default;
+$navbar-dark-hover-color:           rgba($white, .75) !default;
+$navbar-dark-active-color:          $white !default;
+$navbar-dark-disabled-color:        rgba($white, .25) !default;
+$navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
+
+$navbar-light-color:                rgba($black, .5) !default;
+$navbar-light-hover-color:          rgba($black, .7) !default;
+$navbar-light-active-color:         rgba($black, .9) !default;
+$navbar-light-disabled-color:       rgba($black, .3) !default;
+$navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-light-toggler-border-color: rgba($black, .1) !default;
+
 
 // Breadcrumbs
 $breadcrumbs-font-size:         $font-scale * 1.3rem !default;

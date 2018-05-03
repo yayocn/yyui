@@ -4,132 +4,177 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <link rel="stylesheet" href="../css/yyui.css"/>
-  <style>
-    .tab-pane {
-      width: 100%;
-      height: 50px;
-    }
-  </style>
   <title></title>
 </head>
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        <h4>nav</h4>
+      <div class="col-12">
+        <h4>.nav</h4>
         <ul class="nav">
-          <li class="active"><a href="javascript:;">Item</a></li>
-          <li class="disabled"><a href="javascript:;">Item</a></li>
-          <li><a href="javascript:;">Item</a></li>
-          <li><a href="javascript:;">Item</a></li>
-        </ul>
-        <h4>胶囊导航</h4>
-        <ul class="nav nav-pills">
-          <li class="active"><a href="javascript:;">Item</a></li>
-          <li class="disabled"><a href="javascript:;">Item</a></li>
-          <li><a href="javascript:;">Item</a></li>
-          <li><a href="javascript:;">Item</a></li>
-        </ul>
-        <h4>带下拉框</h4>
-        <ul class="nav">
-          <li><a href="javascript:;">Item</a></li>
-          <li><a href="javascript:;">Item</a></li>
-          <li><a href="javascript:;">Item</a></li>
-          <li class="dropdown">
-            <a class="btn dropdown-toggle" href="javascript:;">dropdown</a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="javascript:;">item</a></li>
-              <li class="dropdown-item"><a href="javascript:;">item</a></li>
-              <li class="dropdown-item"><a href="javascript:;">item</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
           </li>
         </ul>
-        <h4>垂直</h4>
-        <ul class="nav nav-vt">
-          <li><a href="javascript:;">Item</a></li>
-          <li><a href="javascript:;">Item</a></li>
-          <li><a href="javascript:;">Item</a></li>
-          <li class="dropdown">
-            <a class="btn dropdown-toggle" href="javascript:;">dropdown</a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="javascript:;">item</a></li>
-              <li class="dropdown-item"><a href="javascript:;">item</a></li>
-              <li class="dropdown-item"><a href="javascript:;">item</a></li>
-            </ul>
+        <h4 class="mt-10">nav</h4>
+        <nav class="nav">
+          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </nav>
+
+        <h4 class="mt-10">Horizontal center</h4>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
           </li>
         </ul>
-        <h4>nav-tabs</h4>
-        <div>
-          <ul class="nav nav-tabs" id="nav1">
-            <li class="active"><a class="" href="#a2" data-toggle="tab">Item</a></li>
-            <li><a href="#b2" data-toggle="tab">Item</a></li>
-            <li><a href="#c2" data-toggle="tab">Item</a></li>
-            <li class=" dropdown">
-              <a class="btn dropdown-toggle" href="javascript:;">dropdown</a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-item"><a href="javascript:;">item</a></li>
-                <li class="dropdown-item"><a href="javascript:;">item</a></li>
-                <li class="dropdown-item"><a href="javascript:;">item</a></li>
-              </ul>
-            </li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane active" style="background-color: white" id="a2"></div>
-            <div class="tab-pane" style="background-color: blue" id="b2"></div>
-            <div class="tab-pane" style="background-color: darkblue;" id="c2"></div>
-            <div class="tab-pane" style="background-color: pink;" id="d2"></div>
-          </div>
-        </div>
-        <h4>nav-tabs nav-vt</h4>
-        <div class="row">
-          <div class="col-sm-2 p-r-0">
-            <ul class="nav nav-tabs nav-vt" id="nav2">
-              <li><a href="#a" data-toggle="tab">Item</a></li>
-              <li class="active"><a href="#b" data-toggle="tab">Item</a></li>
-              <li><a href="#c" data-toggle="tab">Item</a></li>
-              <li><a href="#d" data-toggle="tab">Item</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-10 p-l-0">
-            <div class="tab-content">
-              <div class="tab-pane" style="background-color: white" id="a"></div>
-              <div class="tab-pane active" style="background-color: blue" id="b"></div>
-              <div class="tab-pane" style="background-color: darkblue;" id="c"></div>
-              <div class="tab-pane" style="background-color: pink;" id="d"></div>
-            </div>
-          </div>
+
+        <h4 class="mt-10">Horizontal end</h4>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+
+        <h4 class="mt-10">Vertical</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <h4 class="mt-10">use nav element as possible</h4>
+        <nav class="nav flex-column">
+          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </nav>
+
+        <h4 class="mt-10">Tabs</h4>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
         </div>
 
-        <!--<h4>nav-pills</h4>-->
-        <!--<ul class="nav nav-pills">-->
-          <!--<li class="nav-item"><a class="nav-link" href="javascript:;">Item</a></li>-->
-          <!--<li class="nav-item"><a class="nav-link" href="javascript:;">Item</a></li>-->
-          <!--<li class="nav-item disabled"><a class="nav-link" href="javascript:;">Item</a></li>-->
-          <!--<li class="nav-item dropdown">-->
-            <!--<a class="nav-link dropdown-toggle" href="javascript:;">dropdown</a>-->
-            <!--<ul class="dropdown-menu">-->
-              <!--<li class="dropdown-item"><a href="javascript:;">item</a></li>-->
-              <!--<li class="dropdown-item"><a href="javascript:;">item</a></li>-->
-              <!--<li class="dropdown-item"><a href="javascript:;">item</a></li>-->
-            <!--</ul>-->
-          <!--</li>-->
-        <!--</ul>-->
-        <!--<br/>-->
-        <!--<div class="clearfix"></div>-->
-        <!--<h4>nav-vt</h4>-->
-        <!--<ul class="nav nav-vt" style="max-width: 200px;">-->
-          <!--<li class="nav-item active"><a class="nav-link" href="javascript:;">导航</a></li>-->
-          <!--<li class="nav-item"><a class="nav-link" href="javascript:;">导航</a></li>-->
-          <!--<li class="nav-item"><a class="nav-link" href="javascript:;">导航</a></li>-->
-        <!--</ul>-->
+        <h4 class="mt-10">Pills</h4>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+
+        <h4 class="mt-10">Fill and justify</h4>
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Longer nav link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <h4 class="mt-10">use nav</h4>
+        <nav class="nav nav-pills nav-fill">
+          <a class="nav-item nav-link active" href="#">Active</a>
+          <a class="nav-item nav-link" href="#">Link</a>
+          <a class="nav-item nav-link" href="#">Link</a>
+          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+        </nav>
+
+        <h4 class="mt-10">dropdown</h4>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 
   <script src="../jquery-1.12.4.min.js"></script>
-  <!--<script src="../js/util.js"></script>-->
-  <!--<script src="../js/tab.js"></script>-->
-  <!--<script src="../js/dropdown.js"></script>-->
-  <script src="../dist/js/yyui.min.js"></script>
+  <script src="../js/util.js"></script>
+  <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../js/dropdown.js"></script>
+  <script src="../js/tab.js"></script>
 </body>
 </html>

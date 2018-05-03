@@ -877,48 +877,48 @@ dd {
 }
 
 /* line 43, ../scss/utilities/_view.scss */
+.block {
+  display: block !important;
+}
+
+/* line 47, ../scss/utilities/_view.scss */
+.block-inline {
+  display: inline-block !important;
+}
+
+/* line 51, ../scss/utilities/_view.scss */
+.inline {
+  display: inline !important;
+}
+
+/* line 55, ../scss/utilities/_view.scss */
 .justify-start {
   -webkit-justify-content: flex-start !important;
   justify-content: flex-start !important;
 }
 
-/* line 44, ../scss/utilities/_view.scss */
+/* line 56, ../scss/utilities/_view.scss */
 .justify-end {
   -webkit-justify-content: flex-end !important;
   justify-content: flex-end !important;
 }
 
-/* line 45, ../scss/utilities/_view.scss */
+/* line 57, ../scss/utilities/_view.scss */
 .justify-center {
   -webkit-justify-content: center !important;
   justify-content: center !important;
 }
 
-/* line 46, ../scss/utilities/_view.scss */
+/* line 58, ../scss/utilities/_view.scss */
 .justify-between {
   -webkit-justify-content: space-between !important;
   justify-content: space-between !important;
 }
 
-/* line 47, ../scss/utilities/_view.scss */
+/* line 59, ../scss/utilities/_view.scss */
 .justify-around {
   -webkit-justify-content: space-around !important;
   justify-content: space-around !important;
-}
-
-/* line 49, ../scss/utilities/_view.scss */
-.block {
-  display: block !important;
-}
-
-/* line 53, ../scss/utilities/_view.scss */
-.block-inline {
-  display: inline-block !important;
-}
-
-/* line 57, ../scss/utilities/_view.scss */
-.inline {
-  display: inline !important;
 }
 
 /* line 79, ../scss/mixins/_utilities.scss */
@@ -3497,6 +3497,180 @@ a.text-transparent:focus, a.text-transparent:hover {
 /* line 23, ../scss/utilities/_size.scss */
 .h-full-window {
   min-height: 100vh !important;
+}
+
+/* line 4, ../scss/utilities/_flex.scss */
+.flex-row {
+  -webkit-flex-direction: row !important;
+  flex-direction: row !important;
+}
+
+/* line 5, ../scss/utilities/_flex.scss */
+.flex-column {
+  -webkit-flex-direction: column !important;
+  flex-direction: column !important;
+}
+
+/* line 6, ../scss/utilities/_flex.scss */
+.flex-row-reverse {
+  -webkit-flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important;
+}
+
+/* line 7, ../scss/utilities/_flex.scss */
+.flex-column-reverse {
+  -webkit-flex-direction: column-reverse !important;
+  flex-direction: column-reverse !important;
+}
+
+/* line 9, ../scss/utilities/_flex.scss */
+.flex-wrap {
+  -webkit-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+}
+
+/* line 10, ../scss/utilities/_flex.scss */
+.flex-nowrap {
+  -webkit-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+
+/* line 11, ../scss/utilities/_flex.scss */
+.flex-wrap-reverse {
+  -webkit-flex-wrap: wrap-reverse !important;
+  flex-wrap: wrap-reverse !important;
+}
+
+/* line 13, ../scss/utilities/_flex.scss */
+.justify-content-start {
+  -webkit-justify-content: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+/* line 14, ../scss/utilities/_flex.scss */
+.justify-content-end {
+  -webkit-justify-content: flex-end !important;
+  justify-content: flex-end !important;
+}
+
+/* line 15, ../scss/utilities/_flex.scss */
+.justify-content-center {
+  -webkit-justify-content: center !important;
+  justify-content: center !important;
+}
+
+/* line 16, ../scss/utilities/_flex.scss */
+.justify-content-between {
+  -webkit-justify-content: space-between !important;
+  justify-content: space-between !important;
+}
+
+/* line 17, ../scss/utilities/_flex.scss */
+.justify-content-around {
+  -webkit-justify-content: space-around !important;
+  justify-content: space-around !important;
+}
+
+/* line 19, ../scss/utilities/_flex.scss */
+.align-items-start {
+  -webkit-align-items: flex-start !important;
+  align-items: flex-start !important;
+}
+
+/* line 20, ../scss/utilities/_flex.scss */
+.align-items-end {
+  -webkit-align-items: flex-end !important;
+  align-items: flex-end !important;
+}
+
+/* line 21, ../scss/utilities/_flex.scss */
+.align-items-center {
+  -webkit-align-items: center !important;
+  align-items: center !important;
+}
+
+/* line 22, ../scss/utilities/_flex.scss */
+.align-items-baseline {
+  -webkit-align-items: baseline !important;
+  align-items: baseline !important;
+}
+
+/* line 23, ../scss/utilities/_flex.scss */
+.align-items-stretch {
+  -webkit-align-items: stretch !important;
+  align-items: stretch !important;
+}
+
+/* line 25, ../scss/utilities/_flex.scss */
+.align-content-start {
+  -webkit-align-content: flex-start !important;
+  align-content: flex-start !important;
+}
+
+/* line 26, ../scss/utilities/_flex.scss */
+.align-content-end {
+  -webkit-align-content: flex-end !important;
+  align-content: flex-end !important;
+}
+
+/* line 27, ../scss/utilities/_flex.scss */
+.align-content-center {
+  -webkit-align-content: center !important;
+  align-content: center !important;
+}
+
+/* line 28, ../scss/utilities/_flex.scss */
+.align-content-between {
+  -webkit-align-content: space-between !important;
+  align-content: space-between !important;
+}
+
+/* line 29, ../scss/utilities/_flex.scss */
+.align-content-around {
+  -webkit-align-content: space-around !important;
+  align-content: space-around !important;
+}
+
+/* line 30, ../scss/utilities/_flex.scss */
+.align-content-stretch {
+  -webkit-align-content: stretch !important;
+  align-content: stretch !important;
+}
+
+/* line 32, ../scss/utilities/_flex.scss */
+.align-self-auto {
+  -webkit-align-self: auto !important;
+  align-self: auto !important;
+}
+
+/* line 33, ../scss/utilities/_flex.scss */
+.align-self-start {
+  -webkit-align-self: flex-start !important;
+  align-self: flex-start !important;
+}
+
+/* line 34, ../scss/utilities/_flex.scss */
+.align-self-end {
+  -webkit-align-self: flex-end !important;
+  align-self: flex-end !important;
+}
+
+/* line 35, ../scss/utilities/_flex.scss */
+.align-self-center {
+  -webkit-align-self: center !important;
+  align-self: center !important;
+}
+
+/* line 36, ../scss/utilities/_flex.scss */
+.align-self-baseline {
+  -webkit-align-self: baseline !important;
+  align-self: baseline !important;
+}
+
+/* line 37, ../scss/utilities/_flex.scss */
+.align-self-stretch {
+  -webkit-align-self: stretch !important;
+  align-self: stretch !important;
 }
 
 /* line 13, ../scss/_grid.scss */
@@ -7135,199 +7309,68 @@ tbody.collapse.show {
   border-top-right-radius: 0;
 }
 
-/* line 6, ../scss/_nav.scss */
+/* line 5, ../scss/_nav.scss */
+nav,
 .nav {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
-  vertical-align: middle;
   list-style: none;
 }
-/* line 13, ../scss/_nav.scss */
-.nav:before, .nav:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* line 20, ../scss/_nav.scss */
-.nav > li {
-  float: left;
-  padding: 0.36875rem 0.75rem;
-}
-/* line 35, ../scss/_nav.scss */
-.nav > li > a {
+/* line 14, ../scss/_nav.scss */
+.nav-link {
   display: block;
-  margin: -0.36875rem -0.75rem;
-  padding: 0.36875rem 0.75rem;
-  text-decoration: none;
-  color: #343a40;
-}
-/* line 44, ../scss/_nav.scss */
-.nav > li.active:not(.dropdown) > a {
-  background-color: #e9ecef;
-  border-color: #e9ecef;
-  color: #6c757d;
+  padding: 0.5rem 1rem;
 }
 /* line 18, ../scss/mixins/_hover.scss */
-.nav > li:not(.disabled) > a:focus, .nav > li:not(.disabled) > a:hover {
-  background-color: #e9ecef;
+.nav-link:focus, .nav-link:hover {
+  text-decoration: none;
 }
-/* line 59, ../scss/_nav.scss */
-.nav > li.disabled, .nav > li.disabled:hover, .nav > li.disabled:active {
-  border-color: transparent;
-}
-/* line 63, ../scss/_nav.scss */
-.nav > li.disabled > a, .nav > li.disabled:hover > a, .nav > li.disabled:active > a {
-  color: #ced4da;
+/* line 23, ../scss/_nav.scss */
+.nav-link.disabled {
+  color: #6c757d;
   cursor: not-allowed;
 }
-/* line 69, ../scss/_nav.scss */
-.nav > li + li {
-  margin-left: -1px;
-}
 
-/* line 75, ../scss/_nav.scss */
-.nav + nav {
-  margin-left: 10px;
-}
-/* line 79, ../scss/_nav.scss */
-.nav .nav {
-  display: none;
-}
-/* line 84, ../scss/_nav.scss */
-.nav li.active .nav {
-  display: block;
-}
-
-/* line 92, ../scss/_nav.scss */
-.nav-vt {
-  display: block;
-}
-/* line 94, ../scss/_nav.scss */
-.nav-vt > li {
-  display: block;
-  float: none;
-}
-/* line 98, ../scss/_nav.scss */
-.nav-vt > li + li {
-  margin-top: 0;
-  margin-left: 0;
-}
-
-/* line 110, ../scss/_nav.scss */
+/* line 33, ../scss/_nav.scss */
 .nav-tabs {
   border-bottom: 1px solid #dee2e6;
 }
-/* line 9, ../scss/mixins/_utilities.scss */
-.nav-tabs::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-/* line 114, ../scss/_nav.scss */
-.nav-tabs li:not(.dropdown-item) {
-  float: left;
+/* line 36, ../scss/_nav.scss */
+.nav-tabs .nav-item {
   margin-bottom: -1px;
 }
-/* line 118, ../scss/_nav.scss */
-.nav-tabs li:not(.dropdown-item) + li {
-  margin-left: 0.2rem;
-}
-/* line 123, ../scss/_nav.scss */
-.nav-tabs > li > a {
-  display: block;
+/* line 40, ../scss/_nav.scss */
+.nav-tabs .nav-link {
   border: 1px solid transparent;
-}
-/* line 34, ../scss/mixins/_hover.scss */
-.nav-tabs > li > a.disabled, .nav-tabs > li > a.disabled:focus, .nav-tabs > li > a.disabled:hover {
-  color: #ced4da;
-  background-color: transparent;
-  border-color: transparent;
-}
-/* line 139, ../scss/_nav.scss */
-.nav-tabs > li,
-.nav-tabs > li:hover {
-  border-bottom-width: 0;
-  border-color: transparent;
-}
-/* line 145, ../scss/_nav.scss */
-.nav-tabs > li > a.active,
-.nav-tabs > li.active:not(.dropdown) > a {
-  background-color: #fff;
-}
-/* line 34, ../scss/mixins/_hover.scss */
-.nav-tabs > li > a.active, .nav-tabs > li > a.active:focus, .nav-tabs > li > a.active:hover,
-.nav-tabs > li.active:not(.dropdown) > a,
-.nav-tabs > li.active:not(.dropdown) > a:focus,
-.nav-tabs > li.active:not(.dropdown) > a:hover {
-  color: #6c757d;
-  border-color: #dee2e6 #dee2e6 transparent !important;
-}
-
-/* line 157, ../scss/_nav.scss */
-.tab-content {
-  margin-top: 1px;
-}
-/* line 159, ../scss/_nav.scss */
-.tab-content > .tab-pane {
-  display: none;
-  padding-top: 10px;
-}
-/* line 163, ../scss/_nav.scss */
-.tab-content > .active {
-  display: block;
-}
-
-/* line 170, ../scss/_nav.scss */
-.nav-tabs.nav-vt {
-  border-right: 1px solid #dee2e6;
-  border-bottom: none;
-}
-/* line 173, ../scss/_nav.scss */
-.nav-tabs.nav-vt li:not(.dropdown-item) {
-  float: none;
-  margin-top: 0.1rem;
-  margin-left: 0;
-  margin-right: -2px;
-}
-/* line 180, ../scss/_nav.scss */
-.nav-tabs.nav-vt > li,
-.nav-tabs.nav-vt > li:hover {
-  border-bottom-width: 1px;
-  border-color: transparent;
-  border-right-width: 0;
-}
-/* line 34, ../scss/mixins/_hover.scss */
-.nav-tabs.nav-vt > li > a.active, .nav-tabs.nav-vt > li > a.active:focus, .nav-tabs.nav-vt > li > a.active:hover,
-.nav-tabs.nav-vt > li.active > a,
-.nav-tabs.nav-vt > li.active > a:focus,
-.nav-tabs.nav-vt > li.active > a:hover {
-  border-color: #dee2e6 transparent #dee2e6 #dee2e6 !important;
-}
-
-/* line 208, ../scss/_nav.scss */
-.nav-pills > li.active:not(.dropdown) {
-  -moz-box-shadow: 1px 0 0 0 #007bff;
-  -webkit-box-shadow: 1px 0 0 0 #007bff;
-  box-shadow: 1px 0 0 0 #007bff;
-}
-/* line 210, ../scss/_nav.scss */
-.nav-pills > li.active:not(.dropdown) a {
-  background-color: #007bff;
-  border-color: #007bff;
-  color: #fff;
-}
-/* line 218, ../scss/_nav.scss */
-.nav-pills > li:not(.disabled) > a {
-  color: #007bff;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
 }
 /* line 18, ../scss/mixins/_hover.scss */
-.nav-pills > li:not(.disabled) > a:focus, .nav-pills > li:not(.disabled) > a:hover {
-  color: #0062cc;
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-color: #e9ecef #e9ecef #dee2e6;
 }
-
-/* line 230, ../scss/_nav.scss */
+/* line 48, ../scss/_nav.scss */
+.nav-tabs .nav-link.disabled {
+  color: #6c757d;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: not-allowed;
+}
+/* line 56, ../scss/_nav.scss */
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+/* line 63, ../scss/_nav.scss */
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
   -moz-border-radius-topleft: 0;
@@ -7338,251 +7381,491 @@ tbody.collapse.show {
   border-top-right-radius: 0;
 }
 
+/* line 77, ../scss/_nav.scss */
+.nav-pills .nav-link {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/* line 81, ../scss/_nav.scss */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #007bff;
+}
+
+/* line 94, ../scss/_nav.scss */
+.nav-fill .nav-item {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* line 101, ../scss/_nav.scss */
+.nav-justified .nav-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* line 114, ../scss/_nav.scss */
+.tab-content > .tab-pane {
+  display: none;
+}
+/* line 117, ../scss/_nav.scss */
+.tab-content > .active {
+  display: block;
+}
+
 /* line 6, ../scss/_navbar.scss */
 .navbar {
   position: relative;
-  padding: 6px 12px;
-  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7.5px 15px;
 }
-/* line 9, ../scss/mixins/_utilities.scss */
-.navbar::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-/* line 18, ../scss/_navbar.scss */
-.navbar a {
-  border: none;
-  color: rgba(0, 0, 0, 0.4);
-}
-/* line 21, ../scss/_navbar.scss */
-.navbar a:hover {
-  color: rgba(0, 0, 0, 0.6);
-  border: none;
+/* line 16, ../scss/_navbar.scss */
+.navbar > .container,
+.navbar > .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* line 32, ../scss/_navbar.scss */
-.navbar-toggle {
-  float: right;
-  display: none;
-  padding: 0.5rem 0.75rem;
-  line-height: 1;
-  background: none;
-  border: 1px solid transparent;
-  color: rgba(0, 0, 0, 0.4);
-  font-size: 1rem;
-  -moz-border-radius: 0.25rem;
-  -webkit-border-radius: 0.25rem;
-  border-radius: 0.25rem;
-}
-/* line 51, ../scss/mixins/_hover.scss */
-.navbar-toggle:focus, .navbar-toggle:active, .navbar-toggle:hover {
-  text-decoration: none;
-  outline: none;
-}
-@media (max-width: 767.9px) {
-  /* line 32, ../scss/_navbar.scss */
-  .navbar-toggle {
-    display: block;
-  }
-}
-
-@media (max-width: 767.9px) {
-  /* line 55, ../scss/_navbar.scss */
-  .navbar-collapse {
-    display: none;
-  }
-  /* line 60, ../scss/_navbar.scss */
-  .navbar-collapse.in {
-    display: block;
-    height: 0;
-    overflow: hidden;
-    margin-top: 38px;
-  }
-  /* line 66, ../scss/_navbar.scss */
-  .navbar-collapse.in .navbar-nav,
-  .navbar-collapse.in .dropdown-menu,
-  .navbar-collapse.in .navbar-form,
-  .navbar-collapse.in li {
-    float: none;
-    width: 100%;
-  }
-  /* line 74, ../scss/_navbar.scss */
-  .navbar-collapse.in li + li {
-    margin-left: 0px;
-  }
-}
-/* line 80, ../scss/_navbar.scss */
-.navbar-collapse:before, .navbar-collapse:after {
-  content: "";
-  display: table;
-}
-/* line 85, ../scss/_navbar.scss */
-.navbar-collapse:after {
-  clear: both;
-}
-
-/* line 92, ../scss/_navbar.scss */
-.navbar-nav {
-  margin-top: 1px;
-}
-/* line 95, ../scss/_navbar.scss */
-.navbar-nav li,
-.navbar-nav li:hover {
-  border: none !important;
-}
-/* line 100, ../scss/_navbar.scss */
-.navbar-nav > li > a {
-  background-color: #fff !important;
-  color: rgba(0, 0, 0, 0.4);
-  font-weight: 400;
-}
-/* line 105, ../scss/_navbar.scss */
-.navbar-nav > li > a:hover {
-  background-color: #fff !important;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-/* line 116, ../scss/_navbar.scss */
+/* line 30, ../scss/_navbar.scss */
 .navbar-brand {
-  float: left;
-  margin-right: 1rem;
-  padding-top: 0.375rem;
-  padding-bottom: 0.25rem;
-  background-color: #fff;
+  display: inline-block;
+  padding-top: 0.40625rem;
+  padding-bottom: 0.40625rem;
+  margin-right: 15px;
   font-size: 1rem;
-  font-weight: 600;
+  line-height: inherit;
+  white-space: nowrap;
 }
 /* line 18, ../scss/mixins/_hover.scss */
 .navbar-brand:focus, .navbar-brand:hover {
   text-decoration: none;
 }
-/* line 129, ../scss/_navbar.scss */
-.navbar-brand > img {
-  display: block;
-}
 
-/* line 138, ../scss/_navbar.scss */
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+/* line 49, ../scss/_navbar.scss */
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
   margin-bottom: 0;
+  list-style: none;
 }
-@media (min-width: 576px) {
-  /* line 138, ../scss/_navbar.scss */
-  .navbar-fixed-top,
-  .navbar-fixed-bottom {
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+/* line 56, ../scss/_navbar.scss */
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 61, ../scss/_navbar.scss */
+.navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+/* line 72, ../scss/_navbar.scss */
+.navbar-text {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* line 87, ../scss/_navbar.scss */
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+/* line 96, ../scss/_navbar.scss */
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.navbar-toggler:focus, .navbar-toggler:hover {
+  text-decoration: none;
+}
+/* line 109, ../scss/_navbar.scss */
+.navbar-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+/* line 116, ../scss/_navbar.scss */
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 575.9px) {
+  /* line 135, ../scss/_navbar.scss */
+  .navbar-expand-sm > .container,
+  .navbar-expand-sm > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
-
-/* line 151, ../scss/_navbar.scss */
-.navbar-fixed-top {
-  top: 0;
-}
-
-/* line 155, ../scss/_navbar.scss */
-.navbar-fixed-bottom {
-  bottom: 0;
-}
-
-/* line 159, ../scss/_navbar.scss */
-.navbar-sticky-top {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-  width: 100%;
-}
 @media (min-width: 576px) {
-  /* line 159, ../scss/_navbar.scss */
-  .navbar-sticky-top {
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+  /* line 133, ../scss/_navbar.scss */
+  .navbar-expand-sm {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  /* line 146, ../scss/_navbar.scss */
+  .navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+  }
+  /* line 149, ../scss/_navbar.scss */
+  .navbar-expand-sm .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  /* line 153, ../scss/_navbar.scss */
+  .navbar-expand-sm .navbar-nav .dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+  /* line 158, ../scss/_navbar.scss */
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  /* line 165, ../scss/_navbar.scss */
+  .navbar-expand-sm > .container,
+  .navbar-expand-sm > .container-fluid {
+    flex-wrap: nowrap;
+  }
+  /* line 170, ../scss/_navbar.scss */
+  .navbar-expand-sm .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  /* line 177, ../scss/_navbar.scss */
+  .navbar-expand-sm .navbar-toggler {
+    display: none;
+  }
+  /* line 182, ../scss/_navbar.scss */
+  .navbar-expand-sm .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
   }
 }
-
-/* line 174, ../scss/_navbar.scss */
-.navbar-dark {
-  background-color: #343a40;
+@media (max-width: 767.9px) {
+  /* line 135, ../scss/_navbar.scss */
+  .navbar-expand-md > .container,
+  .navbar-expand-md > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  /* line 133, ../scss/_navbar.scss */
+  .navbar-expand-md {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  /* line 146, ../scss/_navbar.scss */
+  .navbar-expand-md .navbar-nav {
+    flex-direction: row;
+  }
+  /* line 149, ../scss/_navbar.scss */
+  .navbar-expand-md .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  /* line 153, ../scss/_navbar.scss */
+  .navbar-expand-md .navbar-nav .dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+  /* line 158, ../scss/_navbar.scss */
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  /* line 165, ../scss/_navbar.scss */
+  .navbar-expand-md > .container,
+  .navbar-expand-md > .container-fluid {
+    flex-wrap: nowrap;
+  }
+  /* line 170, ../scss/_navbar.scss */
+  .navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  /* line 177, ../scss/_navbar.scss */
+  .navbar-expand-md .navbar-toggler {
+    display: none;
+  }
+  /* line 182, ../scss/_navbar.scss */
+  .navbar-expand-md .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+  }
+}
+@media (max-width: 991.9px) {
+  /* line 135, ../scss/_navbar.scss */
+  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 133, ../scss/_navbar.scss */
+  .navbar-expand-lg {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  /* line 146, ../scss/_navbar.scss */
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+  /* line 149, ../scss/_navbar.scss */
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  /* line 153, ../scss/_navbar.scss */
+  .navbar-expand-lg .navbar-nav .dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+  /* line 158, ../scss/_navbar.scss */
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  /* line 165, ../scss/_navbar.scss */
+  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container-fluid {
+    flex-wrap: nowrap;
+  }
+  /* line 170, ../scss/_navbar.scss */
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  /* line 177, ../scss/_navbar.scss */
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  /* line 182, ../scss/_navbar.scss */
+  .navbar-expand-lg .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+  }
+}
+@media (max-width: 1199.9px) {
+  /* line 135, ../scss/_navbar.scss */
+  .navbar-expand-xl > .container,
+  .navbar-expand-xl > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 133, ../scss/_navbar.scss */
+  .navbar-expand-xl {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  /* line 146, ../scss/_navbar.scss */
+  .navbar-expand-xl .navbar-nav {
+    flex-direction: row;
+  }
+  /* line 149, ../scss/_navbar.scss */
+  .navbar-expand-xl .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  /* line 153, ../scss/_navbar.scss */
+  .navbar-expand-xl .navbar-nav .dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+  /* line 158, ../scss/_navbar.scss */
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  /* line 165, ../scss/_navbar.scss */
+  .navbar-expand-xl > .container,
+  .navbar-expand-xl > .container-fluid {
+    flex-wrap: nowrap;
+  }
+  /* line 170, ../scss/_navbar.scss */
+  .navbar-expand-xl .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  /* line 177, ../scss/_navbar.scss */
+  .navbar-expand-xl .navbar-toggler {
+    display: none;
+  }
+  /* line 182, ../scss/_navbar.scss */
+  .navbar-expand-xl .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+  }
+}
+/* line 133, ../scss/_navbar.scss */
+.navbar-expand {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+/* line 135, ../scss/_navbar.scss */
+.navbar-expand > .container,
+.navbar-expand > .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 146, ../scss/_navbar.scss */
+.navbar-expand .navbar-nav {
+  flex-direction: row;
+}
+/* line 149, ../scss/_navbar.scss */
+.navbar-expand .navbar-nav .dropdown-menu {
+  position: absolute;
+}
+/* line 153, ../scss/_navbar.scss */
+.navbar-expand .navbar-nav .dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+/* line 158, ../scss/_navbar.scss */
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+/* line 165, ../scss/_navbar.scss */
+.navbar-expand > .container,
+.navbar-expand > .container-fluid {
+  flex-wrap: nowrap;
+}
+/* line 170, ../scss/_navbar.scss */
+.navbar-expand .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
 }
 /* line 177, ../scss/_navbar.scss */
+.navbar-expand .navbar-toggler {
+  display: none;
+}
+/* line 182, ../scss/_navbar.scss */
+.navbar-expand .dropup .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+}
+
+/* line 199, ../scss/_navbar.scss */
+.navbar-light .navbar-brand {
+  color: rgba(0, 0, 0, 0.9);
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+/* line 208, ../scss/_navbar.scss */
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 215, ../scss/_navbar.scss */
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+/* line 220, ../scss/_navbar.scss */
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgba(0, 0, 0, 0.9);
+}
+/* line 228, ../scss/_navbar.scss */
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+/* line 233, ../scss/_navbar.scss */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* line 237, ../scss/_navbar.scss */
+.navbar-light .navbar-text {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 239, ../scss/_navbar.scss */
+.navbar-light .navbar-text a {
+  color: rgba(0, 0, 0, 0.9);
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.navbar-light .navbar-text a:focus, .navbar-light .navbar-text a:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 251, ../scss/_navbar.scss */
 .navbar-dark .navbar-brand {
-  color: #adb5bd;
-  background-color: #343a40;
+  color: #fff;
 }
 /* line 18, ../scss/mixins/_hover.scss */
 .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
-  color: #f8f9fa;
+  color: #fff;
 }
-/* line 185, ../scss/_navbar.scss */
-.navbar-dark .navbar-toggle {
-  color: #adb5bd;
-}
-/* line 190, ../scss/_navbar.scss */
-.navbar-dark .navbar-nav > li > a {
-  background-color: #343a40 !important;
-  color: #adb5bd;
-}
-/* line 193, ../scss/_navbar.scss */
-.navbar-dark .navbar-nav > li > a:hover {
-  background-color: #343a40 !important;
-  color: #ced4da;
-}
-
-/* line 204, ../scss/_navbar.scss */
-.navbar-perspective {
-  background-color: transparent !important;
-}
-/* line 207, ../scss/_navbar.scss */
-.navbar-perspective .navbar-brand {
-  background-color: transparent !important;
-}
-/* line 212, ../scss/_navbar.scss */
-.navbar-perspective .navbar-nav > li,
-.navbar-perspective .navbar-nav > li > a,
-.navbar-perspective .navbar-nav > li > a:hover {
-  background-color: transparent !important;
-}
-
-/* line 224, ../scss/_navbar.scss */
-.navbar-theme {
-  background-color: #fff;
-}
-/* line 227, ../scss/_navbar.scss */
-.navbar-theme .navbar-brand {
-  color: #007bff;
-  background-color: #fff;
+/* line 260, ../scss/_navbar.scss */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5);
 }
 /* line 18, ../scss/mixins/_hover.scss */
-.navbar-theme .navbar-brand:focus, .navbar-theme .navbar-brand:hover {
-  color: #006fe6;
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
 }
-/* line 235, ../scss/_navbar.scss */
-.navbar-theme .navbar-toggle {
-  color: #007bff;
+/* line 267, ../scss/_navbar.scss */
+.navbar-dark .navbar-nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.25);
 }
-/* line 240, ../scss/_navbar.scss */
-.navbar-theme .navbar-nav > li > a {
-  background-color: #fff;
-  color: #007bff;
+/* line 272, ../scss/_navbar.scss */
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fff;
 }
-/* line 243, ../scss/_navbar.scss */
-.navbar-theme .navbar-nav > li > a:hover {
-  color: #006fe6;
+/* line 280, ../scss/_navbar.scss */
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
 }
-/* line 250, ../scss/_navbar.scss */
-.navbar-theme .dropdown-toggle:after {
-  border-top-color: #007bff;
+/* line 285, ../scss/_navbar.scss */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-/* line 253, ../scss/_navbar.scss */
-.navbar-theme .dropdown-toggle.up:after {
-  border-bottom-color: #007bff;
+/* line 289, ../scss/_navbar.scss */
+.navbar-dark .navbar-text {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 291, ../scss/_navbar.scss */
+.navbar-dark .navbar-text a {
+  color: #fff;
+}
+/* line 18, ../scss/mixins/_hover.scss */
+.navbar-dark .navbar-text a:focus, .navbar-dark .navbar-text a:hover {
+  color: #fff;
 }
 
 /* line 6, ../scss/_breadcrumb.scss */
