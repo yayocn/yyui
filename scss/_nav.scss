@@ -19,7 +19,7 @@
 }
 .nav > li {
   float: left;
-  padding: .59rem 1.2rem;
+  padding: $font-scale * .59rem $font-scale * 1.2rem;
 
   @if $enable-rounded {
     &:first-child {
@@ -34,8 +34,8 @@
 
   > a {
     display: block;
-    margin: -.59rem -1.2rem;
-    padding: .59rem 1.2rem;
+    margin: $font-scale * -.59rem $font-scale * -1.2rem;
+    padding: $font-scale * .59rem $font-scale * 1.2rem;
     text-decoration: none;
     color: $nav-default-color;
   }
@@ -116,7 +116,7 @@
     margin-bottom: -1px;
 
     + li {
-      margin-left: .32rem;
+      margin-left: $font-scale * .32rem;
     }
   }
 
@@ -172,7 +172,7 @@
   border-bottom: none;
   li:not(.dropdown-item) {
     float: none;
-    margin-top: .16rem;
+    margin-top: $font-scale * .16rem;
     margin-left: 0;
     margin-right: -2px;
   }

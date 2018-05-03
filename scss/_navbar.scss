@@ -32,7 +32,7 @@
 .navbar-toggle {
   float: right;
   display: none;
-  padding: .8rem 1.2rem;
+  padding: $font-scale * .8rem $font-scale * 1.2rem;
   line-height: 1;
   background: none;
   border: 1px solid transparent;
@@ -115,9 +115,9 @@
 
 .navbar-brand {
   float: left;
-  margin-right: 1.6rem;
-  padding-top:    .6rem;
-  padding-bottom: .4rem;
+  margin-right: $font-scale * 1.6rem;
+  padding-top:    $font-scale * .6rem;
+  padding-bottom: $font-scale * .4rem;
   background-color: $navbar-light-bg;
   font-size: $navbar-brand-font-size;
   font-weight: $navbar-brand-font-weight;

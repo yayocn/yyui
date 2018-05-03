@@ -163,7 +163,7 @@ dfn {
 //
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    margin-bottom: .8rem;
+    margin-bottom: $font-scale * .8rem;
 }
 
 h1 {
@@ -187,7 +187,7 @@ abbr[data-original-title] {
 }
 
 address {
-    margin-bottom: 1.6rem;
+    margin-bottom: $font-scale * 1.6rem;
     font-style: normal;
 }
 
@@ -195,7 +195,7 @@ ol,
 ul,
 dl {
     margin-top: 0;
-    margin-bottom: 1.6rem;
+    margin-bottom: $font-scale * 1.6rem;
     padding: 0;
 }
 
@@ -269,7 +269,7 @@ svg:not(:root) {
 //
 
 figure {
-    margin: 0 0 1.6rem;
+    margin: 0 0 $font-scale * 1.6rem;
 }
 
 //
@@ -288,7 +288,7 @@ hr {
 pre {
     overflow: auto;
     margin-top: 0;
-    margin-bottom: 1.6rem;
+    margin-bottom: $font-scale * 1.6rem;
 }
 
 //
@@ -485,8 +485,8 @@ legend {
     display: block;
     width: 100%;
     padding: 0;
-    margin-bottom: .8rem;
-    font-size: 2.4rem;
+    margin-bottom: $font-scale * .8rem;
+    font-size: $font-scale * 2.4rem;
     line-height: inherit;
     border: none;
 }

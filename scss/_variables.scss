@@ -150,20 +150,21 @@ $font-family-base:          $font-family-sans-serif !default;
 // Size
 //
 //
-$font-size-root:    10px !default;
+$font-size-root:    16px !default;
+$font-scale:        .625 !default;
 
-$font-size-base:    1.4rem !default; // 14px
-$font-size-hg:      2rem !default; // 16px
-$font-size-lg:      1.6rem !default; // 16px
-$font-size-sm:      1.3rem !default; // 13px
-$font-size-xs:      1.2rem !default; // 12px
+$font-size-base:    $font-scale * 1.4rem !default;
+$font-size-hg:      $font-scale * 2rem !default;
+$font-size-lg:      $font-scale * 1.6rem !default;
+$font-size-sm:      $font-scale * 1.3rem !default;
+$font-size-xs:      $font-scale * 1.2rem !default;
 
-$font-size-h1:      4rem !default;
-$font-size-h2:      3.2rem !default;
-$font-size-h3:      2.8rem !default;
-$font-size-h4:      2.4rem !default;
-$font-size-h5:      2rem !default;
-$font-size-h6:      1.6rem !default;
+$font-size-h1:      $font-scale * 4rem !default;
+$font-size-h2:      $font-scale * 3.2rem !default;
+$font-size-h3:      $font-scale * 2.8rem !default;
+$font-size-h4:      $font-scale * 2.4rem !default;
+$font-size-h5:      $font-scale * 2rem !default;
+$font-size-h6:      $font-scale * 1.6rem !default;
 
 // Weight
 //
@@ -187,12 +188,12 @@ $line-height-xs:      1.5 !default;
 $border-width:      1px !default;
 $border-color:      $gray-300;
 
-$border-radius:     .4rem !default;
+$border-radius:     $font-scale * .4rem !default;
 $border-radius-no:  0 !default;
-$border-radius-lg:  .48rem !default;
-$border-radius-sm:  .32rem !default;
-$border-radius-xs:  .3rem !default;
-$border-radius-hg:  1000rem;
+$border-radius-lg:  $font-scale * .48rem !default;
+$border-radius-sm:  $font-scale * .32rem !default;
+$border-radius-xs:  $font-scale * .3rem !default;
+$border-radius-hg:  $font-scale * 1000rem;
 $border-radius-circle:  $border-radius-hg !default;
 
 
@@ -200,9 +201,9 @@ $border-radius-circle:  $border-radius-hg !default;
 //
 //
 $shadow-none:            none;
-$shadow:                 0 .5rem 1rem rgba(0,0,0,.15);
-$shadow-sm:              0 .125rem .25rem rgba(0,0,0,.075);
-$shadow-lg:              0 1rem 3rem rgba(0,0,0,.175);
+$shadow:                 0 $font-scale * .5rem $font-scale * 1rem rgba(0,0,0,.15);
+$shadow-sm:              0 $font-scale * .125rem $font-scale * .25rem rgba(0,0,0,.075);
+$shadow-lg:              0 $font-scale * 1rem $font-scale * 3rem rgba(0,0,0,.175);
 
 
 // Sizing
@@ -220,8 +221,8 @@ $sizes: map-merge((
 // Buttons
 // For each of buttons
 //
-$btn-padding-x:     .75rem;
-$btn-padding-y:     .375rem;
+$btn-padding-x:     $font-scale * .75rem;
+$btn-padding-y:     $font-scale * .375rem;
 $btn-font-weight:   normal !default;
 
 $btn-primary-color:     $white;
@@ -258,15 +259,15 @@ $btn-dark-border:     $btn-dark-bg !default;
 
 $btn-link-disabled-color:     $gray-light !default;
 
-$btn-padding-x-sm:      .5rem !default;
-$btn-padding-y-sm:      .25rem !default;
+$btn-padding-x-sm:      $font-scale * .5rem !default;
+$btn-padding-y-sm:      $font-scale * .25rem !default;
 
-$btn-padding-x-lg:      1rem !default;
-$btn-padding-y-lg:      .5rem !default;
+$btn-padding-x-lg:      $font-scale * 1rem !default;
+$btn-padding-y-lg:      $font-scale * .5rem !default;
 
-$btn-padding-x-hg:      2rem !default;
-$btn-padding-y-hg:      1.356667rem !default;
-$btn-hg-line-height:    1.1 !default;
+$btn-padding-x-hg:      $font-scale * 2rem !default;
+$btn-padding-y-hg:      $font-scale * 1.356667rem !default;
+$btn-hg-line-height:    $font-scale * 1.1 !default;
 
 //
 // Grid
@@ -287,7 +288,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 //
 $grid-columns:               12 !default;
-$grid-gutter-width:          3rem !default; // 30px
+$grid-gutter-width:          $font-scale * 3rem !default; // 30px
 
 // Grid breakpoints
 //
@@ -311,8 +312,8 @@ $abbr-border-color:           $gray-light !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:            1.2rem !default;
-$table-sm-cell-padding:         .48rem !default;
+$table-cell-padding:            $font-scale * 1.2rem !default;
+$table-sm-cell-padding:         $font-scale * .48rem !default;
 
 $table-bg:                      transparent !default;
 $table-bg-accent:               $gray-200;
@@ -328,8 +329,8 @@ $input-font-size:                $font-size-base !default;
 $input-font-size-sm:             $font-size-xs !default;
 $input-font-size-lg:             $font-size-lg !default;
 
-$input-padding-x:                .75rem !default;
-$input-padding-y:                .375rem !default;
+$input-padding-x:                $font-scale * .75rem !default;
+$input-padding-y:                $font-scale * .375rem !default;
 
 $input-bg:                       $white;
 $input-bg-disabled:              $gray-lighter !default;
@@ -349,11 +350,11 @@ $input-box-shadow-color-focus:   rgba(102,175,233,.6) !default;
 
 $input-color-placeholder:        $gray-400;
 
-$input-padding-x-sm:             0.5rem !default;
-$input-padding-y-sm:             0.25rem !default;
+$input-padding-x-sm:             $font-scale * 0.5rem !default;
+$input-padding-y-sm:             $font-scale * 0.25rem !default;
 
-$input-padding-x-lg:             1rem !default;
-$input-padding-y-lg:             .5rem !default;
+$input-padding-x-lg:             $font-scale * 1rem !default;
+$input-padding-y-lg:             $font-scale * .5rem !default;
 
 $input-padding-x-hg:             $btn-padding-x-hg !default;
 $input-padding-y-hg:             $btn-padding-y-hg !default;
@@ -479,11 +480,11 @@ $code-color:                  $pink;
 $code-bg:                     $gray-100;
 
 $kbd-font-size:               $code-font-size !default;
-$kbd-padding-y:               .32rem !default;
-$kbd-padding-x:               .64rem !default;
+$kbd-padding-y:               $font-scale * .32rem !default;
+$kbd-padding-x:               $font-scale * .64rem !default;
 $kbd-color:                   $white !default;
 $kbd-bg:                      $gray-900 !default;
-$kbd-box-shadow:              inset 0 -.1rem 0 rgba($black, .25) !default;
+$kbd-box-shadow:              inset 0 $font-scale * -.1rem 0 rgba($black, .25) !default;
 
 $pre-color:                   $gray-900 !default;
 $pre-scrollable-max-height:   340px !default;
@@ -499,7 +500,7 @@ $margin-padding-range: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 
 // Mark
 //
-$mark-font-size:    1.4rem;
+$mark-font-size:    $font-scale * 1.4rem;
 $mark-font-weight:  400;
 
 $mark-list: (
@@ -533,15 +534,15 @@ $zindex-tooltip:           1070 !default;
 //
 // Dropdown menu container and contents.
 
-$dropdown-min-width:                10rem !default;
-$dropdown-padding-y:                .5rem !default;
-$dropdown-spacer:                   .125rem !default;
+$dropdown-min-width:                $font-scale * 10rem !default;
+$dropdown-padding-y:                $font-scale * .5rem !default;
+$dropdown-spacer:                   $font-scale * .125rem !default;
 $dropdown-bg:                       $white !default;
 $dropdown-border-color:             rgba($black, .15) !default;
 $dropdown-border-radius:            $border-radius !default;
 $dropdown-border-width:             $border-width !default;
 $dropdown-divider-bg:               $gray-200 !default;
-$dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
+$dropdown-box-shadow:               0 $font-scale * .5rem $font-scale * 1rem rgba($black, .175) !default;
 
 $dropdown-link-color:               $gray-900 !default;
 $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
@@ -552,8 +553,8 @@ $dropdown-link-active-bg:           $component-active-bg !default;
 
 $dropdown-link-disabled-color:      $gray-600 !default;
 
-$dropdown-item-padding-y:           .25rem !default;
-$dropdown-item-padding-x:           1.5rem !default;
+$dropdown-item-padding-y:           $font-scale * .25rem !default;
+$dropdown-item-padding-x:           $font-scale * 1.5rem !default;
 
 $dropdown-header-color:             $gray-600 !default;
 
@@ -573,7 +574,7 @@ $caret-width:                 .3em !default;
 
 // Image thumbnails
 //
-$thumbnail-padding:           .4rem !default;
+$thumbnail-padding:           $font-scale * .4rem !default;
 $thumbnail-bg:                $body-bg !default;
 $thumbnail-border:            $border-color;
 $thumbnail-border-radius:     $border-radius !default;
@@ -648,9 +649,9 @@ $nav-pills-active-border-color:             $brand-primary !default;
 $nav-pills-active-bg:                       $brand-primary !default;
 
 // Breadcrumbs
-$breadcrumbs-font-size:         1.3rem !default;
-$breadcrumb-padding-vertical:   1.2rem !default;
-$breadcrumb-padding-horizontal: 1.6rem !default;
+$breadcrumbs-font-size:         $font-scale * 1.3rem !default;
+$breadcrumb-padding-vertical:   $font-scale * 1.2rem !default;
+$breadcrumb-padding-horizontal: $font-scale * 1.6rem !default;
 
 $breadcrumb-color:              $brand-info !default;
 $breadcrumb-bg:                 $gray-lightest !default;
@@ -661,12 +662,12 @@ $breadcrumb-divider-color:      $gray-400 !default;
 
 // Pagination
 
-$pagination-padding-x:                1rem !default;
-$pagination-padding-y:                .6rem !default;
-$pagination-padding-x-sm:             .84rem !default;
-$pagination-padding-y-sm:             .44rem !default;
-$pagination-padding-x-lg:             1.4rem !default;
-$pagination-padding-y-lg:             1rem !default;
+$pagination-padding-x:                $font-scale * 1rem !default;
+$pagination-padding-y:                $font-scale * .6rem !default;
+$pagination-padding-x-sm:             $font-scale * .84rem !default;
+$pagination-padding-y-sm:             $font-scale * .44rem !default;
+$pagination-padding-x-lg:             $font-scale * 1.4rem !default;
+$pagination-padding-y-lg:             $font-scale * 1rem !default;
 
 
 $pagination-color:                     $dark !default;
@@ -707,17 +708,17 @@ $badge-font-weight:           $font-weight-bold !default;
 $badge-border-radius:         $border-radius !default;
 
 $badge-pill-padding-x:        .6em !default;
-$badge-pill-border-radius:    10rem !default;
+$badge-pill-border-radius:    $font-scale * 10rem !default;
 
 // Jumbotron
-$jumbotron-padding:                 3.2rem !default;
+$jumbotron-padding:                 $font-scale * 3.2rem !default;
 $jumbotron-bg:                      $gray-200 !default;
 
 
 // Cards
 
-$card-spacer-y:                     .75rem !default;
-$card-spacer-x:                     1.25rem !default;
+$card-spacer-y:                     $font-scale * .75rem !default;
+$card-spacer-x:                     $font-scale * 1.25rem !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
@@ -725,21 +726,21 @@ $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border
 $card-cap-bg:                       rgba($black, .03) !default;
 $card-bg:                           $white !default;
 
-$card-img-overlay-padding:          1.25rem !default;
+$card-img-overlay-padding:          $font-scale * 1.25rem !default;
 
 $card-group-margin:                 ($grid-gutter-width / 2) !default;
 $card-deck-margin:                  $card-group-margin !default;
 
 $card-columns-count:                3 !default;
-$card-columns-gap:                  1.25rem !default;
+$card-columns-gap:                  $font-scale * 1.25rem !default;
 $card-columns-margin:               $card-spacer-y !default;
 
 // Alerts
 //
 // Define alert colors, border radius, and padding.
-$alert-padding-y:                   1.2rem !default;
-$alert-padding-x:                   2rem !default;
-$alert-margin-bottom:               1rem !default;
+$alert-padding-y:                   $font-scale * 1.2rem !default;
+$alert-padding-x:                   $font-scale * 2rem !default;
+$alert-margin-bottom:               $font-scale * 1rem !default;
 $alert-border-radius:               $border-radius !default;
 $alert-link-font-weight:            $font-weight-bold !default;
 $alert-border-width:                $border-width !default;
@@ -868,13 +869,13 @@ $flex-name:                   flex !default;
 //
 // elf
 //
-$elf-width:              .5rem !default;
+$elf-width:              $font-scale * .5rem !default;
 $elf-height:             $elf-width !default;
 
 //
 // dot
 //
-$dot-width:              .8rem !default;
+$dot-width:              $font-scale * .8rem !default;
 $dot-height:             $dot-width !default;
 $dot-border-radius:      $border-radius-circle !default;
 

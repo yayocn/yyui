@@ -5,7 +5,7 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-size: 10px;
+  font-size: 16px;
   box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -113,19 +113,19 @@ dfn {
 /* line 164, ../scss/_normalize.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: .8rem;
+  margin-bottom: 0.5rem;
 }
 
 /* line 169, ../scss/_normalize.scss */
 h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin: 0.67em 0;
 }
 
 /* line 176, ../scss/_normalize.scss */
 p {
   margin-top: 0;
-  margin-bottom: 1.4rem;
+  margin-bottom: 0.875rem;
 }
 
 /* line 182, ../scss/_normalize.scss */
@@ -137,7 +137,7 @@ abbr[data-original-title] {
 
 /* line 189, ../scss/_normalize.scss */
 address {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
   font-style: normal;
 }
 
@@ -146,7 +146,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
   padding: 0;
 }
 
@@ -200,7 +200,7 @@ svg:not(:root) {
 
 /* line 271, ../scss/_normalize.scss */
 figure {
-  margin: 0 0 1.6rem;
+  margin: 0 0 1rem;
 }
 
 /* line 279, ../scss/_normalize.scss */
@@ -213,7 +213,7 @@ hr {
 pre {
   overflow: auto;
   margin-top: 0;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 /* line 298, ../scss/_normalize.scss */
@@ -335,8 +335,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: .8rem;
-  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
   line-height: inherit;
   border: none;
 }
@@ -360,8 +360,8 @@ table {
 
 /* line 524, ../scss/_normalize.scss */
 caption {
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   color: #adb5bd;
   text-align: left;
   caption-side: top;
@@ -396,32 +396,32 @@ h1, h2, h3, h4, h5, h6,
 
 /* line 22, ../scss/_element.scss */
 h1, .h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 /* line 25, ../scss/_element.scss */
 h2, .h2 {
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
 
 /* line 28, ../scss/_element.scss */
 h3, .h3 {
-  font-size: 2.8rem;
+  font-size: 1.75rem;
 }
 
 /* line 31, ../scss/_element.scss */
 h4, .h4 {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
 }
 
 /* line 34, ../scss/_element.scss */
 h5, .h5 {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 /* line 37, ../scss/_element.scss */
 h6, .h6 {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 /* line 45, ../scss/_element.scss */
@@ -459,7 +459,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 /* line 80, ../scss/_element.scss */
 address {
-  font-size: 1.3rem;
+  font-size: 0.8125rem;
 }
 
 /* line 87, ../scss/_element.scss */
@@ -469,8 +469,8 @@ blockquote {
   padding-left: 15px;
   padding-right: 0;
   margin-bottom: 15px;
-  font-size: 1.4rem;
-  border-left: 0.4rem solid #e9ecef;
+  font-size: 0.875rem;
+  border-left: 0.25rem solid #e9ecef;
 }
 /* line 99, ../scss/_element.scss */
 blockquote p:last-child,
@@ -494,7 +494,7 @@ blockquote.blockquote-right {
   padding-left: 0;
   padding-right: 15px;
   text-align: right;
-  border-right: 0.4rem solid #e9ecef;
+  border-right: 0.25rem solid #e9ecef;
   border-left: 0;
 }
 /* line 124, ../scss/_element.scss */
@@ -513,7 +513,7 @@ dt {
 
 /* line 138, ../scss/_element.scss */
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.3125rem;
   margin-left: 0;
 }
 
@@ -659,36 +659,36 @@ dd {
 
 /* line 23, ../scss/utilities/_border.scss */
 .border-round-circle {
-  border-radius: 1000rem !important;
+  border-radius: 625rem !important;
 }
 
 /* line 24, ../scss/utilities/_border.scss */
 .border-round {
-  border-radius: 0.4rem !important;
+  border-radius: 0.25rem !important;
 }
 
 /* line 25, ../scss/utilities/_border.scss */
 .border-round-top {
-  border-top-left-radius: 0.4rem !important;
-  border-top-right-radius: 0.4rem !important;
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
 }
 
 /* line 29, ../scss/utilities/_border.scss */
 .border-round-right {
-  border-top-right-radius: 0.4rem !important;
-  border-bottom-right-radius: 0.4rem !important;
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
 }
 
 /* line 33, ../scss/utilities/_border.scss */
 .border-round-bottom {
-  border-bottom-right-radius: 0.4rem !important;
-  border-bottom-left-radius: 0.4rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
 }
 
 /* line 37, ../scss/utilities/_border.scss */
 .border-round-left {
-  border-top-left-radius: 0.4rem !important;
-  border-bottom-left-radius: 0.4rem !important;
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
 }
 
 /* line 51, ../scss/utilities/_border.scss */
@@ -3294,52 +3294,52 @@ a.text-transparent:focus, a.text-transparent:hover {
 
 /* line 10, ../scss/utilities/_font.scss */
 .font-1x {
-  font-size: 1.4rem !important;
+  font-size: 0.875rem !important;
 }
 
 /* line 10, ../scss/utilities/_font.scss */
 .font-2x {
-  font-size: 2.8rem !important;
+  font-size: 1.75rem !important;
 }
 
 /* line 10, ../scss/utilities/_font.scss */
 .font-3x {
-  font-size: 4.2rem !important;
+  font-size: 2.625rem !important;
 }
 
 /* line 10, ../scss/utilities/_font.scss */
 .font-4x {
-  font-size: 5.6rem !important;
+  font-size: 3.5rem !important;
 }
 
 /* line 10, ../scss/utilities/_font.scss */
 .font-5x {
-  font-size: 7rem !important;
+  font-size: 4.375rem !important;
 }
 
 /* line 10, ../scss/utilities/_font.scss */
 .font-6x {
-  font-size: 8.4rem !important;
+  font-size: 5.25rem !important;
 }
 
 /* line 10, ../scss/utilities/_font.scss */
 .font-7x {
-  font-size: 9.8rem !important;
+  font-size: 6.125rem !important;
 }
 
 /* line 10, ../scss/utilities/_font.scss */
 .font-8x {
-  font-size: 11.2rem !important;
+  font-size: 7rem !important;
 }
 
 /* line 10, ../scss/utilities/_font.scss */
 .font-9x {
-  font-size: 12.6rem !important;
+  font-size: 7.875rem !important;
 }
 
 /* line 10, ../scss/utilities/_font.scss */
 .font-10x {
-  font-size: 14rem !important;
+  font-size: 8.75rem !important;
 }
 
 /* line 19, ../scss/utilities/_font.scss */
@@ -3404,9 +3404,9 @@ a.text-transparent:focus, a.text-transparent:hover {
 
 /* line 13, ../scss/utilities/_shadow.scss */
 .shadow {
-  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  -moz-box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.15) !important;
 }
 
 /* line 17, ../scss/utilities/_shadow.scss */
@@ -3418,16 +3418,16 @@ a.text-transparent:focus, a.text-transparent:hover {
 
 /* line 17, ../scss/utilities/_shadow.scss */
 .shadow-sm {
-  -moz-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  -moz-box-shadow: 0 0.07813rem 0.15625rem rgba(0, 0, 0, 0.075) !important;
+  -webkit-box-shadow: 0 0.07813rem 0.15625rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.07813rem 0.15625rem rgba(0, 0, 0, 0.075) !important;
 }
 
 /* line 17, ../scss/utilities/_shadow.scss */
 .shadow-lg {
-  -moz-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  -moz-box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.175) !important;
+  -webkit-box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.175) !important;
+  box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.175) !important;
 }
 
 /* line 6, ../scss/utilities/_size.scss */
@@ -3500,8 +3500,8 @@ a.text-transparent:focus, a.text-transparent:hover {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 @media (min-width: 576px) {
   /* line 13, ../scss/_grid.scss */
@@ -3533,8 +3533,8 @@ a.text-transparent:focus, a.text-transparent:hover {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 /* line 33, ../scss/_grid.scss */
@@ -3543,8 +3543,8 @@ a.text-transparent:focus, a.text-transparent:hover {
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
 }
 
 /* line 39, ../scss/_grid.scss */
@@ -3569,8 +3569,8 @@ a.text-transparent:focus, a.text-transparent:hover {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
 }
 
 /* line 133, ../scss/mixins/_grid.scss */
@@ -4684,36 +4684,36 @@ a.text-transparent:focus, a.text-transparent:hover {
   flex-flow: row wrap;
   align-items: center;
   margin-bottom: 10px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
 }
 
 /* line 20, ../scss/_forms.scss */
 .form-group-sm {
-  font-size: 1.3rem;
+  font-size: 0.8125rem;
 }
 /* line 23, ../scss/_forms.scss */
 .form-group-sm .form-control {
-  padding: 0.25rem 0.5rem;
+  padding: 0.15625rem 0.3125rem;
   line-height: 1.5;
 }
 
 /* line 32, ../scss/_forms.scss */
 .form-group-lg {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 /* line 35, ../scss/_forms.scss */
 .form-group-lg .form-control {
-  padding: 0.5rem 1rem;
+  padding: 0.3125rem 0.625rem;
   line-height: 1.5;
 }
 
 /* line 44, ../scss/_forms.scss */
 .form-group-hg {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 /* line 47, ../scss/_forms.scss */
 .form-group-hg .form-control {
-  padding: 1.35667rem 2rem;
+  padding: 0.84792rem 1.25rem;
   line-height: 1.5;
 }
 
@@ -4721,8 +4721,8 @@ a.text-transparent:focus, a.text-transparent:hover {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1.4rem;
+  padding: 0.23438rem 0.46875rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   color: #6c757d;
   background-color: #fff;
@@ -4759,23 +4759,23 @@ a.text-transparent:focus, a.text-transparent:hover {
 
 /* line 103, ../scss/_forms.scss */
 .form-control-sm {
-  padding: 0.25rem 0.5rem;
-  font-size: 1.2rem;
+  padding: 0.15625rem 0.3125rem;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
 
 /* line 112, ../scss/_forms.scss */
 .form-control-lg {
-  padding: 0.5rem 1rem;
-  font-size: 1.6rem;
+  padding: 0.3125rem 0.625rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 /* line 121, ../scss/_forms.scss */
 .form-control-hg {
-  padding: 1.35667rem 2rem;
-  font-size: 2rem;
-  line-height: 1.1;
+  padding: 0.84792rem 1.25rem;
+  font-size: 1.25rem;
+  line-height: 0.6875;
 }
 
 /* line 130, ../scss/_forms.scss */
@@ -4824,7 +4824,7 @@ select.form-control > option {
 .checkbox > label {
   margin-bottom: 0;
   color: #444444;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   font-weight: 400;
   cursor: pointer;
   z-index: 10;
@@ -4861,9 +4861,9 @@ select.form-control > option {
 
 /* line 221, ../scss/_forms.scss */
 .radio > label:before {
-  -moz-border-radius: 1000rem;
-  -webkit-border-radius: 1000rem;
-  border-radius: 1000rem;
+  -moz-border-radius: 625rem;
+  -webkit-border-radius: 625rem;
+  border-radius: 625rem;
 }
 
 /* line 226, ../scss/_forms.scss */
@@ -4880,7 +4880,7 @@ select.form-control > option {
 /* line 236, ../scss/_forms.scss */
 .radio + .radio,
 .checkbox + .checkbox {
-  margin-top: -.25rem;
+  margin-top: -0.15625rem;
 }
 
 /* line 242, ../scss/_forms.scss */
@@ -4889,7 +4889,7 @@ select.form-control > option {
   position: relative;
   display: inline-block;
   margin-bottom: 0;
-  margin-right: .75rem;
+  margin-right: 0.46875rem;
   width: auto;
   font-weight: normal;
   vertical-align: middle;
@@ -5205,7 +5205,7 @@ input[type="checkbox"] {
 .form-file .file-surface {
   width: 100%;
   height: 100%;
-  padding: .37rem .75rem;
+  padding: 0.23125rem 0.46875rem;
   background-color: #007bff;
   text-align: center;
   color: #fff;
@@ -5217,9 +5217,9 @@ input[type="checkbox"] {
 .form-control-success,
 .form-control-warning,
 .form-control-error {
-  padding-right: 2.25rem;
-  background-position: center right 0.375rem;
-  background-size: calc(calc(2.85rem + 2px) * .65) calc(calc(2.85rem + 2px) * .65);
+  padding-right: 1.40625rem;
+  background-position: center right 0.23438rem;
+  background-size: calc(calc(1.78125rem + 2px) * .65) calc(calc(1.78125rem + 2px) * .65);
   background-repeat: no-repeat;
 }
 
@@ -5242,8 +5242,8 @@ input[type="checkbox"] {
 /* line 24, ../scss/mixins/_forms.scss */
 .form-control-success + .form-control-feedback {
   color: #2EC6A0;
-  font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.15625rem 0.3125rem;
 }
 
 /* line 455, ../scss/_forms.scss */
@@ -5265,8 +5265,8 @@ input[type="checkbox"] {
 /* line 24, ../scss/mixins/_forms.scss */
 .form-control-warning + .form-control-feedback {
   color: #ffc107;
-  font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.15625rem 0.3125rem;
 }
 
 /* line 459, ../scss/_forms.scss */
@@ -5288,17 +5288,17 @@ input[type="checkbox"] {
 /* line 24, ../scss/mixins/_forms.scss */
 .form-control-error + .form-control-feedback {
   color: #dc3545;
-  font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.15625rem 0.3125rem;
 }
 
 /* line 469, ../scss/_forms.scss */
 .form-group-success .form-control,
 .form-group-warning .form-control,
 .form-group-error .form-control {
-  padding-right: 2.25rem;
-  background-position: center right 0.375rem;
-  background-size: calc(calc(2.85rem + 2px) * .65) calc(calc(2.85rem + 2px) * .65);
+  padding-right: 1.40625rem;
+  background-position: center right 0.23438rem;
+  background-size: calc(calc(1.78125rem + 2px) * .65) calc(calc(1.78125rem + 2px) * .65);
   background-repeat: no-repeat;
 }
 
@@ -5335,8 +5335,8 @@ input[type="checkbox"] {
 /* line 64, ../scss/mixins/_forms.scss */
 .form-group-success .form-control-feedback {
   color: #2EC6A0;
-  font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.15625rem 0.3125rem;
 }
 /* line 480, ../scss/_forms.scss */
 .form-group-success .form-control {
@@ -5376,8 +5376,8 @@ input[type="checkbox"] {
 /* line 64, ../scss/mixins/_forms.scss */
 .form-group-warning .form-control-feedback {
   color: #ffc107;
-  font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.15625rem 0.3125rem;
 }
 /* line 489, ../scss/_forms.scss */
 .form-group-warning .form-control {
@@ -5417,8 +5417,8 @@ input[type="checkbox"] {
 /* line 64, ../scss/mixins/_forms.scss */
 .form-group-error .form-control-feedback {
   color: #dc3545;
-  font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.15625rem 0.3125rem;
 }
 /* line 498, ../scss/_forms.scss */
 .form-group-error .form-control {
@@ -5427,8 +5427,8 @@ input[type="checkbox"] {
 
 /* line 507, ../scss/_forms.scss */
 .form-hz .form-group {
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
   overflow: auto;
   zoom: 1;
 }
@@ -5507,8 +5507,8 @@ input[type="checkbox"] {
   cursor: pointer;
   user-select: none;
   border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1.4rem;
+  padding: 0.23438rem 0.46875rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
@@ -6159,48 +6159,48 @@ input[type="checkbox"] {
 
 /* line 130, ../scss/_buttons.scss */
 .btn-circle {
-  -moz-border-radius: 1000rem;
-  -webkit-border-radius: 1000rem;
-  border-radius: 1000rem;
+  -moz-border-radius: 625rem;
+  -webkit-border-radius: 625rem;
+  border-radius: 625rem;
 }
 
 /* line 133, ../scss/_buttons.scss */
 .btn-round {
-  -moz-border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  border-radius: 0.4rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
 /* line 135, ../scss/_buttons.scss */
 .btn-round.btn-lg, .btn-group-lg .btn-round.btn {
-  -moz-border-radius: 0.48rem;
-  -webkit-border-radius: 0.48rem;
-  border-radius: 0.48rem;
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
 }
 /* line 138, ../scss/_buttons.scss */
 .btn-round.btn-sm, .btn-group-sm .btn-round.btn {
-  -moz-border-radius: 0.32rem;
-  -webkit-border-radius: 0.32rem;
-  border-radius: 0.32rem;
+  -moz-border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
 }
 
 /* line 146, ../scss/_buttons.scss */
 .btn-hg {
-  padding: 1.35667rem 2rem;
-  font-size: 2rem;
-  line-height: 1.1;
+  padding: 0.84792rem 1.25rem;
+  font-size: 1.25rem;
+  line-height: 0.6875;
 }
 
 /* line 149, ../scss/_buttons.scss */
 .btn-lg, .btn-group-lg .btn {
-  padding: 0.5rem 1rem;
-  font-size: 1.6rem;
+  padding: 0.3125rem 0.625rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 /* line 152, ../scss/_buttons.scss */
 .btn-sm, .btn-group-sm .btn {
-  padding: 0.25rem 0.5rem;
-  font-size: 1.2rem;
+  padding: 0.15625rem 0.3125rem;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
 
@@ -6241,9 +6241,9 @@ code {
   font-size: 87.5%;
   color: #e83e8c;
   word-break: break-all;
-  -moz-border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  border-radius: 0.4rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
 /* line 16, ../scss/_code.scss */
 a > code {
@@ -6252,18 +6252,18 @@ a > code {
 
 /* line 22, ../scss/_code.scss */
 kbd {
-  padding: 0.32rem 0.64rem;
+  padding: 0.2rem 0.4rem;
   margin-left: 5px;
   margin-right: 5px;
   font-size: 87.5%;
   color: #fff;
   background-color: #212529;
-  -moz-border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  border-radius: 0.4rem;
-  -moz-box-shadow: inset 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: inset 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  -moz-box-shadow: inset 0 -0.0625rem 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 -0.0625rem 0 rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -0.0625rem 0 rgba(0, 0, 0, 0.25);
 }
 /* line 32, ../scss/_code.scss */
 kbd kbd {
@@ -6306,9 +6306,9 @@ pre code {
   padding: 4px;
   background-color: #fff;
   border: 1px solid #dee2e6;
-  -moz-border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  border-radius: 0.4rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
@@ -6320,7 +6320,7 @@ pre code {
 /* line 29, ../scss/_images.scss */
 .figure {
   display: inline-block;
-  margin: 0 0 1rem;
+  margin: 0 0 0.625rem;
 }
 
 /* line 34, ../scss/_images.scss */
@@ -6340,12 +6340,12 @@ pre code {
   width: 100%;
   max-width: 100%;
   margin-bottom: 15px;
-  font-size: 1.3rem;
+  font-size: 0.8125rem;
 }
 /* line 7, ../scss/_tables.scss */
 .table th,
 .table td {
-  padding: 1.2rem;
+  padding: 0.75rem;
   line-height: 1.5;
   vertical-align: top;
   border-top: 1px solid #e9ecef;
@@ -6367,7 +6367,7 @@ pre code {
 /* line 30, ../scss/_tables.scss */
 .table-sm th,
 .table-sm td {
-  padding: 0.48rem;
+  padding: 0.3rem;
 }
 
 /* line 36, ../scss/_tables.scss */
@@ -6734,25 +6734,25 @@ tbody.collapse.show {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1.4rem;
+  min-width: 6.25rem;
+  padding: 0.3125rem 0;
+  margin: 0.07813rem 0 0;
+  font-size: 0.875rem;
   color: #212529;
   text-align: left;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  -moz-box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.175);
+  box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.175);
 }
 
 /* line 41, ../scss/_dropdown.scss */
 .dropup .dropdown-menu {
   margin-top: 0;
-  margin-bottom: 0.125rem;
+  margin-bottom: 0.07813rem;
 }
 /* line 28, ../scss/mixins/_caret.scss */
 .dropup .dropdown-toggle::after {
@@ -6775,7 +6775,7 @@ tbody.collapse.show {
 /* line 52, ../scss/_dropdown.scss */
 .dropright .dropdown-menu {
   margin-top: 0;
-  margin-left: 0.125rem;
+  margin-left: 0.07813rem;
 }
 /* line 28, ../scss/mixins/_caret.scss */
 .dropright .dropdown-toggle::after {
@@ -6801,7 +6801,7 @@ tbody.collapse.show {
 /* line 66, ../scss/_dropdown.scss */
 .dropleft .dropdown-menu {
   margin-top: 0;
-  margin-right: 0.125rem;
+  margin-right: 0.07813rem;
 }
 /* line 28, ../scss/mixins/_caret.scss */
 .dropleft .dropdown-toggle::after {
@@ -6841,7 +6841,7 @@ tbody.collapse.show {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 1.5rem;
+  padding: 0.15625rem 0.9375rem;
   clear: both;
   font-weight: 400;
   color: #212529;
@@ -6881,9 +6881,9 @@ tbody.collapse.show {
 /* line 123, ../scss/_dropdown.scss */
 .dropdown-header {
   display: block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.3125rem 0.9375rem;
   margin-bottom: 0;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   color: #6c757d;
   white-space: nowrap;
 }
@@ -7149,13 +7149,13 @@ tbody.collapse.show {
 /* line 20, ../scss/_nav.scss */
 .nav > li {
   float: left;
-  padding: .59rem 1.2rem;
+  padding: 0.36875rem 0.75rem;
 }
 /* line 35, ../scss/_nav.scss */
 .nav > li > a {
   display: block;
-  margin: -.59rem -1.2rem;
-  padding: .59rem 1.2rem;
+  margin: -0.36875rem -0.75rem;
+  padding: 0.36875rem 0.75rem;
   text-decoration: none;
   color: #343a40;
 }
@@ -7228,7 +7228,7 @@ tbody.collapse.show {
 }
 /* line 118, ../scss/_nav.scss */
 .nav-tabs li:not(.dropdown-item) + li {
-  margin-left: .32rem;
+  margin-left: 0.2rem;
 }
 /* line 123, ../scss/_nav.scss */
 .nav-tabs > li > a {
@@ -7283,7 +7283,7 @@ tbody.collapse.show {
 /* line 173, ../scss/_nav.scss */
 .nav-tabs.nav-vt li:not(.dropdown-item) {
   float: none;
-  margin-top: .16rem;
+  margin-top: 0.1rem;
   margin-left: 0;
   margin-right: -2px;
 }
@@ -7361,15 +7361,15 @@ tbody.collapse.show {
 .navbar-toggle {
   float: right;
   display: none;
-  padding: .8rem 1.2rem;
+  padding: 0.5rem 0.75rem;
   line-height: 1;
   background: none;
   border: 1px solid transparent;
   color: rgba(0, 0, 0, 0.4);
-  font-size: 1.6rem;
-  -moz-border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  border-radius: 0.4rem;
+  font-size: 1rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
 /* line 51, ../scss/mixins/_hover.scss */
 .navbar-toggle:focus, .navbar-toggle:active, .navbar-toggle:hover {
@@ -7442,11 +7442,11 @@ tbody.collapse.show {
 /* line 116, ../scss/_navbar.scss */
 .navbar-brand {
   float: left;
-  margin-right: 1.6rem;
-  padding-top: .6rem;
-  padding-bottom: .4rem;
+  margin-right: 1rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.25rem;
   background-color: #fff;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 /* line 18, ../scss/mixins/_hover.scss */
@@ -7587,7 +7587,7 @@ tbody.collapse.show {
   flex-wrap: wrap;
   margin-bottom: 15px;
   list-style: none;
-  font-size: 1.3rem;
+  font-size: 0.8125rem;
 }
 /* line 13, ../scss/_breadcrumb.scss */
 .breadcrumb > li {
@@ -7597,9 +7597,9 @@ tbody.collapse.show {
 .breadcrumb > li::after {
   content: "/";
   position: relative;
-  margin: 0 0.75rem;
+  margin: 0 0.46875rem;
   color: #ced4da;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
 }
 /* line 24, ../scss/_breadcrumb.scss */
 .breadcrumb > li:last-child {
@@ -7653,7 +7653,7 @@ tbody.collapse.show {
   float: left;
   line-height: 1.5;
   text-decoration: none;
-  padding: 0.6rem 1rem;
+  padding: 0.375rem 0.625rem;
   color: #212529;
   font-family: Menlo, Monaco, Consolas, "Courier New", Monospace;
 }
@@ -7722,16 +7722,16 @@ tbody.collapse.show {
 /* line 5, ../scss/mixins/_paginations.scss */
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 1rem 1.4rem;
-  font-size: 1.6rem;
+  padding: 0.625rem 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 /* line 5, ../scss/mixins/_paginations.scss */
 .pagination-sm > li > a,
 .pagination-sm > li > span {
-  padding: 0.44rem 0.84rem;
-  font-size: 1.3rem;
+  padding: 0.275rem 0.525rem;
+  font-size: 0.8125rem;
   line-height: 1.5;
 }
 
@@ -8010,9 +8010,9 @@ tbody.collapse.show {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  -moz-border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  border-radius: 0.4rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
 /* line 16, ../scss/_badge.scss */
 .badge:empty {
@@ -8029,9 +8029,9 @@ tbody.collapse.show {
 .badge-pill {
   padding-right: 0.6em;
   padding-left: 0.6em;
-  -moz-border-radius: 10rem;
-  -webkit-border-radius: 10rem;
-  border-radius: 10rem;
+  -moz-border-radius: 6.25rem;
+  -webkit-border-radius: 6.25rem;
+  border-radius: 6.25rem;
 }
 
 /* line 36, ../scss/_badge.scss */
@@ -8190,9 +8190,9 @@ tbody.collapse.show {
   display: block;
   position: absolute;
   top: 4px;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 1000rem;
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border-radius: 625rem;
 }
 
 /* line 14, ../scss/mixins/_elf.scss */
@@ -8343,9 +8343,9 @@ tbody.collapse.show {
 .dot {
   display: inline-block;
   vertical-align: middle;
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 1000rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 625rem;
 }
 
 /* line 3, ../scss/mixins/_dot.scss */
@@ -8410,14 +8410,14 @@ tbody.collapse.show {
 
 /* line 6, ../scss/_jumbotron.scss */
 .jumbotron {
-  padding: 3.2rem 1.6rem;
-  margin-bottom: 3.2rem;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
   background-color: #e9ecef;
 }
 @media (min-width: 576px) {
   /* line 6, ../scss/_jumbotron.scss */
   .jumbotron {
-    padding: 6.4rem 3.2rem;
+    padding: 4rem 2rem;
   }
 }
 
@@ -8433,7 +8433,7 @@ tbody.collapse.show {
 /* line 4, ../scss/_close.scss */
 .close {
   float: right;
-  font-size: 2.1rem;
+  font-size: 1.3125rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
@@ -8479,17 +8479,17 @@ button.close {
 /* line 20, ../scss/_card.scss */
 .card-body {
   flex: 1 1 auto;
-  padding: 1.25rem;
+  padding: 0.78125rem;
 }
 
 /* line 25, ../scss/_card.scss */
 .card-title {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.46875rem;
 }
 
 /* line 29, ../scss/_card.scss */
 .card-subtitle {
-  margin-top: -0.375rem;
+  margin-top: -0.23438rem;
   margin-bottom: 0;
 }
 
@@ -8504,12 +8504,12 @@ button.close {
 }
 /* line 43, ../scss/_card.scss */
 .card-link + .card-link {
-  margin-left: 1.25rem;
+  margin-left: 0.78125rem;
 }
 
 /* line 52, ../scss/_card.scss */
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 0.46875rem 0.78125rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -8517,7 +8517,7 @@ button.close {
 
 /* line 59, ../scss/_card.scss */
 .card-footer {
-  padding: 0.75rem 1.25rem;
+  padding: 0.46875rem 0.78125rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -8529,23 +8529,23 @@ button.close {
 }
 /* line 73, ../scss/_card.scss */
 .card-deck .card {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9375rem;
 }
 @media (min-width: 576px) {
   /* line 69, ../scss/_card.scss */
   .card-deck {
     flex-flow: row wrap;
-    margin-right: -1.5rem;
-    margin-left: -1.5rem;
+    margin-right: -0.9375rem;
+    margin-left: -0.9375rem;
   }
   /* line 82, ../scss/_card.scss */
   .card-deck .card {
     display: flex;
     flex: 1 0 0%;
     flex-direction: column;
-    margin-right: 1.5rem;
+    margin-right: 0.9375rem;
     margin-bottom: 0;
-    margin-left: 1.5rem;
+    margin-left: 0.9375rem;
   }
 }
 
@@ -8556,7 +8556,7 @@ button.close {
 }
 /* line 104, ../scss/_card.scss */
 .card-group > .card {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9375rem;
 }
 @media (min-width: 576px) {
   /* line 98, ../scss/_card.scss */
@@ -8577,13 +8577,13 @@ button.close {
 
 /* line 183, ../scss/_card.scss */
 .card-columns .card {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.46875rem;
 }
 @media (min-width: 576px) {
   /* line 182, ../scss/_card.scss */
   .card-columns {
     column-count: 3;
-    column-gap: 1.25rem;
+    column-gap: 0.78125rem;
   }
   /* line 191, ../scss/_card.scss */
   .card-columns .card {
@@ -8595,12 +8595,12 @@ button.close {
 /* line 5, ../scss/_alert.scss */
 .alert {
   position: relative;
-  padding: 1.2rem 2rem;
-  margin-bottom: 1rem;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0.625rem;
   border: 1px solid transparent;
-  -moz-border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  border-radius: 0.4rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
 
 /* line 14, ../scss/_alert.scss */
@@ -8615,14 +8615,14 @@ button.close {
 
 /* line 29, ../scss/_alert.scss */
 .alert-dismissible {
-  padding-right: 6.1rem;
+  padding-right: 3.8125rem;
 }
 /* line 33, ../scss/_alert.scss */
 .alert-dismissible .close {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1.2rem 2rem;
+  padding: 0.75rem 1.25rem;
   color: inherit;
 }
 /* line 40, ../scss/_alert.scss */
@@ -8825,9 +8825,9 @@ progress {
   background-color: #fff;
   padding: 1px;
   color: #fff;
-  -moz-border-radius: 1000rem;
-  -webkit-border-radius: 1000rem;
-  border-radius: 1000rem;
+  -moz-border-radius: 625rem;
+  -webkit-border-radius: 625rem;
+  border-radius: 625rem;
 }
 
 /* line 18, ../scss/_progress.scss */
@@ -8840,9 +8840,9 @@ progress .progress {
 /* line 29, ../scss/_progress.scss */
 .progress-value {
   float: left;
-  -moz-border-radius: 1000rem;
-  -webkit-border-radius: 1000rem;
-  border-radius: 1000rem;
+  -moz-border-radius: 625rem;
+  -webkit-border-radius: 625rem;
+  border-radius: 625rem;
   padding-right: 10px;
   background-color: #6c757d;
   height: 100%;
@@ -8858,16 +8858,16 @@ progress[value]::-webkit-progress-bar {
 }
 /* line 46, ../scss/_progress.scss */
 progress[value]::-webkit-progress-value {
-  -moz-border-radius: 1000rem;
-  -webkit-border-radius: 1000rem;
-  border-radius: 1000rem;
+  -moz-border-radius: 625rem;
+  -webkit-border-radius: 625rem;
+  border-radius: 625rem;
   background-color: #6c757d;
 }
 /* line 51, ../scss/_progress.scss */
 progress[value]::-moz-progress-bar {
-  -moz-border-radius: 1000rem;
-  -webkit-border-radius: 1000rem;
-  border-radius: 1000rem;
+  -moz-border-radius: 625rem;
+  -webkit-border-radius: 625rem;
+  border-radius: 625rem;
   background-color: #6c757d;
 }
 
@@ -8945,7 +8945,7 @@ progress[value]::-moz-progress-bar {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 1000rem;
+  border-radius: 625rem;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
   animation: progress-running 2s ease infinite;
 }
@@ -9096,7 +9096,7 @@ progress[value]::-moz-progress-bar {
   position: relative;
   display: block;
   padding: 8px 15px;
-  margin-bottom: -.1rem;
+  margin-bottom: -0.0625rem;
   font-size: 14px;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -9322,7 +9322,7 @@ progress[value]::-moz-progress-bar {
 /* line 15, ../scss/_input-group.scss */
 .input-group .form-control,
 .input-group .btn {
-  padding: 0.375rem 0.75rem;
+  padding: 0.23438rem 0.46875rem;
 }
 /* line 20, ../scss/_input-group.scss */
 .input-group .form-control {
@@ -9353,8 +9353,8 @@ progress[value]::-moz-progress-bar {
 .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
-  padding: 0.25rem 0.5rem;
-  font-size: 1.2rem;
+  padding: 0.15625rem 0.3125rem;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
 
@@ -9362,8 +9362,8 @@ progress[value]::-moz-progress-bar {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  padding: 0.5rem 1rem;
-  font-size: 1.6rem;
+  padding: 0.3125rem 0.625rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -9371,15 +9371,15 @@ progress[value]::-moz-progress-bar {
 .input-group-hg > .form-control,
 .input-group-hg > .input-group-addon,
 .input-group-hg > .input-group-btn > .btn {
-  padding: 1.35667rem 2rem;
-  font-size: 2rem;
-  line-height: 1.1;
+  padding: 0.84792rem 1.25rem;
+  font-size: 1.25rem;
+  line-height: 0.6875;
 }
 
 /* line 111, ../scss/_input-group.scss */
 .input-group-addon {
-  padding: 0.375rem 0.75rem;
-  font-size: 1.4rem;
+  padding: 0.23438rem 0.46875rem;
+  font-size: 0.875rem;
   font-weight: normal;
   line-height: 1.5;
   color: #6c757d;
@@ -9597,14 +9597,14 @@ progress[value]::-moz-progress-bar {
 
 /* line 246, ../scss/_input-group.scss */
 .input-group-round > :first-child {
-  border-top-left-radius: 0.4rem !important;
-  border-bottom-left-radius: 0.4rem !important;
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
 }
 /* line 251, ../scss/_input-group.scss */
 .input-group-round > :last-child,
 .input-group-round > :last-child * {
-  border-top-right-radius: 0.4rem !important;
-  border-bottom-right-radius: 0.4rem !important;
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
 }
 
 /* line 261, ../scss/_input-group.scss */
@@ -9864,7 +9864,7 @@ progress[value]::-moz-progress-bar {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.48rem;
+  border-radius: 0.3rem;
   -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -9983,7 +9983,7 @@ progress[value]::-moz-progress-bar {
 .mark-close, .mark-ok, .mark-arrow-left2, .mark-arrow-right2 {
   display: inline-block;
   vertical-align: middle;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   font-weight: 400;
   outline: none;
 }
@@ -10044,7 +10044,7 @@ progress[value]::-moz-progress-bar {
 .mark-close, .mark-ok, .mark-arrow-left2, .mark-arrow-right2 {
   display: inline-block;
   vertical-align: middle;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   font-weight: 400;
   outline: none;
 }

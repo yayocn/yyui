@@ -91,7 +91,7 @@ blockquote {
   padding-right: 0;
   margin-bottom: $space-default;
   font-size: $blockquote-font-size;
-  border-left: .4rem solid $blockquote-border-color;
+  border-left: $font-scale * .4rem solid $blockquote-border-color;
 
   p,
   ul,
@@ -116,7 +116,7 @@ blockquote {
     padding-left: 0;
     padding-right: $space-default;
     text-align: right;
-    border-right: .4rem solid $blockquote-border-color;
+    border-right: $font-scale * .4rem solid $blockquote-border-color;
     border-left: 0;
 
     // Account for citation
@@ -136,7 +136,7 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: $font-scale * .5rem;
   margin-left: 0; // Undo browser default
 }
 

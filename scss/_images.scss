@@ -28,7 +28,7 @@
 
 .figure {
   display: inline-block;
-  margin: 0 0 1rem;
+  margin: 0 0 $font-scale * 1rem;
 }
 
 .figure-img {

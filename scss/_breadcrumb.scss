@@ -16,7 +16,7 @@
     &::after {
       content: $breadcrumb-divider;
       position: relative;
-      margin: 0 0.75rem;
+      margin: 0 $font-scale * 0.75rem;
       color: $breadcrumb-divider-color;
       font-size: $font-size-xs;
     }
