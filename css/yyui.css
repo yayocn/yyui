@@ -258,19 +258,23 @@ textarea {
 button {
   overflow: visible;
 }
+/* line 18, ../scss/mixins/_hover.scss */
+button:focus, button:hover {
+  outline: 0;
+}
 
-/* line 362, ../scss/_normalize.scss */
+/* line 366, ../scss/_normalize.scss */
 [role="button"] {
   cursor: pointer;
 }
 
-/* line 373, ../scss/_normalize.scss */
+/* line 377, ../scss/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 386, ../scss/_normalize.scss */
+/* line 390, ../scss/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -279,50 +283,50 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 398, ../scss/_normalize.scss */
+/* line 402, ../scss/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 407, ../scss/_normalize.scss */
+/* line 411, ../scss/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 418, ../scss/_normalize.scss */
+/* line 422, ../scss/_normalize.scss */
 input {
   line-height: normal;
 }
 
-/* line 430, ../scss/_normalize.scss */
+/* line 434, ../scss/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 442, ../scss/_normalize.scss */
+/* line 446, ../scss/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 452, ../scss/_normalize.scss */
+/* line 456, ../scss/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: none;
   box-sizing: content-box;
 }
 
-/* line 463, ../scss/_normalize.scss */
+/* line 467, ../scss/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 472, ../scss/_normalize.scss */
+/* line 476, ../scss/_normalize.scss */
 fieldset {
   min-width: 0;
   padding: 0;
@@ -330,7 +334,7 @@ fieldset {
   border: 0;
 }
 
-/* line 484, ../scss/_normalize.scss */
+/* line 488, ../scss/_normalize.scss */
 legend {
   display: block;
   width: 100%;
@@ -341,24 +345,24 @@ legend {
   border: none;
 }
 
-/* line 498, ../scss/_normalize.scss */
+/* line 502, ../scss/_normalize.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 507, ../scss/_normalize.scss */
+/* line 511, ../scss/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
 
-/* line 518, ../scss/_normalize.scss */
+/* line 522, ../scss/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
   background-color: transparent;
 }
 
-/* line 524, ../scss/_normalize.scss */
+/* line 528, ../scss/_normalize.scss */
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -367,18 +371,18 @@ caption {
   caption-side: top;
 }
 
-/* line 532, ../scss/_normalize.scss */
+/* line 536, ../scss/_normalize.scss */
 td,
 th {
   padding: 0;
 }
 
-/* line 537, ../scss/_normalize.scss */
+/* line 541, ../scss/_normalize.scss */
 th {
   text-align: left;
 }
 
-/* line 541, ../scss/_normalize.scss */
+/* line 545, ../scss/_normalize.scss */
 output {
   display: inline-block;
 }
@@ -9817,12 +9821,12 @@ progress[value]::-moz-progress-bar {
   text-align: center;
 }
 
-/* line 5, ../scss/_modal.scss */
+/* line 8, ../scss/_modal.scss */
 .modal-open {
   overflow: hidden;
 }
 
-/* line 9, ../scss/_modal.scss */
+/* line 13, ../scss/_modal.scss */
 .modal {
   position: fixed;
   top: 0;
@@ -9833,45 +9837,57 @@ progress[value]::-moz-progress-bar {
   display: none;
   overflow: hidden;
   outline: 0;
-  -webkit-overflow-scrolling: touch;
 }
-/* line 21, ../scss/_modal.scss */
-.modal.fade .modal-dialog {
-  transform: translate(0, -25%);
-  transition: transform .3s ease-out;
-}
-/* line 25, ../scss/_modal.scss */
-.modal.in .modal-dialog {
-  transform: translate(0, 0);
-}
-
-/* line 28, ../scss/_modal.scss */
+/* line 29, ../scss/_modal.scss */
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-/* line 33, ../scss/_modal.scss */
+/* line 36, ../scss/_modal.scss */
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+/* line 44, ../scss/_modal.scss */
+.modal.fade .modal-dialog {
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -25%);
+}
+/* line 48, ../scss/_modal.scss */
+.modal.show .modal-dialog {
+  transform: translate(0, 0);
 }
 
-/* line 39, ../scss/_modal.scss */
+/* line 53, ../scss/_modal.scss */
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - (0.5rem * 2));
+}
+
+/* line 60, ../scss/_modal.scss */
 .modal-content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
   outline: 0;
 }
 
-/* line 51, ../scss/_modal.scss */
+/* line 76, ../scss/_modal.scss */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -9881,71 +9897,60 @@ progress[value]::-moz-progress-bar {
   z-index: 1040;
   background-color: #000;
 }
-/* line 61, ../scss/_modal.scss */
+/* line 86, ../scss/_modal.scss */
 .modal-backdrop.fade {
   opacity: 0;
 }
-/* line 62, ../scss/_modal.scss */
-.modal-backdrop.in {
+/* line 87, ../scss/_modal.scss */
+.modal-backdrop.show {
   opacity: 0.5;
 }
 
-/* line 66, ../scss/_modal.scss */
+/* line 92, ../scss/_modal.scss */
 .modal-header {
-  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
   border-bottom: 1px solid #e9ecef;
 }
-/* line 9, ../scss/mixins/_utilities.scss */
-.modal-header::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-/* line 72, ../scss/_modal.scss */
+/* line 99, ../scss/_modal.scss */
 .modal-header .close {
-  margin-top: -2px;
+  padding: 1rem;
+  margin: -1rem -1rem -1rem auto;
 }
 
-/* line 77, ../scss/_modal.scss */
+/* line 107, ../scss/_modal.scss */
 .modal-title {
-  margin: 0;
+  margin-bottom: 0;
   line-height: 1.5;
 }
 
-/* line 83, ../scss/_modal.scss */
+/* line 114, ../scss/_modal.scss */
 .modal-body {
   position: relative;
-  padding: 15px;
+  flex: 1 1 auto;
+  padding: 1rem;
 }
 
-/* line 88, ../scss/_modal.scss */
+/* line 123, ../scss/_modal.scss */
 .modal-footer {
-  padding: 15px;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
   border-top: 1px solid #e9ecef;
 }
-/* line 9, ../scss/mixins/_utilities.scss */
-.modal-footer::after {
-  display: block;
-  clear: both;
-  content: "";
+/* line 131, ../scss/_modal.scss */
+.modal-footer > :not(:first-child) {
+  margin-left: .25rem;
 }
-/* line 94, ../scss/_modal.scss */
-.modal-footer .btn + .btn {
-  margin-bottom: 0;
-  margin-left: 5px;
-}
-/* line 99, ../scss/_modal.scss */
-.modal-footer .btn-group .btn + .btn {
-  margin-left: -1px;
-}
-/* line 103, ../scss/_modal.scss */
-.modal-footer .btn-block + .btn-block {
-  margin-left: 0;
+/* line 132, ../scss/_modal.scss */
+.modal-footer > :not(:last-child) {
+  margin-right: .25rem;
 }
 
-/* line 108, ../scss/_modal.scss */
+/* line 136, ../scss/_modal.scss */
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -9955,28 +9960,33 @@ progress[value]::-moz-progress-bar {
 }
 
 @media (min-width: 576px) {
-  /* line 118, ../scss/_modal.scss */
+  /* line 147, ../scss/_modal.scss */
   .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
+    max-width: 500px;
+    margin: 1.75rem auto;
   }
 
-  /* line 122, ../scss/_modal.scss */
+  /* line 152, ../scss/_modal.scss */
+  .modal-dialog-centered {
+    min-height: calc(100% - (1.75rem * 2));
+  }
+
+  /* line 156, ../scss/_modal.scss */
   .modal-content {
-    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   }
 
-  /* line 126, ../scss/_modal.scss */
+  /* line 160, ../scss/_modal.scss */
   .modal-sm {
-    width: 300px;
+    max-width: 300px;
   }
 }
-@media (min-width: 768px) {
-  /* line 130, ../scss/_modal.scss */
+@media (min-width: 992px) {
+  /* line 165, ../scss/_modal.scss */
   .modal-lg {
-    width: 900px;
+    max-width: 800px;
   }
 }
 /* line 4, ../scss/_mark.scss */

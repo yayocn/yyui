@@ -357,6 +357,10 @@ textarea {
 
 button {
     overflow: visible;
+
+    @include hover-focus {
+        outline: 0;
+    }
 }
 
 [role="button"] {
