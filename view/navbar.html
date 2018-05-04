@@ -8,122 +8,53 @@
 </head>
 <body>
 <header>
-  <h4>default</h4>
-  <nav class="navbar">
-    <div class="container">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
-        <i class="fa fa-bars"></i>
-      </button>
-      <a class="navbar-brand" href="javascript:;">商标</a>
-      <div id="navbar1" class="navbar-collapse">
-        <ul class="nav navbar-nav f-r">
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" href="javascript:;">项目</a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="navbar-form f-r">
-          <input class="form-control" type="text" placeholder="Searching..."/>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <h4>dark</h4>
-  <nav class="navbar navbar-dark">
-    <div class="container">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar2">
-      <i class="fa fa-bars"></i>
-      </button>
-      <a class="navbar-brand" href="javascript:;">商标</a>
-      <div id="navbar2" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav f-r">
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" href="javascript:;">项目</a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="navbar-form f-r">
-          <input class="form-control" type="text" placeholder="Searching..."/>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <h4>theme</h4>
-  <nav class="navbar navbar-theme">
-    <div class="container">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar3">
-      <i class="fa fa-bars"></i>
-      </button>
-      <a class="navbar-brand" href="javascript:;">商标</a>
-      <div id="navbar3" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" href="javascript:;">项目</a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <h4>perspective</h4>
-  <nav class="navbar navbar-theme navbar-perspective" style="background-image: url(../img/index-bg.png)">
-    <div class="container">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar4">
-      <i class="fa fa-bars"></i>
-      </button>
-      <a class="navbar-brand" href="javascript:;">商标</a>
-      <div id="navbar4" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li><a href="javascript:;">项目</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" href="javascript:;">项目</a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-              <li class="dropdown-item"><a href="javascript:;">项目</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline mv-5">
+        <input class="form-control" type="search" placeholder="Search">
+        <button class="btn" type="submit">Search</button>
+      </form>
     </div>
   </nav>
 </header>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+
+    </div>
+  </div>
+</div>
 
 <script src="../jquery-1.12.4.min.js"></script>
 <script src="../js/util.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script src="../js/dropdown.js"></script>
 <script src="../js/collapse.js"></script>
 </body>

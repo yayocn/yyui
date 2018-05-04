@@ -3251,6 +3251,70 @@ a.text-transparent:focus, a.text-transparent:hover {
   padding-right: 50px !important;
 }
 
+/* line 54, ../scss/utilities/_spacer.scss */
+.mt-auto {
+  margin-top: auto !important;
+}
+
+/* line 72, ../scss/utilities/_spacer.scss */
+.pt-auto {
+  padding-top: auto !important;
+}
+
+/* line 54, ../scss/utilities/_spacer.scss */
+.mr-auto {
+  margin-right: auto !important;
+}
+
+/* line 72, ../scss/utilities/_spacer.scss */
+.pr-auto {
+  padding-right: auto !important;
+}
+
+/* line 54, ../scss/utilities/_spacer.scss */
+.mb-auto {
+  margin-bottom: auto !important;
+}
+
+/* line 72, ../scss/utilities/_spacer.scss */
+.pb-auto {
+  padding-bottom: auto !important;
+}
+
+/* line 54, ../scss/utilities/_spacer.scss */
+.ml-auto {
+  margin-left: auto !important;
+}
+
+/* line 72, ../scss/utilities/_spacer.scss */
+.pl-auto {
+  padding-left: auto !important;
+}
+
+/* line 54, ../scss/utilities/_spacer.scss */
+.mv-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+/* line 72, ../scss/utilities/_spacer.scss */
+.pv-auto {
+  padding-top: auto !important;
+  padding-bottom: auto !important;
+}
+
+/* line 54, ../scss/utilities/_spacer.scss */
+.mh-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* line 72, ../scss/utilities/_spacer.scss */
+.ph-auto {
+  padding-left: auto !important;
+  padding-right: auto !important;
+}
+
 /* line 5, ../scss/utilities/_font.scss */
 .font-12 {
   font-size: 12px !important;

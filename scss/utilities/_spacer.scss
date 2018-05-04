@@ -49,3 +49,41 @@
     }
   }
 }
+
+@each $dir in $margin-padding-direction  {
+  .m#{$dir}-auto {
+    @if $dir == t {
+      margin-top: auto !important;
+    }@else if($dir == r) {
+      margin-right: auto !important;
+    }@else if($dir == b) {
+      margin-bottom: auto !important;
+    }@else if($dir == l) {
+      margin-left: auto !important;
+    }@else if($dir == v) {
+      margin-top: auto !important;
+      margin-bottom: auto !important;
+    }@else if($dir == h) {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+
+  .p#{$dir}-auto {
+    @if($dir == t) {
+      padding-top: auto !important;
+    }@else if($dir == r) {
+      padding-right: auto !important;
+    }@else if($dir == b) {
+      padding-bottom: auto !important;
+    }@else if($dir == l) {
+      padding-left: auto !important;
+    }@else if($dir == v) {
+      padding-top: auto !important;
+      padding-bottom: auto !important;
+    }@else if($dir == h) {
+      padding-left: auto !important;
+      padding-right: auto !important;
+    }
+  }
+}
