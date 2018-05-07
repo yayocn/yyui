@@ -52,9 +52,3 @@
   display: inline !important;
 }
 
-.justify-start { @include justify-content(flex-start !important) }
-.justify-end { @include justify-content(flex-end !important) }
-.justify-center { @include justify-content(center !important) }
-.justify-between { @include justify-content(space-between !important) }
-.justify-around { @include justify-content(space-around !important) }
-

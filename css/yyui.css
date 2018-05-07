@@ -205,7 +205,7 @@ figure {
 
 /* line 279, ../scss/_normalize.scss */
 hr {
-  box-sizing: content-box;
+  box-sizing: border-box;
   height: 0;
 }
 
@@ -317,7 +317,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* line 456, ../scss/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: none;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 /* line 467, ../scss/_normalize.scss */
@@ -889,36 +889,6 @@ dd {
 /* line 51, ../scss/utilities/_view.scss */
 .inline {
   display: inline !important;
-}
-
-/* line 55, ../scss/utilities/_view.scss */
-.justify-start {
-  -webkit-justify-content: flex-start !important;
-  justify-content: flex-start !important;
-}
-
-/* line 56, ../scss/utilities/_view.scss */
-.justify-end {
-  -webkit-justify-content: flex-end !important;
-  justify-content: flex-end !important;
-}
-
-/* line 57, ../scss/utilities/_view.scss */
-.justify-center {
-  -webkit-justify-content: center !important;
-  justify-content: center !important;
-}
-
-/* line 58, ../scss/utilities/_view.scss */
-.justify-between {
-  -webkit-justify-content: space-between !important;
-  justify-content: space-between !important;
-}
-
-/* line 59, ../scss/utilities/_view.scss */
-.justify-around {
-  -webkit-justify-content: space-around !important;
-  justify-content: space-around !important;
 }
 
 /* line 79, ../scss/mixins/_utilities.scss */
@@ -7501,10 +7471,10 @@ nav,
 /* line 30, ../scss/_navbar.scss */
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.40625rem;
-  padding-bottom: 0.40625rem;
+  padding-top: 0.21875rem;
+  padding-bottom: 0.21875rem;
   margin-right: 15px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -7549,7 +7519,7 @@ nav,
 /* line 96, ../scss/_navbar.scss */
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
