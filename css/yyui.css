@@ -10938,3 +10938,197 @@ progress[value]::-moz-progress-bar {
 .loader-dark.loader-win-bar span[class*="l-"], .loader-dark.loader-win-roll span[class*="l-"]::after {
   background: #212529;
 }
+
+/* line 1, ../scss/_popover.scss */
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: block;
+  max-width: 276px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 0.8125rem;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  -moz-box-shadow: 0 0.15625rem 0.3125rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0.15625rem 0.3125rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.15625rem 0.3125rem rgba(0, 0, 0, 0.2);
+}
+/* line 20, ../scss/_popover.scss */
+.popover .arrow {
+  position: absolute;
+  display: block;
+  width: 0.625rem;
+  height: 0.3125rem;
+  margin: 0 0.3rem;
+}
+/* line 27, ../scss/_popover.scss */
+.popover .arrow::before, .popover .arrow::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* line 38, ../scss/_popover.scss */
+.bs-popover-top, .bs-popover-auto[x-placement^="top"] {
+  margin-bottom: 0.3125rem;
+}
+/* line 41, ../scss/_popover.scss */
+.bs-popover-top .arrow, .bs-popover-auto[x-placement^="top"] .arrow {
+  bottom: calc((0.3125rem + 1px) * -1);
+}
+/* line 45, ../scss/_popover.scss */
+.bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before,
+.bs-popover-top .arrow::after,
+.bs-popover-auto[x-placement^="top"] .arrow::after {
+  border-width: 0.3125rem 0.3125rem 0;
+}
+/* line 50, ../scss/_popover.scss */
+.bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
+  bottom: 0;
+  border-top-color: rgba(0, 0, 0, 0.25);
+}
+/* line 55, ../scss/_popover.scss */
+.bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
+  bottom: 1px;
+  border-top-color: #fff;
+}
+
+/* line 61, ../scss/_popover.scss */
+.bs-popover-right, .bs-popover-auto[x-placement^="right"] {
+  margin-left: 0.3125rem;
+}
+/* line 64, ../scss/_popover.scss */
+.bs-popover-right .arrow, .bs-popover-auto[x-placement^="right"] .arrow {
+  left: calc((0.3125rem + 1px) * -1);
+  width: 0.3125rem;
+  height: 0.625rem;
+  margin: 0.3rem 0;
+}
+/* line 71, ../scss/_popover.scss */
+.bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before,
+.bs-popover-right .arrow::after,
+.bs-popover-auto[x-placement^="right"] .arrow::after {
+  border-width: 0.3125rem 0.3125rem 0.3125rem 0;
+}
+/* line 76, ../scss/_popover.scss */
+.bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
+  left: 0;
+  border-right-color: rgba(0, 0, 0, 0.25);
+}
+/* line 81, ../scss/_popover.scss */
+.bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
+  left: 1px;
+  border-right-color: #fff;
+}
+
+/* line 87, ../scss/_popover.scss */
+.bs-popover-bottom, .bs-popover-auto[x-placement^="bottom"] {
+  margin-top: 0.3125rem;
+}
+/* line 90, ../scss/_popover.scss */
+.bs-popover-bottom .arrow, .bs-popover-auto[x-placement^="bottom"] .arrow {
+  top: calc((0.3125rem + 1px) * -1);
+}
+/* line 94, ../scss/_popover.scss */
+.bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before,
+.bs-popover-bottom .arrow::after,
+.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  border-width: 0 0.3125rem 0.3125rem 0.3125rem;
+}
+/* line 99, ../scss/_popover.scss */
+.bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
+  top: 0;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+/* line 104, ../scss/_popover.scss */
+.bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  top: 1px;
+  border-bottom-color: #fff;
+}
+/* line 110, ../scss/_popover.scss */
+.bs-popover-bottom .popover-header::before, .bs-popover-auto[x-placement^="bottom"] .popover-header::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 0.625rem;
+  margin-left: -0.3125rem;
+  content: "";
+  border-bottom: 1px solid #f7f7f7;
+}
+
+/* line 122, ../scss/_popover.scss */
+.bs-popover-left, .bs-popover-auto[x-placement^="left"] {
+  margin-right: 0.3125rem;
+}
+/* line 125, ../scss/_popover.scss */
+.bs-popover-left .arrow, .bs-popover-auto[x-placement^="left"] .arrow {
+  right: calc((0.3125rem + 1px) * -1);
+  width: 0.3125rem;
+  height: 0.625rem;
+  margin: 0.3rem 0;
+}
+/* line 132, ../scss/_popover.scss */
+.bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before,
+.bs-popover-left .arrow::after,
+.bs-popover-auto[x-placement^="left"] .arrow::after {
+  border-width: 0.3125rem 0 0.3125rem 0.3125rem;
+}
+/* line 137, ../scss/_popover.scss */
+.bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
+  right: 0;
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+/* line 142, ../scss/_popover.scss */
+.bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
+  right: 1px;
+  border-left-color: #fff;
+}
+
+/* line 165, ../scss/_popover.scss */
+.popover-header {
+  padding: 0.3125rem 0.46875rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  color: inherit;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  -moz-border-radius-topleft: calc(0.3rem - 1px);
+  -webkit-border-top-left-radius: calc(0.3rem - 1px);
+  border-top-left-radius: calc(0.3rem - 1px);
+  -moz-border-radius-topright: calc(0.3rem - 1px);
+  -webkit-border-top-right-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+/* line 175, ../scss/_popover.scss */
+.popover-header:empty {
+  display: none;
+}
+
+/* line 180, ../scss/_popover.scss */
+.popover-body {
+  padding: 0.3125rem 0.46875rem;
+  color: #212529;
+}

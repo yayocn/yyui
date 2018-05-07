@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="../css/yyui.css"/>
+  <title></title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h4>default</h4>
+      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+      <h4 class="mt-10">direction</h4>
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on top
+      </button>
+      <br>
+      <br>
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on right
+      </button>
+      <br>
+      <br>
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on bottom
+      </button>
+      <br>
+      <br>
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on left
+      </button>
+
+      <h4 class="mt-10">focus</h4>
+      <button type="button" class="btn btn-lg btn-danger" data-trigger="focus" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+    </div>
+
+  </div>
+</div>
+<script src="../jquery-1.12.4.min.js"></script>
+<script src="../js/util.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="../js/tooltip.js"></script>
+<script src="../js/popover.js"></script>
+<script>
+  $(function () {
+    $('.btn ').popover({
+      container: 'body'
+    })
+  })
+</script>
+</body>
+</html>
