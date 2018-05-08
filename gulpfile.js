@@ -5,7 +5,7 @@ var uglify = require('gulp-uglify');
 var cssmin = require('gulp-minify-css');
 var rename = require('gulp-rename');
 
-var VERSION = '1.1.2';
+var VERSION = '2.0.0';
 
 //
 // css
