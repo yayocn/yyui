@@ -11129,3 +11129,122 @@ progress[value]::-moz-progress-bar {
   padding: 0.3125rem 0.46875rem;
   color: #212529;
 }
+
+/* line 2, ../scss/_tooltip.scss */
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 0.8125rem;
+  word-wrap: break-word;
+  opacity: 0;
+}
+/* line 15, ../scss/_tooltip.scss */
+.tooltip.show {
+  opacity: 0.9;
+}
+/* line 17, ../scss/_tooltip.scss */
+.tooltip .arrow {
+  position: absolute;
+  display: block;
+  width: 0.5rem;
+  height: 0.25rem;
+}
+/* line 23, ../scss/_tooltip.scss */
+.tooltip .arrow::before {
+  position: absolute;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* line 32, ../scss/_tooltip.scss */
+.ui-tooltip-top, .ui-tooltip-auto[x-placement^="top"] {
+  padding: 0.25rem 0;
+}
+/* line 35, ../scss/_tooltip.scss */
+.ui-tooltip-top .arrow, .ui-tooltip-auto[x-placement^="top"] .arrow {
+  bottom: 0;
+}
+/* line 38, ../scss/_tooltip.scss */
+.ui-tooltip-top .arrow::before, .ui-tooltip-auto[x-placement^="top"] .arrow::before {
+  top: 0;
+  border-width: 0.25rem 0.25rem 0;
+  border-top-color: #000;
+}
+
+/* line 46, ../scss/_tooltip.scss */
+.ui-tooltip-right, .ui-tooltip-auto[x-placement^="right"] {
+  padding: 0 0.25rem;
+}
+/* line 49, ../scss/_tooltip.scss */
+.ui-tooltip-right .arrow, .ui-tooltip-auto[x-placement^="right"] .arrow {
+  left: 0;
+  width: 0.25rem;
+  height: 0.5rem;
+}
+/* line 54, ../scss/_tooltip.scss */
+.ui-tooltip-right .arrow::before, .ui-tooltip-auto[x-placement^="right"] .arrow::before {
+  right: 0;
+  border-width: 0.25rem 0.25rem 0.25rem 0;
+  border-right-color: #000;
+}
+
+/* line 62, ../scss/_tooltip.scss */
+.ui-tooltip-bottom, .ui-tooltip-auto[x-placement^="bottom"] {
+  padding: 0.25rem 0;
+}
+/* line 65, ../scss/_tooltip.scss */
+.ui-tooltip-bottom .arrow, .ui-tooltip-auto[x-placement^="bottom"] .arrow {
+  top: 0;
+}
+/* line 68, ../scss/_tooltip.scss */
+.ui-tooltip-bottom .arrow::before, .ui-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  bottom: 0;
+  border-width: 0 0.25rem 0.25rem;
+  border-bottom-color: #000;
+}
+
+/* line 76, ../scss/_tooltip.scss */
+.ui-tooltip-left, .ui-tooltip-auto[x-placement^="left"] {
+  padding: 0 0.25rem;
+}
+/* line 79, ../scss/_tooltip.scss */
+.ui-tooltip-left .arrow, .ui-tooltip-auto[x-placement^="left"] .arrow {
+  right: 0;
+  width: 0.25rem;
+  height: 0.5rem;
+}
+/* line 84, ../scss/_tooltip.scss */
+.ui-tooltip-left .arrow::before, .ui-tooltip-auto[x-placement^="left"] .arrow::before {
+  left: 0;
+  border-width: 0.25rem 0 0.25rem 0.25rem;
+  border-left-color: #000;
+}
+
+/* line 108, ../scss/_tooltip.scss */
+.tooltip-inner {
+  max-width: 200px;
+  padding: 0.15625rem 0.3125rem;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}

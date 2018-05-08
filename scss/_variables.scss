@@ -685,6 +685,22 @@ $pager-active-color:                   $pagination-active-color !default;
 
 $pager-disabled-color:                 $pagination-disabled-color !default;
 
+// Tooltips
+
+$tooltip-font-size:           $font-size-sm !default;
+$tooltip-max-width:           200px !default;
+$tooltip-color:               $white !default;
+$tooltip-bg:                  $black !default;
+$tooltip-border-radius:       $border-radius-no !default;
+$tooltip-opacity:             .9 !default;
+$tooltip-padding-y:           $font-scale * .25rem !default;
+$tooltip-padding-x:           $font-scale * .5rem !default;
+$tooltip-margin:              0 !default;
+
+$tooltip-arrow-width:         $font-scale * .8rem !default;
+$tooltip-arrow-height:        $font-scale * .4rem !default;
+$tooltip-arrow-color:         $tooltip-bg !default;
+
 // Popover
 //
 

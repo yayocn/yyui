@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="../css/yyui.css"/>
+  <title></title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h4>default</h4>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+        Tooltip on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+        Tooltip on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+        Tooltip on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+        Tooltip on left
+      </button>
+    </div>
+  </div>
+  
+</div>
+<script src="../jquery-1.12.4.min.js"></script>
+<script src="../js/util.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="../js/tooltip.js"></script>
+<script>
+  $(function () {
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  })
+</script>
+</body>
+</html>

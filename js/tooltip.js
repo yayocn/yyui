@@ -18,11 +18,11 @@ var Tooltip = function ($) {
    */
   var NAME = 'tooltip';
   var VERSION = '4.0.0';
-  var DATA_KEY = 'bs.tooltip';
+  var DATA_KEY = 'ui.tooltip';
   var EVENT_KEY = "." + DATA_KEY;
   var JQUERY_NO_CONFLICT = $.fn[NAME];
   var TRANSITION_DURATION = 150;
-  var CLASS_PREFIX = 'bs-tooltip';
+  var CLASS_PREFIX = 'ui-tooltip';
   var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g');
   var DefaultType = {
     animation: 'boolean',
@@ -175,7 +175,7 @@ var Tooltip = function ($) {
       clearTimeout(this._timeout);
       $.removeData(this.element, this.constructor.DATA_KEY);
       $(this.element).off(this.constructor.EVENT_KEY);
-      $(this.element).closest('.modal').off('hide.bs.modal');
+      $(this.element).closest('.modal').off('hide.ui.modal');
 
       if (this.tip) {
         $(this.tip).remove();
@@ -421,7 +421,7 @@ var Tooltip = function ($) {
           });
         }
 
-        $(_this3.element).closest('.modal').on('hide.bs.modal', function () {
+        $(_this3.element).closest('.modal').on('hide.ui.modal', function () {
           return _this3.hide();
         });
       });
