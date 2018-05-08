@@ -14,7 +14,6 @@
   background-color: $popover-bg;
   background-clip: padding-box;
   border: $popover-border-width solid $popover-border-color;
-  @include border-radius($popover-border-radius);
   @include box-shadow($popover-box-shadow);
 
   .arrow {
@@ -35,7 +34,7 @@
   }
 }
 
-.bs-popover-top {
+.ui-popover-top {
   margin-bottom: $popover-arrow-height;
 
   .arrow {
@@ -58,7 +57,7 @@
   }
 }
 
-.bs-popover-right {
+.ui-popover-right {
   margin-left: $popover-arrow-height;
 
   .arrow {
@@ -84,7 +83,7 @@
   }
 }
 
-.bs-popover-bottom {
+.ui-popover-bottom {
   margin-top: $popover-arrow-height;
 
   .arrow {
@@ -119,7 +118,7 @@
   }
 }
 
-.bs-popover-left {
+.ui-popover-left {
   margin-right: $popover-arrow-height;
 
   .arrow {
@@ -145,18 +144,18 @@
   }
 }
 
-.bs-popover-auto {
+.ui-popover-auto {
   &[x-placement^="top"] {
-    @extend .bs-popover-top;
+    @extend .ui-popover-top;
   }
   &[x-placement^="right"] {
-    @extend .bs-popover-right;
+    @extend .ui-popover-right;
   }
   &[x-placement^="bottom"] {
-    @extend .bs-popover-bottom;
+    @extend .ui-popover-bottom;
   }
   &[x-placement^="left"] {
-    @extend .bs-popover-left;
+    @extend .ui-popover-left;
   }
 }
 

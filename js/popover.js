@@ -20,10 +20,10 @@ var Popover = function ($) {
    */
   var NAME = 'popover';
   var VERSION = '4.0.0';
-  var DATA_KEY = 'bs.popover';
+  var DATA_KEY = 'ui.popover';
   var EVENT_KEY = "." + DATA_KEY;
   var JQUERY_NO_CONFLICT = $.fn[NAME];
-  var CLASS_PREFIX = 'bs-popover';
+  var CLASS_PREFIX = 'ui-popover';
   var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g');
 
   var Default = _extends({}, Tooltip.Default, {

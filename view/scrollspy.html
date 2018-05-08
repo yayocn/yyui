@@ -3,65 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/yyui.css"/>
-  <style>
-    /* line 3, ../scss/global.scss */
-    .sidebar {
-      padding-top: 40px;
-    }
-    /* line 6, ../scss/global.scss */
-    .sidebar .nav-link {
-      padding-left: 20px;
-      color: #55595c;
-    }
-    /* line 11, ../scss/global.scss */
-    .sidebar .nav .nav-link.active {
-      color: #2EC6A0;
-      border-left: 2px solid #2EC6A0;
-    }
-    /* line 18, ../scss/global.scss */
-    .sidebar ul > ul {
-      display: none;
-      font-size: 80%;
-    }
-    /* line 23, ../scss/global.scss */
-    .sidebar ul .nav-link.active + ul {
-      display: block;
-    }
-  </style>
   <title></title>
-  <style>
-    body {
-      position: relative;
-    }
-    .tab-cont {
-      margin-top: 60px;
-    }
-    .aa {
-      width: 100%;
-      height: 500px;
-    }
-  </style>
 </head>
-<body data-spy="scroll" data-target="#dafdasf" data-offset="180">
-<div class="sidebar">
-  <ul class="nav" style="position: fixed;top: 0;" id="dafdasf">
-    <li class="active">
-      <a href="#a">Item</a>
-      <ul class="nav">
-        <li><a href="#b">Item</a></li>
-        <li><a href="#c" >Item</a></li>
-        <li><a href="#d" >Item</a></li>
-      </ul>
+<body>
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#fat">@fat</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#mdo">@mdo</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#one">one</a>
+        <a class="dropdown-item" href="#two">two</a>
+        <div role="separator" class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#three">three</a>
+      </div>
     </li>
   </ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0" style="height: 100px; overflow: scroll">
+  <h4 id="fat">@fat</h4>
+  <p>...</p>
+  <h4 id="mdo">@mdo</h4>
+  <p>...</p>
+  <h4 id="one">one</h4>
+  <p>...</p>
+  <h4 id="two">two</h4>
+  <p>...</p>
+  <h4 id="three">three</h4>
+  <p>...</p>
 </div>
 
-<div class="tab-cont">
-  <div class="aa" style="background-color: red" id="a"></div>gt
-  <div class="aa" style="background-color: blue" id="b"></div>
-  <div class="aa" style="background-color: darkblue;" id="c"></div>
-  <div class="aa" style="background-color: pink;" id="d"></div>
+<div class="divider"></div>
+<div id="list-example" class="list-group">
+  <ul class="list-group">
+    <a href="#list-item-1" class="list-group-item">百度</a>
+    <a href="#list-item-2" class="list-group-item">阿里</a>
+    <a href="#list-item-3" class="list-group-item">腾讯</a>
+  </ul>
 </div>
+<div data-spy="scroll" data-target="#list-example" data-offset="0" class="pt-relative" style="height: 100px; overflow: scroll;">
+  <h4 id="list-item-1">Item 1</h4>
+  <p>...</p>
+  <h4 id="list-item-2">Item 2</h4>
+  <p>...</p>
+  <h4 id="list-item-3">Item 3</h4>
+  <p>...</p>
+</div>
+
 <script src="../jquery-1.12.4.min.js"></script>
 <script src="../js/util.js"></script>
 <script src="../js/scrollspy.js"></script>
