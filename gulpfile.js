@@ -32,7 +32,19 @@ gulp.task('minifier', function() {
 // Connect the js file in `js` folder
 //
 gulp.task('concatJsAll', function() {
-  return gulp.src('js/*.js')
+  return gulp.src([
+    'js/util.js',
+    'js/button.js',
+    'js/collapse.js',
+    'js/alert.js',
+    'js/tab.js',
+    'js/carousel.js',
+    'js/dropdown.js',
+    'js/modal.js',
+    'js/tooltip.js',
+    'js/popover.js',
+    'js/scrollspy.js'
+  ])
     .pipe(concat('yyui.js'))
     .pipe(gulp.dest('js/dist/'))
     .pipe(rename('yyui.js'))
