@@ -1,8 +1,8 @@
 {
-  "name": "flyingimmortal",
-  "version": "1.0.0",
-  "description": "this is a framework.",
-  "main": "gulpfile.js",
+  "name": "yyui",
+  "version": "2.0.0",
+  "description": "It's a front-end framwork.",
+  "main": "index.js",
   "directories": {
     "doc": "docs"
   },
@@ -11,17 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flyimt/flyingImmortal.git"
+    "url": "git+https://github.com/yayocn/yyui.git"
   },
   "keywords": [
-    "fi"
+    "css",
+    "front-end",
+    "framwork"
   ],
-  "author": "yy",
+  "author": "yayo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/flyimt/flyingImmortal/issues"
+    "url": "https://github.com/yayocn/yyui/issues"
   },
-  "homepage": "https://github.com/flyimt/flyingImmortal#readme",
+  "homepage": "https://github.com/yayocn/yyui#readme",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
