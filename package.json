@@ -2,7 +2,7 @@
   "name": "yyui",
   "version": "2.0.0",
   "description": "It's a front-end framwork.",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "directories": {
     "doc": "docs"
   },
