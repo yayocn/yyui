@@ -751,7 +751,6 @@ dd {
 /* line 23, ../scss/utilities/_position.scss */
 .pt-vc {
   display: block;
-  position: absolute;
   top: 50%;
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -762,7 +761,6 @@ dd {
 /* line 27, ../scss/utilities/_position.scss */
 .pt-center {
   display: block;
-  position: absolute;
   top: 50%;
   left: 0;
   right: 0;
@@ -774,27 +772,32 @@ dd {
   margin-right: auto;
 }
 
-/* line 35, ../scss/utilities/_position.scss */
+/* line 36, ../scss/utilities/_position.scss */
 .pt-top {
   top: 0 !important;
-  left: 0;
-  right: 0;
+}
+
+/* line 36, ../scss/utilities/_position.scss */
+.pt-right {
+  right: 0 !important;
+}
+
+/* line 36, ../scss/utilities/_position.scss */
+.pt-bottom {
+  bottom: 0 !important;
+}
+
+/* line 36, ../scss/utilities/_position.scss */
+.pt-left {
+  left: 0 !important;
 }
 
 /* line 41, ../scss/utilities/_position.scss */
-.pt-bottom {
-  right: 0;
-  bottom: 0 !important;
-  left: 0;
-}
-
-/* line 47, ../scss/utilities/_position.scss */
 .pt-full {
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  right: 0;
+  left: 0;
 }
 
 /* line 11, ../scss/utilities/_view.scss */
@@ -895,7 +898,7 @@ dd {
   display: inline !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-primary {
   background-color: #007bff !important;
 }
@@ -905,7 +908,7 @@ a.bg-primary:focus, a.bg-primary:hover {
   background-color: #0062cc !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-secondary {
   background-color: #375A7F !important;
 }
@@ -915,7 +918,7 @@ a.bg-secondary:focus, a.bg-secondary:hover {
   background-color: #28415b !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-success {
   background-color: #2EC6A0 !important;
 }
@@ -925,7 +928,7 @@ a.bg-success:focus, a.bg-success:hover {
   background-color: #249d7f !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-info {
   background-color: #14adea !important;
 }
@@ -935,7 +938,7 @@ a.bg-info:focus, a.bg-info:hover {
   background-color: #108abb !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-warning {
   background-color: #ffc107 !important;
 }
@@ -945,7 +948,7 @@ a.bg-warning:focus, a.bg-warning:hover {
   background-color: #d39e00 !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-danger {
   background-color: #dc3545 !important;
 }
@@ -955,7 +958,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   background-color: #bd2130 !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-white {
   background-color: #fff !important;
 }
@@ -965,7 +968,7 @@ a.bg-white:focus, a.bg-white:hover {
   background-color: #e6e6e6 !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-light {
   background-color: #dee2e6 !important;
 }
@@ -975,7 +978,7 @@ a.bg-light:focus, a.bg-light:hover {
   background-color: #c1c9d0 !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-muted {
   background-color: #6c757d !important;
 }
@@ -985,7 +988,7 @@ a.bg-muted:focus, a.bg-muted:hover {
   background-color: #545b62 !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-dark {
   background-color: #212529 !important;
 }
@@ -995,7 +998,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   background-color: #0a0c0d !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-black {
   background-color: #000 !important;
 }
@@ -1005,7 +1008,7 @@ a.bg-black:focus, a.bg-black:hover {
   background-color: black !important;
 }
 
-/* line 79, ../scss/mixins/_utilities.scss */
+/* line 77, ../scss/mixins/_utilities.scss */
 .bg-transparent {
   background-color: transparent !important;
 }

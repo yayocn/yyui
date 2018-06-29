@@ -2,9 +2,9 @@
 // Position
 //
 
-$positions: static, relative, absolute, fixed, sticky;
+$type: static, relative, absolute, fixed, sticky;
 
-@each $position in $positions {
+@each $position in $type {
   .pt-#{$position} {
     position: $position !important;
 
@@ -31,23 +31,16 @@ $positions: static, relative, absolute, fixed, sticky;
 //
 // Short
 //
-
-.pt-top {
-  top: 0 !important;
-  left: 0;
-  right: 0;
-}
-
-.pt-bottom {
-  right: 0;
-  bottom: 0 !important;
-  left: 0;
+$position: top, right, bottom, left;
+@each $p in $position {
+  .pt-#{$p} {
+    #{$p}: 0 !important;
+  }
 }
 
 .pt-full {
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  right: 0;
+  left: 0;
 }

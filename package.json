@@ -1,6 +1,6 @@
 {
   "name": "yyui",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "It's a front-end framwork.",
   "main": "gulpfile.js",
   "directories": {
@@ -33,6 +33,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
+    "ricenoodle": "^1.0.0",
     "run-sequence": "^1.1.5"
   }
 }
